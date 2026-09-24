@@ -53,7 +53,7 @@ if (projects) {
   const arrow = document.createElement('span'); arrow.textContent = 'Listen ↗'; caption.append(title, arrow); a.append(sleeve, caption); projects.append(a);
  }); }
 }
-const spotify = document.querySelector('a[href*="open.spotify.com/artist/"]');
+const spotify = document.querySelector('main a[href*="open.spotify.com/artist/"]');
 if (spotify && safeUrl(content.spotifyUrl)) spotify.href = safeUrl(content.spotifyUrl);
 const youtube = document.querySelector('#music-youtube');
 if (youtube && safeUrl(content.musicYoutubeUrl)) youtube.href = safeUrl(content.musicYoutubeUrl);
