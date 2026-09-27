@@ -13,3 +13,5 @@ Only doll-original.webp, doll-detail.webp, and the favicon are permitted image a
 The original interior and album images were removed from the current checkout. Git history preserves the earlier design. The OG preview uses the original doll artwork, replacing the studio photograph.
 
 The user has not approved publishing. Remote authentication was unavailable in the previous pass. No remote writes are part of this revision.
+
+September 26 music preview: the owner explicitly supplied and authorized five album covers for the music section, superseding the earlier image restriction for these assets. The current public navigation has Music and Pan de Cada Día. Music now has static album pages under /music/, generated from .development/music-catalog.json. See music-maintenance.md. This new revision still requires preview approval before publication.

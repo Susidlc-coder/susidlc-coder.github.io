@@ -1,0 +1,237 @@
+{
+  "SDLC_11": {
+    "sourceFilename": "SDLC_11.png",
+    "sourceDimensions": [
+      4284,
+      5712
+    ],
+    "sourceBytes": 43289181,
+    "sourceOrientation": 1,
+    "sourceColorProfile": "Display P3",
+    "dimensions": [
+      4284,
+      5712
+    ],
+    "colorProfile": "sRGB",
+    "webp": [
+      {
+        "src": "/assets/music/covers/sdlc-11-320.webp",
+        "width": 320,
+        "height": 427,
+        "bytes": 60200
+      },
+      {
+        "src": "/assets/music/covers/sdlc-11-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 246878
+      },
+      {
+        "src": "/assets/music/covers/sdlc-11-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 563018
+      },
+      {
+        "src": "/assets/music/covers/sdlc-11-1280.webp",
+        "width": 1280,
+        "height": 1707,
+        "bytes": 1000496
+      }
+    ],
+    "fallback": {
+      "src": "/assets/music/covers/sdlc-11.jpg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 709456
+    }
+  },
+  "SDLC_10": {
+    "sourceFilename": "SDLC_10.jpeg",
+    "sourceDimensions": [
+      5712,
+      4284
+    ],
+    "sourceBytes": 5225156,
+    "sourceOrientation": 6,
+    "sourceColorProfile": "Display P3",
+    "dimensions": [
+      4284,
+      5712
+    ],
+    "colorProfile": "sRGB",
+    "webp": [
+      {
+        "src": "/assets/music/covers/sdlc-10-320.webp",
+        "width": 320,
+        "height": 427,
+        "bytes": 33646
+      },
+      {
+        "src": "/assets/music/covers/sdlc-10-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 123748
+      },
+      {
+        "src": "/assets/music/covers/sdlc-10-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 264402
+      },
+      {
+        "src": "/assets/music/covers/sdlc-10-1280.webp",
+        "width": 1280,
+        "height": 1707,
+        "bytes": 428232
+      }
+    ],
+    "fallback": {
+      "src": "/assets/music/covers/sdlc-10.jpg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 398790
+    }
+  },
+  "SDLC_07": {
+    "sourceFilename": "SDLC_07.jpg",
+    "sourceDimensions": [
+      3000,
+      3000
+    ],
+    "sourceBytes": 951457,
+    "sourceOrientation": 1,
+    "sourceColorProfile": "Display P3",
+    "dimensions": [
+      3000,
+      3000
+    ],
+    "colorProfile": "sRGB",
+    "webp": [
+      {
+        "src": "/assets/music/covers/sdlc-07-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21540
+      },
+      {
+        "src": "/assets/music/covers/sdlc-07-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 49096
+      },
+      {
+        "src": "/assets/music/covers/sdlc-07-960.webp",
+        "width": 960,
+        "height": 960,
+        "bytes": 78282
+      },
+      {
+        "src": "/assets/music/covers/sdlc-07-1280.webp",
+        "width": 1280,
+        "height": 1280,
+        "bytes": 110904
+      }
+    ],
+    "fallback": {
+      "src": "/assets/music/covers/sdlc-07.jpg",
+      "width": 960,
+      "height": 960,
+      "bytes": 189909
+    }
+  },
+  "SDLC_01": {
+    "sourceFilename": "SDLC_01.png",
+    "sourceDimensions": [
+      3000,
+      3000
+    ],
+    "sourceBytes": 7381537,
+    "sourceOrientation": 1,
+    "sourceColorProfile": "untagged, assumed sRGB",
+    "dimensions": [
+      3000,
+      3000
+    ],
+    "colorProfile": "sRGB",
+    "webp": [
+      {
+        "src": "/assets/music/covers/sdlc-01-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 20784
+      },
+      {
+        "src": "/assets/music/covers/sdlc-01-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 64088
+      },
+      {
+        "src": "/assets/music/covers/sdlc-01-960.webp",
+        "width": 960,
+        "height": 960,
+        "bytes": 115484
+      },
+      {
+        "src": "/assets/music/covers/sdlc-01-1280.webp",
+        "width": 1280,
+        "height": 1280,
+        "bytes": 174292
+      }
+    ],
+    "fallback": {
+      "src": "/assets/music/covers/sdlc-01.jpg",
+      "width": 960,
+      "height": 960,
+      "bytes": 218027
+    }
+  },
+  "SDLC_02": {
+    "sourceFilename": "SDLC_02.png",
+    "sourceDimensions": [
+      1290,
+      1622
+    ],
+    "sourceBytes": 1830639,
+    "sourceOrientation": 1,
+    "sourceColorProfile": "Display",
+    "dimensions": [
+      1290,
+      1622
+    ],
+    "colorProfile": "sRGB",
+    "webp": [
+      {
+        "src": "/assets/music/covers/sdlc-02-320.webp",
+        "width": 320,
+        "height": 402,
+        "bytes": 13386
+      },
+      {
+        "src": "/assets/music/covers/sdlc-02-640.webp",
+        "width": 640,
+        "height": 805,
+        "bytes": 30396
+      },
+      {
+        "src": "/assets/music/covers/sdlc-02-960.webp",
+        "width": 960,
+        "height": 1207,
+        "bytes": 48460
+      },
+      {
+        "src": "/assets/music/covers/sdlc-02-1280.webp",
+        "width": 1280,
+        "height": 1609,
+        "bytes": 67460
+      }
+    ],
+    "fallback": {
+      "src": "/assets/music/covers/sdlc-02.jpg",
+      "width": 960,
+      "height": 1207,
+      "bytes": 124834
+    }
+  }
+}
