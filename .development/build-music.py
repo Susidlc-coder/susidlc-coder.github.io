@@ -55,7 +55,7 @@ def album_route(album):
 
 def main_page(data, manifest):
     content = f'''<section class="page-intro music-intro wrap"><p class="eyebrow">01 / THE LISTENING ROOM</p><h1><span>001-SDLC</span><em>_music</em></h1>
-<div class="intro-line"><p>An evolving collection of cinematic and experimental music shaped by memory, faith, humor, tension, and everyday life. Explore the albums and imagine where these sounds could live next, from personal listening to film, movement, and visual storytelling. Available worldwide for original scores, soundtracks, licensing, and creative collaboration.</p>{external(data['artistUrl'], 'Listen on Spotify', 'spotify-button', icon=True)}</div></section>'''
+<div class="intro-line"><p>Cinematic and experimental music for listeners, filmmakers, movement artists, and visual storytellers. Available worldwide for original scores, licensing, and creative collaboration.</p>{external(data['artistUrl'], 'Listen on Spotify', 'spotify-button', icon=True)}</div></section>'''
     upcoming = data.get('upcoming')
     if upcoming:
         art = f'<div class="upcoming-art">{picture(upcoming["cover"], upcoming["coverAlt"], manifest, True, "(max-width: 720px) 158px, 195px")}</div>' if upcoming.get('cover') else ''
@@ -64,13 +64,15 @@ def main_page(data, manifest):
         if upcoming.get('subtitle') and upcoming['title'].endswith(upcoming['subtitle']):
             title = esc(upcoming['title'][:-len(upcoming['subtitle'])].strip()) + ' <em>' + esc(upcoming['subtitle']) + '</em>'
         content += f'''<section class="upcoming-release wrap" aria-labelledby="upcoming-title"><div class="upcoming-copy"><p class="eyebrow">UPCOMING ALBUM</p><h2 id="upcoming-title">{title}</h2><p class="upcoming-status">{esc(upcoming['status'])}</p>{button}</div>{art}</section>'''
+    order = data.get('collectionOrder', [a['id'] for a in data['albums']])
+    albums = sorted(data['albums'], key=lambda a: order.index(a['id']) if a['id'] in order else len(order))
     cards = []
-    for album in data['albums']:
+    for album in albums:
         cards.append(f'''<a class="album-card" href="{album_route(album)}" aria-label="Explore {esc(album['title'])}"><div class="cover-mount">{picture(album['cover'], album['coverAlt'], manifest)}</div><div class="cover-caption"><h3>{esc(album['title'])}</h3><span class="cover-meta"><span class="track-count">{len(album['tracks'])} tracks</span><span class="arrow" aria-hidden="true">↗</span></span></div></a>''')
-    content += f'''<section class="record-library wrap" aria-labelledby="collection-title"><div class="collection-heading"><h2 id="collection-title">The collection</h2><span class="eyebrow">{len(cards):02} ALBUMS / MANY MOODS</span></div><div class="album-collection">{''.join(cards)}</div><div class="music-secondary">{external(data['youtubeUrl'], 'Watch on YouTube')}</div></section>'''
+    content += f'''<section class="record-library wrap" aria-labelledby="collection-title"><div class="collection-heading"><h2 id="collection-title">The collection</h2><div class="collection-tools"><span class="eyebrow">{len(cards):02} ALBUMS / MANY MOODS</span><label class="album-sort" hidden>Sort by <select id="album-sort"><option value="recent">Most recent</option><option value="name">Name A to Z</option></select></label></div></div><div class="album-collection">{''.join(cards)}</div><div class="music-secondary">{external(data['youtubeUrl'], 'Watch on YouTube')}</div></section>'''
     content += contact(data)
-    structured = {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': 'Music | Susidlc World', 'url': DOMAIN + '/music.html', 'mainEntity': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i, 'url': DOMAIN + album_route(a), 'name': a['title']} for i, a in enumerate(data['albums'], 1)]}}
-    return page('Music', 'Songs, soundtracks, and small worlds made of sound. Explore albums by Susidlc and get in touch for soundtrack work worldwide.', '/music.html', '/assets/doll-original.webp', content, data, structured)
+    structured = {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': 'Music | Susidlc World', 'url': DOMAIN + '/music.html', 'mainEntity': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i, 'url': DOMAIN + album_route(a), 'name': a['title']} for i, a in enumerate(albums, 1)]}}
+    return page('Music', 'Songs, soundtracks, and small worlds made of sound. Explore albums by Susidlc and get in touch for soundtrack work worldwide.', '/music.html', '/assets/doll-original.webp', content, data, structured).replace('music.css?v=5', 'music.css?v=8').replace('music.js?v=2', 'music.js?v=3')
 
 def optional_field(value, title, cls=''):
     return f'<div class="{cls}"><h4>{esc(title)}</h4><p>{esc(value)}</p></div>' if value else ''
