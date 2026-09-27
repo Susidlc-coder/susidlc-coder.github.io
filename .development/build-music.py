@@ -44,7 +44,7 @@ def page(title, description, route, image, content, data, structured):
 <link rel="canonical" href="{DOMAIN}{route}"><meta name="theme-color" content="#f2eee5">
 <meta property="og:title" content="{esc(title)} | Susidlc World"><meta property="og:description" content="{esc(description)}"><meta property="og:image" content="{DOMAIN}{image}"><meta property="og:type" content="website"><meta property="og:url" content="{DOMAIN}{route}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{DOMAIN}{image}">
-<link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=6"><link rel="stylesheet" href="/assets/music.css?v=5">
+<link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=6"><link rel="stylesheet" href="/assets/music.css?v=9">
 <script src="/assets/app.js?v=2" defer></script><script src="/assets/music.js?v=2" defer></script>
 <script type="application/ld+json">{schema}</script></head><body id="top" class="music-page">
 {header()}<main id="main">{content}</main>{footer(data)}
@@ -72,7 +72,7 @@ def main_page(data, manifest):
     content += f'''<section class="record-library wrap" aria-labelledby="collection-title"><div class="collection-heading"><h2 id="collection-title">The collection</h2><div class="collection-tools"><span class="eyebrow">{len(cards):02} ALBUMS / MANY MOODS</span><label class="album-sort" hidden>Sort by <select id="album-sort"><option value="recent">Most recent</option><option value="name">Name A to Z</option></select></label></div></div><div class="album-collection">{''.join(cards)}</div><div class="music-secondary">{external(data['youtubeUrl'], 'Watch on YouTube')}</div></section>'''
     content += contact(data)
     structured = {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': 'Music | Susidlc World', 'url': DOMAIN + '/music.html', 'mainEntity': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i, 'url': DOMAIN + album_route(a), 'name': a['title']} for i, a in enumerate(albums, 1)]}}
-    return page('Music', 'Songs, soundtracks, and small worlds made of sound. Explore albums by Susidlc and get in touch for soundtrack work worldwide.', '/music.html', '/assets/doll-original.webp', content, data, structured).replace('music.css?v=5', 'music.css?v=8').replace('music.js?v=2', 'music.js?v=3')
+    return page('Music', 'Songs, soundtracks, and small worlds made of sound. Explore albums by Susidlc and get in touch for soundtrack work worldwide.', '/music.html', '/assets/doll-original.webp', content, data, structured).replace('music.css?v=9', 'music.css?v=8').replace('music.js?v=2', 'music.js?v=3')
 
 def optional_field(value, title, cls=''):
     return f'<div class="{cls}"><h4>{esc(title)}</h4><p>{esc(value)}</p></div>' if value else ''
