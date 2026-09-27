@@ -39,3 +39,17 @@
   // The primary image has fixed dimensions, so hashes stay stable as images load.
   if (location.hash) window.addEventListener('load', () => fromHash(true), {once: true});
 })();
+
+// Reorder existing cards without fetching or replacing album content.
+(() => {
+  const select = document.querySelector('#album-sort');
+  const collection = document.querySelector('.album-collection');
+  if (!select || !collection) return;
+  const recent = [...collection.querySelectorAll('.album-card')];
+  const byName = [...recent].sort((a, b) => a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent));
+  select.value = 'recent';
+  select.closest('label').hidden = false;
+  select.addEventListener('change', () => {
+    collection.append(...(select.value === 'name' ? byName : recent));
+  });
+})();
