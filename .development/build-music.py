@@ -3,6 +3,7 @@ import argparse
 import html
 import json
 import re
+import runpy
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -149,6 +150,7 @@ def build(data, output=ROOT):
         sitemap = re.sub(r'  <url><loc>https://susidlc.com/music/[^<]+</loc></url>\n', '', sitemap)
         entries = ''.join(f'  <url><loc>{DOMAIN}{album_route(a)}</loc></url>\n' for a in data['albums'])
         (ROOT / 'sitemap.xml').write_text(sitemap.replace('</urlset>', entries + '</urlset>'))
+        runpy.run_path(str(DEV / 'build-home-updates.py'))['update_home'](ROOT, data)
     print(f'Built music.html and {len(data["albums"])} album pages in {output}')
 
 if __name__ == '__main__':
