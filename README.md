@@ -1,5 +1,9 @@
 # Susidlc World
 
+## Homepage update workflow
+
+New Music or Pan de Cada Día content includes its homepage announcement. Give the album/chapter name, content, and links in ordinary English or Spanish; no special form is needed. The Music notice reads the latest release from the music catalog. The Pan notice uses `.development/site-updates.json`. Run `python3 .development/build-home-updates.py` after changes and add `--check` before publication. Preview the homepage notice together with its destination page. See [home-updates.md](.development/home-updates.md) and [AGENTS.md](AGENTS.md).
+
 A static, English-language creative world built with HTML, CSS, and JavaScript. Music, Art, Fashion, and Faith share one visual identity centered on Susidlc’s original red doll artwork.
 
 ## Preview
