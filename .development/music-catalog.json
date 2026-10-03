@@ -3,16 +3,6 @@
   "youtubeUrl": "https://www.youtube.com/@susid95",
   "contactEmail": "me@susidlc.com",
   "standardCredit": "All tracks written, composed, performed, and produced by Susi de León Campo",
-  "upcoming": {
-    "id": "SDLC_11",
-    "title": "SDLC_11 Ambience",
-    "subtitle": "Ambience",
-    "cover": "SDLC_11",
-    "coverAlt": "SDLC_11 Ambience cover, sunlight through a canopy of trees",
-    "status": "October 4, 2026",
-    "link": null,
-    "linkLabel": null
-  },
   "albums": [
     {
       "id": "SDLC_01",
@@ -128,7 +118,8 @@
           "duration": "4:51",
           "videoUrl": null
         }
-      ]
+      ],
+      "subtitle": "Best Soundtracks"
     },
     {
       "id": "SDLC_02",
@@ -229,7 +220,8 @@
           "duration": "3:42",
           "videoUrl": null
         }
-      ]
+      ],
+      "subtitle": "Anoche"
     },
     {
       "id": "SDLC_07",
@@ -447,12 +439,107 @@
           "videoUrl": null
         }
       ]
+    },
+    {
+      "id": "SDLC_11",
+      "slug": "sdlc-11",
+      "title": "SDLC_11",
+      "subtitle": "Ambience",
+      "description": null,
+      "cover": "SDLC_11",
+      "coverAlt": "SDLC_11 Ambience cover, sunlight through a canopy of trees",
+      "spotifyUrl": "https://open.spotify.com/album/4ASnhnwrDU1A6FvpZY0x9T",
+      "tracks": [
+        {
+          "number": 1,
+          "id": "track-01-linden-ocean",
+          "title": "Linden Ocean",
+          "spotifyUrl": "https://open.spotify.com/track/0VDMTcgDbNsSpoRpsJXIyz?si=db21f57d21574441",
+          "detailsPending": true
+        },
+        {
+          "number": 2,
+          "id": "track-02-logic",
+          "title": "Logic",
+          "spotifyUrl": "https://open.spotify.com/track/0AOL1Fv2DBxzeRmF65HPda?si=edb38af9298749e1",
+          "detailsPending": true
+        },
+        {
+          "number": 3,
+          "id": "track-03-el-tuki-tuki",
+          "title": "El Tuki Tuki",
+          "spotifyUrl": "https://open.spotify.com/track/0Y3dsfQjj334gpGZChCsfp?si=54cbb86ab4cb4271",
+          "detailsPending": true
+        },
+        {
+          "number": 4,
+          "id": "track-04-magical-project",
+          "title": "Magical Project",
+          "spotifyUrl": "https://open.spotify.com/track/14ow0DnfRXg7CRpONSVpTH?si=b2280e4e6bfc4151",
+          "detailsPending": true
+        },
+        {
+          "number": 5,
+          "id": "track-05-songon-b",
+          "title": "songon B",
+          "spotifyUrl": "https://open.spotify.com/track/1zo7lgwUzudMEH1sG3OhkD?si=1a6fd736362d4f12",
+          "detailsPending": true
+        },
+        {
+          "number": 6,
+          "id": "track-06-project-0",
+          "title": "Project 0",
+          "spotifyUrl": "https://open.spotify.com/track/0taxwy9jN8m2KilAPOkgJc?si=cb30af88074942cf",
+          "detailsPending": true
+        },
+        {
+          "number": 7,
+          "id": "track-07-oracion-a-jesus",
+          "title": "Oración A Jesús",
+          "spotifyUrl": "https://open.spotify.com/track/5dW6iYf3pe6NonI0hMmLee?si=c6a3db0e7a2d4db4",
+          "detailsPending": true
+        },
+        {
+          "number": 8,
+          "id": "track-08-elbe",
+          "title": "Elbe",
+          "spotifyUrl": "https://open.spotify.com/track/4v7I3uTNB3Turu15iYeJTA?si=102debcfe228487e",
+          "detailsPending": true
+        },
+        {
+          "number": 9,
+          "id": "track-09-lala",
+          "title": "Lala",
+          "spotifyUrl": "https://open.spotify.com/track/4TY02J6McUe5sNuQaKU0KH?si=20b576c342974686",
+          "detailsPending": true
+        },
+        {
+          "number": 10,
+          "id": "track-10-seda",
+          "title": "Seda",
+          "spotifyUrl": "https://open.spotify.com/track/51yRUSnAZPVSzcj1uhOZhH?si=c035e3c2cfa94f20",
+          "detailsPending": true
+        }
+      ],
+      "trackDetailsPending": true
     }
   ],
   "collectionOrder": [
+    "SDLC_11",
     "SDLC_10",
     "SDLC_07",
     "SDLC_02",
     "SDLC_01"
-  ]
+  ],
+  "latestRelease": {
+    "id": "SDLC_11",
+    "title": "SDLC_11 Ambience",
+    "subtitle": "Ambience",
+    "cover": "SDLC_11",
+    "coverAlt": "SDLC_11 Ambience cover, sunlight through a canopy of trees",
+    "status": "Out now",
+    "link": "https://open.spotify.com/album/4ASnhnwrDU1A6FvpZY0x9T",
+    "linkLabel": "Listen now",
+    "label": "NEW RELEASE"
+  }
 }
