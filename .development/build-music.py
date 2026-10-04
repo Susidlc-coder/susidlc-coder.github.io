@@ -102,7 +102,7 @@ def track_html(track):
     if track.get('videoUrl'):
         panel += external(track['videoUrl'], 'Watch Video', 'track-video', 'Watch video for ' + track['title'])
     if not panel and track.get('detailsPending'):
-        panel = '<p>Coming soon</p>'
+        panel = '<p>Track details coming soon</p>'
     return f'''<article class="track" id="{tid}"><div class="track-row"><h3><button class="track-toggle" type="button" aria-expanded="true" aria-controls="{tid}-panel" id="{tid}-toggle"><span class="track-number">{esc(str(track['number']).zfill(2))}</span><span><span class="track-title">{esc(track['title'])}</span>{tags}</span>{duration}<span class="track-indicator" aria-hidden="true"></span></button></h3><div class="track-actions">{external(track['spotifyUrl'], 'Listen', 'track-listen', 'Listen to ' + track['title'] + ' on Spotify', True)}</div></div><div class="track-panel" id="{tid}-panel" role="region" aria-labelledby="{tid}-toggle">{panel}</div></article>'''
 
 def new_album_page(album, data, manifest):
