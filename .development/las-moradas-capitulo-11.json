@@ -1,0 +1,21 @@
+{
+  "chapter": "6-11",
+  "summary": "El deseo de Dios crece hasta convertirse en una pena profunda que Teresa compara con una saeta de fuego. Describe la soledad y la sed del alma, sus efectos en el cuerpo y el consuelo que devuelve fuerzas para vivir. Esta experiencia aumenta el desapego, el ánimo y el cuidado de no ofender a Dios.",
+  "editorialNotice": "Resumen editorial del website; no forma parte del texto de Santa Teresa.",
+  "sources": [
+    {
+      "source": "6_Sexta Morada/Capítulo 11_M6/Texto Adaptado _ Capítulo 11_Sexta Morada.docx",
+      "sha256": "a4196a14fc58066d4ae2b997ffd97722ba4802c400002068e7525d3ddb8b61a1",
+      "version": "adaptado",
+      "paragraphs": 65,
+      "characters": 10708
+    },
+    {
+      "source": "6_Sexta Morada/Capítulo 11_M6/Texto original (1577) _ Capítulo 11_Sexta Morada .docx",
+      "sha256": "a786b44b5295a212499b3ebba758d1a54611cba0963aff8f61e466f23feeb4e3",
+      "version": "original",
+      "paragraphs": 69,
+      "characters": 10400
+    }
+  ]
+}
