@@ -1,0 +1,28 @@
+{
+  "chapter": "7-1",
+  "summary": "Teresa introduce la séptima morada como preparación para la unión espiritual. Describe una visión intelectual de la Santísima Trinidad y la certeza de su compañía en lo más interior del alma. Explica cómo esa presencia y quietud pueden permanecer mientras la persona atiende sus ocupaciones y sirve a Dios.",
+  "moradaSummary": "El capítulo disponible presenta la entrada en la morada más interior del alma. Teresa describe la compañía de la Santísima Trinidad y una quietud que permanece en medio de las ocupaciones y del servicio a Dios.",
+  "editorialNotice": "Resumen editorial del website; no forma parte del texto de Santa Teresa.",
+  "sources": [
+    {
+      "source": "7_Septima Morada/Texto Adaptado _ Capítulo 1_Septima Morada.docx",
+      "sha256": "d2a9062e260fabefc7b5e22198ff86a68fb2074e0d70cf855735c5584ffd7105",
+      "morada": 7,
+      "chapter": 1,
+      "part": 0,
+      "version": "adaptado",
+      "paragraphs": 61,
+      "characters": 10033
+    },
+    {
+      "source": "7_Septima Morada/Texto original (1577) _ Capítulo 1_Septima Morada.docx",
+      "sha256": "395603aaf02e13e3aee2ab1e5bcae77fa125061dab9fa0f147b546738a757eaf",
+      "morada": 7,
+      "chapter": 1,
+      "part": 0,
+      "version": "original",
+      "paragraphs": 58,
+      "characters": 9570
+    }
+  ]
+}
