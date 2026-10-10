@@ -1,0 +1,16 @@
+#susi-poems .sp-reading-controls{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 22px;align-items:start;margin:-4px 0 22px}
+#susi-poems .sp-reading-language-stack{min-width:0}
+#susi-poems .sp-reading-languages{display:flex;align-items:center;gap:4px;font:11px/1.4 'Helvetica Neue',Arial,sans-serif}
+#susi-poems .sp-reading-language-label{margin-right:auto;color:var(--quiet)}
+#susi-poems .sp-reading-languages button,#susi-poems .sp-reading-compare{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:8px 12px;border:1px solid var(--rule);border-radius:2px;background:transparent;color:var(--ink);font:11px 'Helvetica Neue',Arial,sans-serif;cursor:pointer}
+#susi-poems .sp-reading-languages button[aria-pressed=true],#susi-poems .sp-reading-compare[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+#susi-poems .sp-reading-controls button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+#susi-poems .sp-reading-version{font:11px/1.5 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em;color:var(--quiet);margin:8px 0 0;text-align:right}
+#susi-poems .sp-reading p{white-space:pre-line}
+#susi-poems .sp-read-dialog[data-reading-parallel=true]{max-width:min(1040px,calc(100vw - 28px))}
+#susi-poems .sp-reading-parallel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+#susi-poems .sp-reading-column{min-width:0;overflow-wrap:break-word}
+#susi-poems .sp-reading-column+.sp-reading-column{border-left:1px solid var(--rule);padding-left:36px}
+#susi-poems .sp-reading-column-title{font:11px/1.5 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em;margin:0 0 22px;color:var(--quiet)}
+@media(max-width:720px){#susi-poems .sp-reading-parallel{grid-template-columns:1fr;gap:28px}#susi-poems .sp-reading-column+.sp-reading-column{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:28px}}
+@media(max-width:480px){#susi-poems .sp-reading-controls{grid-template-columns:1fr;gap:12px}#susi-poems .sp-reading-compare{justify-self:start}}

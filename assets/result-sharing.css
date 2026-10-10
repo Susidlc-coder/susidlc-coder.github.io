@@ -1,0 +1,49 @@
+/* Keep the published logo's three gradients, faces and baseline alignment.
+   The supplied reference occupies approximately 47% of the card's inner width.
+   Its original 55/57px cap was designed for the narrower 650px published dialog. */
+#susi-poems .sp-result .sp-dialog-inner{container-type:inline-size}
+#susi-poems .sp-result .sp-result-logo{margin-top:16px}
+#susi-poems .sp-result .sp-result-logo b,#susi-poems .sp-result .sp-result-logo span{font-size:clamp(30px,9.5cqw,82px);letter-spacing:-.036363636em}
+#susi-poems .sp-result .sp-result-logo em{font-size:clamp(31px,9.85cqw,85px);letter-spacing:-.035087719em}
+
+/* Native disclosure sits above the closing divider, quietly aligned right. */
+#susi-poems .sp-share{width:max-content;max-width:100%;margin:8px 0 0 auto;padding:0;border:0;color:#d4c8b8;text-align:right}
+#susi-poems .sp-share[open]{width:min(100%,480px)}
+#susi-poems .sp-share-toggle{display:flex;align-items:center;justify-content:flex-end;gap:7px;min-height:38px;width:max-content;margin-left:auto;padding:0 3px;list-style:none;color:#d4c8b8;font:11px/1.4 'Helvetica Neue',Arial,sans-serif;cursor:pointer}
+#susi-poems .sp-share-toggle::-webkit-details-marker{display:none}
+#susi-poems .sp-share-toggle::after{content:'';width:5px;height:5px;margin:0 2px 3px 4px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg)}
+#susi-poems .sp-share[open]>.sp-share-toggle::after{transform:rotate(225deg);margin-top:5px}
+#susi-poems .sp-share-icon,#susi-poems .sp-share-icon svg{display:block;width:14px;height:14px}
+#susi-poems .sp-share-toggle:hover{color:#f2eee5}
+#susi-poems .sp-share-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px;padding-top:5px}
+#susi-poems .sp-share-action{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:8px 10px;border:1px solid #766859;border-radius:2px;background:transparent;color:#f2eee5;font:11px/1.4 'Helvetica Neue',Arial,sans-serif;text-align:center;text-decoration:none;cursor:pointer}
+#susi-poems .sp-share-action:hover{background:#443328;border-color:#b8aa96}
+#susi-poems .sp-share-action:disabled,#susi-poems .sp-share-action[aria-disabled=true]{opacity:.5;cursor:wait}
+#susi-poems .sp-share-action:focus-visible,#susi-poems .sp-share-toggle:focus-visible{outline:2px solid #f4e3bd;outline-offset:4px}
+#susi-poems .sp-share-status{margin:10px 0 0;color:#d4c8b8;font:11px/1.6 'Helvetica Neue',Arial,sans-serif}
+#susi-poems .sp-share-status:empty{display:none}
+#susi-poems .sp-share-copy-fallback{display:block;margin-top:12px;font:11px/1.6 'Helvetica Neue',Arial,sans-serif;text-align:left}
+#susi-poems .sp-share-copy-fallback[hidden]{display:none}
+#susi-poems .sp-share-copy-fallback input{display:block;width:100%;box-sizing:border-box;min-height:38px;margin-top:7px;border:1px solid #b8aa96;border-radius:2px;padding:9px;background:#241b18;color:#f2eee5;font:12px 'Helvetica Neue',Arial,sans-serif}
+#susi-poems .sp-share-preview{margin-top:10px;color:#d4c8b8;font:11px/1.6 'Helvetica Neue',Arial,sans-serif;text-align:left}
+#susi-poems .sp-share-preview[hidden]{display:none}
+#susi-poems .sp-share-preview summary{width:fit-content;margin-left:auto;cursor:pointer;text-underline-offset:4px;min-height:38px;padding-block:8px}
+#susi-poems .sp-share-preview summary:hover{text-decoration:underline}
+#susi-poems .sp-share-preview summary:focus-visible{outline:2px solid #f4e3bd;outline-offset:3px}
+#susi-poems .sp-share-preview img{display:block;width:100%;max-width:480px;height:auto;margin:10px auto 0;border:1px solid #766859}
+@media(max-width:480px){#susi-poems .sp-share-actions{gap:6px}#susi-poems .sp-share-action{flex:1 1 120px}}
+
+/* Album identifier in the top-right corner; artwork stays complete in a square. */
+#susi-poems .sp-result .sp-result-album{margin-left:auto;white-space:nowrap;font:10px/1.5 'Helvetica Neue',Arial,sans-serif;color:#d4c8b8;letter-spacing:.03em}
+#susi-poems .sp-result .sp-result-cover{display:block;margin:0}
+#susi-poems .sp-result .sp-result-cover a{aspect-ratio:1;max-width:185px;background:#3b2c25}
+#susi-poems .sp-result .sp-result-cover img{width:100%;height:100%;max-height:none;aspect-ratio:1;object-fit:contain;object-position:center}
+#susi-poems .sp-result .sp-dialog-source{margin-top:8px}
+@media(max-width:480px){
+ #susi-poems .sp-result .sp-dialog-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 14px}
+ #susi-poems .sp-result .sp-dialog-kicker{grid-column:1;grid-row:1;margin:0}
+ #susi-poems .sp-result [data-close-result]{grid-column:2;grid-row:1}
+ #susi-poems .sp-result .sp-result-album{grid-column:1 / -1;grid-row:2;justify-self:end;font-size:9px}
+ #susi-poems .sp-result .sp-result-cover{margin:20px 0 0}
+ #susi-poems .sp-result .sp-result-cover a{width:110px}
+}

@@ -1,0 +1,24 @@
+/* Interpolate the original surface, never add another paint layer. */
+@property --susi-wave-value{syntax:'<number>';inherits:false;initial-value:0}
+@property --susi-hover-value{syntax:'<number>';inherits:false;initial-value:0}
+/* The colour wave belongs only to surfaces. Words keep one fixed ink. */
+@keyframes sp-color-wave{
+ 0%,100%{--susi-wave-value:0}
+ 50%{--susi-wave-value:1}
+}
+#susi-poems [data-color-wave-stage] .sp-cell>.sp-reveal{stroke:#f2eee5;stroke-width:1.15;opacity:calc(var(--susi-wave-value) + (1 - var(--susi-wave-value)) * var(--susi-hover-value))!important;--susi-hover-value:0;transition:--susi-hover-value 1100ms cubic-bezier(.25,.1,.25,1)}
+#susi-poems [data-color-wave-stage] .sp-cell>.sp-ink{fill:var(--sp-fixed-ink);stroke:var(--sp-fixed-stroke);opacity:1;pointer-events:none;animation:none;transition:none}
+#susi-poems [data-color-wave-stage] .sp-ink>.sp-word{fill:inherit;stroke:inherit;animation:none;transition:none}
+#susi-poems [data-color-wave-stage] .sp-ink>.sp-route-code{fill:inherit;animation:none;transition:none}
+#susi-poems[data-color-motion-mode="ambient"] [data-color-wave-stage] .sp-cell>.sp-reveal{
+ animation:sp-color-wave var(--susi-color-wave-period,8s) cubic-bezier(.45,0,.55,1) var(--sp-color-delay,0ms) infinite;
+ animation-play-state:paused;
+}
+#susi-poems[data-color-motion-mode="ambient"][data-color-motion-running="true"] [data-color-wave-stage] .sp-cell>.sp-reveal{animation-play-state:running}
+/* Pointer and keyboard emphasis affect only the surface, never the word. */
+#susi-poems [data-color-wave-stage] .sp-cell.sp-lit>.sp-reveal,
+#susi-poems [data-color-wave-stage] .sp-cell:focus-visible>.sp-reveal{--susi-hover-value:1;transition:--susi-hover-value 800ms cubic-bezier(.25,.1,.25,1)}
+#susi-poems[data-color-motion-mode="static"] .sp-cell.sp-ambient>.sp-reveal{--susi-wave-value:1}
+@media(prefers-reduced-motion:reduce){
+ #susi-poems [data-color-wave-stage] .sp-cell>.sp-reveal{animation:none!important;transition:none!important}
+}

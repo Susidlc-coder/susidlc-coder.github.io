@@ -1,0 +1,42 @@
+/* The original proposal's album components only; the live palette and integrated shell remain authoritative. */
+.album-page{--serif:var(--selective-serif);--sans:var(--selective-sans);--red:var(--accent);--soft:var(--panel);--paper:var(--bg);width:min(100%,1400px);padding-inline:clamp(22px,5.2vw,88px);font-family:var(--sans)}
+.album-page h1,.album-page h2,.album-page h3{font-family:var(--serif);font-weight:400}
+.album-page .album-opening{padding:0}.album-page .album-credit{padding:0;border:0}.album-page .track-about{padding:0}.album-page .track-facts{max-width:none}
+.album-page .quiet{color:var(--muted);font-size:13px}.album-page .eyebrow{font-size:10px;letter-spacing:1.6px;font-weight:500}
+.album-page .button{display:inline-flex;align-items:center;justify-content:space-between;gap:42px;padding:19px 24px;min-height:58px;background:var(--ink);color:var(--paper);font-size:13px;border:1px solid var(--ink);transition:background .18s}
+.album-page .button:hover{background:var(--accent);border-color:var(--accent)}
+.album-page .section-heading{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-top:1px solid var(--line);padding-top:22px;margin-bottom:36px}
+.album-page .section-heading h2{font-size:28px;letter-spacing:-.7px}.album-page .back-link{display:inline-flex;align-items:center;min-height:44px;color:var(--muted);font-size:12px;margin:22px 0}
+.album-page .back-link:hover,.album-page .track-spotify:hover{color:var(--accent)}
+.album-page .text-link{display:inline-flex;align-items:center;gap:24px;border-bottom:1px solid var(--line);padding:10px 0;font-size:13px;min-height:44px;line-height:1.4}
+.album-page .text-link:hover{color:var(--accent);border-color:var(--accent)}
+.album-page summary{cursor:pointer;touch-action:manipulation}.album-page summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.album-page .sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.album-page{max-width:1400px;padding-bottom:85px}.album-page .album-opening{display:grid;grid-template-columns:1fr 1.1fr;gap:10%;align-items:center;margin:20px 0 80px}.album-page .album-opening figure{height:470px;background:var(--soft);padding:24px}.album-page .album-opening img{width:100%;height:100%;object-fit:contain}.album-page .album-heading h1{font-size:clamp(58px,7vw,90px);letter-spacing:-4px;margin-top:20px}.album-page .album-subtitle{font-family:var(--serif);font-size:35px;font-style:italic;color:var(--red);margin:2px 0 28px}.album-page .album-subtitle:empty{display:none}.album-page .album-heading .button{margin-top:12px}.album-page .album-credit{font-size:12px;color:var(--muted);max-width:300px;margin-top:30px}.album-page .tracks .section-heading{margin-bottom:15px}.album-page .record-track,.album-page .track-no-notes{position:relative;border-bottom:1px solid var(--line);scroll-margin-top:20px}.album-page .record-track>details>summary{padding:25px 115px 25px 0;display:flex;gap:22px;align-items:center;list-style:none;min-height:85px}.album-page .record-track>details>summary::-webkit-details-marker{display:none}.album-page .track-num{font-size:11px;color:var(--muted);width:28px;flex-shrink:0}.album-page .record-track h3,.album-page .track-no-notes h3{font-family:var(--serif);font-size:25px;letter-spacing:-.6px;line-height:1.2}.album-page .track-duration{font-size:11px;color:var(--muted);margin-left:auto}.album-page .track-plus{font-size:24px;line-height:1;min-width:20px;text-align:center;font-weight:300}.album-page .record-track>details[open]>summary .track-plus{transform:rotate(45deg)}.album-page .record-track>details[open]>summary{color:var(--red)}.album-page .track-spotify{position:absolute;right:0;top:21px;font-size:11px;padding:15px 0 15px 18px;border-left:1px solid var(--line)}.album-page .track-content{padding:3px 115px 38px 50px;max-width:1050px;font-size:14px;color:var(--muted)}.album-page .track-content .track-about p{font-family:var(--serif);font-size:21px;color:var(--ink);line-height:1.6;max-width:730px}.album-page .track-content h4{font-weight:500;color:var(--ink);font-size:9px;letter-spacing:1px;text-transform:uppercase;margin:22px 0 12px}.album-page .track-facts{display:grid;grid-template-columns:1fr 1fr;gap:4px 35px;margin-top:24px}.album-page .track-facts p{font-size:12px}.album-page .track-scene{grid-column:1/-1;max-width:700px}.album-page .track-lyrics{margin-top:27px;border-top:1px solid var(--line);padding-top:20px}.album-page .track-lyrics summary{font-size:12px;min-height:35px}.album-page .lyrics-text{white-space:pre-line;font-family:var(--serif);font-size:18px;line-height:1.7;padding-top:15px;color:var(--ink)}.album-page .track-no-notes{display:flex;align-items:center;gap:22px;padding:25px 110px 25px 0;min-height:85px}.album-page .album-return{margin-top:45px}
+@media(max-width:700px){.album-page{padding-bottom:60px}.album-page .back-link{font-size:11px;margin-block:15px}.album-page .album-opening{grid-template-columns:1fr;gap:28px;margin:10px 0 45px}.album-page .album-opening figure{height:340px;padding:18px}.album-page .album-heading h1{font-size:65px;letter-spacing:-3px;margin-top:18px}.album-page .album-subtitle{font-size:30px;margin-bottom:19px}.album-page .album-credit{font-size:11px;margin-top:22px}.album-page .album-heading .button{font-size:12px}.album-page .record-track>details>summary{padding:23px 26px 56px 0;gap:12px;position:relative;align-items:flex-start;min-height:110px}.album-page .record-track h3,.album-page .track-no-notes h3{font-size:23px}.album-page .track-num{font-size:10px;width:23px;padding-top:5px}.album-page .track-duration{position:absolute;bottom:23px;left:35px;font-size:10px}.album-page .track-plus{position:absolute;right:0;top:23px;font-size:22px}.album-page .track-spotify{top:61px;font-size:10px;padding:12px 0 12px 15px}.album-page .track-content{padding:0 0 28px 35px}.album-page .track-content .track-about p{font-size:19px;line-height:1.6}.album-page .track-facts{grid-template-columns:1fr;gap:5px;margin-top:18px}.album-page .track-content h4{font-size:8px;line-height:1.5}.album-page .track-facts p{font-size:12px}.album-page .track-lyrics{margin-top:22px}.album-page .lyrics-text{font-size:17px}.album-page .track-no-notes{padding:23px 0 58px;align-items:flex-start;gap:12px;min-height:110px}.album-page{padding-inline:22px}.album-page .section-heading{align-items:flex-start;flex-direction:column;gap:12px}.album-page .section-heading h2{font-size:29px}.album-page .section-heading .quiet{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.album-page *{transition:none!important;scroll-behavior:auto!important}}
+
+/* Restore the published track controls: original dimensions, colours and icon. */
+.album-page .record-track>details>summary{padding-right:153px}
+.album-page .track-plus{position:relative;display:inline-block;flex:0 0 32px;min-width:32px;width:32px;height:32px;font-size:0;background:#a42b40;color:#fff2cc}
+.album-page .track-plus:before,.album-page .track-plus:after{content:'';position:absolute;left:9px;top:15.5px;width:14px;height:1px;background:currentColor;transition:transform .2s}
+.album-page .track-plus:after{transform:rotate(90deg)}
+.album-page .record-track>details[open]>summary .track-plus{transform:none}
+.album-page .record-track>details[open]>summary .track-plus:after{transform:rotate(0)}
+.album-page .track-spotify{display:inline-flex;align-items:center;justify-content:center;gap:8px;top:26px;min-height:32px;padding:5px 16px;border:1px solid transparent;background:#fff2cc;color:#33241e;font-size:13px;line-height:20px;text-decoration:none}
+.album-page .track-spotify:hover{color:#33241e;border-color:#a42b40}
+.album-page .track-spotify svg{width:15px;height:15px;flex-shrink:0}
+.album-page .track-spotify:focus-visible{outline:2px solid #a42b40;outline-offset:4px}
+.album-page .track-no-notes{padding-right:153px}
+@media(max-width:700px){
+ .album-page .record-track>details>summary{padding-right:46px;padding-bottom:66px}
+ .album-page .track-plus{position:absolute;top:20px;right:0}
+ .album-page .track-spotify{top:auto;bottom:auto;top:66px;min-height:36px;font-size:13px}
+ .album-page .track-no-notes{padding-right:0;padding-bottom:66px}
+ .album-page .track-duration{bottom:25px}
+}
+/* Reserve a separate action line on narrow screens, including two-line titles. */
+@media(max-width:700px){
+ .album-page .record-track>details>summary,.album-page .track-no-notes{min-height:148px;padding-bottom:56px}
+ .album-page .track-spotify{top:94px}
+}

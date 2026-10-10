@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /.development/
-Disallow: /content/
 
 Sitemap: https://susidlc.com/sitemap.xml

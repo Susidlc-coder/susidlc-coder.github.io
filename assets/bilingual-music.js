@@ -1,0 +1,5 @@
+// Native details remain usable without JavaScript. This only opens deep links.
+function revealMusicTrack(){if(!location.hash)return;let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}const track=document.getElementById(id);if(!track||!track.matches('.record-track,.track-no-notes'))return;const detail=track.querySelector(':scope>details');if(detail)detail.open=true;requestAnimationFrame(()=>track.scrollIntoView({block:'start',behavior:'instant'}));}
+revealMusicTrack();addEventListener('hashchange',revealMusicTrack);if(location.hash)addEventListener('load',revealMusicTrack,{once:true});
+
+(()=>{const key="susidlc-open-tracks:"+location.pathname.replace(/^\/(es|en)/,"");try{const ids=JSON.parse(sessionStorage.getItem(key)||"[]");document.querySelectorAll(".record-track").forEach(t=>{if(ids.includes(t.id))t.querySelector(":scope>details").open=true;});}catch{}document.addEventListener("toggle",e=>{if(e.target.matches(".record-track>details")){try{sessionStorage.setItem(key,JSON.stringify([...document.querySelectorAll(".record-track:has(>details[open])")].map(x=>x.id)));}catch{}}},true);})();

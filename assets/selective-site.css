@@ -1,0 +1,63 @@
+/* Selective integration: original section styles and color variables remain authoritative.
+   Typography comes from the previous local proposal; no web fonts are downloaded. */
+:root {
+  --selective-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --selective-sans: 'Helvetica Neue', Arial, sans-serif;
+}
+body { font-family: var(--selective-sans); }
+body:is(.homepage, .music-page, .moradas-page) :is(h1, h2) {
+  font-family: var(--selective-serif);
+}
+body:is(.homepage, .music-page, .moradas-page) :is(h1, h2, h3) em {
+  font-family: var(--selective-serif);
+}
+.header .brand > span:not(.brand-portrait),
+footer.editorial-footer .footer-brand {
+  font-family: var(--selective-serif);
+}
+.header .brand-world { font-family: var(--selective-sans); }
+footer.editorial-footer .footer-brand em,
+footer.editorial-footer .footer-contact-group h2,
+.moradas-page .morada-group h3,
+.moradas-page .text-column,
+.music-page .cover-caption h3,
+.music-page .track-title,
+.music-page .track-lyrics {
+  font-family: var(--selective-serif);
+}
+/* Keep the original composition, gallery, updates, colors, and illustration. */
+.homepage .entry-copy h1 {
+  font-family: var(--selective-serif);
+  letter-spacing: -.065em;
+  line-height: .94;
+}
+.homepage .entry-copy h1 em {
+  color: var(--accent);
+  font-family: var(--selective-serif);
+  letter-spacing: inherit;
+}
+.homepage .world-map { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.homepage .world-map strong {
+  display: block;
+  max-width: calc(100% - 24px);
+  font-family: var(--selective-serif);
+  font-size: clamp(26px, 2.4vw, 34px);
+  line-height: 1.1;
+}
+.homepage .world-map a { min-width: 0; }
+.homepage .world-map .world-poems { color: var(--ink); }
+.homepage .world-map .world-poems:hover strong { color: var(--accent); }
+/* All new accents inherit the exact original Daylight / chocolate Lamplight tokens. */
+@media (max-width: 720px) {
+  .homepage .world-map { grid-template-columns: 1fr; }
+  .homepage .world-map > a:not(:last-child) { border-bottom: 1px solid var(--line); }
+  .homepage .world-map > a { border-right: 0; }
+  .homepage .entry-copy h1 {
+    font-size: clamp(42px, 12.4vw, 78px);
+    line-height: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body, .homepage .home-update::before, .world-map > a { transition: none; }
+}

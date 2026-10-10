@@ -1,0 +1,42 @@
+/* The previous proposal's three visual cards, within the published home's palette.
+   Hero, gallery, authored painting, personal note, updates and lighting stay intact. */
+.homepage .world-paths{padding-top:40px;padding-bottom:76px;scroll-margin-top:26px}
+.world-paths .section-heading{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-top:1px solid var(--line);padding-top:22px;margin-bottom:36px}
+.world-paths .section-heading h2{font-family:var(--selective-sans);font-size:11px;line-height:1.6;letter-spacing:1.7px;text-transform:uppercase;font-weight:400}
+.world-paths .quiet{color:var(--muted);font-size:13px;line-height:1.6}
+.world-paths .entry-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.world-paths .entry{display:block;min-width:0}
+.world-paths .entry-num{display:block;font-size:10px;line-height:1.6;letter-spacing:1px;margin-bottom:20px;color:var(--muted)}
+.world-paths .entry-image{height:260px;overflow:hidden;background:var(--panel);display:flex;justify-content:center;align-items:center}
+.world-paths .entry-image img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.world-paths .entry-music .entry-image img{width:56%;object-fit:contain;padding-block:20px}
+.world-paths .entry-poems .home-fibonacci{display:block;width:calc(100% - 8px);height:calc(100% - 8px);max-width:100%;max-height:100%;flex-shrink:1;overflow:visible}
+/* The landing's exact 24 cells, in their native horizontal viewBox.
+   Only colour changes; the single card link remains the keyboard target. */
+.world-paths .home-fibonacci-cell .home-fibonacci-active{opacity:0;transition:opacity 650ms cubic-bezier(.2,.65,.2,1);pointer-events:none}
+.world-paths .home-fibonacci-cell:hover .home-fibonacci-active,
+.world-paths .entry-poems:focus-visible .home-fibonacci-active,
+.world-paths .entry-poems:active .home-fibonacci-active{opacity:1}
+.world-paths .entry-pan .entry-image img{object-position:50% 60%}
+.world-paths .entry:hover .entry-image img{transform:scale(1.025)}
+.world-paths .entry:focus-visible{outline:3px solid var(--accent);outline-offset:7px}
+.world-paths .entry-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:21px}
+.world-paths .entry-heading h3{font-family:var(--selective-serif);font-size:32px;font-weight:400;letter-spacing:-1px;line-height:1.15}
+.world-paths .entry-heading>span{font-size:22px;flex-shrink:0}
+.world-paths .entry p{font-size:13px;line-height:1.6;max-width:285px;color:var(--muted);margin-top:10px}
+.homepage .world-paths+.world-note{border-top:1px solid var(--line)}
+@media(max-width:1100px){.world-paths .entry-grid{gap:24px}.world-paths .entry-image{height:225px}.world-paths .entry-heading h3{font-size:28px}}
+@media(max-width:720px){
+ .homepage .world-paths{padding-top:28px;padding-bottom:48px}
+ .world-paths .section-heading{align-items:flex-start;flex-direction:column;gap:8px;margin-bottom:28px;padding-top:19px}
+ .world-paths .entry-grid{grid-template-columns:1fr;gap:34px}
+ .world-paths .entry{padding-bottom:29px;border-bottom:1px solid var(--line)}
+ .world-paths .entry:last-child{padding-bottom:0;border-bottom:0}
+ .world-paths .entry-num{margin-bottom:13px;font-size:10px}
+ .world-paths .entry-image{height:clamp(210px,62vw,310px)}
+ .world-paths .entry-music .entry-image img{width:56%;padding-block:19px}
+ .world-paths .entry-heading{margin-top:18px}
+ .world-paths .entry-heading h3{font-size:32px}
+ .world-paths .entry p{font-size:13px;max-width:320px;margin-top:10px}
+}
+@media(prefers-reduced-motion:reduce){.world-paths .entry-image img,.world-paths .home-fibonacci-active{transition:none}.world-paths .entry:hover .entry-image img{transform:none}}

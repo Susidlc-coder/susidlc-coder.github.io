@@ -66,6 +66,9 @@ def render(root=ROOT, catalog=None):
 
 
 def update_home(root=ROOT, catalog=None, check=False):
+    if (root / 'es/index.html').exists():
+        from bilingual_home_updates import update_bilingual
+        return update_bilingual(root, catalog, check)
     path = root / 'index.html'
     page = path.read_text()
     pattern = re.escape(START) + r'.*?' + re.escape(END)

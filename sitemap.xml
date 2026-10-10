@@ -1,38 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://susidlc.com/</loc></url>
-  <url><loc>https://susidlc.com/music.html</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/primera-morada/capitulo-1/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/primera-morada/capitulo-2/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/segunda-morada/capitulo-1/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/tercera-morada/capitulo-1/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/tercera-morada/capitulo-2/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-1/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-2/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-3/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-1/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-2/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-3/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-4/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-1/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-2/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-3/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-4/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-5/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-6/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-7/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-8/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-9/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-10/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-11/</loc></url>
-  <url><loc>https://susidlc.com/music/sdlc-01/</loc></url>
-  <url><loc>https://susidlc.com/music/sdlc-02/</loc></url>
-  <url><loc>https://susidlc.com/music/sdlc-07/</loc></url>
-  <url><loc>https://susidlc.com/music/sdlc-10/</loc></url>
-  <url><loc>https://susidlc.com/music/sdlc-11/</loc></url>
-  <url><loc>https://susidlc.com/pan-de-cada-dia/las-moradas/septima-morada/capitulo-1/</loc></url>
-  <url><loc>https://susidlc.com/poemas/</loc></url>
+<url><loc>https://susidlc.com/es/</loc></url>
+<url><loc>https://susidlc.com/es/music/sdlc-01/</loc></url>
+<url><loc>https://susidlc.com/es/music/sdlc-02/</loc></url>
+<url><loc>https://susidlc.com/es/music/sdlc-07/</loc></url>
+<url><loc>https://susidlc.com/es/music/sdlc-10/</loc></url>
+<url><loc>https://susidlc.com/es/music/sdlc-11/</loc></url>
+<url><loc>https://susidlc.com/es/music.html</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-3/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/primera-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/primera-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-3/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-4/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/segunda-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/septima-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-10/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-11/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-3/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-4/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-5/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-6/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-7/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-8/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-9/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/tercera-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/es/pan-de-cada-dia/las-moradas/tercera-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/es/poemas/</loc></url>
+<url><loc>https://susidlc.com/es/poemas/recorrido.html</loc></url>
+<url><loc>https://susidlc.com/en/</loc></url>
+<url><loc>https://susidlc.com/en/music/sdlc-01/</loc></url>
+<url><loc>https://susidlc.com/en/music/sdlc-02/</loc></url>
+<url><loc>https://susidlc.com/en/music/sdlc-07/</loc></url>
+<url><loc>https://susidlc.com/en/music/sdlc-10/</loc></url>
+<url><loc>https://susidlc.com/en/music/sdlc-11/</loc></url>
+<url><loc>https://susidlc.com/en/music.html</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/cuarta-morada/capitulo-3/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/primera-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/primera-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-3/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/quinta-morada/capitulo-4/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/segunda-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/septima-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-10/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-11/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-3/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-4/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-5/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-6/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-7/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-8/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/sexta-morada/capitulo-9/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/tercera-morada/capitulo-1/</loc></url>
+<url><loc>https://susidlc.com/en/pan-de-cada-dia/las-moradas/tercera-morada/capitulo-2/</loc></url>
+<url><loc>https://susidlc.com/en/poemas/</loc></url>
+<url><loc>https://susidlc.com/en/poemas/recorrido.html</loc></url>
 </urlset>
-
