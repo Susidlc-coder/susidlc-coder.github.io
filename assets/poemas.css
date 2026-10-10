@@ -15,6 +15,7 @@ body{margin:0;background:#f2eee5;-webkit-font-smoothing:antialiased}button,a,sel
 #susi-poems .sp-nav-group{display:flex;gap:15px;align-items:center;min-width:0}
 #susi-poems .sp-select{background:transparent;border:0;border-bottom:1px solid var(--rule);padding:8px 24px 8px 0;max-width:280px;min-width:0;font-size:12px}
 #susi-poems .sp-text-button{border:0;border-bottom:1px solid var(--rule);background:transparent;padding:7px 0;font-size:12px;white-space:nowrap}
+#susi-poems .sp-nav a.sp-text-button{text-decoration:none}
 #susi-poems .sp-text-button[aria-pressed='true']{color:var(--accent);border-color:var(--accent)}
 #susi-poems .sp-number{font-size:11px;letter-spacing:1px;color:var(--quiet);white-space:nowrap}
 #susi-poems .sp-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:22px}
