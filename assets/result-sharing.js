@@ -64,14 +64,14 @@ function install(dialog){
   try{supported=typeof navigator.share==='function'&&typeof navigator.canShare==='function'&&navigator.canShare({files:[file]});}catch{}
   if(!supported){status.textContent=t.unsupported;download.focus();return;}
   share.disabled=true;
-  try{await navigator.share({files:[file],title:state.data.title+' · Susidlc',text:t.shareText+' «'+state.data.title+'». '+state.data.words.join(' → ')+'. https://susidlc.com'});status.textContent=t.shared;}
+  try{await navigator.share({files:[file],url:state.url});status.textContent=t.shared;}
   catch(error){status.textContent=error.name==='AbortError'?t.cancel:t.failure;}
   finally{share.disabled=false;}
  });
  download.addEventListener('click',event=>{if(!state.file){event.preventDefault();return;}status.textContent=state.labels.saved;});
  link.addEventListener('click',async()=>{
   fallback.hidden=true;
-  try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText(state.url);status.textContent=/^(localhost|127\.)/.test(location.hostname)?state.labels.localCopied:state.labels.copied;}
+  try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText(state.url);status.textContent=state.labels.copied;}
   catch{fallback.hidden=false;fallbackLabel.textContent=state.labels.manual;input.value=state.url;input.focus();input.select();status.textContent='';}
  });
  return state;
@@ -79,7 +79,7 @@ function install(dialog){
 export function prepareResultSharing(dialog,data){
  const state=states.get(dialog)||install(dialog),t=copy[data.lang]||copy.es;
  const token=++state.token;if(state.blobURL)URL.revokeObjectURL(state.blobURL);
- state.data=data;state.labels=t;state.file=null;state.url=new URL('/'+data.lang+'/poemas/',location.origin).href;
+ state.data=data;state.labels=t;state.file=null;state.url=new URL('/'+data.lang+'/poemas/','https://susidlc.com').href;
  state.group.open=false;state.toggleLabel.textContent=t.toggle;state.share.textContent=t.share;state.download.textContent=t.download;state.link.textContent=t.link;state.group.setAttribute('aria-label',t.label);state.status.textContent=t.preparing;state.fallback.hidden=true;state.share.disabled=true;state.download.removeAttribute('href');state.download.setAttribute('aria-disabled','true');
  state.preview.open=false;state.preview.hidden=true;state.previewLabel.textContent=t.preview;state.previewImage.removeAttribute('src');state.previewImage.alt=data.title+' · '+data.album+' · '+data.words.join(' → ')+' · Susidlc.com';
  renderCard(data,t).then(({blob,width,height})=>{

@@ -1,7 +1,7 @@
 import {POEM_EN} from './poem-translations.js';
 import {createPoemReader} from './poem-reader.js';
-import {createColorMotion} from './poem-color-motion.js';
-import {prepareResultSharing} from './result-sharing.js';
+import {createColorMotion} from './poem-color-motion.js?v=20261010-refinements';
+import {prepareResultSharing} from './result-sharing.js?v=20261010-refinements';
 import {createRecommender} from './recommendation.js';
 
 (()=>{

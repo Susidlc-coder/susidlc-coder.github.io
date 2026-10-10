@@ -4,8 +4,14 @@ const localeEnglish=window.SusiLocale?.lang==='en';
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#navigation');
 const light = document.querySelector('.light-toggle');
-function closeMenu() { menu?.setAttribute('aria-expanded', 'false'); nav?.classList.remove('is-open'); }
-menu?.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); nav.classList.toggle('is-open', open); });
+function setMenu(open) {
+ menu?.setAttribute('aria-expanded', String(open));
+ nav?.classList.toggle('is-open', open);
+ if (menu) menu.textContent = open ? (localeEnglish ? 'Close' : 'Cerrar') : (localeEnglish ? 'Menu' : 'Menú');
+}
+function closeMenu() { setMenu(false); }
+menu?.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+closeMenu();
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 document.addEventListener('click', e => { if (!e.target.closest('.header')) closeMenu(); });
 nav?.addEventListener('click', e => { if (e.target.closest('a')) closeMenu(); });

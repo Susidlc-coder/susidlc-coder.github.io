@@ -4,7 +4,7 @@
 /* Original single-surface hover, with a gentler transition. */
 @keyframes susi-fibonacci-breeze{0%,100%{--susi-wave-value:0}50%{--susi-wave-value:1}}
 [data-fibonacci-breeze="ambient"][data-fibonacci-running] .fibonacci-breeze-surface{
- animation:susi-fibonacci-breeze var(--susi-color-wave-period,8s) var(--susi-color-wave-easing,cubic-bezier(.45,0,.55,1)) var(--fibonacci-breeze-delay,0ms) infinite;
+ animation:susi-fibonacci-breeze var(--susi-color-wave-period,6.5s) var(--susi-color-wave-easing,cubic-bezier(.45,0,.55,1)) var(--fibonacci-breeze-delay,0ms) infinite;
  animation-play-state:paused;opacity:calc(var(--susi-wave-value) + (1 - var(--susi-wave-value)) * var(--susi-hover-value))!important;--susi-hover-value:0;transition:--susi-hover-value 1100ms cubic-bezier(.25,.1,.25,1);
 }
 [data-fibonacci-breeze="ambient"][data-fibonacci-running="true"] .fibonacci-breeze-surface{animation-play-state:running}

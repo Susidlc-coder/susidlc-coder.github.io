@@ -11,7 +11,7 @@
 #susi-poems [data-color-wave-stage] .sp-ink>.sp-word{fill:inherit;stroke:inherit;animation:none;transition:none}
 #susi-poems [data-color-wave-stage] .sp-ink>.sp-route-code{fill:inherit;animation:none;transition:none}
 #susi-poems[data-color-motion-mode="ambient"] [data-color-wave-stage] .sp-cell>.sp-reveal{
- animation:sp-color-wave var(--susi-color-wave-period,8s) cubic-bezier(.45,0,.55,1) var(--sp-color-delay,0ms) infinite;
+ animation:sp-color-wave var(--susi-color-wave-period,6.5s) cubic-bezier(.45,0,.55,1) var(--sp-color-delay,0ms) infinite;
  animation-play-state:paused;
 }
 #susi-poems[data-color-motion-mode="ambient"][data-color-motion-running="true"] [data-color-wave-stage] .sp-cell>.sp-reveal{animation-play-state:running}
