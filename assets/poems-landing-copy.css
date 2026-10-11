@@ -1,0 +1,7 @@
+/* Landing copy approved 2026-10-11: question and subtitle only. */
+.poems-gateway #susi-poems .gateway-copy h1{margin:0;max-width:10ch;text-wrap:balance}
+.poems-gateway #susi-poems .gateway-subtitle{max-width:32ch;font:clamp(20px,1.8vw,26px)/1.5 var(--selective-serif);color:var(--quiet);margin:26px 0 34px;text-wrap:pretty}
+@media(max-width:700px){
+ .poems-gateway #susi-poems .gateway-copy{padding-top:28px}
+ .poems-gateway #susi-poems .gateway-subtitle{font-size:21px;line-height:1.5;margin:22px 0 28px;max-width:29ch}
+}

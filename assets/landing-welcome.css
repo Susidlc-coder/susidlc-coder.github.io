@@ -1,0 +1,9 @@
+#susi-poems .landing-welcome{box-sizing:border-box;width:min(680px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow:auto;padding:48px;border:1px solid var(--rule);background:var(--paper);color:var(--ink)}
+.landing-welcome::backdrop{background:rgba(36,27,24,.62)}
+#susi-poems .landing-welcome h2{font:clamp(32px,4vw,46px)/1.13 var(--selective-serif);letter-spacing:-1.5px;margin:25px 0}
+#susi-poems .landing-welcome h2 em{color:var(--accent)}
+#susi-poems .landing-welcome #landing-welcome-copy{font:clamp(21px,2.5vw,27px)/1.5 var(--selective-serif);margin:0 0 30px;max-width:550px}
+.landing-welcome-close{position:absolute;right:12px;top:12px;width:44px;height:44px;border:0;background:none;color:inherit;font:30px Arial;cursor:pointer}
+.landing-welcome-continue{padding:14px 20px;min-height:48px;border:1px solid #cba027;background:#fff3cb;color:#33241e;font:14px Arial;cursor:pointer;display:flex;align-items:center;gap:24px}
+.landing-welcome button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(max-width:600px){#susi-poems .landing-welcome{padding:36px 24px 28px}#susi-poems .landing-welcome h2{margin:18px 0}#susi-poems .landing-welcome #landing-welcome-copy{font-size:21px}.landing-welcome .sp-eyebrow{max-width:230px}}

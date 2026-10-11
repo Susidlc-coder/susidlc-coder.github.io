@@ -1,6 +1,6 @@
 /* The home and gateway use their existing golden surfaces and shared wave timing.
  * Only opacity animates in CSS. Geometry, gradients, links and text stay intact. */
-import {COLOR_WAVE} from './poem-color-motion.js?v=20261010-words-view-2';
+import {COLOR_WAVE} from './poem-color-motion.js?v=20261011-approved-editorial';
 
 export function createFibonacciBreeze(svg){
  const doc=svg.ownerDocument,view=doc.defaultView;
@@ -52,7 +52,7 @@ export function createFibonacciBreeze(svg){
 if(typeof document!=='undefined'){
  const figures=document.querySelectorAll('.home-fibonacci,.gold-fibonacci');
  if(figures.length){
-  const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('./fibonacci-breeze.css?v=20261010-refinements',import.meta.url).href;document.head.append(sheet);
+  const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('./fibonacci-breeze.css',import.meta.url).href;document.head.append(sheet);
   figures.forEach(svg=>createFibonacciBreeze(svg));
  }
 }

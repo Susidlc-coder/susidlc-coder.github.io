@@ -1,6 +1,6 @@
-import {pages,originals} from './landing-atlas-data.js';
-import {POEM_EN} from './poem-translations.js?v=20261010-editorial-paths-2';
-import {createPoemReader} from './poem-reader.js?v=20261010-reader-credit-1';
+import {pages,originals} from './landing-atlas-data.js?v=20261011-approved-editorial';
+import {POEM_EN} from './poem-translations.js?v=20261011-approved-editorial';
+import {createPoemReader} from './poem-reader.js?v=20261011-approved-editorial';
 const root=document.querySelector('#susi-poems');
 const reader=createPoemReader({root,pages,originals,translations:POEM_EN,lang:document.documentElement.lang});
 root.querySelectorAll('[data-landing-read]').forEach(button=>button.addEventListener('click',()=>reader.open(Number(button.dataset.landingRead))));

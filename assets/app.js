@@ -15,7 +15,7 @@ function setLight(evening) {
  const label = document.querySelector('[data-light-label]');
  if (label) label.textContent = evening ? 'Lamplight' : 'Daylight';
 }
-try { setLight(localStorage.getItem('susidlc-light') === 'evening'); } catch { setLight(false); }
+try { setLight(localStorage.getItem('susidlc-light') !== 'day'); } catch { setLight(true); }
 light?.addEventListener('click', () => { const evening = !document.body.classList.contains('evening'); setLight(evening); try { localStorage.setItem('susidlc-light', evening ? 'evening' : 'day'); } catch {} });
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {

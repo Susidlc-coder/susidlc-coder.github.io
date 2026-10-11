@@ -1,5 +1,5 @@
 {
-  "version": "editorial-context-v2",
+  "version": "editorial-context-v3",
   "policy": "Strongest meaning match wins; recent history resolves exact numerical ties only; no album or song priors. Odds are audited against reachable cell combinations, not forced equal frequencies.",
   "poems": [
     {
@@ -11,10 +11,17 @@
           "en": "wounds",
           "profile": {
             "heridas": 1.6,
-            "dolor": 1.1
+            "dolor": 1.1,
+            "presion": 0.5
           },
           "source": "Un peatón de los muchos que pasaban por el parque decidió llevarla a casa. Le limpiaba las heridas que la irritación de la tierra húmeda le había causado, ella se sentía morir.",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Un peatón de los muchos que pasaban por el parque decidió llevarla a casa. Le limpiaba las heridas que la irritación de la tierra húmeda le había causado, ella se sentía morir."
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "cuidado",
@@ -25,7 +32,12 @@
             "amor": 0.8
           },
           "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos."
+          }
         },
         {
           "text": "felicidad",
@@ -35,7 +47,12 @@
             "confianza": 0.7
           },
           "source": "Su felicidad era muy grande, pero estaba extrañada que sus compañeros no volaran hacia los colores brillantes.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Su felicidad era muy grande, pero estaba extrañada que sus compañeros no volaran hacia los colores brillantes."
+          }
         },
         {
           "text": "celos",
@@ -45,7 +62,12 @@
             "injusticia": 0.8
           },
           "source": "Su vida siempre fue diferente, durante su crecimiento, todo eran celos y envidias que pretendían enraizarla y no dejarla volar.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Su vida siempre fue diferente, durante su crecimiento, todo eran celos y envidias que pretendían enraizarla y no dejarla volar."
+          }
         },
         {
           "text": "esperando",
@@ -55,7 +77,12 @@
             "esperanza": 1.0
           },
           "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos."
+          }
         },
         {
           "text": "compañeros",
@@ -65,7 +92,12 @@
             "memoria": 0.6
           },
           "source": "Su felicidad era muy grande, pero estaba extrañada que sus compañeros no volaran hacia los colores brillantes.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Su felicidad era muy grande, pero estaba extrañada que sus compañeros no volaran hacia los colores brillantes."
+          }
         },
         {
           "text": "libremente",
@@ -75,7 +107,12 @@
             "juego": 0.9
           },
           "source": "Los demás jugando libremente, mientras cohibida estaba ella en una esquina,",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Los demás jugando libremente, mientras cohibida estaba ella en una esquina,"
+          }
         },
         {
           "text": "brillar",
@@ -85,7 +122,12 @@
             "esperanza": 0.7
           },
           "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos."
+          }
         },
         {
           "text": "roca",
@@ -95,7 +137,12 @@
             "encierro": 0.8
           },
           "source": "Desde ese día, decidió convertirse en una roca, para que nada la pudiera mover. Estaba tan sucia por todo el lodo que corroía sus aperladas plumas.",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Desde ese día, decidió convertirse en una roca, para que nada la pudiera mover. Estaba tan sucia por todo el lodo que corroía sus aperladas plumas."
+          }
         },
         {
           "text": "historia",
@@ -105,17 +152,29 @@
             "compania": 0.8
           },
           "source": "Luego de la operación, me llevaban al cuarto de hospital compartido en donde en la otra cama, se encontraba una mujer, envuelta en vendajes que le cubrían todo el cuerpo menos la cara, parecía no tener forma. El cuarto lo dividía una sencilla cortina de algodón muy delgada, lo que nos permitió conocernos y que me contara su historia.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Luego de la operación, me llevaban al cuarto de hospital compartido en donde en la otra cama, se encontraba una mujer, envuelta en vendajes que le cubrían todo el cuerpo menos la cara, parecía no tener forma. El cuarto lo dividía una sencilla cortina de algodón muy delgada, lo que nos permitió conocernos y que me contara su historia."
+          }
         },
         {
           "text": "volando",
           "en": "flying",
           "profile": {
             "vuelo": 1.5,
-            "escape": 1.0
+            "escape": 1.0,
+            "suspension": 1.0
           },
           "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar.",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "colores",
@@ -125,7 +184,12 @@
             "asombro": 0.8
           },
           "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros.",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros."
+          }
         },
         {
           "text": "envidias",
@@ -135,7 +199,12 @@
             "injusticia": 1.1
           },
           "source": "Su vida siempre fue diferente, durante su crecimiento, todo eran celos y envidias que pretendían enraizarla y no dejarla volar.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Su vida siempre fue diferente, durante su crecimiento, todo eran celos y envidias que pretendían enraizarla y no dejarla volar."
+          }
         },
         {
           "text": "jugando",
@@ -145,7 +214,12 @@
             "alegria": 0.9
           },
           "source": "Los demás jugando libremente, mientras cohibida estaba ella en una esquina,",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Los demás jugando libremente, mientras cohibida estaba ella en una esquina,"
+          }
         },
         {
           "text": "casa",
@@ -155,7 +229,12 @@
             "compasion": 1.1
           },
           "source": "Un peatón de los muchos que pasaban por el parque decidió llevarla a casa. Le limpiaba las heridas que la irritación de la tierra húmeda le había causado, ella se sentía morir.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Un peatón de los muchos que pasaban por el parque decidió llevarla a casa. Le limpiaba las heridas que la irritación de la tierra húmeda le había causado, ella se sentía morir."
+          }
         },
         {
           "text": "fuerzas",
@@ -165,17 +244,29 @@
             "lucha": 1.0
           },
           "source": "Con todas sus fuerzas ella hacía todo para limpiar su aspecto, pero esas alas aperladas no relucían como antes, trataba de volar, pero sus alas todavía eran pesadas.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Con todas sus fuerzas ella hacía todo para limpiar su aspecto, pero esas alas aperladas no relucían como antes, trataba de volar, pero sus alas todavía eran pesadas."
+          }
         },
         {
           "text": "ligeros",
           "en": "light",
           "profile": {
             "vuelo": 1.4,
-            "escape": 0.7
+            "escape": 0.7,
+            "suspension": 1.1
           },
           "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "luces",
@@ -185,7 +276,12 @@
             "esperanza": 0.7
           },
           "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar."
+          }
         },
         {
           "text": "determinada",
@@ -195,7 +291,12 @@
             "esperanza": 1.0
           },
           "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos."
+          }
         },
         {
           "text": "plumas",
@@ -205,7 +306,12 @@
             "heridas": 0.5
           },
           "source": "Desde ese día, decidió convertirse en una roca, para que nada la pudiera mover. Estaba tan sucia por todo el lodo que corroía sus aperladas plumas.",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Desde ese día, decidió convertirse en una roca, para que nada la pudiera mover. Estaba tan sucia por todo el lodo que corroía sus aperladas plumas."
+          }
         },
         {
           "text": "vuelo",
@@ -215,7 +321,12 @@
             "libertad": 0.8
           },
           "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar.",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar."
+          }
         },
         {
           "text": "dolor",
@@ -225,17 +336,29 @@
             "heridas": 1.1
           },
           "source": "Recuerdo que fue el momento en donde volteé a ver el cielo y veía algo caer desde lo alto, hasta que cayó sobre el periódico que leía. La fuerza con la que cayó hizo que mis dos fémures se quebraran a la mitad. Inmediatamente las personas de alrededor llamaban a la ambulancia, pero mientras llegaba, delirando del dolor, intentaba ver exactamente qué era lo que había caído sobre mí.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Recuerdo que fue el momento en donde volteé a ver el cielo y veía algo caer desde lo alto, hasta que cayó sobre el periódico que leía. La fuerza con la que cayó hizo que mis dos fémures se quebraran a la mitad. Inmediatamente las personas de alrededor llamaban a la ambulancia, pero mientras llegaba, delirando del dolor, intentaba ver exactamente qué era lo que había caído sobre mí."
+          }
         },
         {
           "text": "ventana abierta",
           "en": "open window",
           "profile": {
             "escape": 1.4,
-            "renacer": 1.0
+            "renacer": 1.0,
+            "transicion": 1.2
           },
           "source": "la otra cama, solo estaba la ventana abierta. La vi de lejos, volando de nuevo pero ahora ya dentro de los vapores coloridos.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "la otra cama, solo estaba la ventana abierta. La vi de lejos, volando de nuevo pero ahora ya dentro de los vapores coloridos."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "vientos",
@@ -245,7 +368,12 @@
             "mundo": 0.5
           },
           "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 1,
+            "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros."
+          }
         }
       ],
       "compactWords": [
@@ -275,7 +403,12 @@
             "incertidumbre": 1.2
           },
           "source": "Se siente muy lejos,",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Se siente muy lejos,"
+          }
         },
         {
           "text": "inalcanzable",
@@ -285,7 +418,12 @@
             "duda": 1.3
           },
           "source": "Se siente inalcanzable, de esas que estiras la mano y la tocas, pero no está realmente allí.",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Se siente inalcanzable, de esas que estiras la mano y la tocas, pero no está realmente allí."
+          }
         },
         {
           "text": "alcanzar",
@@ -295,7 +433,12 @@
             "busqueda": 1.1
           },
           "source": "Volando contra la corriente, tratando de alcanzar,",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Volando contra la corriente, tratando de alcanzar,"
+          }
         },
         {
           "text": "frío",
@@ -305,7 +448,12 @@
             "noche": 0.5
           },
           "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel"
+          }
         },
         {
           "text": "lágrimas",
@@ -315,7 +463,12 @@
             "heridas": 0.6
           },
           "source": "Siente las lágrimas dentro de su garganta, pero no logran salir",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Siente las lágrimas dentro de su garganta, pero no logran salir"
+          }
         },
         {
           "text": "pulso",
@@ -325,7 +478,12 @@
             "supervivencia": 1.2
           },
           "source": "Repentinamente siente su pulso otra vez,",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Repentinamente siente su pulso otra vez,"
+          }
         },
         {
           "text": "vida",
@@ -335,7 +493,12 @@
             "supervivencia": 1.5
           },
           "source": "Ya no hay más acceso a la vida.",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Ya no hay más acceso a la vida."
+          }
         },
         {
           "text": "otra vez",
@@ -345,7 +508,12 @@
             "ciclo": 1.1
           },
           "source": "Repentinamente siente su pulso otra vez,",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Repentinamente siente su pulso otra vez,"
+          }
         },
         {
           "text": "ojos",
@@ -355,17 +523,29 @@
             "duda": 0.8
           },
           "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben"
+          }
         },
         {
           "text": "fuerza",
           "en": "force",
           "profile": {
             "lucha": 1.3,
-            "miedo": 0.8
+            "miedo": 0.8,
+            "presion": 1.0
           },
           "source": "Las piernas desfiguradas por esa misma fuerza que ahora pareciera que la succiona.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Las piernas desfiguradas por esa misma fuerza que ahora pareciera que la succiona."
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "caída",
@@ -375,7 +555,12 @@
             "incertidumbre": 1.2
           },
           "source": "Sus plumas revoltosas por la caída,",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Sus plumas revoltosas por la caída,"
+          }
         },
         {
           "text": "agua",
@@ -385,7 +570,12 @@
             "claridad": 1.0
           },
           "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben"
+          }
         },
         {
           "text": "sentidos",
@@ -395,7 +585,12 @@
             "duda": 1.0
           },
           "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben"
+          }
         },
         {
           "text": "corriente",
@@ -405,17 +600,29 @@
             "agua": 1.0
           },
           "source": "Volando contra la corriente, tratando de alcanzar,",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Volando contra la corriente, tratando de alcanzar,"
+          }
         },
         {
           "text": "desesperadamente",
           "en": "desperately",
           "profile": {
             "lucha": 1.5,
-            "miedo": 1.4
+            "miedo": 1.4,
+            "presion": 0.7
           },
           "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel"
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "logrado",
@@ -425,7 +632,12 @@
             "incertidumbre": 1.0
           },
           "source": "La logra alcanzar. Lo logró. ¡De verdad lo ha logrado!",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "La logra alcanzar. Lo logró. ¡De verdad lo ha logrado!"
+          }
         },
         {
           "text": "desvanece",
@@ -435,7 +647,12 @@
             "despedida": 1.0
           },
           "source": "Se le desvanece de las manos",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Se le desvanece de las manos"
+          }
         },
         {
           "text": "vacío infinito",
@@ -445,7 +662,12 @@
             "encierro": 1.2
           },
           "source": "y comienza a caer en un vacío infinito",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "y comienza a caer en un vacío infinito"
+          }
         },
         {
           "text": "abrir",
@@ -455,7 +677,12 @@
             "esperanza": 1.0
           },
           "source": "Vuelve a abrir los ojos.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Vuelve a abrir los ojos."
+          }
         },
         {
           "text": "volando",
@@ -465,7 +692,12 @@
             "lucha": 1.1
           },
           "source": "Volando contra la corriente, tratando de alcanzar,",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Volando contra la corriente, tratando de alcanzar,"
+          }
         },
         {
           "text": "estirar",
@@ -475,7 +707,12 @@
             "busqueda": 1.0
           },
           "source": "Si tan solo pudiera estirar un poco más",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Si tan solo pudiera estirar un poco más"
+          }
         },
         {
           "text": "piel",
@@ -484,7 +721,12 @@
             "heridas": 1.2
           },
           "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel"
+          }
         },
         {
           "text": "plumas",
@@ -494,7 +736,12 @@
             "miedo": 0.6
           },
           "source": "Sus plumas revoltosas por la caída,",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Sus plumas revoltosas por la caída,"
+          }
         },
         {
           "text": "velocidad",
@@ -504,7 +751,12 @@
             "incertidumbre": 0.6
           },
           "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 2,
+            "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel"
+          }
         }
       ],
       "compactWords": [
@@ -534,7 +786,12 @@
             "supervivencia": 1.4
           },
           "source": "Pero está viva, en una nueva oportunidad,",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Pero está viva, en una nueva oportunidad,"
+          }
         },
         {
           "text": "orgullo",
@@ -544,17 +801,29 @@
             "gratitud": 0.8
           },
           "source": "Un sentimiento de orgullo le llena",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Un sentimiento de orgullo le llena"
+          }
         },
         {
           "text": "nómada",
           "en": "nomad",
           "profile": {
             "desarraigo": 1.6,
-            "busqueda": 1.0
+            "busqueda": 1.0,
+            "transicion": 1.5
           },
           "source": "Ella todavía no reside, apenas es una nómada que duerme en las calles mientras le pisotean sus alas.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Ella todavía no reside, apenas es una nómada que duerme en las calles mientras le pisotean sus alas."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "talentos",
@@ -564,7 +833,12 @@
             "identidad": 1.0
           },
           "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos."
+          }
         },
         {
           "text": "inhalo",
@@ -574,7 +848,12 @@
             "adaptacion": 1.2
           },
           "source": "Inhalo",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Inhalo"
+          }
         },
         {
           "text": "brillante",
@@ -584,7 +863,12 @@
             "asombro": 1.1
           },
           "source": "Era real, colorido y brillante.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Era real, colorido y brillante."
+          }
         },
         {
           "text": "mundo",
@@ -594,7 +878,12 @@
             "adaptacion": 1.1
           },
           "source": "Este mundo era diferente",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Este mundo era diferente"
+          }
         },
         {
           "text": "mar",
@@ -604,7 +893,12 @@
             "contemplacion": 0.9
           },
           "source": "Los astros brillaban durante el día, y la noche dentro del mar",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Los astros brillaban durante el día, y la noche dentro del mar"
+          }
         },
         {
           "text": "árboles",
@@ -614,17 +908,29 @@
             "asombro": 0.8
           },
           "source": "Creciendo alternos a los árboles.",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Creciendo alternos a los árboles."
+          }
         },
         {
           "text": "nueva oportunidad",
           "en": "new chance",
           "profile": {
             "renacer": 1.6,
-            "esperanza": 1.3
+            "esperanza": 1.3,
+            "transicion": 1.0
           },
           "source": "Pero está viva, en una nueva oportunidad,",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Pero está viva, en una nueva oportunidad,"
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "colorido",
@@ -634,7 +940,12 @@
             "asombro": 1.0
           },
           "source": "Era real, colorido y brillante.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Era real, colorido y brillante."
+          }
         },
         {
           "text": "real",
@@ -644,7 +955,12 @@
             "incertidumbre": 0.7
           },
           "source": "Era real, colorido y brillante.",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Era real, colorido y brillante."
+          }
         },
         {
           "text": "astros",
@@ -654,7 +970,12 @@
             "asombro": 1.1
           },
           "source": "Los astros brillaban durante el día, y la noche dentro del mar",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Los astros brillaban durante el día, y la noche dentro del mar"
+          }
         },
         {
           "text": "olas",
@@ -664,7 +985,12 @@
             "mundo": 0.6
           },
           "source": "Que con sus olas rasca las terrazas de los rascacielos",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Que con sus olas rasca las terrazas de los rascacielos"
+          }
         },
         {
           "text": "raíces",
@@ -674,7 +1000,12 @@
             "mundo": 1.3
           },
           "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos.",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos."
+          }
         },
         {
           "text": "exhalo",
@@ -684,7 +1015,12 @@
             "adaptacion": 1.1
           },
           "source": "Exhalo",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Exhalo"
+          }
         },
         {
           "text": "diamantes",
@@ -694,7 +1030,12 @@
             "luz": 1.1
           },
           "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor."
+          }
         },
         {
           "text": "dolor",
@@ -704,17 +1045,29 @@
             "adaptacion": 0.8
           },
           "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor.",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor."
+          }
         },
         {
           "text": "soportarlo",
           "en": "bear it",
           "profile": {
             "perseverancia": 1.4,
-            "adaptacion": 1.2
+            "adaptacion": 1.2,
+            "presion": 1.0
           },
           "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor.",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor."
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "alas",
@@ -724,7 +1077,12 @@
             "heridas": 1.1
           },
           "source": "Ella todavía no reside, apenas es una nómada que duerme en las calles mientras le pisotean sus alas.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Ella todavía no reside, apenas es una nómada que duerme en las calles mientras le pisotean sus alas."
+          }
         },
         {
           "text": "noche",
@@ -734,7 +1092,12 @@
             "contemplacion": 0.9
           },
           "source": "Los astros brillaban durante el día, y la noche dentro del mar",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Los astros brillaban durante el día, y la noche dentro del mar"
+          }
         },
         {
           "text": "superficie",
@@ -744,7 +1107,12 @@
             "creacion": 0.7
           },
           "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos.",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos."
+          }
         },
         {
           "text": "aire",
@@ -754,7 +1122,12 @@
             "naturaleza": 0.9
           },
           "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor."
+          }
         },
         {
           "text": "diferente",
@@ -764,7 +1137,12 @@
             "adaptacion": 1.2
           },
           "source": "Este mundo era diferente",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 3,
+            "source": "Este mundo era diferente"
+          }
         }
       ],
       "compactWords": [
@@ -791,17 +1169,29 @@
             "creacion": 1.1
           },
           "source": "Como en el mundo del que vengo le dirían, un piano.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Como en el mundo del que vengo le dirían, un piano."
+          }
         },
         {
           "text": "descansar",
           "en": "rest",
           "profile": {
             "calma": 1.8,
-            "refugio": 1.0
+            "refugio": 1.0,
+            "culminacion": 1.2
           },
           "source": "Y, por fin, logro descansar.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Y, por fin, logro descansar."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "alma",
@@ -811,7 +1201,12 @@
             "introspeccion": 1.3
           },
           "source": "Si las toco lentamente, arrullan mi alma",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Si las toco lentamente, arrullan mi alma"
+          }
         },
         {
           "text": "construir",
@@ -821,7 +1216,12 @@
             "perseverancia": 1.3
           },
           "source": "Tengo que volverme a construir, a lijar mis garras para poder trepar esos edificios",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Tengo que volverme a construir, a lijar mis garras para poder trepar esos edificios"
+          }
         },
         {
           "text": "cueva",
@@ -831,7 +1231,12 @@
             "refugio": 0.8
           },
           "source": "Encontré una cueva, formada por la raíz de una Ceiba.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Encontré una cueva, formada por la raíz de una Ceiba."
+          }
         },
         {
           "text": "confío",
@@ -841,7 +1246,12 @@
             "piano": 0.7
           },
           "source": "Es lo único que tengo, es lo único a lo que le confío.",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Es lo único que tengo, es lo único a lo que le confío."
+          }
         },
         {
           "text": "teclas",
@@ -851,7 +1261,12 @@
             "creacion": 1.0
           },
           "source": "La combinación de teclas es deliciosa para mis tímpanos que resuenan a su sonar.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "La combinación de teclas es deliciosa para mis tímpanos que resuenan a su sonar."
+          }
         },
         {
           "text": "ruta",
@@ -861,7 +1276,12 @@
             "incertidumbre": 1.0
           },
           "source": "Esta ruta que, sin saberlo, elegí.",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Esta ruta que, sin saberlo, elegí."
+          }
         },
         {
           "text": "pasión",
@@ -871,17 +1291,30 @@
             "memoria": 0.8
           },
           "source": "Necesito esas notas para volver a sentir esa pasión que algún día tuve.",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Necesito esas notas para volver a sentir esa pasión que algún día tuve."
+          }
         },
         {
           "text": "lentamente",
           "en": "slowly",
           "profile": {
             "calma": 1.5,
-            "contemplacion": 1.1
+            "contemplacion": 1.1,
+            "suspension": 1.0,
+            "culminacion": 0.8
           },
           "source": "Si las toco lentamente, arrullan mi alma",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Si las toco lentamente, arrullan mi alma"
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "Ceiba",
@@ -891,7 +1324,12 @@
             "cueva": 1.0
           },
           "source": "Encontré una cueva, formada por la raíz de una Ceiba.",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Encontré una cueva, formada por la raíz de una Ceiba."
+          }
         },
         {
           "text": "rayos solares",
@@ -901,7 +1339,12 @@
             "memoria": 0.8
           },
           "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad."
+          }
         },
         {
           "text": "mar",
@@ -911,7 +1354,12 @@
             "busqueda": 1.0
           },
           "source": "Aquí no se puede volar, aquí no hay cielo, hay mar.",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Aquí no se puede volar, aquí no hay cielo, hay mar."
+          }
         },
         {
           "text": "triste melodía",
@@ -921,7 +1369,12 @@
             "dolor": 1.0
           },
           "source": "Pero para mientras, toco una triste melodía",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Pero para mientras, toco una triste melodía"
+          }
         },
         {
           "text": "luché",
@@ -931,7 +1384,12 @@
             "lucha": 1.2
           },
           "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,"
+          }
         },
         {
           "text": "seguir",
@@ -941,7 +1399,12 @@
             "busqueda": 0.8
           },
           "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,"
+          }
         },
         {
           "text": "oscuro",
@@ -951,7 +1414,12 @@
             "duda": 0.9
           },
           "source": "Y ahora aquí, estoy tirada en la calle de un lugar oscuro, sin luz.",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Y ahora aquí, estoy tirada en la calle de un lugar oscuro, sin luz."
+          }
         },
         {
           "text": "notas",
@@ -961,17 +1429,29 @@
             "creacion": 1.0
           },
           "source": "Necesito esas notas para volver a sentir esa pasión que algún día tuve.",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Necesito esas notas para volver a sentir esa pasión que algún día tuve."
+          }
         },
         {
           "text": "tres notas",
           "en": "three notes",
           "profile": {
             "piano": 1.4,
-            "ciclo": 1.1
+            "ciclo": 1.1,
+            "culminacion": 1.0
           },
           "source": "Que consiste de tan solo tres notas seguidas.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Que consiste de tan solo tres notas seguidas."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "luz",
@@ -981,7 +1461,12 @@
             "busqueda": 1.0
           },
           "source": "Y ahora aquí, estoy tirada en la calle de un lugar oscuro, sin luz.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Y ahora aquí, estoy tirada en la calle de un lugar oscuro, sin luz."
+          }
         },
         {
           "text": "fuerza",
@@ -991,7 +1476,12 @@
             "lucha": 1.1
           },
           "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad."
+          }
         },
         {
           "text": "plumas",
@@ -1001,7 +1491,12 @@
             "memoria": 0.8
           },
           "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad."
+          }
         },
         {
           "text": "aguas majestuosas",
@@ -1011,7 +1506,12 @@
             "asombro": 1.0
           },
           "source": "A tocar esas aguas majestuosas que quizás me den una pista para saber por dónde seguir",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "A tocar esas aguas majestuosas que quizás me den una pista para saber por dónde seguir"
+          }
         },
         {
           "text": "ojos",
@@ -1021,7 +1521,12 @@
             "busqueda": 0.8
           },
           "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 4,
+            "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,"
+          }
         }
       ],
       "compactWords": [
@@ -1052,7 +1557,12 @@
             "amor": 0.8
           },
           "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados.",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados."
+          }
         },
         {
           "text": "familia",
@@ -1062,7 +1572,12 @@
             "compania": 1.2
           },
           "source": "Tengo una casa, tengo un carro, tengo una familia, o solía tenerla…",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Tengo una casa, tengo un carro, tengo una familia, o solía tenerla…"
+          }
         },
         {
           "text": "verdad",
@@ -1072,7 +1587,12 @@
             "claridad": 0.9
           },
           "source": "Nunca entendí por qué crearon tantas falsas historias con tal de cubrir mi verdad.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Nunca entendí por qué crearon tantas falsas historias con tal de cubrir mi verdad."
+          }
         },
         {
           "text": "percepción",
@@ -1082,7 +1602,12 @@
             "claridad": 0.8
           },
           "source": "Cambió mi percepción.",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Cambió mi percepción."
+          }
         },
         {
           "text": "melancolías",
@@ -1092,7 +1617,12 @@
             "dolor": 1.1
           },
           "source": "Mi reflejo en el espejo me hace recordar, melancolías.",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Mi reflejo en el espejo me hace recordar, melancolías."
+          }
         },
         {
           "text": "normalidad",
@@ -1102,7 +1632,12 @@
             "calma": 1.0
           },
           "source": "Todavía me cuesta andar. Mi terapista dice que me tomará un año regresar a la normalidad.",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Todavía me cuesta andar. Mi terapista dice que me tomará un año regresar a la normalidad."
+          }
         },
         {
           "text": "historia",
@@ -1112,7 +1647,12 @@
             "asombro": 0.7
           },
           "source": "Una oportunidad, una historia, que ahora la transformé en una nueva forma de vida.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Una oportunidad, una historia, que ahora la transformé en una nueva forma de vida."
+          }
         },
         {
           "text": "reflejo",
@@ -1122,7 +1662,12 @@
             "contemplacion": 1.0
           },
           "source": "Mi reflejo en el espejo me hace recordar, melancolías.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Mi reflejo en el espejo me hace recordar, melancolías."
+          }
         },
         {
           "text": "delirios",
@@ -1132,7 +1677,12 @@
             "duda": 1.3
           },
           "source": "Culparon a la anestesia por mis delirios.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Culparon a la anestesia por mis delirios."
+          }
         },
         {
           "text": "despierto",
@@ -1142,7 +1692,12 @@
             "renacer": 1.0
           },
           "source": "Otra vez me sentí despierto.",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Otra vez me sentí despierto."
+          }
         },
         {
           "text": "casa",
@@ -1152,7 +1707,12 @@
             "estabilidad": 1.0
           },
           "source": "Tengo una casa, tengo un carro, tengo una familia, o solía tenerla…",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Tengo una casa, tengo un carro, tengo una familia, o solía tenerla…"
+          }
         },
         {
           "text": "voz",
@@ -1162,7 +1722,12 @@
             "memoria": 0.8
           },
           "source": "Escuchar su historia; esa voz de fuego.",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Escuchar su historia; esa voz de fuego."
+          }
         },
         {
           "text": "nadie me creyó",
@@ -1172,17 +1737,29 @@
             "duda": 1.0
           },
           "source": "Intenté contarles a todos, pero nadie me creyó.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Intenté contarles a todos, pero nadie me creyó."
+          }
         },
         {
           "text": "cambió",
           "en": "changed",
           "profile": {
             "adaptacion": 1.5,
-            "renacer": 0.8
+            "renacer": 0.8,
+            "transicion": 1.5
           },
           "source": "Pero ese día me cambió,",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Pero ese día me cambió,"
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "amores pasados",
@@ -1192,7 +1769,12 @@
             "despedida": 1.4
           },
           "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados.",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados."
+          }
         },
         {
           "text": "huesos",
@@ -1202,7 +1784,12 @@
             "dolor": 1.0
           },
           "source": "De la viga de hierro, que quebró mis huesos.",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "De la viga de hierro, que quebró mis huesos."
+          }
         },
         {
           "text": "espejo",
@@ -1212,7 +1799,12 @@
             "identidad": 1.1
           },
           "source": "Mi reflejo en el espejo me hace recordar, melancolías.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Mi reflejo en el espejo me hace recordar, melancolías."
+          }
         },
         {
           "text": "otra vez",
@@ -1222,7 +1814,12 @@
             "renacer": 1.0
           },
           "source": "Otra vez me sentí despierto.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Otra vez me sentí despierto."
+          }
         },
         {
           "text": "vida",
@@ -1232,7 +1829,12 @@
             "adaptacion": 1.0
           },
           "source": "Mi vida es normal, es simple.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Mi vida es normal, es simple."
+          }
         },
         {
           "text": "oportunidad",
@@ -1242,7 +1844,12 @@
             "esperanza": 1.1
           },
           "source": "Una oportunidad, una historia, que ahora la transformé en una nueva forma de vida.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Una oportunidad, una historia, que ahora la transformé en una nueva forma de vida."
+          }
         },
         {
           "text": "volar",
@@ -1252,7 +1859,12 @@
             "memoria": 0.8
           },
           "source": "Quizás y solo quizás, si pudiera volverle a hablar, verla volar...",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Quizás y solo quizás, si pudiera volverle a hablar, verla volar..."
+          }
         },
         {
           "text": "colores",
@@ -1262,7 +1874,12 @@
             "memoria": 0.8
           },
           "source": "Qué no daría por verla otra vez, alcanzando sus amados vientos de colores…",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Qué no daría por verla otra vez, alcanzando sus amados vientos de colores…"
+          }
         },
         {
           "text": "fuego",
@@ -1272,7 +1889,12 @@
             "fuego": 0.8
           },
           "source": "Escuchar su historia; esa voz de fuego.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Escuchar su historia; esa voz de fuego."
+          }
         },
         {
           "text": "aroma",
@@ -1282,7 +1904,12 @@
             "contemplacion": 0.7
           },
           "source": "Su aroma era suave y delicado, no iba con su personalidad.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Su aroma era suave y delicado, no iba con su personalidad."
+          }
         },
         {
           "text": "amores",
@@ -1292,7 +1919,12 @@
             "amor": 1.2
           },
           "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados."
+          }
         },
         {
           "text": "normal",
@@ -1302,7 +1934,12 @@
             "calma": 1.0
           },
           "source": "Mi vida es normal, es simple.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Mi vida es normal, es simple."
+          }
         },
         {
           "text": "suave",
@@ -1312,7 +1949,12 @@
             "memoria": 1.0
           },
           "source": "Su aroma era suave y delicado, no iba con su personalidad.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Su aroma era suave y delicado, no iba con su personalidad."
+          }
         },
         {
           "text": "tiempo",
@@ -1322,7 +1964,12 @@
             "incertidumbre": 1.0
           },
           "source": "Puede que ya no tenga mucho tiempo, o quizás sí.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 5,
+            "source": "Puede que ya no tenga mucho tiempo, o quizás sí."
+          }
         }
       ],
       "compactWords": [
@@ -1352,7 +1999,12 @@
             "distraccion": 1.1
           },
           "source": "En este momento, incluso dudo si siquiera sé escribir o leer. Soy un cuerpo relleno",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "En este momento, incluso dudo si siquiera sé escribir o leer. Soy un cuerpo relleno"
+          }
         },
         {
           "text": "ayuda",
@@ -1362,7 +2014,12 @@
             "compania": 1.1
           },
           "source": "Una tercera mano aparece, y le ofrece ayuda, pero retira la mano y corre de nuevo a",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Una tercera mano aparece, y le ofrece ayuda, pero retira la mano y corre de nuevo a"
+          }
         },
         {
           "text": "pasos",
@@ -1372,7 +2029,12 @@
             "ciclo": 1.0
           },
           "source": "Ya no sé qué hacer, de verdad. Quisiera nada más saltar todos los pasos que hay para",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Ya no sé qué hacer, de verdad. Quisiera nada más saltar todos los pasos que hay para"
+          }
         },
         {
           "text": "piano",
@@ -1382,7 +2044,12 @@
             "introspeccion": 1.1
           },
           "source": "su piano.",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "su piano."
+          }
         },
         {
           "text": "busco",
@@ -1392,7 +2059,12 @@
             "duda": 0.8
           },
           "source": "¿En dónde más busco?",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "¿En dónde más busco?"
+          }
         },
         {
           "text": "cueva",
@@ -1402,7 +2074,12 @@
             "cueva": 1.3
           },
           "source": "cueva.",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "cueva."
+          }
         },
         {
           "text": "amor",
@@ -1412,7 +2089,12 @@
             "despedida": 1.0
           },
           "source": "Los cuentos de amor ya no me calan bajo la piel, solo algunos, antes eran la",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Los cuentos de amor ya no me calan bajo la piel, solo algunos, antes eran la"
+          }
         },
         {
           "text": "atajo",
@@ -1422,7 +2104,12 @@
             "incertidumbre": 1.0
           },
           "source": "Tiene que haber un atajo, sin que tenga repercusiones.",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Tiene que haber un atajo, sin que tenga repercusiones."
+          }
         },
         {
           "text": "simple",
@@ -1432,7 +2119,12 @@
             "duda": 0.8
           },
           "source": "Mi vida es simple y la verdad es que quisiera ser especial.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Mi vida es simple y la verdad es que quisiera ser especial."
+          }
         },
         {
           "text": "manos",
@@ -1442,7 +2134,12 @@
             "compania": 1.0
           },
           "source": "manos.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "manos."
+          }
         },
         {
           "text": "tintes púrpuras",
@@ -1452,7 +2149,12 @@
             "contemplacion": 0.7
           },
           "source": "Puede ver cómo los tintes púrpuras de este nuevo lugar reflejan sobre la piel de sus",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Puede ver cómo los tintes púrpuras de este nuevo lugar reflejan sobre la piel de sus"
+          }
         },
         {
           "text": "salvar",
@@ -1462,7 +2164,12 @@
             "compasion": 1.2
           },
           "source": "pero luego de eso, ¿qué? ¿Quién me viene a salvar?",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "pero luego de eso, ¿qué? ¿Quién me viene a salvar?"
+          }
         },
         {
           "text": "pasiones",
@@ -1472,7 +2179,12 @@
             "despedida": 1.0
           },
           "source": "Por las pasiones que pudieron pasar, pero nunca fueron.",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Por las pasiones que pudieron pasar, pero nunca fueron."
+          }
         },
         {
           "text": "especial",
@@ -1482,7 +2194,12 @@
             "duda": 1.0
           },
           "source": "Mi vida es simple y la verdad es que quisiera ser especial.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Mi vida es simple y la verdad es que quisiera ser especial."
+          }
         },
         {
           "text": "verdad",
@@ -1492,7 +2209,12 @@
             "claridad": 0.8
           },
           "source": "Mi vida es simple y la verdad es que quisiera ser especial.",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Mi vida es simple y la verdad es que quisiera ser especial."
+          }
         },
         {
           "text": "tristes melodías",
@@ -1502,7 +2224,12 @@
             "dolor": 1.1
           },
           "source": "Es todo un romanticismo; el sentarme en el piano, para pensar tristes melodías…",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Es todo un romanticismo; el sentarme en el piano, para pensar tristes melodías…"
+          }
         },
         {
           "text": "prometieron",
@@ -1512,7 +2239,12 @@
             "incertidumbre": 1.2
           },
           "source": "¡¡Me lo prometieron!! ¡Todos me lo prometieron! ¡Era siempre tan fácil y ahora que",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "¡¡Me lo prometieron!! ¡Todos me lo prometieron! ¡Era siempre tan fácil y ahora que"
+          }
         },
         {
           "text": "imposible",
@@ -1522,7 +2254,12 @@
             "duda": 1.2
           },
           "source": "Pero es completamente imposible. Quiero pasar de la A a la Z, pero no se puede.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Pero es completamente imposible. Quiero pasar de la A a la Z, pero no se puede."
+          }
         },
         {
           "text": "no tengo nada",
@@ -1532,7 +2269,12 @@
             "dolor": 1.4
           },
           "source": "No tengo nada, ni siquiera me tengo a mí.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "No tengo nada, ni siquiera me tengo a mí."
+          }
         },
         {
           "text": "cuerpo",
@@ -1542,7 +2284,12 @@
             "agotamiento": 0.8
           },
           "source": "En este momento, incluso dudo si siquiera sé escribir o leer. Soy un cuerpo relleno",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "En este momento, incluso dudo si siquiera sé escribir o leer. Soy un cuerpo relleno"
+          }
         },
         {
           "text": "mundos",
@@ -1552,7 +2299,12 @@
             "desarraigo": 1.0
           },
           "source": "El suelo de ambos mundos se estremece",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "El suelo de ambos mundos se estremece"
+          }
         },
         {
           "text": "mar",
@@ -1562,7 +2314,12 @@
             "agua": 1.0
           },
           "source": "llegar al mar,",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "llegar al mar,"
+          }
         },
         {
           "text": "vida",
@@ -1572,7 +2329,12 @@
             "duda": 0.9
           },
           "source": "Mi vida es simple y la verdad es que quisiera ser especial.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Mi vida es simple y la verdad es que quisiera ser especial."
+          }
         },
         {
           "text": "romanticismo",
@@ -1582,7 +2344,12 @@
             "piano": 0.8
           },
           "source": "Es todo un romanticismo; el sentarme en el piano, para pensar tristes melodías…",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 6,
+            "source": "Es todo un romanticismo; el sentarme en el piano, para pensar tristes melodías…"
+          }
         }
       ],
       "compactWords": [
@@ -1612,17 +2379,29 @@
             "renacer": 1.3
           },
           "source": "Sé que tengo que volver a empezar.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Sé que tengo que volver a empezar."
+          }
         },
         {
           "text": "fallé",
           "en": "I failed",
           "profile": {
             "aprendizaje": 1.5,
-            "duda": 1.3
+            "duda": 1.3,
+            "presion": 1.0
           },
           "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé."
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "esperanza",
@@ -1632,7 +2411,12 @@
             "perseverancia": 1.0
           },
           "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé."
+          }
         },
         {
           "text": "padre",
@@ -1642,7 +2426,12 @@
             "responsabilidad": 1.1
           },
           "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera"
+          }
         },
         {
           "text": "viñedo",
@@ -1653,17 +2442,29 @@
             "naturaleza": 0.8
           },
           "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera"
+          }
         },
         {
           "text": "orgullo",
           "en": "pride",
           "profile": {
             "aprendizaje": 1.4,
-            "identidad": 1.1
+            "identidad": 1.1,
+            "presion": 0.5
           },
           "source": "Duele el orgullo intentar pintar algo y que todo falle.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Duele el orgullo intentar pintar algo y que todo falle."
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "lienzo",
@@ -1673,7 +2474,12 @@
             "aprendizaje": 1.1
           },
           "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé."
+          }
         },
         {
           "text": "fuerzas",
@@ -1683,7 +2489,12 @@
             "lucha": 1.1
           },
           "source": "Acostada en el piso, viendo hacia el cielo, tratando de encontrar las fuerzas para volverme a parar.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Acostada en el piso, viendo hacia el cielo, tratando de encontrar las fuerzas para volverme a parar."
+          }
         },
         {
           "text": "triunfante",
@@ -1693,7 +2504,12 @@
             "esperanza": 1.3
           },
           "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante."
+          }
         },
         {
           "text": "extraño",
@@ -1703,17 +2519,29 @@
             "desarraigo": 1.3
           },
           "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera"
+          }
         },
         {
           "text": "lentamente",
           "en": "slowly",
           "profile": {
             "calma": 1.0,
-            "paciencia": 1.1
+            "paciencia": 1.1,
+            "suspension": 1.6
           },
           "source": "Caí sin llegar al piso. Una caída infinita como un torbellino cargándome y colocándome lentamente en el pavimento.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Caí sin llegar al piso. Una caída infinita como un torbellino cargándome y colocándome lentamente en el pavimento."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "eucalipto",
@@ -1723,27 +2551,46 @@
             "calma": 1.0
           },
           "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!"
+          }
         },
         {
           "text": "comenzando",
           "en": "beginning",
           "profile": {
             "renacer": 1.4,
-            "perseverancia": 1.1
+            "perseverancia": 1.1,
+            "transicion": 1.2
           },
           "source": "Aquí estoy comenzando de nuevo",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Aquí estoy comenzando de nuevo"
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "técnica",
           "en": "technique",
           "profile": {
             "aprendizaje": 1.7,
-            "creacion": 0.7
+            "creacion": 0.7,
+            "presion": 0.7
           },
           "source": "No importa con cuántas ganas lo hice. Sin técnica no hay paraíso",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "No importa con cuántas ganas lo hice. Sin técnica no hay paraíso"
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "trabajando",
@@ -1753,7 +2600,12 @@
             "entrega": 1.2
           },
           "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera"
+          }
         },
         {
           "text": "pintar",
@@ -1763,7 +2615,12 @@
             "aprendizaje": 1.0
           },
           "source": "Duele el orgullo intentar pintar algo y que todo falle.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Duele el orgullo intentar pintar algo y que todo falle."
+          }
         },
         {
           "text": "dibujar",
@@ -1773,7 +2630,12 @@
             "aprendizaje": 1.0
           },
           "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé."
+          }
         },
         {
           "text": "praderas",
@@ -1783,7 +2645,12 @@
             "memoria": 1.0
           },
           "source": "Solo pienso en regresar a esas largas praderas y correr junto al viento. Pero me he jurado no regresar hasta que logre hacerte orgulloso papá.",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Solo pienso en regresar a esas largas praderas y correr junto al viento. Pero me he jurado no regresar hasta que logre hacerte orgulloso papá."
+          }
         },
         {
           "text": "cielo celeste",
@@ -1793,7 +2660,12 @@
             "calma": 1.0
           },
           "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!"
+          }
         },
         {
           "text": "nubes blancas",
@@ -1803,7 +2675,12 @@
             "contemplacion": 0.8
           },
           "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!"
+          }
         },
         {
           "text": "volveré",
@@ -1813,7 +2690,12 @@
             "familia": 1.0
           },
           "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante."
+          }
         },
         {
           "text": "vueltas",
@@ -1823,27 +2705,46 @@
             "incertidumbre": 0.8
           },
           "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!"
+          }
         },
         {
           "text": "caída infinita",
           "en": "endless fall",
           "profile": {
             "miedo": 1.3,
-            "duda": 1.2
+            "duda": 1.2,
+            "suspension": 1.2
           },
           "source": "Caí sin llegar al piso. Una caída infinita como un torbellino cargándome y colocándome lentamente en el pavimento.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Caí sin llegar al piso. Una caída infinita como un torbellino cargándome y colocándome lentamente en el pavimento."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "nómada",
           "en": "nomad",
           "profile": {
             "desarraigo": 1.5,
-            "busqueda": 1.1
+            "busqueda": 1.1,
+            "transicion": 1.5
           },
           "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante.",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 7,
+            "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         }
       ],
       "compactWords": [
@@ -1873,7 +2774,12 @@
             "dolor": 1.0
           },
           "source": "Cansada de tanto llorar",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "Cansada de tanto llorar"
+          }
         },
         {
           "text": "llorar",
@@ -1883,7 +2789,12 @@
             "agotamiento": 1.1
           },
           "source": "Cansada de tanto llorar",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "Cansada de tanto llorar"
+          }
         },
         {
           "text": "alma",
@@ -1893,17 +2804,29 @@
             "agotamiento": 1.2
           },
           "source": "de un alma que no ha",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "de un alma que no ha"
+          }
         },
         {
           "text": "noche desvelada",
           "en": "sleepless night",
           "profile": {
             "agotamiento": 1.6,
-            "noche": 1.4
+            "noche": 1.4,
+            "insomnio": 1.8
           },
           "source": "de una noche desvelada",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "de una noche desvelada"
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "cielo gris",
@@ -1914,7 +2837,12 @@
             "cielo": 0.8
           },
           "source": "Un cielo gris",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "Un cielo gris"
+          }
         },
         {
           "text": "despertar",
@@ -1924,7 +2852,12 @@
             "suenos": 1.2
           },
           "source": "acalla el despertar",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "acalla el despertar"
+          }
         },
         {
           "text": "acalla",
@@ -1934,7 +2867,12 @@
             "introspeccion": 1.0
           },
           "source": "acalla el despertar",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "acalla el despertar"
+          }
         },
         {
           "text": "astros",
@@ -1944,7 +2882,12 @@
             "cielo": 1.1
           },
           "source": "Los astros hinchados",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "Los astros hinchados"
+          }
         },
         {
           "text": "ojos",
@@ -1954,7 +2897,12 @@
             "introspeccion": 0.9
           },
           "source": "asemejan los ojos",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "asemejan los ojos"
+          }
         },
         {
           "text": "hinchados",
@@ -1964,17 +2912,29 @@
             "agotamiento": 1.3
           },
           "source": "Los astros hinchados",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "Los astros hinchados"
+          }
         },
         {
           "text": "desvelada",
           "en": "sleepless",
           "profile": {
             "agotamiento": 1.6,
-            "noche": 1.1
+            "noche": 1.1,
+            "insomnio": 1.8
           },
           "source": "de una noche desvelada",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "de una noche desvelada"
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "cielo",
@@ -1984,7 +2944,12 @@
             "dolor": 0.8
           },
           "source": "Un cielo gris",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "Un cielo gris"
+          }
         },
         {
           "text": "noche",
@@ -1994,7 +2959,12 @@
             "agotamiento": 1.2
           },
           "source": "de una noche desvelada",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "de una noche desvelada"
+          }
         },
         {
           "text": "gris",
@@ -2004,7 +2974,12 @@
             "noche": 0.9
           },
           "source": "Un cielo gris",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "Un cielo gris"
+          }
         },
         {
           "text": "un alma",
@@ -2014,7 +2989,12 @@
             "agotamiento": 1.2
           },
           "source": "de un alma que no ha",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "de un alma que no ha"
+          }
         },
         {
           "text": "podido despertar",
@@ -2024,7 +3004,12 @@
             "suenos": 1.1
           },
           "source": "podido despertar",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "podido despertar"
+          }
         },
         {
           "text": "astros hinchados",
@@ -2034,7 +3019,12 @@
             "noche": 1.2
           },
           "source": "Los astros hinchados",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "Los astros hinchados"
+          }
         },
         {
           "text": "asemejan",
@@ -2044,7 +3034,12 @@
             "suenos": 0.8
           },
           "source": "asemejan los ojos",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 8,
+            "source": "asemejan los ojos"
+          }
         }
       ],
       "compactWords": [
@@ -2074,7 +3069,12 @@
             "rabia": 1.3
           },
           "source": "su rebelión contra los vivos que pueden razonar",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "su rebelión contra los vivos que pueden razonar"
+          }
         },
         {
           "text": "defiende",
@@ -2084,7 +3084,12 @@
             "lucha": 1.4
           },
           "source": "ahora se defiende ante la autodestrucción de aquel",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "ahora se defiende ante la autodestrucción de aquel"
+          }
         },
         {
           "text": "dolor",
@@ -2094,7 +3099,12 @@
             "injusticia": 1.2
           },
           "source": "el otro con sabiduría reacciona al dolor",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "el otro con sabiduría reacciona al dolor"
+          }
         },
         {
           "text": "sabiduría",
@@ -2104,7 +3114,12 @@
             "introspeccion": 1.2
           },
           "source": "el otro con sabiduría reacciona al dolor",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "el otro con sabiduría reacciona al dolor"
+          }
         },
         {
           "text": "escucha",
@@ -2114,7 +3129,12 @@
             "compasion": 1.1
           },
           "source": "escucha La Tierra manifestar",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "escucha La Tierra manifestar"
+          }
         },
         {
           "text": "Tierra",
@@ -2124,7 +3144,12 @@
             "responsabilidad": 0.8
           },
           "source": "escucha La Tierra manifestar",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "escucha La Tierra manifestar"
+          }
         },
         {
           "text": "maravilla",
@@ -2134,7 +3159,12 @@
             "naturaleza": 1.1
           },
           "source": "esa maravilla que alguna vez fue",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "esa maravilla que alguna vez fue"
+          }
         },
         {
           "text": "naturaleza",
@@ -2144,7 +3174,12 @@
             "responsabilidad": 0.9
           },
           "source": "La naturaleza de aquellos es cruel",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "La naturaleza de aquellos es cruel"
+          }
         },
         {
           "text": "cruel",
@@ -2154,7 +3189,12 @@
             "dolor": 1.0
           },
           "source": "La naturaleza de aquellos es cruel",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "La naturaleza de aquellos es cruel"
+          }
         },
         {
           "text": "destruyendo",
@@ -2164,7 +3204,12 @@
             "rabia": 1.2
           },
           "source": "van destruyendo un paso a la vez",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "van destruyendo un paso a la vez"
+          }
         },
         {
           "text": "autodestrucción",
@@ -2174,7 +3219,12 @@
             "supervivencia": 1.2
           },
           "source": "ahora se defiende ante la autodestrucción de aquel",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "ahora se defiende ante la autodestrucción de aquel"
+          }
         },
         {
           "text": "razonar",
@@ -2184,7 +3234,12 @@
             "introspeccion": 1.0
           },
           "source": "su rebelión contra los vivos que pueden razonar",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "su rebelión contra los vivos que pueden razonar"
+          }
         },
         {
           "text": "querellando",
@@ -2194,7 +3249,12 @@
             "injusticia": 1.3
           },
           "source": "Querellando entre el mayor y el menor",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "Querellando entre el mayor y el menor"
+          }
         },
         {
           "text": "afectados",
@@ -2204,7 +3264,12 @@
             "compasion": 1.0
           },
           "source": "Afectados están los dos",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "Afectados están los dos"
+          }
         },
         {
           "text": "manifestar",
@@ -2214,7 +3279,12 @@
             "libertad": 1.0
           },
           "source": "escucha La Tierra manifestar",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "escucha La Tierra manifestar"
+          }
         },
         {
           "text": "vivos",
@@ -2224,7 +3294,12 @@
             "mundo": 0.9
           },
           "source": "su rebelión contra los vivos que pueden razonar",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "su rebelión contra los vivos que pueden razonar"
+          }
         },
         {
           "text": "reacciona",
@@ -2234,7 +3309,12 @@
             "responsabilidad": 0.9
           },
           "source": "el otro con sabiduría reacciona al dolor",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "el otro con sabiduría reacciona al dolor"
+          }
         },
         {
           "text": "mayor",
@@ -2244,7 +3324,12 @@
             "responsabilidad": 0.8
           },
           "source": "Querellando entre el mayor y el menor",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "Querellando entre el mayor y el menor"
+          }
         },
         {
           "text": "menor",
@@ -2254,7 +3339,12 @@
             "compasion": 0.8
           },
           "source": "Querellando entre el mayor y el menor",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "Querellando entre el mayor y el menor"
+          }
         },
         {
           "text": "ágil",
@@ -2264,7 +3354,12 @@
             "supervivencia": 0.8
           },
           "source": "mientras uno es más ágil,",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "mientras uno es más ágil,"
+          }
         },
         {
           "text": "paso",
@@ -2274,7 +3369,12 @@
             "ciclo": 0.8
           },
           "source": "van destruyendo un paso a la vez",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 9,
+            "source": "van destruyendo un paso a la vez"
+          }
         }
       ],
       "compactWords": [
@@ -2299,7 +3399,12 @@
             "duda": 1.2
           },
           "source": "Lo que siempre quise ser, no lo soy",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Lo que siempre quise ser, no lo soy"
+          }
         },
         {
           "text": "camino",
@@ -2309,7 +3414,12 @@
             "busqueda": 1.3
           },
           "source": "El otro camino que tomé, no soy la mejor.",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "El otro camino que tomé, no soy la mejor."
+          }
         },
         {
           "text": "nombre",
@@ -2319,7 +3429,12 @@
             "introspeccion": 0.8
           },
           "source": "Lo único que tengo es un nombre y apellido",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Lo único que tengo es un nombre y apellido"
+          }
         },
         {
           "text": "apellido",
@@ -2329,17 +3444,29 @@
             "familia": 0.6
           },
           "source": "Lo único que tengo es un nombre y apellido",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Lo único que tengo es un nombre y apellido"
+          }
         },
         {
           "text": "espinas",
           "en": "thorns",
           "profile": {
             "heridas": 1.6,
-            "dolor": 1.3
+            "dolor": 1.3,
+            "presion": 0.65
           },
           "source": "Rezumando espinas",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Rezumando espinas"
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "papel",
@@ -2349,7 +3476,12 @@
             "dolor": 1.1
           },
           "source": "Lo único que quema es papel",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Lo único que quema es papel"
+          }
         },
         {
           "text": "quema",
@@ -2359,7 +3491,12 @@
             "fuego": 1.2
           },
           "source": "Lo único que quema es papel",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Lo único que quema es papel"
+          }
         },
         {
           "text": "fuego",
@@ -2370,7 +3507,12 @@
             "despedida": 1.0
           },
           "source": "Desperdiciado es fuego que ahora",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Desperdiciado es fuego que ahora"
+          }
         },
         {
           "text": "gotas",
@@ -2380,7 +3522,12 @@
             "agua": 0.9
           },
           "source": "Caen las gotas a color",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Caen las gotas a color"
+          }
         },
         {
           "text": "color",
@@ -2390,7 +3537,12 @@
             "creacion": 1.0
           },
           "source": "Caen las gotas a color",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Caen las gotas a color"
+          }
         },
         {
           "text": "algún día",
@@ -2400,7 +3552,12 @@
             "esperanza": 0.8
           },
           "source": "Ensuciando la reputación que, algún día",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Ensuciando la reputación que, algún día"
+          }
         },
         {
           "text": "lecho",
@@ -2410,17 +3567,29 @@
             "agotamiento": 1.0
           },
           "source": "Quiso tener y que ahora reside en un lecho",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Quiso tener y que ahora reside en un lecho"
+          }
         },
         {
           "text": "avergonzado",
           "en": "ashamed",
           "profile": {
             "duda": 1.5,
-            "identidad": 1.3
+            "identidad": 1.3,
+            "presion": 0.8
           },
           "source": "Avergonzado de cómo fue",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Avergonzado de cómo fue"
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "desperdiciado",
@@ -2430,17 +3599,29 @@
             "dolor": 1.1
           },
           "source": "Desperdiciado es fuego que ahora",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Desperdiciado es fuego que ahora"
+          }
         },
         {
           "text": "reputación",
           "en": "reputation",
           "profile": {
             "identidad": 1.4,
-            "duda": 1.2
+            "duda": 1.2,
+            "presion": 1.0
           },
           "source": "Ensuciando la reputación que, algún día",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Ensuciando la reputación que, algún día"
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "cuerpo",
@@ -2450,7 +3631,12 @@
             "dolor": 1.0
           },
           "source": "Ni el mar abraza mi cuerpo",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Ni el mar abraza mi cuerpo"
+          }
         },
         {
           "text": "rezumando",
@@ -2460,7 +3646,12 @@
             "dolor": 1.2
           },
           "source": "Rezumando espinas",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Rezumando espinas"
+          }
         },
         {
           "text": "pecho",
@@ -2470,7 +3661,12 @@
             "heridas": 1.0
           },
           "source": "Sobre mi pecho",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Sobre mi pecho"
+          }
         },
         {
           "text": "mar",
@@ -2480,7 +3676,12 @@
             "encierro": 1.0
           },
           "source": "Ni el mar abraza mi cuerpo",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Ni el mar abraza mi cuerpo"
+          }
         },
         {
           "text": "abraza",
@@ -2490,7 +3691,12 @@
             "duda": 1.0
           },
           "source": "Ni el mar abraza mi cuerpo",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Ni el mar abraza mi cuerpo"
+          }
         },
         {
           "text": "quiso tener",
@@ -2500,7 +3706,12 @@
             "despedida": 1.1
           },
           "source": "Quiso tener y que ahora reside en un lecho",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Quiso tener y que ahora reside en un lecho"
+          }
         },
         {
           "text": "reside",
@@ -2510,7 +3721,12 @@
             "memoria": 0.8
           },
           "source": "Quiso tener y que ahora reside en un lecho",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Quiso tener y que ahora reside en un lecho"
+          }
         },
         {
           "text": "caen",
@@ -2520,7 +3736,12 @@
             "incertidumbre": 0.9
           },
           "source": "Caen las gotas a color",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 10,
+            "source": "Caen las gotas a color"
+          }
         }
       ],
       "compactWords": [
@@ -2550,7 +3771,12 @@
             "incertidumbre": 1.1
           },
           "source": "Ese miedo cada noche al irme a dormir",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Ese miedo cada noche al irme a dormir"
+          }
         },
         {
           "text": "vivir",
@@ -2560,7 +3786,12 @@
             "esperanza": 1.1
           },
           "source": "Sin saber si otro día podré vivir.",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Sin saber si otro día podré vivir."
+          }
         },
         {
           "text": "amanecer",
@@ -2570,7 +3801,12 @@
             "luz": 1.2
           },
           "source": "Es la energía que me levanta al amanecer",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Es la energía que me levanta al amanecer"
+          }
         },
         {
           "text": "hogar",
@@ -2580,7 +3816,12 @@
             "estabilidad": 1.3
           },
           "source": "Regresan a su hogar para confortarme",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Regresan a su hogar para confortarme"
+          }
         },
         {
           "text": "confortarme",
@@ -2590,17 +3831,29 @@
             "calma": 1.4
           },
           "source": "Regresan a su hogar para confortarme",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Regresan a su hogar para confortarme"
+          }
         },
         {
           "text": "empezar",
           "en": "begin",
           "profile": {
             "perseverancia": 1.5,
-            "renacer": 1.2
+            "renacer": 1.2,
+            "transicion": 1.1
           },
           "source": "De nuevo y empezar el día una vez más.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "De nuevo y empezar el día una vez más."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "energía",
@@ -2610,7 +3863,12 @@
             "perseverancia": 1.0
           },
           "source": "Es la energía que me levanta al amanecer",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Es la energía que me levanta al amanecer"
+          }
         },
         {
           "text": "euforia",
@@ -2620,17 +3878,29 @@
             "incertidumbre": 1.1
           },
           "source": "Con esa euforia, que, en el ocaso, vuelve y me aterra.",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Con esa euforia, que, en el ocaso, vuelve y me aterra."
+          }
         },
         {
           "text": "límites",
           "en": "limits",
           "profile": {
             "encierro": 1.4,
-            "lucha": 1.1
+            "lucha": 1.1,
+            "presion": 1.2
           },
           "source": "La lleva a sus límites y no sabe hasta dónde podrá más.",
-          "dest": 11
+          "dest": 11,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "La lleva a sus límites y no sabe hasta dónde podrá más."
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "noche",
@@ -2640,7 +3910,12 @@
             "miedo": 1.1
           },
           "source": "Ese miedo cada noche al irme a dormir",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Ese miedo cada noche al irme a dormir"
+          }
         },
         {
           "text": "dormir",
@@ -2650,7 +3925,12 @@
             "miedo": 0.9
           },
           "source": "Ese miedo cada noche al irme a dormir",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Ese miedo cada noche al irme a dormir"
+          }
         },
         {
           "text": "pasión",
@@ -2660,7 +3940,12 @@
             "lucha": 1.1
           },
           "source": "Porque la demás a mi pasión le hereda.",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Porque la demás a mi pasión le hereda."
+          }
         },
         {
           "text": "corazón",
@@ -2670,7 +3955,12 @@
             "introspeccion": 1.0
           },
           "source": "Tengo acelerado el corazón",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Tengo acelerado el corazón"
+          }
         },
         {
           "text": "helada",
@@ -2680,7 +3970,12 @@
             "noche": 0.7
           },
           "source": "Tan cerca que me toca las manos y helada me deja.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Tan cerca que me toca las manos y helada me deja."
+          }
         },
         {
           "text": "muerte",
@@ -2690,7 +3985,12 @@
             "supervivencia": 1.1
           },
           "source": "Nunca me había sentido tan cerca de la muerte",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Nunca me había sentido tan cerca de la muerte"
+          }
         },
         {
           "text": "lágrimas",
@@ -2700,7 +4000,12 @@
             "lucha": 0.8
           },
           "source": "Mis lágrimas son de fuego y queman",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Mis lágrimas son de fuego y queman"
+          }
         },
         {
           "text": "fuego",
@@ -2710,7 +4015,12 @@
             "dolor": 1.1
           },
           "source": "Mis lágrimas son de fuego y queman",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Mis lágrimas son de fuego y queman"
+          }
         },
         {
           "text": "regresan",
@@ -2720,7 +4030,12 @@
             "refugio": 1.1
           },
           "source": "Regresan a su hogar para confortarme",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Regresan a su hogar para confortarme"
+          }
         },
         {
           "text": "día",
@@ -2730,17 +4045,29 @@
             "renacer": 1.1
           },
           "source": "Sin saber si otro día podré vivir.",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Sin saber si otro día podré vivir."
+          }
         },
         {
           "text": "ocaso",
           "en": "dusk",
           "profile": {
             "noche": 1.3,
-            "ciclo": 1.0
+            "ciclo": 1.0,
+            "transicion": 1.2
           },
           "source": "Con esa euforia, que, en el ocaso, vuelve y me aterra.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Con esa euforia, que, en el ocaso, vuelve y me aterra."
+          },
+          "connectionNote": "Contextual association from the passage, reviewed 2026-10-11."
         },
         {
           "text": "manos",
@@ -2750,7 +4077,12 @@
             "heridas": 0.8
           },
           "source": "Tan cerca que me toca las manos y helada me deja.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Tan cerca que me toca las manos y helada me deja."
+          }
         },
         {
           "text": "sangre",
@@ -2760,7 +4092,12 @@
             "miedo": 0.9
           },
           "source": "La sangre ya solo en la cara me queda",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "La sangre ya solo en la cara me queda"
+          }
         },
         {
           "text": "piel",
@@ -2770,7 +4107,12 @@
             "incertidumbre": 1.0
           },
           "source": "Es como si una nueva persona se vistió de mi piel",
-          "dest": 4
+          "dest": 4,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Es como si una nueva persona se vistió de mi piel"
+          }
         },
         {
           "text": "tez",
@@ -2780,7 +4122,12 @@
             "heridas": 0.8
           },
           "source": "Cuando caen por mi tez",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 11,
+            "source": "Cuando caen por mi tez"
+          }
         }
       ],
       "compactWords": [
@@ -2807,10 +4154,17 @@
           "en": "hold on",
           "profile": {
             "perseverancia": 1.8,
-            "lucha": 1.1
+            "lucha": 1.1,
+            "presion": 1.0
           },
           "source": "Hacer es aguantar, aguantar un poco más en esta agonía,",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Hacer es aguantar, aguantar un poco más en esta agonía,"
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "ayudar",
@@ -2820,7 +4174,12 @@
             "entrega": 1.1
           },
           "source": "Trato de ayudar, no me dejan ayudar",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Trato de ayudar, no me dejan ayudar"
+          }
         },
         {
           "text": "crear",
@@ -2830,7 +4189,12 @@
             "perseverancia": 1.0
           },
           "source": "Trato de crear, tengo que estudiar muchísimo para lograr hacerlo bien",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Trato de crear, tengo que estudiar muchísimo para lograr hacerlo bien"
+          }
         },
         {
           "text": "estudiar",
@@ -2840,7 +4204,12 @@
             "perseverancia": 1.1
           },
           "source": "Trato de crear, tengo que estudiar muchísimo para lograr hacerlo bien",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Trato de crear, tengo que estudiar muchísimo para lograr hacerlo bien"
+          }
         },
         {
           "text": "encierro",
@@ -2850,17 +4219,29 @@
             "injusticia": 1.0
           },
           "source": "De encierro, de impotencia.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "De encierro, de impotencia."
+          }
         },
         {
           "text": "impotencia",
           "en": "helplessness",
           "profile": {
             "encierro": 1.4,
-            "duda": 1.3
+            "duda": 1.3,
+            "presion": 0.8
           },
           "source": "De encierro, de impotencia.",
-          "dest": 8
+          "dest": 8,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "De encierro, de impotencia."
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "libertad",
@@ -2870,7 +4251,12 @@
             "escape": 1.1
           },
           "source": "Ni siquiera en un mundo en línea encuentro esa libertad.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Ni siquiera en un mundo en línea encuentro esa libertad."
+          }
         },
         {
           "text": "amor",
@@ -2880,17 +4266,29 @@
             "compania": 0.8
           },
           "source": "Tuve dinero y no amor y no lo quise. Tengo amor y no dinero y sigue infeliz.",
-          "dest": 5
+          "dest": 5,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Tuve dinero y no amor y no lo quise. Tengo amor y no dinero y sigue infeliz."
+          }
         },
         {
           "text": "escribo",
           "en": "I write",
           "profile": {
             "autenticidad": 1.5,
-            "creacion": 1.3
+            "creacion": 1.3,
+            "presion": 0.4
           },
           "source": "Escribo, ¡Me emociono por algo por fin!",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Escribo, ¡Me emociono por algo por fin!"
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "herramientas",
@@ -2900,7 +4298,12 @@
             "aprendizaje": 1.3
           },
           "source": "Tengo todas las herramientas posibles para salir al mundo",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Tengo todas las herramientas posibles para salir al mundo"
+          }
         },
         {
           "text": "miedo",
@@ -2910,7 +4313,12 @@
             "duda": 1.1
           },
           "source": "Vivir siempre con el miedo de estar haciéndolo mal.",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Vivir siempre con el miedo de estar haciéndolo mal."
+          }
         },
         {
           "text": "camino",
@@ -2920,7 +4328,12 @@
             "duda": 1.0
           },
           "source": "No sé qué más, me pregunto si es correcto el camino que elegí ya que nada se siente bien,",
-          "dest": 6
+          "dest": 6,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "No sé qué más, me pregunto si es correcto el camino que elegí ya que nada se siente bien,"
+          }
         },
         {
           "text": "lágrimas",
@@ -2930,7 +4343,12 @@
             "agotamiento": 0.8
           },
           "source": "Incluso se me acabaron las lágrimas de tanto llorar.",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Incluso se me acabaron las lágrimas de tanto llorar."
+          }
         },
         {
           "text": "agonía",
@@ -2940,7 +4358,12 @@
             "miedo": 1.0
           },
           "source": "Hacer es aguantar, aguantar un poco más en esta agonía,",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Hacer es aguantar, aguantar un poco más en esta agonía,"
+          }
         },
         {
           "text": "sin salida",
@@ -2950,17 +4373,29 @@
             "incertidumbre": 1.0
           },
           "source": "Sin salida.",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Sin salida."
+          }
         },
         {
           "text": "hirientes",
           "en": "hurtful",
           "profile": {
             "heridas": 1.6,
-            "dolor": 1.1
+            "dolor": 1.1,
+            "presion": 0.9
           },
           "source": "Hirientes",
-          "dest": 9
+          "dest": 9,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Hirientes"
+          },
+          "connectionNote": "Pressure is a contextual connection from this passage; reviewed after owner clarification, 2026-10-11."
         },
         {
           "text": "me emociono",
@@ -2970,7 +4405,12 @@
             "creacion": 1.1
           },
           "source": "Escribo, ¡Me emociono por algo por fin!",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Escribo, ¡Me emociono por algo por fin!"
+          }
         },
         {
           "text": "corazón",
@@ -2980,7 +4420,12 @@
             "identidad": 0.8
           },
           "source": "La odio con todo mi corazón. Nada me satisface. Hago todos mis pasatiempos, pero nada me complace.",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "La odio con todo mi corazón. Nada me satisface. Hago todos mis pasatiempos, pero nada me complace."
+          }
         },
         {
           "text": "libre",
@@ -2990,7 +4435,12 @@
             "escape": 1.0
           },
           "source": "Es imposible ser libre en este mundo.",
-          "dest": 0
+          "dest": 0,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Es imposible ser libre en este mundo."
+          }
         },
         {
           "text": "mundo",
@@ -3000,7 +4450,12 @@
             "mundo": 1.1
           },
           "source": "Tengo todas las herramientas posibles para salir al mundo",
-          "dest": 2
+          "dest": 2,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Tengo todas las herramientas posibles para salir al mundo"
+          }
         },
         {
           "text": "momento",
@@ -3010,7 +4465,12 @@
             "paciencia": 0.8
           },
           "source": "O solo es un momento de esos amargos de la vida, lo único que tengo que",
-          "dest": 7
+          "dest": 7,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "O solo es un momento de esos amargos de la vida, lo único que tengo que"
+          }
         },
         {
           "text": "vida",
@@ -3020,7 +4480,12 @@
             "incertidumbre": 0.9
           },
           "source": "O solo es un momento de esos amargos de la vida, lo único que tengo que",
-          "dest": 10
+          "dest": 10,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "O solo es un momento de esos amargos de la vida, lo único que tengo que"
+          }
         },
         {
           "text": "altos",
@@ -3030,7 +4495,12 @@
             "esperanza": 1.0
           },
           "source": "Claro, la vida tiene sus altos y sus bajos.",
-          "dest": 3
+          "dest": 3,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Claro, la vida tiene sus altos y sus bajos."
+          }
         },
         {
           "text": "bajos",
@@ -3040,7 +4510,12 @@
             "ciclo": 1.1
           },
           "source": "Claro, la vida tiene sus altos y sus bajos.",
-          "dest": 1
+          "dest": 1,
+          "provenance": {
+            "type": "verbatim",
+            "poem": 12,
+            "source": "Claro, la vida tiene sus altos y sus bajos."
+          }
         }
       ],
       "compactWords": [
@@ -3458,39 +4933,44 @@
     {
       "anchors": [
         [
+          "presion",
+          "lucha",
+          "heridas",
           "fuego"
         ],
         [
           "autenticidad",
+          "creacion",
           "juego"
         ]
       ],
       "title": "Tortilla Song",
       "album": "SDLC_02",
-      "interpretation": "Heat leaves marks that become part of an authentic whole; imperfect does not mean wrong.",
+      "interpretation": "Pressure leaves marks that become part of an authentic, individual form. Tension and playfulness coexist with a clear creative direction. Heat is a secondary metaphorical connection, not the track’s literal subject.",
       "profile": {
-        "autenticidad": 1.7,
-        "fuego": 1.5,
+        "autenticidad": 1.9,
+        "presion": 1.5,
         "juego": 1.1,
-        "creacion": 1.0,
+        "creacion": 1.2,
         "aprendizaje": 0.7,
-        "confianza": 0.6
+        "confianza": 0.7,
+        "fuego": 0.45
       },
       "arc": {
         "start": {
-          "fuego": 1.0,
+          "presion": 1.2,
           "heridas": 1.0,
           "creacion": 1.0
         },
         "end": {
-          "autenticidad": 1.0,
+          "autenticidad": 1.2,
           "confianza": 1.0,
           "alegria": 1.0
         }
       },
       "source": {
         "about": "Tortilla Song is a funny song to me. It is tense and loud, yet it makes a quiet statement. It may seem like I do not know what I am doing, but I actually have a clear direction. It is playful, energetic, and filled with the sound of trumpets.",
-        "scene": "A tortilla cooks on a hot comal as dark spots slowly appear across its surface. Each mark forms where the heat is most intense, yet those toasted spots are what make the tortilla look familiar and complete. What might initially seem imperfect becomes a sign that it is ready, authentic, and exactly as it should be.",
+        "scene": "A form holds the marks left by pressure. Those traces gradually become part of its character, revealing something authentic and individual. The scene carries tension and playfulness together: an apparent imperfection can belong to a clear creative direction.",
         "mood": "Atmospheric, Cinematic, Tense"
       }
     },
@@ -4412,39 +5892,40 @@
     {
       "anchors": [
         [
-          "despedida",
-          "memoria"
+          "transicion",
+          "culminacion"
         ],
         [
-          "calma",
-          "vuelo",
-          "color"
+          "suspension",
+          "insomnio"
         ]
       ],
       "title": "Lala",
       "album": "SDLC_11",
-      "interpretation": "The culmination of a chapter and the quiet release of letting it end; purple, suspended space.",
+      "interpretation": "An outro-like culmination still floating: transition, weightless suspension and sleeplessness. Missing someone, grief and nostalgic memory are not primary signals.",
       "profile": {
-        "despedida": 1.8,
-        "calma": 1.3,
-        "memoria": 1.1,
-        "color": 1.0,
-        "vuelo": 0.9
+        "transicion": 1.9,
+        "suspension": 1.9,
+        "culminacion": 1.6,
+        "insomnio": 1.5,
+        "noche": 0.45,
+        "suenos": 0.6,
+        "calma": 0.65
       },
       "arc": {
         "start": {
-          "memoria": 1.0,
-          "despedida": 1.0,
-          "color": 1.0
+          "insomnio": 1.4,
+          "transicion": 1.0
         },
         "end": {
-          "despedida": 1.0,
-          "calma": 1.0,
-          "vuelo": 1.0
+          "suspension": 1.5,
+          "culminacion": 1.4,
+          "transicion": 1.0,
+          "calma": 0.5
         }
       },
       "source": {
-        "about": "This is a transitional track. It feels like the end of something, the culmination of everything that came before it.",
+        "about": "A brief, outro-like passage that gathers the feeling of everything that came before it. Lala marks a culmination while remaining weightless and in motion, a closing moment that still seems to float, carrying the listener gently into what follows.",
         "scene": "A vast, weightless space surrounded by a purple gradient that shifts from deep violet to lavender. A few indistinct forms float slowly through it, hinting at what came before. Their movement gradually slows until everything seems suspended in one moment. It feels like a culmination, followed by the quiet release of letting it end.",
         "mood": "Atmospheric, Dreamlike, Tense"
       }

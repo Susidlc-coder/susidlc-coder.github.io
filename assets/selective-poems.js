@@ -1,4 +1,4 @@
-import {createRecommender} from './recommendation.js';
+import {createRecommender} from './recommendation.js?v=20261011-approved-editorial';
 
 (()=>{
   const stateHost={get widgetState(){try{return JSON.parse(sessionStorage.getItem('susidlc-selective-journey')||'null');}catch{return null;}},setWidgetState(state){try{sessionStorage.setItem('susidlc-selective-journey',JSON.stringify(state));}catch{}return Promise.resolve();}};
