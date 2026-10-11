@@ -1388,7 +1388,7 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Interloc
   function rotateAlbum(){let previous=-1;try{const raw=localStorage.getItem('susidlc-selective-last-album');if(raw!==null)previous=Number(raw);}catch(e){}const valid=Number.isInteger(previous)&&previous>=0&&previous<ALBUMS.length;const next=valid?(previous+1+Math.floor(Math.random()*(ALBUMS.length-1)))%ALBUMS.length:Math.floor(Math.random()*ALBUMS.length);paintAlbum(next);}
   function shiftAlbum(direction){paintAlbum((currentAlbum+direction+ALBUMS.length)%ALBUMS.length);}
   function setMenu(open){const nav=q('[data-site-nav]'),toggle=q('[data-menu-toggle]');nav.dataset.open=String(open);toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?"Close −":"Menu +";}
-  function progress(){const done=totalClicks%7;q('[data-seven-progress]').textContent="Your song · "+done+" of 7 words";}
+  function progress(){const done=totalClicks%7;const node=q('[data-seven-progress]');node.textContent='Your journey · '+done+' of 7 words';node.dataset.step=String(done);node.setAttribute('aria-live','polite');}
   const poemReader=createPoemReader({root,pages:PAGES,originals:POEMS,translations:POEM_EN,lang:LANG});
   function readPoem(index=active){poemReader.open(Number.isInteger(index)?index:active);}
   let recentSongs=[];
@@ -1421,10 +1421,11 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Interloc
   let routePage=-1,routeDeck=[];
   const previousDecks=new Map(),paintTimers=new Map();
   function shuffleRoutes(page){
-    const deck=PAGES.map((_,i)=>i).filter(i=>i!==page);
+    const count=totalClicks%7;const visited=new Set(count?choices.slice(-count).map(choice=>choice.page):[]);
+    const deck=PAGES.map((_,i)=>i).filter(i=>i!==page&&!visited.has(i));
     for(let i=deck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[deck[i],deck[j]]=[deck[j],deck[i]];}
     const previous=previousDecks.get(page);
-    if(previous&&deck[0]===previous[0])[deck[0],deck[1]]=[deck[1],deck[0]];
+    if(previous&&deck.length>1&&deck[0]===previous[0])[deck[0],deck[1]]=[deck[1],deck[0]];
     routePage=page;routeDeck=deck;previousDecks.set(page,deck.slice());
   }
   function cellRelief(page,cell,index,revealed=false){
@@ -1547,9 +1548,9 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Interloc
   }
   function toggleRoutes(persist=true){root.dataset.routes=String(showRoutes);q('[data-routes-toggle]').setAttribute('aria-pressed',String(showRoutes));q('[data-routes-toggle]').textContent=showRoutes?"Show words":"Show destinations";q('[data-hint]').textContent=showRoutes?"Numbers identify destinations; find them among the twelve poems.":"Tap or activate a word to enter the next poem. Tab and Enter work too.";if(persist)save();}
   function restore(state){const p=state?.privateContent;if(p?.version!==2&&p?.version!==4)return;recentSongs=Array.isArray(p.recentSongs)?p.recentSongs.filter(title=>SONGS.some(s=>s.title===title)).slice(-4):[];choices=Array.isArray(p.choices)?p.choices.filter(x=>typeof x.word==='string'&&Number.isInteger(x.page)&&x.page>=0&&x.page<12&&Number.isInteger(x.dest)&&x.dest>=0&&x.dest<12).slice(-7):[];totalClicks=Number.isInteger(p.totalClicks)&&p.totalClicks>=0?p.totalClicks:choices.length;progress();active=Number.isInteger(p.active)&&p.active>=0&&p.active<12?p.active:0;showRoutes=Boolean(p.showRoutes);history=Array.isArray(p.history)?p.history.filter(i=>Number.isInteger(i)&&i>=0&&i<12).slice(-24):[active];opts.trail=Number.isFinite(p.trail)?Math.max(200,Math.min(2400,p.trail)):1400;opts.textScale=Number.isFinite(p.textScale)?Math.max(85,Math.min(115,p.textScale)):100;root.style.setProperty('--out',opts.trail+'ms');toggleRoutes(false);
-    if(p.routePage===active&&Array.isArray(p.routeDeck)&&p.routeDeck.length===11&&new Set(p.routeDeck).size===11&&p.routeDeck.every(id=>Number.isInteger(id)&&id>=0&&id<12&&id!==active)){
+    if(p.routePage===active&&Array.isArray(p.routeDeck)&&p.routeDeck.length>=5&&p.routeDeck.length<=11&&new Set(p.routeDeck).size===p.routeDeck.length&&p.routeDeck.every(id=>Number.isInteger(id)&&id>=0&&id<12&&id!==active&&!(totalClicks%7&&choices.slice(-(totalClicks%7)).some(choice=>choice.page===id)))){
       routePage=active;routeDeck=p.routeDeck.slice();
-      if(Array.isArray(p.previousDecks))for(const [id,deck]of p.previousDecks){if(Number.isInteger(id)&&Array.isArray(deck)&&deck.length===11&&deck.every(n=>Number.isInteger(n)&&n>=0&&n<12&&n!==id))previousDecks.set(id,deck.slice());}
+      if(Array.isArray(p.previousDecks))for(const [id,deck]of p.previousDecks){if(Number.isInteger(id)&&Array.isArray(deck)&&deck.length>=5&&deck.length<=11&&deck.every(n=>Number.isInteger(n)&&n>=0&&n<12&&n!==id))previousDecks.set(id,deck.slice());}
     }
     openPage(active);}
   PAGES.forEach((page,i)=>{
