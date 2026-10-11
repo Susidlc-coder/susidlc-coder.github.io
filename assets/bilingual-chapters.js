@@ -4,9 +4,10 @@
   if (!reading) return;
   const modes = ['adaptado', 'original', 'ambos'];
   const buttons = [...document.querySelectorAll('[data-reader-mode]')];
+  const mobileReading = window.matchMedia('(max-width: 720px)');
   const storageKey = 'susidlc-bilingual-reading-mode';
   function setMode(mode) {
-    if (!modes.includes(mode)) mode = 'adaptado';
+    if (!modes.includes(mode) || (mobileReading.matches && mode === 'ambos')) mode = 'adaptado';
     reading.dataset.readingMode = mode;
     reading.querySelectorAll('[data-version]').forEach(column => {
       column.hidden = mode !== 'ambos' && column.dataset.version !== mode;
@@ -17,6 +18,9 @@
   let initialMode = 'adaptado';
   try { initialMode = localStorage.getItem(storageKey) || initialMode; } catch {}
   setMode(initialMode);
+  mobileReading.addEventListener('change', () => {
+    if (mobileReading.matches && reading.dataset.readingMode === 'ambos') setMode('adaptado');
+  });
   buttons.forEach(button => button.addEventListener('click', () => setMode(button.dataset.readerMode)));
   document.querySelectorAll('[data-reader-video]').forEach(button => {
     button.addEventListener('click', () => {

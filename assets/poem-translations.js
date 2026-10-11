@@ -1,5 +1,4 @@
-// English literary translation for the private preview.
-// Spanish keys remain canonical for navigation and song matching. Original titles are unchanged.
+// English literary translation. Spanish keys remain canonical for navigation and matching.
 export const POEM_EN = [
   {
     "paragraphs": [
@@ -45,7 +44,19 @@ export const POEM_EN = [
       "cielo": "sky",
       "ventana abierta": "open window",
       "volando": "flying",
-      "vapores coloridos": "colorful vapors"
+      "vapores coloridos": "colorful vapors",
+      "felicidad": "happiness",
+      "celos": "jealousy",
+      "esperando": "waiting",
+      "compañeros": "companions",
+      "libremente": "freely",
+      "historia": "story",
+      "envidias": "envy",
+      "jugando": "playing",
+      "casa": "home",
+      "fuerzas": "strength",
+      "determinada": "determined",
+      "dolor": "pain"
     }
   },
   {
@@ -98,7 +109,8 @@ export const POEM_EN = [
       "vida": "life",
       "pulso": "pulse",
       "abrir": "open",
-      "otra vez": "again"
+      "otra vez": "again",
+      "desesperadamente": "desperately"
     }
   },
   {
@@ -144,7 +156,11 @@ export const POEM_EN = [
       "orgullo": "pride",
       "nómada": "nomad",
       "alas": "wings",
-      "nueva oportunidad": "new chance"
+      "nueva oportunidad": "new chance",
+      "viva": "alive",
+      "dolor": "pain",
+      "soportarlo": "bear it",
+      "diferente": "different"
     }
   },
   {
@@ -197,7 +213,13 @@ export const POEM_EN = [
       "triste melodía": "sad melody",
       "tres notas": "three notes",
       "alma": "soul",
-      "descansar": "rest"
+      "descansar": "rest",
+      "confío": "I trust",
+      "lentamente": "slowly",
+      "luché": "I struggled",
+      "seguir": "continue",
+      "oscuro": "dark",
+      "notas": "notes"
     }
   },
   {
@@ -255,7 +277,18 @@ export const POEM_EN = [
       "aroma": "scent",
       "volar": "fly",
       "vientos": "winds",
-      "colores": "colors"
+      "colores": "colors",
+      "familia": "family",
+      "historia": "story",
+      "casa": "home",
+      "nadie me creyó": "no one believed me",
+      "cambió": "changed",
+      "otra vez": "again",
+      "oportunidad": "opportunity",
+      "amores": "loves",
+      "normal": "ordinary",
+      "suave": "gentle",
+      "tiempo": "time"
     }
   },
   {
@@ -310,7 +343,13 @@ export const POEM_EN = [
       "romanticismo": "romanticism",
       "tristes melodías": "sad melodies",
       "salvar": "save",
-      "verdad": "truth"
+      "verdad": "truth",
+      "dudo": "I doubt",
+      "busco": "I search",
+      "simple": "simple",
+      "prometieron": "they promised",
+      "imposible": "impossible",
+      "no tengo nada": "I have nothing"
     }
   },
   {
@@ -353,7 +392,13 @@ export const POEM_EN = [
       "vuelo": "flight",
       "alas": "wings",
       "volveré": "I will return",
-      "triunfante": "triumphant"
+      "triunfante": "triumphant",
+      "fallé": "I failed",
+      "padre": "father",
+      "orgullo": "pride",
+      "extraño": "I miss",
+      "técnica": "technique",
+      "trabajando": "working"
     }
   },
   {
@@ -461,7 +506,10 @@ export const POEM_EN = [
       "algún día": "one day",
       "quiso tener": "wanted to have",
       "reside": "dwells",
-      "lecho": "bed"
+      "lecho": "bed",
+      "avergonzado": "ashamed",
+      "desperdiciado": "wasted",
+      "reputación": "reputation"
     }
   },
   {
@@ -569,7 +617,10 @@ export const POEM_EN = [
       "altos": "highs",
       "bajos": "lows",
       "hirientes": "hurtful",
-      "sin salida": "no way out"
+      "sin salida": "no way out",
+      "aguantar": "hold on",
+      "estudiar": "study",
+      "me emociono": "I feel excited"
     }
   }
 ];

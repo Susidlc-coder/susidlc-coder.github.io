@@ -40,3 +40,36 @@ body.evening .locale-dialog{--locale-bg:#241b18;--locale-ink:#f0e7d5;--locale-mu
 @media(max-width:430px){.locale-dialog{padding:32px 23px}.locale-dialog-brand{margin-bottom:30px;font-size:24px}.locale-dialog h2{font-size:31px}.locale-dialog h2>em{font-size:22px}.locale-choices{gap:9px;margin:25px 0 22px}.locale-choices button{padding:17px 12px;gap:10px;min-height:84px}.locale-choices button>span{font-size:21px}.locale-choices svg{width:16px;height:11px}.locale-dialog #locale-choice-note{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.language-switch a,.locale-dialog,.locale-choices button{transition:none;animation:none}}
 @media(max-width:360px){.locale-choices{grid-template-columns:1fr}.locale-choices button{min-height:68px}.locale-choices button>span{display:flex;align-items:baseline;justify-content:space-between;gap:16px;width:100%}.locale-choices small{margin-top:0}}
+
+/* Primary sections sit on the header centreline; controls share one compact group. */
+.header .header-utilities,#susi-poems .sp-header .header-utilities{display:contents}
+.header .header-utilities>.language-switch,#susi-poems .sp-header .header-utilities>.language-switch{grid-column:2;grid-row:1;justify-self:end;margin-left:0}
+.header .header-utilities>.light-toggle,#susi-poems .sp-header .header-utilities>.light-toggle{grid-column:2;grid-row:2;justify-self:end}
+.header>#navigation a,#susi-poems .sp-site-nav a{font-size:14px;line-height:1.4;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}
+@media(min-width:670px){
+ .header,#susi-poems .sp-header{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:20px;height:auto;min-height:80px;padding-block:16px;position:relative;flex-wrap:nowrap}
+ #susi-poems .sp-header{padding-inline:40px}
+ .header>.brand,#susi-poems .sp-brand-link{grid-column:1;grid-row:1;justify-self:start;margin:0}
+ .header>.menu-toggle,#susi-poems .sp-menu-toggle,#susi-poems .sp-header-label{display:none}
+ .header>#navigation,.header>#navigation.is-open,#susi-poems .sp-site-nav,#susi-poems .sp-site-nav[data-open='true']{display:flex;position:static;grid-column:2;grid-row:1;flex-direction:row;align-items:center;gap:26px;margin:0;padding:0;width:auto;border:0;background:transparent;box-shadow:none;z-index:auto}
+ .header .header-utilities,#susi-poems .sp-header .header-utilities{display:flex;grid-column:3;grid-row:1;align-items:center;justify-self:end;gap:10px}
+ .header .header-utilities>.language-switch,#susi-poems .sp-header .header-utilities>.language-switch{margin:0}
+ .header .header-utilities>.light-toggle,#susi-poems .sp-header .header-utilities>.light-toggle{margin:0;max-width:none;white-space:nowrap}
+ #susi-poems .sp-site-nav a{color:#f2eee5;padding:5px 0;border-bottom-color:transparent}
+ #susi-poems .sp-site-nav a[aria-current],#susi-poems .sp-site-nav a:hover{border-bottom-color:#f2eee5}
+}
+@media(min-width:670px) and (max-width:900px){
+ .header,#susi-poems .sp-header{gap:10px}
+ #susi-poems .sp-header{padding-inline:20px}
+ .header>#navigation,.header>#navigation.is-open,#susi-poems .sp-site-nav,#susi-poems .sp-site-nav[data-open='true']{gap:18px}
+ .header>#navigation a,#susi-poems .sp-site-nav a{font-size:12px}
+ .header .header-utilities,#susi-poems .sp-header .header-utilities{gap:8px}
+ .header .header-utilities .language-switch a,#susi-poems .sp-header .header-utilities .language-switch a{min-width:34px;padding:8px 5px;font-size:9px}
+ .header .header-utilities>.light-toggle,#susi-poems .sp-header .header-utilities>.light-toggle{font-size:10px;gap:6px;padding:8px;min-height:40px}
+}
+@media(max-width:669px){
+ .header>.menu-toggle,#susi-poems .sp-menu-toggle{min-height:44px;padding:10px 20px;border:1px solid currentColor;border-radius:24px;font-size:13px;line-height:1.2;background:transparent;justify-content:center;min-width:82px}
+ .header{row-gap:10px}.header>#navigation{top:100%}
+ #susi-poems .sp-menu-toggle,#susi-poems .header-utilities>.light-toggle{margin-top:8px}
+ #susi-poems .sp-site-nav a{display:flex}
+}

@@ -1,0 +1,4499 @@
+{
+  "version": "editorial-context-v2",
+  "policy": "Strongest meaning match wins; recent history resolves exact numerical ties only; no album or song priors. Odds are audited against reachable cell combinations, not forced equal frequencies.",
+  "poems": [
+    {
+      "title": "Corriente de colores (I)",
+      "interpretation": "Hurt and imposed isolation, receiving care, patiently pursuing flight, then a mysterious release. Care and envy are distinct from the color imagery.",
+      "words": [
+        {
+          "text": "heridas",
+          "en": "wounds",
+          "profile": {
+            "heridas": 1.6,
+            "dolor": 1.1
+          },
+          "source": "Un peatón de los muchos que pasaban por el parque decidió llevarla a casa. Le limpiaba las heridas que la irritación de la tierra húmeda le había causado, ella se sentía morir.",
+          "dest": 9
+        },
+        {
+          "text": "cuidado",
+          "en": "care",
+          "profile": {
+            "compasion": 1.6,
+            "confianza": 1.2,
+            "amor": 0.8
+          },
+          "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos.",
+          "dest": 5
+        },
+        {
+          "text": "felicidad",
+          "en": "happiness",
+          "profile": {
+            "alegria": 1.7,
+            "confianza": 0.7
+          },
+          "source": "Su felicidad era muy grande, pero estaba extrañada que sus compañeros no volaran hacia los colores brillantes.",
+          "dest": 1
+        },
+        {
+          "text": "celos",
+          "en": "jealousy",
+          "profile": {
+            "envidia": 1.8,
+            "injusticia": 0.8
+          },
+          "source": "Su vida siempre fue diferente, durante su crecimiento, todo eran celos y envidias que pretendían enraizarla y no dejarla volar.",
+          "dest": 1
+        },
+        {
+          "text": "esperando",
+          "en": "waiting",
+          "profile": {
+            "paciencia": 1.5,
+            "esperanza": 1.0
+          },
+          "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos.",
+          "dest": 1
+        },
+        {
+          "text": "compañeros",
+          "en": "companions",
+          "profile": {
+            "compania": 1.5,
+            "memoria": 0.6
+          },
+          "source": "Su felicidad era muy grande, pero estaba extrañada que sus compañeros no volaran hacia los colores brillantes.",
+          "dest": 1
+        },
+        {
+          "text": "libremente",
+          "en": "freely",
+          "profile": {
+            "libertad": 1.5,
+            "juego": 0.9
+          },
+          "source": "Los demás jugando libremente, mientras cohibida estaba ella en una esquina,",
+          "dest": 1
+        },
+        {
+          "text": "brillar",
+          "en": "shine",
+          "profile": {
+            "luz": 1.5,
+            "esperanza": 0.7
+          },
+          "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos.",
+          "dest": 7
+        },
+        {
+          "text": "roca",
+          "en": "rock",
+          "profile": {
+            "estabilidad": 1.3,
+            "encierro": 0.8
+          },
+          "source": "Desde ese día, decidió convertirse en una roca, para que nada la pudiera mover. Estaba tan sucia por todo el lodo que corroía sus aperladas plumas.",
+          "dest": 8
+        },
+        {
+          "text": "historia",
+          "en": "story",
+          "profile": {
+            "memoria": 1.3,
+            "compania": 0.8
+          },
+          "source": "Luego de la operación, me llevaban al cuarto de hospital compartido en donde en la otra cama, se encontraba una mujer, envuelta en vendajes que le cubrían todo el cuerpo menos la cara, parecía no tener forma. El cuarto lo dividía una sencilla cortina de algodón muy delgada, lo que nos permitió conocernos y que me contara su historia.",
+          "dest": 1
+        },
+        {
+          "text": "volando",
+          "en": "flying",
+          "profile": {
+            "vuelo": 1.5,
+            "escape": 1.0
+          },
+          "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar.",
+          "dest": 3
+        },
+        {
+          "text": "colores",
+          "en": "colors",
+          "profile": {
+            "color": 1.5,
+            "asombro": 0.8
+          },
+          "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros.",
+          "dest": 4
+        },
+        {
+          "text": "envidias",
+          "en": "envy",
+          "profile": {
+            "envidia": 1.8,
+            "injusticia": 1.1
+          },
+          "source": "Su vida siempre fue diferente, durante su crecimiento, todo eran celos y envidias que pretendían enraizarla y no dejarla volar.",
+          "dest": 1
+        },
+        {
+          "text": "jugando",
+          "en": "playing",
+          "profile": {
+            "juego": 1.6,
+            "alegria": 0.9
+          },
+          "source": "Los demás jugando libremente, mientras cohibida estaba ella en una esquina,",
+          "dest": 1
+        },
+        {
+          "text": "casa",
+          "en": "home",
+          "profile": {
+            "refugio": 1.6,
+            "compasion": 1.1
+          },
+          "source": "Un peatón de los muchos que pasaban por el parque decidió llevarla a casa. Le limpiaba las heridas que la irritación de la tierra húmeda le había causado, ella se sentía morir.",
+          "dest": 1
+        },
+        {
+          "text": "fuerzas",
+          "en": "strength",
+          "profile": {
+            "perseverancia": 1.3,
+            "lucha": 1.0
+          },
+          "source": "Con todas sus fuerzas ella hacía todo para limpiar su aspecto, pero esas alas aperladas no relucían como antes, trataba de volar, pero sus alas todavía eran pesadas.",
+          "dest": 1
+        },
+        {
+          "text": "ligeros",
+          "en": "light",
+          "profile": {
+            "vuelo": 1.4,
+            "escape": 0.7
+          },
+          "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros.",
+          "dest": 7
+        },
+        {
+          "text": "luces",
+          "en": "lights",
+          "profile": {
+            "luz": 1.4,
+            "esperanza": 0.7
+          },
+          "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar.",
+          "dest": 10
+        },
+        {
+          "text": "determinada",
+          "en": "determined",
+          "profile": {
+            "perseverancia": 1.7,
+            "esperanza": 1.0
+          },
+          "source": "Luego de meses de cuidado, el peatón la llevó de regreso al parque. Ella estaba determinada a quedarse en el mismo lugar esperando que la onda de colores volviera a brillar frente a sus ojos.",
+          "dest": 1
+        },
+        {
+          "text": "plumas",
+          "en": "feathers",
+          "profile": {
+            "vuelo": 1.2,
+            "heridas": 0.5
+          },
+          "source": "Desde ese día, decidió convertirse en una roca, para que nada la pudiera mover. Estaba tan sucia por todo el lodo que corroía sus aperladas plumas.",
+          "dest": 3
+        },
+        {
+          "text": "vuelo",
+          "en": "flight",
+          "profile": {
+            "vuelo": 1.6,
+            "libertad": 0.8
+          },
+          "source": "Emprendió vuelo, las luces ahora se reflejaban en sus plumas. En cualquier momento, la corriente la tomaría entre sus vapores y la llevaría a un mejor lugar. Ella volaba y volaba, aleteaba, pero no había nada succionándola. Estaba volando mucho más arriba de lo que era usual, pero no iba a parar.",
+          "dest": 4
+        },
+        {
+          "text": "dolor",
+          "en": "pain",
+          "profile": {
+            "dolor": 1.5,
+            "heridas": 1.1
+          },
+          "source": "Recuerdo que fue el momento en donde volteé a ver el cielo y veía algo caer desde lo alto, hasta que cayó sobre el periódico que leía. La fuerza con la que cayó hizo que mis dos fémures se quebraran a la mitad. Inmediatamente las personas de alrededor llamaban a la ambulancia, pero mientras llegaba, delirando del dolor, intentaba ver exactamente qué era lo que había caído sobre mí.",
+          "dest": 1
+        },
+        {
+          "text": "ventana abierta",
+          "en": "open window",
+          "profile": {
+            "escape": 1.4,
+            "renacer": 1.0
+          },
+          "source": "la otra cama, solo estaba la ventana abierta. La vi de lejos, volando de nuevo pero ahora ya dentro de los vapores coloridos.",
+          "dest": 6
+        },
+        {
+          "text": "vientos",
+          "en": "winds",
+          "profile": {
+            "vuelo": 1.2,
+            "mundo": 0.5
+          },
+          "source": "Durante los años, veía a otros de su especie entrar a una corriente de vientos que pasaban esporádicamente cada cierto tiempo. Pareciera que dejara estelas de vapor, formando espirales de colores que dirigen a las esquinas de otros mundos, pero la corriente solo succiona a los ligeros.",
+          "dest": 6
+        }
+      ],
+      "compactWords": [
+        "heridas",
+        "cuidado",
+        "felicidad",
+        "celos",
+        "esperando",
+        "compañeros",
+        "libremente",
+        "brillar",
+        "roca",
+        "historia",
+        "volando",
+        "colores"
+      ]
+    },
+    {
+      "title": "Corriente de colores (II)",
+      "interpretation": "Yearning for the unreachable, exertion and collapse, then a renewed pulse. Water is a comparison, and pulse is returning life, not a game.",
+      "words": [
+        {
+          "text": "lejos",
+          "en": "far away",
+          "profile": {
+            "busqueda": 1.3,
+            "incertidumbre": 1.2
+          },
+          "source": "Se siente muy lejos,",
+          "dest": 2
+        },
+        {
+          "text": "inalcanzable",
+          "en": "beyond reach",
+          "profile": {
+            "busqueda": 1.5,
+            "duda": 1.3
+          },
+          "source": "Se siente inalcanzable, de esas que estiras la mano y la tocas, pero no está realmente allí.",
+          "dest": 11
+        },
+        {
+          "text": "alcanzar",
+          "en": "reach",
+          "profile": {
+            "perseverancia": 1.5,
+            "busqueda": 1.1
+          },
+          "source": "Volando contra la corriente, tratando de alcanzar,",
+          "dest": 6
+        },
+        {
+          "text": "frío",
+          "en": "cold",
+          "profile": {
+            "miedo": 1.0,
+            "noche": 0.5
+          },
+          "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel",
+          "dest": 7
+        },
+        {
+          "text": "lágrimas",
+          "en": "tears",
+          "profile": {
+            "dolor": 1.5,
+            "heridas": 0.6
+          },
+          "source": "Siente las lágrimas dentro de su garganta, pero no logran salir",
+          "dest": 9
+        },
+        {
+          "text": "pulso",
+          "en": "pulse",
+          "profile": {
+            "renacer": 1.7,
+            "supervivencia": 1.2
+          },
+          "source": "Repentinamente siente su pulso otra vez,",
+          "dest": 10
+        },
+        {
+          "text": "vida",
+          "en": "life",
+          "profile": {
+            "renacer": 1.5,
+            "supervivencia": 1.5
+          },
+          "source": "Ya no hay más acceso a la vida.",
+          "dest": 2
+        },
+        {
+          "text": "otra vez",
+          "en": "again",
+          "profile": {
+            "renacer": 1.4,
+            "ciclo": 1.1
+          },
+          "source": "Repentinamente siente su pulso otra vez,",
+          "dest": 0
+        },
+        {
+          "text": "ojos",
+          "en": "eyes",
+          "profile": {
+            "claridad": 1.2,
+            "duda": 0.8
+          },
+          "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben",
+          "dest": 7
+        },
+        {
+          "text": "fuerza",
+          "en": "force",
+          "profile": {
+            "lucha": 1.3,
+            "miedo": 0.8
+          },
+          "source": "Las piernas desfiguradas por esa misma fuerza que ahora pareciera que la succiona.",
+          "dest": 10
+        },
+        {
+          "text": "caída",
+          "en": "fall",
+          "profile": {
+            "miedo": 1.5,
+            "incertidumbre": 1.2
+          },
+          "source": "Sus plumas revoltosas por la caída,",
+          "dest": 9
+        },
+        {
+          "text": "agua",
+          "en": "water",
+          "profile": {
+            "agua": 1.2,
+            "claridad": 1.0
+          },
+          "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben",
+          "dest": 3
+        },
+        {
+          "text": "sentidos",
+          "en": "senses",
+          "profile": {
+            "introspeccion": 1.4,
+            "duda": 1.0
+          },
+          "source": "Los ojos lo ven tan claro como el agua, pero los sentidos no lo perciben",
+          "dest": 4
+        },
+        {
+          "text": "corriente",
+          "en": "current",
+          "profile": {
+            "lucha": 1.3,
+            "agua": 1.0
+          },
+          "source": "Volando contra la corriente, tratando de alcanzar,",
+          "dest": 0
+        },
+        {
+          "text": "desesperadamente",
+          "en": "desperately",
+          "profile": {
+            "lucha": 1.5,
+            "miedo": 1.4
+          },
+          "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel",
+          "dest": 2
+        },
+        {
+          "text": "logrado",
+          "en": "achieved",
+          "profile": {
+            "confianza": 1.3,
+            "incertidumbre": 1.0
+          },
+          "source": "La logra alcanzar. Lo logró. ¡De verdad lo ha logrado!",
+          "dest": 2
+        },
+        {
+          "text": "desvanece",
+          "en": "vanishes",
+          "profile": {
+            "incertidumbre": 1.6,
+            "despedida": 1.0
+          },
+          "source": "Se le desvanece de las manos",
+          "dest": 11
+        },
+        {
+          "text": "vacío infinito",
+          "en": "endless void",
+          "profile": {
+            "miedo": 1.5,
+            "encierro": 1.2
+          },
+          "source": "y comienza a caer en un vacío infinito",
+          "dest": 11
+        },
+        {
+          "text": "abrir",
+          "en": "open",
+          "profile": {
+            "renacer": 1.4,
+            "esperanza": 1.0
+          },
+          "source": "Vuelve a abrir los ojos.",
+          "dest": 6
+        },
+        {
+          "text": "volando",
+          "en": "flying",
+          "profile": {
+            "vuelo": 1.2,
+            "lucha": 1.1
+          },
+          "source": "Volando contra la corriente, tratando de alcanzar,",
+          "dest": 0
+        },
+        {
+          "text": "estirar",
+          "en": "stretch",
+          "profile": {
+            "perseverancia": 1.4,
+            "busqueda": 1.0
+          },
+          "source": "Si tan solo pudiera estirar un poco más",
+          "dest": 6
+        },
+        {
+          "text": "piel",
+          "en": "skin",
+          "profile": {
+            "heridas": 1.2
+          },
+          "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel",
+          "dest": 9
+        },
+        {
+          "text": "plumas",
+          "en": "feathers",
+          "profile": {
+            "vuelo": 1.0,
+            "miedo": 0.6
+          },
+          "source": "Sus plumas revoltosas por la caída,",
+          "dest": 0
+        },
+        {
+          "text": "velocidad",
+          "en": "speed",
+          "profile": {
+            "lucha": 1.4,
+            "incertidumbre": 0.6
+          },
+          "source": "Desesperadamente. El frío le seca los ojos y la velocidad, mientras más se acerca, desfigura su piel",
+          "dest": 10
+        }
+      ],
+      "compactWords": [
+        "lejos",
+        "inalcanzable",
+        "alcanzar",
+        "frío",
+        "lágrimas",
+        "pulso",
+        "vida",
+        "otra vez",
+        "ojos",
+        "fuerza",
+        "caída",
+        "agua"
+      ]
+    },
+    {
+      "title": "Nuevo mundo (III)",
+      "interpretation": "Wonder in an unfamiliar world, painful adaptation and survival. Pride here is accomplishment; the nomad is not yet at home.",
+      "words": [
+        {
+          "text": "viva",
+          "en": "alive",
+          "profile": {
+            "renacer": 1.5,
+            "supervivencia": 1.4
+          },
+          "source": "Pero está viva, en una nueva oportunidad,",
+          "dest": 3
+        },
+        {
+          "text": "orgullo",
+          "en": "pride",
+          "profile": {
+            "confianza": 1.5,
+            "gratitud": 0.8
+          },
+          "source": "Un sentimiento de orgullo le llena",
+          "dest": 9
+        },
+        {
+          "text": "nómada",
+          "en": "nomad",
+          "profile": {
+            "desarraigo": 1.6,
+            "busqueda": 1.0
+          },
+          "source": "Ella todavía no reside, apenas es una nómada que duerme en las calles mientras le pisotean sus alas.",
+          "dest": 6
+        },
+        {
+          "text": "talentos",
+          "en": "talents",
+          "profile": {
+            "creacion": 1.3,
+            "identidad": 1.0
+          },
+          "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos.",
+          "dest": 5
+        },
+        {
+          "text": "inhalo",
+          "en": "I inhale",
+          "profile": {
+            "calma": 1.3,
+            "adaptacion": 1.2
+          },
+          "source": "Inhalo",
+          "dest": 6
+        },
+        {
+          "text": "brillante",
+          "en": "bright",
+          "profile": {
+            "luz": 1.3,
+            "asombro": 1.1
+          },
+          "source": "Era real, colorido y brillante.",
+          "dest": 10
+        },
+        {
+          "text": "mundo",
+          "en": "world",
+          "profile": {
+            "mundo": 1.5,
+            "adaptacion": 1.1
+          },
+          "source": "Este mundo era diferente",
+          "dest": 0
+        },
+        {
+          "text": "mar",
+          "en": "sea",
+          "profile": {
+            "agua": 1.4,
+            "contemplacion": 0.9
+          },
+          "source": "Los astros brillaban durante el día, y la noche dentro del mar",
+          "dest": 3
+        },
+        {
+          "text": "árboles",
+          "en": "trees",
+          "profile": {
+            "naturaleza": 1.4,
+            "asombro": 0.8
+          },
+          "source": "Creciendo alternos a los árboles.",
+          "dest": 8
+        },
+        {
+          "text": "nueva oportunidad",
+          "en": "new chance",
+          "profile": {
+            "renacer": 1.6,
+            "esperanza": 1.3
+          },
+          "source": "Pero está viva, en una nueva oportunidad,",
+          "dest": 6
+        },
+        {
+          "text": "colorido",
+          "en": "colorful",
+          "profile": {
+            "color": 1.4,
+            "asombro": 1.0
+          },
+          "source": "Era real, colorido y brillante.",
+          "dest": 0
+        },
+        {
+          "text": "real",
+          "en": "real",
+          "profile": {
+            "claridad": 1.1,
+            "incertidumbre": 0.7
+          },
+          "source": "Era real, colorido y brillante.",
+          "dest": 4
+        },
+        {
+          "text": "astros",
+          "en": "stars",
+          "profile": {
+            "cielo": 1.4,
+            "asombro": 1.1
+          },
+          "source": "Los astros brillaban durante el día, y la noche dentro del mar",
+          "dest": 7
+        },
+        {
+          "text": "olas",
+          "en": "waves",
+          "profile": {
+            "agua": 1.3,
+            "mundo": 0.6
+          },
+          "source": "Que con sus olas rasca las terrazas de los rascacielos",
+          "dest": 1
+        },
+        {
+          "text": "raíces",
+          "en": "roots",
+          "profile": {
+            "desarraigo": 1.0,
+            "mundo": 1.3
+          },
+          "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos.",
+          "dest": 8
+        },
+        {
+          "text": "exhalo",
+          "en": "I exhale",
+          "profile": {
+            "calma": 1.4,
+            "adaptacion": 1.1
+          },
+          "source": "Exhalo",
+          "dest": 6
+        },
+        {
+          "text": "diamantes",
+          "en": "diamonds",
+          "profile": {
+            "asombro": 1.4,
+            "luz": 1.1
+          },
+          "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor.",
+          "dest": 10
+        },
+        {
+          "text": "dolor",
+          "en": "pain",
+          "profile": {
+            "dolor": 1.4,
+            "adaptacion": 0.8
+          },
+          "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor.",
+          "dest": 3
+        },
+        {
+          "text": "soportarlo",
+          "en": "bear it",
+          "profile": {
+            "perseverancia": 1.4,
+            "adaptacion": 1.2
+          },
+          "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor.",
+          "dest": 3
+        },
+        {
+          "text": "alas",
+          "en": "wings",
+          "profile": {
+            "vuelo": 1.0,
+            "heridas": 1.1
+          },
+          "source": "Ella todavía no reside, apenas es una nómada que duerme en las calles mientras le pisotean sus alas.",
+          "dest": 0
+        },
+        {
+          "text": "noche",
+          "en": "night",
+          "profile": {
+            "noche": 1.2,
+            "contemplacion": 0.9
+          },
+          "source": "Los astros brillaban durante el día, y la noche dentro del mar",
+          "dest": 7
+        },
+        {
+          "text": "superficie",
+          "en": "surface",
+          "profile": {
+            "mundo": 1.1,
+            "creacion": 0.7
+          },
+          "source": "Ahora hay tres capas: las raíces, donde todos viven, la superficie, donde todos expresan sus talentos y el mar, donde todos admiran los astros vivos.",
+          "dest": 4
+        },
+        {
+          "text": "aire",
+          "en": "air",
+          "profile": {
+            "vuelo": 1.0,
+            "naturaleza": 0.9
+          },
+          "source": "El aire está conformado por viruta de diamantes, por lo que todos usan un filtro en las fosas nasales y la garganta para poder soportarlo. Los ojos poco a poco se adecúan al dolor.",
+          "dest": 0
+        },
+        {
+          "text": "diferente",
+          "en": "different",
+          "profile": {
+            "asombro": 1.2,
+            "adaptacion": 1.2
+          },
+          "source": "Este mundo era diferente",
+          "dest": 3
+        }
+      ],
+      "compactWords": [
+        "viva",
+        "orgullo",
+        "nómada",
+        "talentos",
+        "inhalo",
+        "brillante",
+        "mundo",
+        "mar",
+        "árboles"
+      ]
+    },
+    {
+      "title": "Primeros días en el Nuevo Mundo (IV)",
+      "interpretation": "Disorientation and effort to rebuild, then trust in music, a gentle melody and rest. The lack of light is not equivalent to present serenity.",
+      "words": [
+        {
+          "text": "piano",
+          "en": "piano",
+          "profile": {
+            "piano": 1.6,
+            "creacion": 1.1
+          },
+          "source": "Como en el mundo del que vengo le dirían, un piano.",
+          "dest": 5
+        },
+        {
+          "text": "descansar",
+          "en": "rest",
+          "profile": {
+            "calma": 1.8,
+            "refugio": 1.0
+          },
+          "source": "Y, por fin, logro descansar.",
+          "dest": 7
+        },
+        {
+          "text": "alma",
+          "en": "soul",
+          "profile": {
+            "contemplacion": 1.6,
+            "introspeccion": 1.3
+          },
+          "source": "Si las toco lentamente, arrullan mi alma",
+          "dest": 5
+        },
+        {
+          "text": "construir",
+          "en": "build",
+          "profile": {
+            "aprendizaje": 1.5,
+            "perseverancia": 1.3
+          },
+          "source": "Tengo que volverme a construir, a lijar mis garras para poder trepar esos edificios",
+          "dest": 6
+        },
+        {
+          "text": "cueva",
+          "en": "cave",
+          "profile": {
+            "cueva": 1.6,
+            "refugio": 0.8
+          },
+          "source": "Encontré una cueva, formada por la raíz de una Ceiba.",
+          "dest": 5
+        },
+        {
+          "text": "confío",
+          "en": "I trust",
+          "profile": {
+            "confianza": 1.7,
+            "piano": 0.7
+          },
+          "source": "Es lo único que tengo, es lo único a lo que le confío.",
+          "dest": 4
+        },
+        {
+          "text": "teclas",
+          "en": "keys",
+          "profile": {
+            "piano": 1.5,
+            "creacion": 1.0
+          },
+          "source": "La combinación de teclas es deliciosa para mis tímpanos que resuenan a su sonar.",
+          "dest": 5
+        },
+        {
+          "text": "ruta",
+          "en": "path",
+          "profile": {
+            "busqueda": 1.4,
+            "incertidumbre": 1.0
+          },
+          "source": "Esta ruta que, sin saberlo, elegí.",
+          "dest": 11
+        },
+        {
+          "text": "pasión",
+          "en": "passion",
+          "profile": {
+            "creacion": 1.5,
+            "memoria": 0.8
+          },
+          "source": "Necesito esas notas para volver a sentir esa pasión que algún día tuve.",
+          "dest": 9
+        },
+        {
+          "text": "lentamente",
+          "en": "slowly",
+          "profile": {
+            "calma": 1.5,
+            "contemplacion": 1.1
+          },
+          "source": "Si las toco lentamente, arrullan mi alma",
+          "dest": 4
+        },
+        {
+          "text": "Ceiba",
+          "en": "Ceiba",
+          "profile": {
+            "naturaleza": 1.4,
+            "cueva": 1.0
+          },
+          "source": "Encontré una cueva, formada por la raíz de una Ceiba.",
+          "dest": 8
+        },
+        {
+          "text": "rayos solares",
+          "en": "sun's rays",
+          "profile": {
+            "luz": 1.5,
+            "memoria": 0.8
+          },
+          "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad.",
+          "dest": 10
+        },
+        {
+          "text": "mar",
+          "en": "sea",
+          "profile": {
+            "agua": 1.3,
+            "busqueda": 1.0
+          },
+          "source": "Aquí no se puede volar, aquí no hay cielo, hay mar.",
+          "dest": 2
+        },
+        {
+          "text": "triste melodía",
+          "en": "sad melody",
+          "profile": {
+            "piano": 1.5,
+            "dolor": 1.0
+          },
+          "source": "Pero para mientras, toco una triste melodía",
+          "dest": 5
+        },
+        {
+          "text": "luché",
+          "en": "I struggled",
+          "profile": {
+            "perseverancia": 1.5,
+            "lucha": 1.2
+          },
+          "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,",
+          "dest": 4
+        },
+        {
+          "text": "seguir",
+          "en": "continue",
+          "profile": {
+            "perseverancia": 1.5,
+            "busqueda": 0.8
+          },
+          "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,",
+          "dest": 4
+        },
+        {
+          "text": "oscuro",
+          "en": "dark",
+          "profile": {
+            "encierro": 1.2,
+            "duda": 0.9
+          },
+          "source": "Y ahora aquí, estoy tirada en la calle de un lugar oscuro, sin luz.",
+          "dest": 4
+        },
+        {
+          "text": "notas",
+          "en": "notes",
+          "profile": {
+            "piano": 1.4,
+            "creacion": 1.0
+          },
+          "source": "Necesito esas notas para volver a sentir esa pasión que algún día tuve.",
+          "dest": 4
+        },
+        {
+          "text": "tres notas",
+          "en": "three notes",
+          "profile": {
+            "piano": 1.4,
+            "ciclo": 1.1
+          },
+          "source": "Que consiste de tan solo tres notas seguidas.",
+          "dest": 5
+        },
+        {
+          "text": "luz",
+          "en": "light",
+          "profile": {
+            "luz": 1.2,
+            "busqueda": 1.0
+          },
+          "source": "Y ahora aquí, estoy tirada en la calle de un lugar oscuro, sin luz.",
+          "dest": 10
+        },
+        {
+          "text": "fuerza",
+          "en": "strength",
+          "profile": {
+            "perseverancia": 1.3,
+            "lucha": 1.1
+          },
+          "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad.",
+          "dest": 1
+        },
+        {
+          "text": "plumas",
+          "en": "feathers",
+          "profile": {
+            "vuelo": 1.0,
+            "memoria": 0.8
+          },
+          "source": "Yo vivía de los rayos solares que suaves rozaban mi piel y mis plumas a veces brillaban por tantas vitaminas que nutrían su fuerza y agilidad.",
+          "dest": 0
+        },
+        {
+          "text": "aguas majestuosas",
+          "en": "majestic waters",
+          "profile": {
+            "agua": 1.4,
+            "asombro": 1.0
+          },
+          "source": "A tocar esas aguas majestuosas que quizás me den una pista para saber por dónde seguir",
+          "dest": 2
+        },
+        {
+          "text": "ojos",
+          "en": "eyes",
+          "profile": {
+            "introspeccion": 1.0,
+            "busqueda": 0.8
+          },
+          "source": "Luché por tantos años por seguir lo que veía, lo que tenía enfrente de mis ojos,",
+          "dest": 4
+        }
+      ],
+      "compactWords": [
+        "piano",
+        "descansar",
+        "alma",
+        "construir",
+        "cueva",
+        "confío",
+        "teclas",
+        "ruta",
+        "pasión",
+        "lentamente",
+        "Ceiba",
+        "rayos solares",
+        "mar"
+      ]
+    },
+    {
+      "title": "Relatos del civil (V)",
+      "interpretation": "Being disbelieved, trying to make sense of experience, and remembering love and family. Memory, doubt and belonging matter more than bodily nouns.",
+      "words": [
+        {
+          "text": "recuerdos",
+          "en": "memories",
+          "profile": {
+            "memoria": 1.8,
+            "amor": 0.8
+          },
+          "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados.",
+          "dest": 11
+        },
+        {
+          "text": "familia",
+          "en": "family",
+          "profile": {
+            "familia": 1.7,
+            "compania": 1.2
+          },
+          "source": "Tengo una casa, tengo un carro, tengo una familia, o solía tenerla…",
+          "dest": 5
+        },
+        {
+          "text": "verdad",
+          "en": "truth",
+          "profile": {
+            "autenticidad": 1.6,
+            "claridad": 0.9
+          },
+          "source": "Nunca entendí por qué crearon tantas falsas historias con tal de cubrir mi verdad.",
+          "dest": 5
+        },
+        {
+          "text": "percepción",
+          "en": "perception",
+          "profile": {
+            "introspeccion": 1.6,
+            "claridad": 0.8
+          },
+          "source": "Cambió mi percepción.",
+          "dest": 2
+        },
+        {
+          "text": "melancolías",
+          "en": "melancholy",
+          "profile": {
+            "despedida": 1.5,
+            "dolor": 1.1
+          },
+          "source": "Mi reflejo en el espejo me hace recordar, melancolías.",
+          "dest": 11
+        },
+        {
+          "text": "normalidad",
+          "en": "normality",
+          "profile": {
+            "estabilidad": 1.5,
+            "calma": 1.0
+          },
+          "source": "Todavía me cuesta andar. Mi terapista dice que me tomará un año regresar a la normalidad.",
+          "dest": 8
+        },
+        {
+          "text": "historia",
+          "en": "story",
+          "profile": {
+            "memoria": 1.4,
+            "asombro": 0.7
+          },
+          "source": "Una oportunidad, una historia, que ahora la transformé en una nueva forma de vida.",
+          "dest": 5
+        },
+        {
+          "text": "reflejo",
+          "en": "reflection",
+          "profile": {
+            "introspeccion": 1.5,
+            "contemplacion": 1.0
+          },
+          "source": "Mi reflejo en el espejo me hace recordar, melancolías.",
+          "dest": 5
+        },
+        {
+          "text": "delirios",
+          "en": "delirium",
+          "profile": {
+            "distraccion": 1.4,
+            "duda": 1.3
+          },
+          "source": "Culparon a la anestesia por mis delirios.",
+          "dest": 7
+        },
+        {
+          "text": "despierto",
+          "en": "awake",
+          "profile": {
+            "claridad": 1.5,
+            "renacer": 1.0
+          },
+          "source": "Otra vez me sentí despierto.",
+          "dest": 2
+        },
+        {
+          "text": "casa",
+          "en": "home",
+          "profile": {
+            "refugio": 1.6,
+            "estabilidad": 1.0
+          },
+          "source": "Tengo una casa, tengo un carro, tengo una familia, o solía tenerla…",
+          "dest": 5
+        },
+        {
+          "text": "voz",
+          "en": "voice",
+          "profile": {
+            "autenticidad": 1.3,
+            "memoria": 0.8
+          },
+          "source": "Escuchar su historia; esa voz de fuego.",
+          "dest": 9
+        },
+        {
+          "text": "nadie me creyó",
+          "en": "no one believed me",
+          "profile": {
+            "injusticia": 1.5,
+            "duda": 1.0
+          },
+          "source": "Intenté contarles a todos, pero nadie me creyó.",
+          "dest": 5
+        },
+        {
+          "text": "cambió",
+          "en": "changed",
+          "profile": {
+            "adaptacion": 1.5,
+            "renacer": 0.8
+          },
+          "source": "Pero ese día me cambió,",
+          "dest": 5
+        },
+        {
+          "text": "amores pasados",
+          "en": "past loves",
+          "profile": {
+            "memoria": 1.5,
+            "despedida": 1.4
+          },
+          "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados.",
+          "dest": 9
+        },
+        {
+          "text": "huesos",
+          "en": "bones",
+          "profile": {
+            "heridas": 1.4,
+            "dolor": 1.0
+          },
+          "source": "De la viga de hierro, que quebró mis huesos.",
+          "dest": 8
+        },
+        {
+          "text": "espejo",
+          "en": "mirror",
+          "profile": {
+            "introspeccion": 1.5,
+            "identidad": 1.1
+          },
+          "source": "Mi reflejo en el espejo me hace recordar, melancolías.",
+          "dest": 5
+        },
+        {
+          "text": "otra vez",
+          "en": "again",
+          "profile": {
+            "ciclo": 1.2,
+            "renacer": 1.0
+          },
+          "source": "Otra vez me sentí despierto.",
+          "dest": 5
+        },
+        {
+          "text": "vida",
+          "en": "life",
+          "profile": {
+            "renacer": 1.3,
+            "adaptacion": 1.0
+          },
+          "source": "Mi vida es normal, es simple.",
+          "dest": 10
+        },
+        {
+          "text": "oportunidad",
+          "en": "opportunity",
+          "profile": {
+            "renacer": 1.4,
+            "esperanza": 1.1
+          },
+          "source": "Una oportunidad, una historia, que ahora la transformé en una nueva forma de vida.",
+          "dest": 5
+        },
+        {
+          "text": "volar",
+          "en": "fly",
+          "profile": {
+            "vuelo": 1.3,
+            "memoria": 0.8
+          },
+          "source": "Quizás y solo quizás, si pudiera volverle a hablar, verla volar...",
+          "dest": 0
+        },
+        {
+          "text": "colores",
+          "en": "colors",
+          "profile": {
+            "color": 1.2,
+            "memoria": 0.8
+          },
+          "source": "Qué no daría por verla otra vez, alcanzando sus amados vientos de colores…",
+          "dest": 0
+        },
+        {
+          "text": "fuego",
+          "en": "fire",
+          "profile": {
+            "autenticidad": 1.0,
+            "fuego": 0.8
+          },
+          "source": "Escuchar su historia; esa voz de fuego.",
+          "dest": 10
+        },
+        {
+          "text": "aroma",
+          "en": "scent",
+          "profile": {
+            "memoria": 1.3,
+            "contemplacion": 0.7
+          },
+          "source": "Su aroma era suave y delicado, no iba con su personalidad.",
+          "dest": 6
+        },
+        {
+          "text": "amores",
+          "en": "loves",
+          "profile": {
+            "memoria": 1.5,
+            "amor": 1.2
+          },
+          "source": "Acaricio mis mejillas, trayendo recuerdos de amores pasados.",
+          "dest": 5
+        },
+        {
+          "text": "normal",
+          "en": "ordinary",
+          "profile": {
+            "estabilidad": 1.5,
+            "calma": 1.0
+          },
+          "source": "Mi vida es normal, es simple.",
+          "dest": 5
+        },
+        {
+          "text": "suave",
+          "en": "gentle",
+          "profile": {
+            "calma": 1.1,
+            "memoria": 1.0
+          },
+          "source": "Su aroma era suave y delicado, no iba con su personalidad.",
+          "dest": 5
+        },
+        {
+          "text": "tiempo",
+          "en": "time",
+          "profile": {
+            "despedida": 1.4,
+            "incertidumbre": 1.0
+          },
+          "source": "Puede que ya no tenga mucho tiempo, o quizás sí.",
+          "dest": 5
+        }
+      ],
+      "compactWords": [
+        "familia",
+        "verdad",
+        "historia",
+        "reflejo",
+        "delirios",
+        "casa",
+        "voz",
+        "amores",
+        "normal",
+        "suave",
+        "tiempo",
+        "vida"
+      ]
+    },
+    {
+      "title": "Pensamientos del alma (VI)",
+      "interpretation": "Withdrawn self-doubt, refused help, longing for shortcuts, and expression at the piano. Asking to be saved expresses a need for help, without asserting a religious belief.",
+      "words": [
+        {
+          "text": "dudo",
+          "en": "I doubt",
+          "profile": {
+            "duda": 1.7,
+            "distraccion": 1.1
+          },
+          "source": "En este momento, incluso dudo si siquiera sé escribir o leer. Soy un cuerpo relleno",
+          "dest": 6
+        },
+        {
+          "text": "ayuda",
+          "en": "help",
+          "profile": {
+            "compasion": 1.6,
+            "compania": 1.1
+          },
+          "source": "Una tercera mano aparece, y le ofrece ayuda, pero retira la mano y corre de nuevo a",
+          "dest": 11
+        },
+        {
+          "text": "pasos",
+          "en": "steps",
+          "profile": {
+            "perseverancia": 1.3,
+            "ciclo": 1.0
+          },
+          "source": "Ya no sé qué hacer, de verdad. Quisiera nada más saltar todos los pasos que hay para",
+          "dest": 6
+        },
+        {
+          "text": "piano",
+          "en": "piano",
+          "profile": {
+            "piano": 1.5,
+            "introspeccion": 1.1
+          },
+          "source": "su piano.",
+          "dest": 3
+        },
+        {
+          "text": "busco",
+          "en": "I search",
+          "profile": {
+            "busqueda": 1.6,
+            "duda": 0.8
+          },
+          "source": "¿En dónde más busco?",
+          "dest": 6
+        },
+        {
+          "text": "cueva",
+          "en": "cave",
+          "profile": {
+            "encierro": 1.5,
+            "cueva": 1.3
+          },
+          "source": "cueva.",
+          "dest": 3
+        },
+        {
+          "text": "amor",
+          "en": "love",
+          "profile": {
+            "amor": 1.4,
+            "despedida": 1.0
+          },
+          "source": "Los cuentos de amor ya no me calan bajo la piel, solo algunos, antes eran la",
+          "dest": 9
+        },
+        {
+          "text": "atajo",
+          "en": "shortcut",
+          "profile": {
+            "busqueda": 1.5,
+            "incertidumbre": 1.0
+          },
+          "source": "Tiene que haber un atajo, sin que tenga repercusiones.",
+          "dest": 11
+        },
+        {
+          "text": "simple",
+          "en": "simple",
+          "profile": {
+            "identidad": 1.3,
+            "duda": 0.8
+          },
+          "source": "Mi vida es simple y la verdad es que quisiera ser especial.",
+          "dest": 6
+        },
+        {
+          "text": "manos",
+          "en": "hands",
+          "profile": {
+            "compasion": 1.3,
+            "compania": 1.0
+          },
+          "source": "manos.",
+          "dest": 10
+        },
+        {
+          "text": "tintes púrpuras",
+          "en": "purple hues",
+          "profile": {
+            "color": 1.5,
+            "contemplacion": 0.7
+          },
+          "source": "Puede ver cómo los tintes púrpuras de este nuevo lugar reflejan sobre la piel de sus",
+          "dest": 0
+        },
+        {
+          "text": "salvar",
+          "en": "save",
+          "profile": {
+            "esperanza": 1.3,
+            "compasion": 1.2
+          },
+          "source": "pero luego de eso, ¿qué? ¿Quién me viene a salvar?",
+          "dest": 11
+        },
+        {
+          "text": "pasiones",
+          "en": "passions",
+          "profile": {
+            "creacion": 1.2,
+            "despedida": 1.0
+          },
+          "source": "Por las pasiones que pudieron pasar, pero nunca fueron.",
+          "dest": 9
+        },
+        {
+          "text": "especial",
+          "en": "special",
+          "profile": {
+            "identidad": 1.5,
+            "duda": 1.0
+          },
+          "source": "Mi vida es simple y la verdad es que quisiera ser especial.",
+          "dest": 6
+        },
+        {
+          "text": "verdad",
+          "en": "truth",
+          "profile": {
+            "introspeccion": 1.3,
+            "claridad": 0.8
+          },
+          "source": "Mi vida es simple y la verdad es que quisiera ser especial.",
+          "dest": 4
+        },
+        {
+          "text": "tristes melodías",
+          "en": "sad melodies",
+          "profile": {
+            "piano": 1.4,
+            "dolor": 1.1
+          },
+          "source": "Es todo un romanticismo; el sentarme en el piano, para pensar tristes melodías…",
+          "dest": 3
+        },
+        {
+          "text": "prometieron",
+          "en": "they promised",
+          "profile": {
+            "duda": 1.4,
+            "incertidumbre": 1.2
+          },
+          "source": "¡¡Me lo prometieron!! ¡Todos me lo prometieron! ¡Era siempre tan fácil y ahora que",
+          "dest": 6
+        },
+        {
+          "text": "imposible",
+          "en": "impossible",
+          "profile": {
+            "encierro": 1.6,
+            "duda": 1.2
+          },
+          "source": "Pero es completamente imposible. Quiero pasar de la A a la Z, pero no se puede.",
+          "dest": 6
+        },
+        {
+          "text": "no tengo nada",
+          "en": "I have nothing",
+          "profile": {
+            "encierro": 1.4,
+            "dolor": 1.4
+          },
+          "source": "No tengo nada, ni siquiera me tengo a mí.",
+          "dest": 6
+        },
+        {
+          "text": "cuerpo",
+          "en": "body",
+          "profile": {
+            "identidad": 1.3,
+            "agotamiento": 0.8
+          },
+          "source": "En este momento, incluso dudo si siquiera sé escribir o leer. Soy un cuerpo relleno",
+          "dest": 4
+        },
+        {
+          "text": "mundos",
+          "en": "worlds",
+          "profile": {
+            "mundo": 1.2,
+            "desarraigo": 1.0
+          },
+          "source": "El suelo de ambos mundos se estremece",
+          "dest": 2
+        },
+        {
+          "text": "mar",
+          "en": "sea",
+          "profile": {
+            "busqueda": 1.3,
+            "agua": 1.0
+          },
+          "source": "llegar al mar,",
+          "dest": 1
+        },
+        {
+          "text": "vida",
+          "en": "life",
+          "profile": {
+            "identidad": 1.2,
+            "duda": 0.9
+          },
+          "source": "Mi vida es simple y la verdad es que quisiera ser especial.",
+          "dest": 10
+        },
+        {
+          "text": "romanticismo",
+          "en": "romanticism",
+          "profile": {
+            "introspeccion": 1.3,
+            "piano": 0.8
+          },
+          "source": "Es todo un romanticismo; el sentarme en el piano, para pensar tristes melodías…",
+          "dest": 9
+        }
+      ],
+      "compactWords": [
+        "dudo",
+        "ayuda",
+        "pasos",
+        "piano",
+        "busco",
+        "cueva",
+        "amor",
+        "atajo",
+        "simple",
+        "manos",
+        "tintes púrpuras",
+        "salvar"
+      ]
+    },
+    {
+      "title": "Querido diario,",
+      "interpretation": "Failure, learning, longing for one's father and choosing to begin again. Vineyard and meadow are remembered belonging, not automatically calm.",
+      "words": [
+        {
+          "text": "empezar",
+          "en": "begin",
+          "profile": {
+            "perseverancia": 1.6,
+            "renacer": 1.3
+          },
+          "source": "Sé que tengo que volver a empezar.",
+          "dest": 10
+        },
+        {
+          "text": "fallé",
+          "en": "I failed",
+          "profile": {
+            "aprendizaje": 1.5,
+            "duda": 1.3
+          },
+          "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé.",
+          "dest": 7
+        },
+        {
+          "text": "esperanza",
+          "en": "hope",
+          "profile": {
+            "esperanza": 1.8,
+            "perseverancia": 1.0
+          },
+          "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé.",
+          "dest": 10
+        },
+        {
+          "text": "padre",
+          "en": "father",
+          "profile": {
+            "familia": 1.7,
+            "responsabilidad": 1.1
+          },
+          "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera",
+          "dest": 7
+        },
+        {
+          "text": "viñedo",
+          "en": "vineyard",
+          "profile": {
+            "memoria": 1.4,
+            "familia": 1.1,
+            "naturaleza": 0.8
+          },
+          "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera",
+          "dest": 8
+        },
+        {
+          "text": "orgullo",
+          "en": "pride",
+          "profile": {
+            "aprendizaje": 1.4,
+            "identidad": 1.1
+          },
+          "source": "Duele el orgullo intentar pintar algo y que todo falle.",
+          "dest": 7
+        },
+        {
+          "text": "lienzo",
+          "en": "canvas",
+          "profile": {
+            "creacion": 1.6,
+            "aprendizaje": 1.1
+          },
+          "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé.",
+          "dest": 0
+        },
+        {
+          "text": "fuerzas",
+          "en": "strength",
+          "profile": {
+            "perseverancia": 1.7,
+            "lucha": 1.1
+          },
+          "source": "Acostada en el piso, viendo hacia el cielo, tratando de encontrar las fuerzas para volverme a parar.",
+          "dest": 10
+        },
+        {
+          "text": "triunfante",
+          "en": "triumphant",
+          "profile": {
+            "confianza": 1.4,
+            "esperanza": 1.3
+          },
+          "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante.",
+          "dest": 10
+        },
+        {
+          "text": "extraño",
+          "en": "I miss",
+          "profile": {
+            "memoria": 1.6,
+            "desarraigo": 1.3
+          },
+          "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera",
+          "dest": 7
+        },
+        {
+          "text": "lentamente",
+          "en": "slowly",
+          "profile": {
+            "calma": 1.0,
+            "paciencia": 1.1
+          },
+          "source": "Caí sin llegar al piso. Una caída infinita como un torbellino cargándome y colocándome lentamente en el pavimento.",
+          "dest": 7
+        },
+        {
+          "text": "eucalipto",
+          "en": "eucalyptus",
+          "profile": {
+            "naturaleza": 1.6,
+            "calma": 1.0
+          },
+          "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!",
+          "dest": 8
+        },
+        {
+          "text": "comenzando",
+          "en": "beginning",
+          "profile": {
+            "renacer": 1.4,
+            "perseverancia": 1.1
+          },
+          "source": "Aquí estoy comenzando de nuevo",
+          "dest": 10
+        },
+        {
+          "text": "técnica",
+          "en": "technique",
+          "profile": {
+            "aprendizaje": 1.7,
+            "creacion": 0.7
+          },
+          "source": "No importa con cuántas ganas lo hice. Sin técnica no hay paraíso",
+          "dest": 7
+        },
+        {
+          "text": "trabajando",
+          "en": "working",
+          "profile": {
+            "responsabilidad": 1.4,
+            "entrega": 1.2
+          },
+          "source": "Mi padre sigue trabajando en el viñedo. Lo extraño. Él no tiene ni idea de mi cambio de carrera",
+          "dest": 7
+        },
+        {
+          "text": "pintar",
+          "en": "paint",
+          "profile": {
+            "creacion": 1.6,
+            "aprendizaje": 1.0
+          },
+          "source": "Duele el orgullo intentar pintar algo y que todo falle.",
+          "dest": 0
+        },
+        {
+          "text": "dibujar",
+          "en": "draw",
+          "profile": {
+            "creacion": 1.5,
+            "aprendizaje": 1.0
+          },
+          "source": "Con toda la esperanza del mundo comencé un lienzo, uno grande, pero al dibujar lo que quería, fallé.",
+          "dest": 5
+        },
+        {
+          "text": "praderas",
+          "en": "meadows",
+          "profile": {
+            "naturaleza": 1.4,
+            "memoria": 1.0
+          },
+          "source": "Solo pienso en regresar a esas largas praderas y correr junto al viento. Pero me he jurado no regresar hasta que logre hacerte orgulloso papá.",
+          "dest": 8
+        },
+        {
+          "text": "cielo celeste",
+          "en": "pale blue sky",
+          "profile": {
+            "cielo": 1.4,
+            "calma": 1.0
+          },
+          "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!",
+          "dest": 7
+        },
+        {
+          "text": "nubes blancas",
+          "en": "white clouds",
+          "profile": {
+            "cielo": 1.4,
+            "contemplacion": 0.8
+          },
+          "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!",
+          "dest": 7
+        },
+        {
+          "text": "volveré",
+          "en": "I will return",
+          "profile": {
+            "esperanza": 1.5,
+            "familia": 1.0
+          },
+          "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante.",
+          "dest": 0
+        },
+        {
+          "text": "vueltas",
+          "en": "turning",
+          "profile": {
+            "ciclo": 1.5,
+            "incertidumbre": 0.8
+          },
+          "source": "Parpadeo lento, puedo oler eucalipto y ver un cielo celeste y nubes blancas pasar.\n¡Qué atrevido el mundo que sigue dando vueltas mientras yo ni me puedo parar!",
+          "dest": 4
+        },
+        {
+          "text": "caída infinita",
+          "en": "endless fall",
+          "profile": {
+            "miedo": 1.3,
+            "duda": 1.2
+          },
+          "source": "Caí sin llegar al piso. Una caída infinita como un torbellino cargándome y colocándome lentamente en el pavimento.",
+          "dest": 1
+        },
+        {
+          "text": "nómada",
+          "en": "nomad",
+          "profile": {
+            "desarraigo": 1.5,
+            "busqueda": 1.1
+          },
+          "source": "Soy un nómada de profesiones. Cambiando de una a otra. A veces siento que vuelo, pero sin alas. Algún día lo voy a lograr y te prometo papá que volveré triunfante.",
+          "dest": 2
+        }
+      ],
+      "compactWords": [
+        "empezar",
+        "fallé",
+        "esperanza",
+        "padre",
+        "viñedo",
+        "orgullo",
+        "lienzo",
+        "fuerzas",
+        "triunfante",
+        "extraño",
+        "lentamente",
+        "eucalipto"
+      ]
+    },
+    {
+      "title": "La Noche",
+      "interpretation": "Weary grief after a sleepless night. The hush suppresses awakening; it should not be treated as cheerful peacefulness or automatically as faith.",
+      "words": [
+        {
+          "text": "cansada",
+          "en": "weary",
+          "profile": {
+            "agotamiento": 1.8,
+            "dolor": 1.0
+          },
+          "source": "Cansada de tanto llorar",
+          "dest": 11
+        },
+        {
+          "text": "llorar",
+          "en": "weep",
+          "profile": {
+            "dolor": 1.7,
+            "agotamiento": 1.1
+          },
+          "source": "Cansada de tanto llorar",
+          "dest": 9
+        },
+        {
+          "text": "alma",
+          "en": "soul",
+          "profile": {
+            "introspeccion": 1.3,
+            "agotamiento": 1.2
+          },
+          "source": "de un alma que no ha",
+          "dest": 5
+        },
+        {
+          "text": "noche desvelada",
+          "en": "sleepless night",
+          "profile": {
+            "agotamiento": 1.6,
+            "noche": 1.4
+          },
+          "source": "de una noche desvelada",
+          "dest": 11
+        },
+        {
+          "text": "cielo gris",
+          "en": "gray sky",
+          "profile": {
+            "dolor": 1.3,
+            "noche": 1.0,
+            "cielo": 0.8
+          },
+          "source": "Un cielo gris",
+          "dest": 0
+        },
+        {
+          "text": "despertar",
+          "en": "awakening",
+          "profile": {
+            "agotamiento": 1.3,
+            "suenos": 1.2
+          },
+          "source": "acalla el despertar",
+          "dest": 10
+        },
+        {
+          "text": "acalla",
+          "en": "hushes",
+          "profile": {
+            "agotamiento": 1.2,
+            "introspeccion": 1.0
+          },
+          "source": "acalla el despertar",
+          "dest": 5
+        },
+        {
+          "text": "astros",
+          "en": "stars",
+          "profile": {
+            "noche": 1.3,
+            "cielo": 1.1
+          },
+          "source": "Los astros hinchados",
+          "dest": 2
+        },
+        {
+          "text": "ojos",
+          "en": "eyes",
+          "profile": {
+            "agotamiento": 1.3,
+            "introspeccion": 0.9
+          },
+          "source": "asemejan los ojos",
+          "dest": 4
+        },
+        {
+          "text": "hinchados",
+          "en": "swollen",
+          "profile": {
+            "dolor": 1.3,
+            "agotamiento": 1.3
+          },
+          "source": "Los astros hinchados",
+          "dest": 9
+        },
+        {
+          "text": "desvelada",
+          "en": "sleepless",
+          "profile": {
+            "agotamiento": 1.6,
+            "noche": 1.1
+          },
+          "source": "de una noche desvelada",
+          "dest": 11
+        },
+        {
+          "text": "cielo",
+          "en": "sky",
+          "profile": {
+            "cielo": 1.2,
+            "dolor": 0.8
+          },
+          "source": "Un cielo gris",
+          "dest": 2
+        },
+        {
+          "text": "noche",
+          "en": "night",
+          "profile": {
+            "noche": 1.5,
+            "agotamiento": 1.2
+          },
+          "source": "de una noche desvelada",
+          "dest": 10
+        },
+        {
+          "text": "gris",
+          "en": "gray",
+          "profile": {
+            "dolor": 1.3,
+            "noche": 0.9
+          },
+          "source": "Un cielo gris",
+          "dest": 0
+        },
+        {
+          "text": "un alma",
+          "en": "a soul",
+          "profile": {
+            "introspeccion": 1.3,
+            "agotamiento": 1.2
+          },
+          "source": "de un alma que no ha",
+          "dest": 5
+        },
+        {
+          "text": "podido despertar",
+          "en": "able to awaken",
+          "profile": {
+            "agotamiento": 1.4,
+            "suenos": 1.1
+          },
+          "source": "podido despertar",
+          "dest": 10
+        },
+        {
+          "text": "astros hinchados",
+          "en": "swollen stars",
+          "profile": {
+            "agotamiento": 1.4,
+            "noche": 1.2
+          },
+          "source": "Los astros hinchados",
+          "dest": 2
+        },
+        {
+          "text": "asemejan",
+          "en": "resemble",
+          "profile": {
+            "introspeccion": 1.2,
+            "suenos": 0.8
+          },
+          "source": "asemejan los ojos",
+          "dest": 4
+        }
+      ],
+      "compactWords": [
+        "cansada",
+        "llorar",
+        "alma",
+        "noche desvelada",
+        "cielo gris",
+        "despertar",
+        "acalla",
+        "astros",
+        "ojos",
+        "hinchados",
+        "desvelada",
+        "cielo"
+      ]
+    },
+    {
+      "title": "La Tierra y la humanidad",
+      "interpretation": "Injustice, resistance, injury and the response of wisdom. Nature is the setting; listening can carry reflection rather than being an empty tag.",
+      "words": [
+        {
+          "text": "rebelión",
+          "en": "rebellion",
+          "profile": {
+            "injusticia": 1.6,
+            "rabia": 1.3
+          },
+          "source": "su rebelión contra los vivos que pueden razonar",
+          "dest": 10
+        },
+        {
+          "text": "defiende",
+          "en": "defends",
+          "profile": {
+            "responsabilidad": 1.4,
+            "lucha": 1.4
+          },
+          "source": "ahora se defiende ante la autodestrucción de aquel",
+          "dest": 10
+        },
+        {
+          "text": "dolor",
+          "en": "pain",
+          "profile": {
+            "dolor": 1.4,
+            "injusticia": 1.2
+          },
+          "source": "el otro con sabiduría reacciona al dolor",
+          "dest": 9
+        },
+        {
+          "text": "sabiduría",
+          "en": "wisdom",
+          "profile": {
+            "claridad": 1.5,
+            "introspeccion": 1.2
+          },
+          "source": "el otro con sabiduría reacciona al dolor",
+          "dest": 5
+        },
+        {
+          "text": "escucha",
+          "en": "listen",
+          "profile": {
+            "contemplacion": 1.2,
+            "compasion": 1.1
+          },
+          "source": "escucha La Tierra manifestar",
+          "dest": 5
+        },
+        {
+          "text": "Tierra",
+          "en": "Earth",
+          "profile": {
+            "naturaleza": 1.5,
+            "responsabilidad": 0.8
+          },
+          "source": "escucha La Tierra manifestar",
+          "dest": 2
+        },
+        {
+          "text": "maravilla",
+          "en": "wonder",
+          "profile": {
+            "asombro": 1.4,
+            "naturaleza": 1.1
+          },
+          "source": "esa maravilla que alguna vez fue",
+          "dest": 0
+        },
+        {
+          "text": "naturaleza",
+          "en": "nature",
+          "profile": {
+            "naturaleza": 1.4,
+            "responsabilidad": 0.9
+          },
+          "source": "La naturaleza de aquellos es cruel",
+          "dest": 6
+        },
+        {
+          "text": "cruel",
+          "en": "cruel",
+          "profile": {
+            "injusticia": 1.7,
+            "dolor": 1.0
+          },
+          "source": "La naturaleza de aquellos es cruel",
+          "dest": 9
+        },
+        {
+          "text": "destruyendo",
+          "en": "destroying",
+          "profile": {
+            "injusticia": 1.5,
+            "rabia": 1.2
+          },
+          "source": "van destruyendo un paso a la vez",
+          "dest": 11
+        },
+        {
+          "text": "autodestrucción",
+          "en": "self-destruction",
+          "profile": {
+            "injusticia": 1.4,
+            "supervivencia": 1.2
+          },
+          "source": "ahora se defiende ante la autodestrucción de aquel",
+          "dest": 9
+        },
+        {
+          "text": "razonar",
+          "en": "reason",
+          "profile": {
+            "claridad": 1.5,
+            "introspeccion": 1.0
+          },
+          "source": "su rebelión contra los vivos que pueden razonar",
+          "dest": 5
+        },
+        {
+          "text": "querellando",
+          "en": "quarreling",
+          "profile": {
+            "rabia": 1.5,
+            "injusticia": 1.3
+          },
+          "source": "Querellando entre el mayor y el menor",
+          "dest": 4
+        },
+        {
+          "text": "afectados",
+          "en": "affected",
+          "profile": {
+            "dolor": 1.2,
+            "compasion": 1.0
+          },
+          "source": "Afectados están los dos",
+          "dest": 11
+        },
+        {
+          "text": "manifestar",
+          "en": "declare",
+          "profile": {
+            "autenticidad": 1.3,
+            "libertad": 1.0
+          },
+          "source": "escucha La Tierra manifestar",
+          "dest": 4
+        },
+        {
+          "text": "vivos",
+          "en": "the living",
+          "profile": {
+            "supervivencia": 1.4,
+            "mundo": 0.9
+          },
+          "source": "su rebelión contra los vivos que pueden razonar",
+          "dest": 2
+        },
+        {
+          "text": "reacciona",
+          "en": "responds",
+          "profile": {
+            "lucha": 1.3,
+            "responsabilidad": 0.9
+          },
+          "source": "el otro con sabiduría reacciona al dolor",
+          "dest": 10
+        },
+        {
+          "text": "mayor",
+          "en": "elder",
+          "profile": {
+            "injusticia": 1.1,
+            "responsabilidad": 0.8
+          },
+          "source": "Querellando entre el mayor y el menor",
+          "dest": 3
+        },
+        {
+          "text": "menor",
+          "en": "younger",
+          "profile": {
+            "injusticia": 1.2,
+            "compasion": 0.8
+          },
+          "source": "Querellando entre el mayor y el menor",
+          "dest": 7
+        },
+        {
+          "text": "ágil",
+          "en": "agile",
+          "profile": {
+            "lucha": 1.2,
+            "supervivencia": 0.8
+          },
+          "source": "mientras uno es más ágil,",
+          "dest": 0
+        },
+        {
+          "text": "paso",
+          "en": "step",
+          "profile": {
+            "perseverancia": 1.2,
+            "ciclo": 0.8
+          },
+          "source": "van destruyendo un paso a la vez",
+          "dest": 1
+        }
+      ],
+      "compactWords": [
+        "rebelión",
+        "defiende",
+        "dolor",
+        "sabiduría",
+        "escucha",
+        "Tierra",
+        "maravilla"
+      ]
+    },
+    {
+      "title": "Muerte a una pasión",
+      "interpretation": "Disappointment about identity and a spent creative passion. The sea does not embrace the speaker; fire burns paper rather than offering a cosy home.",
+      "words": [
+        {
+          "text": "quise ser",
+          "en": "wanted to be",
+          "profile": {
+            "identidad": 1.7,
+            "duda": 1.2
+          },
+          "source": "Lo que siempre quise ser, no lo soy",
+          "dest": 6
+        },
+        {
+          "text": "camino",
+          "en": "path",
+          "profile": {
+            "identidad": 1.3,
+            "busqueda": 1.3
+          },
+          "source": "El otro camino que tomé, no soy la mejor.",
+          "dest": 11
+        },
+        {
+          "text": "nombre",
+          "en": "first name",
+          "profile": {
+            "identidad": 1.7,
+            "introspeccion": 0.8
+          },
+          "source": "Lo único que tengo es un nombre y apellido",
+          "dest": 4
+        },
+        {
+          "text": "apellido",
+          "en": "last name",
+          "profile": {
+            "identidad": 1.5,
+            "familia": 0.6
+          },
+          "source": "Lo único que tengo es un nombre y apellido",
+          "dest": 4
+        },
+        {
+          "text": "espinas",
+          "en": "thorns",
+          "profile": {
+            "heridas": 1.6,
+            "dolor": 1.3
+          },
+          "source": "Rezumando espinas",
+          "dest": 8
+        },
+        {
+          "text": "papel",
+          "en": "paper",
+          "profile": {
+            "creacion": 1.4,
+            "dolor": 1.1
+          },
+          "source": "Lo único que quema es papel",
+          "dest": 6
+        },
+        {
+          "text": "quema",
+          "en": "burns",
+          "profile": {
+            "dolor": 1.4,
+            "fuego": 1.2
+          },
+          "source": "Lo único que quema es papel",
+          "dest": 10
+        },
+        {
+          "text": "fuego",
+          "en": "fire",
+          "profile": {
+            "creacion": 1.1,
+            "fuego": 1.3,
+            "despedida": 1.0
+          },
+          "source": "Desperdiciado es fuego que ahora",
+          "dest": 10
+        },
+        {
+          "text": "gotas",
+          "en": "drops",
+          "profile": {
+            "dolor": 1.2,
+            "agua": 0.9
+          },
+          "source": "Caen las gotas a color",
+          "dest": 1
+        },
+        {
+          "text": "color",
+          "en": "color",
+          "profile": {
+            "color": 1.2,
+            "creacion": 1.0
+          },
+          "source": "Caen las gotas a color",
+          "dest": 0
+        },
+        {
+          "text": "algún día",
+          "en": "one day",
+          "profile": {
+            "incertidumbre": 1.4,
+            "esperanza": 0.8
+          },
+          "source": "Ensuciando la reputación que, algún día",
+          "dest": 7
+        },
+        {
+          "text": "lecho",
+          "en": "bed",
+          "profile": {
+            "despedida": 1.4,
+            "agotamiento": 1.0
+          },
+          "source": "Quiso tener y que ahora reside en un lecho",
+          "dest": 7
+        },
+        {
+          "text": "avergonzado",
+          "en": "ashamed",
+          "profile": {
+            "duda": 1.5,
+            "identidad": 1.3
+          },
+          "source": "Avergonzado de cómo fue",
+          "dest": 10
+        },
+        {
+          "text": "desperdiciado",
+          "en": "wasted",
+          "profile": {
+            "despedida": 1.5,
+            "dolor": 1.1
+          },
+          "source": "Desperdiciado es fuego que ahora",
+          "dest": 10
+        },
+        {
+          "text": "reputación",
+          "en": "reputation",
+          "profile": {
+            "identidad": 1.4,
+            "duda": 1.2
+          },
+          "source": "Ensuciando la reputación que, algún día",
+          "dest": 10
+        },
+        {
+          "text": "cuerpo",
+          "en": "body",
+          "profile": {
+            "identidad": 1.2,
+            "dolor": 1.0
+          },
+          "source": "Ni el mar abraza mi cuerpo",
+          "dest": 10
+        },
+        {
+          "text": "rezumando",
+          "en": "oozing",
+          "profile": {
+            "heridas": 1.4,
+            "dolor": 1.2
+          },
+          "source": "Rezumando espinas",
+          "dest": 11
+        },
+        {
+          "text": "pecho",
+          "en": "chest",
+          "profile": {
+            "dolor": 1.2,
+            "heridas": 1.0
+          },
+          "source": "Sobre mi pecho",
+          "dest": 5
+        },
+        {
+          "text": "mar",
+          "en": "sea",
+          "profile": {
+            "agua": 1.1,
+            "encierro": 1.0
+          },
+          "source": "Ni el mar abraza mi cuerpo",
+          "dest": 1
+        },
+        {
+          "text": "abraza",
+          "en": "embraces",
+          "profile": {
+            "amor": 1.0,
+            "duda": 1.0
+          },
+          "source": "Ni el mar abraza mi cuerpo",
+          "dest": 5
+        },
+        {
+          "text": "quiso tener",
+          "en": "wanted to have",
+          "profile": {
+            "duda": 1.3,
+            "despedida": 1.1
+          },
+          "source": "Quiso tener y que ahora reside en un lecho",
+          "dest": 6
+        },
+        {
+          "text": "reside",
+          "en": "dwells",
+          "profile": {
+            "despedida": 1.2,
+            "memoria": 0.8
+          },
+          "source": "Quiso tener y que ahora reside en un lecho",
+          "dest": 7
+        },
+        {
+          "text": "caen",
+          "en": "fall",
+          "profile": {
+            "dolor": 1.2,
+            "incertidumbre": 0.9
+          },
+          "source": "Caen las gotas a color",
+          "dest": 1
+        }
+      ],
+      "compactWords": [
+        "quise ser",
+        "camino",
+        "nombre",
+        "apellido",
+        "espinas",
+        "papel",
+        "quema",
+        "fuego",
+        "gotas",
+        "color",
+        "algún día",
+        "lecho"
+      ]
+    },
+    {
+      "title": "Energética muerte",
+      "interpretation": "Fear and relentless energy alternate with dawn, comfort and restarting. Home and comfort are the clearest security anchors.",
+      "words": [
+        {
+          "text": "miedo",
+          "en": "fear",
+          "profile": {
+            "miedo": 1.7,
+            "incertidumbre": 1.1
+          },
+          "source": "Ese miedo cada noche al irme a dormir",
+          "dest": 11
+        },
+        {
+          "text": "vivir",
+          "en": "live",
+          "profile": {
+            "supervivencia": 1.5,
+            "esperanza": 1.1
+          },
+          "source": "Sin saber si otro día podré vivir.",
+          "dest": 2
+        },
+        {
+          "text": "amanecer",
+          "en": "dawn",
+          "profile": {
+            "renacer": 1.5,
+            "luz": 1.2
+          },
+          "source": "Es la energía que me levanta al amanecer",
+          "dest": 3
+        },
+        {
+          "text": "hogar",
+          "en": "home",
+          "profile": {
+            "refugio": 1.8,
+            "estabilidad": 1.3
+          },
+          "source": "Regresan a su hogar para confortarme",
+          "dest": 6
+        },
+        {
+          "text": "confortarme",
+          "en": "comfort me",
+          "profile": {
+            "refugio": 1.6,
+            "calma": 1.4
+          },
+          "source": "Regresan a su hogar para confortarme",
+          "dest": 5
+        },
+        {
+          "text": "empezar",
+          "en": "begin",
+          "profile": {
+            "perseverancia": 1.5,
+            "renacer": 1.2
+          },
+          "source": "De nuevo y empezar el día una vez más.",
+          "dest": 6
+        },
+        {
+          "text": "energía",
+          "en": "energy",
+          "profile": {
+            "lucha": 1.5,
+            "perseverancia": 1.0
+          },
+          "source": "Es la energía que me levanta al amanecer",
+          "dest": 0
+        },
+        {
+          "text": "euforia",
+          "en": "euphoria",
+          "profile": {
+            "alegria": 1.3,
+            "incertidumbre": 1.1
+          },
+          "source": "Con esa euforia, que, en el ocaso, vuelve y me aterra.",
+          "dest": 6
+        },
+        {
+          "text": "límites",
+          "en": "limits",
+          "profile": {
+            "encierro": 1.4,
+            "lucha": 1.1
+          },
+          "source": "La lleva a sus límites y no sabe hasta dónde podrá más.",
+          "dest": 11
+        },
+        {
+          "text": "noche",
+          "en": "night",
+          "profile": {
+            "noche": 1.3,
+            "miedo": 1.1
+          },
+          "source": "Ese miedo cada noche al irme a dormir",
+          "dest": 7
+        },
+        {
+          "text": "dormir",
+          "en": "sleep",
+          "profile": {
+            "suenos": 1.3,
+            "miedo": 0.9
+          },
+          "source": "Ese miedo cada noche al irme a dormir",
+          "dest": 7
+        },
+        {
+          "text": "pasión",
+          "en": "passion",
+          "profile": {
+            "creacion": 1.4,
+            "lucha": 1.1
+          },
+          "source": "Porque la demás a mi pasión le hereda.",
+          "dest": 9
+        },
+        {
+          "text": "corazón",
+          "en": "heart",
+          "profile": {
+            "miedo": 1.2,
+            "introspeccion": 1.0
+          },
+          "source": "Tengo acelerado el corazón",
+          "dest": 9
+        },
+        {
+          "text": "helada",
+          "en": "icy cold",
+          "profile": {
+            "miedo": 1.5,
+            "noche": 0.7
+          },
+          "source": "Tan cerca que me toca las manos y helada me deja.",
+          "dest": 7
+        },
+        {
+          "text": "muerte",
+          "en": "death",
+          "profile": {
+            "miedo": 1.6,
+            "supervivencia": 1.1
+          },
+          "source": "Nunca me había sentido tan cerca de la muerte",
+          "dest": 9
+        },
+        {
+          "text": "lágrimas",
+          "en": "tears",
+          "profile": {
+            "dolor": 1.4,
+            "lucha": 0.8
+          },
+          "source": "Mis lágrimas son de fuego y queman",
+          "dest": 9
+        },
+        {
+          "text": "fuego",
+          "en": "fire",
+          "profile": {
+            "fuego": 1.3,
+            "dolor": 1.1
+          },
+          "source": "Mis lágrimas son de fuego y queman",
+          "dest": 9
+        },
+        {
+          "text": "regresan",
+          "en": "return",
+          "profile": {
+            "ciclo": 1.6,
+            "refugio": 1.1
+          },
+          "source": "Regresan a su hogar para confortarme",
+          "dest": 0
+        },
+        {
+          "text": "día",
+          "en": "day",
+          "profile": {
+            "luz": 1.3,
+            "renacer": 1.1
+          },
+          "source": "Sin saber si otro día podré vivir.",
+          "dest": 3
+        },
+        {
+          "text": "ocaso",
+          "en": "dusk",
+          "profile": {
+            "noche": 1.3,
+            "ciclo": 1.0
+          },
+          "source": "Con esa euforia, que, en el ocaso, vuelve y me aterra.",
+          "dest": 7
+        },
+        {
+          "text": "manos",
+          "en": "hands",
+          "profile": {
+            "miedo": 1.2,
+            "heridas": 0.8
+          },
+          "source": "Tan cerca que me toca las manos y helada me deja.",
+          "dest": 5
+        },
+        {
+          "text": "sangre",
+          "en": "blood",
+          "profile": {
+            "supervivencia": 1.4,
+            "miedo": 0.9
+          },
+          "source": "La sangre ya solo en la cara me queda",
+          "dest": 4
+        },
+        {
+          "text": "piel",
+          "en": "skin",
+          "profile": {
+            "identidad": 1.2,
+            "incertidumbre": 1.0
+          },
+          "source": "Es como si una nueva persona se vistió de mi piel",
+          "dest": 4
+        },
+        {
+          "text": "tez",
+          "en": "face",
+          "profile": {
+            "dolor": 1.2,
+            "heridas": 0.8
+          },
+          "source": "Cuando caen por mi tez",
+          "dest": 3
+        }
+      ],
+      "compactWords": [
+        "vivir",
+        "noche",
+        "hogar",
+        "ocaso",
+        "fuego",
+        "piel",
+        "miedo",
+        "pasión",
+        "energía",
+        "dormir",
+        "empezar",
+        "día"
+      ]
+    },
+    {
+      "title": "Sin salida",
+      "interpretation": "Feeling blocked despite love and tools, wanting to help/create, persevering, and briefly finding excitement in writing. Freedom is sought, not already possessed.",
+      "words": [
+        {
+          "text": "aguantar",
+          "en": "hold on",
+          "profile": {
+            "perseverancia": 1.8,
+            "lucha": 1.1
+          },
+          "source": "Hacer es aguantar, aguantar un poco más en esta agonía,",
+          "dest": 0
+        },
+        {
+          "text": "ayudar",
+          "en": "help",
+          "profile": {
+            "compasion": 1.6,
+            "entrega": 1.1
+          },
+          "source": "Trato de ayudar, no me dejan ayudar",
+          "dest": 5
+        },
+        {
+          "text": "crear",
+          "en": "create",
+          "profile": {
+            "creacion": 1.7,
+            "perseverancia": 1.0
+          },
+          "source": "Trato de crear, tengo que estudiar muchísimo para lograr hacerlo bien",
+          "dest": 0
+        },
+        {
+          "text": "estudiar",
+          "en": "study",
+          "profile": {
+            "aprendizaje": 1.8,
+            "perseverancia": 1.1
+          },
+          "source": "Trato de crear, tengo que estudiar muchísimo para lograr hacerlo bien",
+          "dest": 0
+        },
+        {
+          "text": "encierro",
+          "en": "confinement",
+          "profile": {
+            "encierro": 1.8,
+            "injusticia": 1.0
+          },
+          "source": "De encierro, de impotencia.",
+          "dest": 7
+        },
+        {
+          "text": "impotencia",
+          "en": "helplessness",
+          "profile": {
+            "encierro": 1.4,
+            "duda": 1.3
+          },
+          "source": "De encierro, de impotencia.",
+          "dest": 8
+        },
+        {
+          "text": "libertad",
+          "en": "freedom",
+          "profile": {
+            "libertad": 1.5,
+            "escape": 1.1
+          },
+          "source": "Ni siquiera en un mundo en línea encuentro esa libertad.",
+          "dest": 0
+        },
+        {
+          "text": "amor",
+          "en": "love",
+          "profile": {
+            "amor": 1.5,
+            "compania": 0.8
+          },
+          "source": "Tuve dinero y no amor y no lo quise. Tengo amor y no dinero y sigue infeliz.",
+          "dest": 5
+        },
+        {
+          "text": "escribo",
+          "en": "I write",
+          "profile": {
+            "autenticidad": 1.5,
+            "creacion": 1.3
+          },
+          "source": "Escribo, ¡Me emociono por algo por fin!",
+          "dest": 6
+        },
+        {
+          "text": "herramientas",
+          "en": "tools",
+          "profile": {
+            "responsabilidad": 1.2,
+            "aprendizaje": 1.3
+          },
+          "source": "Tengo todas las herramientas posibles para salir al mundo",
+          "dest": 6
+        },
+        {
+          "text": "miedo",
+          "en": "fear",
+          "profile": {
+            "miedo": 1.5,
+            "duda": 1.1
+          },
+          "source": "Vivir siempre con el miedo de estar haciéndolo mal.",
+          "dest": 9
+        },
+        {
+          "text": "camino",
+          "en": "path",
+          "profile": {
+            "busqueda": 1.4,
+            "duda": 1.0
+          },
+          "source": "No sé qué más, me pregunto si es correcto el camino que elegí ya que nada se siente bien,",
+          "dest": 6
+        },
+        {
+          "text": "lágrimas",
+          "en": "tears",
+          "profile": {
+            "dolor": 1.5,
+            "agotamiento": 0.8
+          },
+          "source": "Incluso se me acabaron las lágrimas de tanto llorar.",
+          "dest": 9
+        },
+        {
+          "text": "agonía",
+          "en": "agony",
+          "profile": {
+            "dolor": 1.7,
+            "miedo": 1.0
+          },
+          "source": "Hacer es aguantar, aguantar un poco más en esta agonía,",
+          "dest": 9
+        },
+        {
+          "text": "sin salida",
+          "en": "no way out",
+          "profile": {
+            "encierro": 1.8,
+            "incertidumbre": 1.0
+          },
+          "source": "Sin salida.",
+          "dest": 7
+        },
+        {
+          "text": "hirientes",
+          "en": "hurtful",
+          "profile": {
+            "heridas": 1.6,
+            "dolor": 1.1
+          },
+          "source": "Hirientes",
+          "dest": 9
+        },
+        {
+          "text": "me emociono",
+          "en": "I feel excited",
+          "profile": {
+            "alegria": 1.5,
+            "creacion": 1.1
+          },
+          "source": "Escribo, ¡Me emociono por algo por fin!",
+          "dest": 0
+        },
+        {
+          "text": "corazón",
+          "en": "heart",
+          "profile": {
+            "rabia": 1.2,
+            "identidad": 0.8
+          },
+          "source": "La odio con todo mi corazón. Nada me satisface. Hago todos mis pasatiempos, pero nada me complace.",
+          "dest": 10
+        },
+        {
+          "text": "libre",
+          "en": "free",
+          "profile": {
+            "libertad": 1.6,
+            "escape": 1.0
+          },
+          "source": "Es imposible ser libre en este mundo.",
+          "dest": 0
+        },
+        {
+          "text": "mundo",
+          "en": "world",
+          "profile": {
+            "desarraigo": 1.3,
+            "mundo": 1.1
+          },
+          "source": "Tengo todas las herramientas posibles para salir al mundo",
+          "dest": 2
+        },
+        {
+          "text": "momento",
+          "en": "moment",
+          "profile": {
+            "incertidumbre": 1.2,
+            "paciencia": 0.8
+          },
+          "source": "O solo es un momento de esos amargos de la vida, lo único que tengo que",
+          "dest": 7
+        },
+        {
+          "text": "vida",
+          "en": "life",
+          "profile": {
+            "perseverancia": 1.3,
+            "incertidumbre": 0.9
+          },
+          "source": "O solo es un momento de esos amargos de la vida, lo único que tengo que",
+          "dest": 10
+        },
+        {
+          "text": "altos",
+          "en": "highs",
+          "profile": {
+            "ciclo": 1.3,
+            "esperanza": 1.0
+          },
+          "source": "Claro, la vida tiene sus altos y sus bajos.",
+          "dest": 3
+        },
+        {
+          "text": "bajos",
+          "en": "lows",
+          "profile": {
+            "agotamiento": 1.3,
+            "ciclo": 1.1
+          },
+          "source": "Claro, la vida tiene sus altos y sus bajos.",
+          "dest": 1
+        }
+      ],
+      "compactWords": [
+        "aguantar",
+        "ayudar",
+        "crear",
+        "estudiar",
+        "encierro",
+        "impotencia",
+        "libertad",
+        "amor",
+        "escribo",
+        "herramientas",
+        "miedo",
+        "camino"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "anchors": [
+        [
+          "agua"
+        ],
+        [
+          "contemplacion",
+          "calma"
+        ]
+      ],
+      "title": "Sorrow'sDeep",
+      "album": "SDLC_01",
+      "interpretation": "Watching water without needing to escape: reflective stillness and gradual clarity.",
+      "profile": {
+        "agua": 1.5,
+        "contemplacion": 1.6,
+        "calma": 1.4,
+        "claridad": 0.7,
+        "piano": 0.5
+      },
+      "arc": {
+        "start": {
+          "calma": 1.0,
+          "contemplacion": 1.0,
+          "agua": 1.0
+        },
+        "end": {
+          "calma": 1.0,
+          "contemplacion": 1.0,
+          "claridad": 1.0
+        }
+      },
+      "source": {
+        "about": "This song gradually builds toward beautiful harmonies and clear melodic lines.",
+        "scene": "A quiet moment beside flowing water, watching the ripples and reflections move across the surface.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "introspeccion",
+          "distraccion"
+        ],
+        [
+          "claridad",
+          "calma"
+        ]
+      ],
+      "title": "The Bongos",
+      "album": "SDLC_01",
+      "interpretation": "The mind moves from diffuse thoughts into clearer ideas, gently rather than through crisis.",
+      "profile": {
+        "introspeccion": 1.4,
+        "claridad": 1.7,
+        "calma": 1.2,
+        "distraccion": 0.9,
+        "suenos": 0.6
+      },
+      "arc": {
+        "start": {
+          "distraccion": 1.0,
+          "suenos": 1.0,
+          "introspeccion": 1.0
+        },
+        "end": {
+          "claridad": 1.0,
+          "calma": 1.0,
+          "introspeccion": 1.0
+        }
+      },
+      "source": {
+        "about": "This track develops gradually, with one melody flowing seamlessly into the next from beginning to end.",
+        "scene": "A quiet moment of reflection, as the mind moves from ambient, dreamlike thoughts toward clearer ideas, with gentle spaces of stillness in between",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "encierro",
+          "miedo"
+        ],
+        [
+          "escape",
+          "alegria"
+        ]
+      ],
+      "title": "Aurel",
+      "album": "SDLC_01",
+      "interpretation": "A trapped voice escapes danger; fear becomes exhilaration and freedom.",
+      "profile": {
+        "escape": 1.6,
+        "miedo": 1.2,
+        "encierro": 1.1,
+        "alegria": 1.2,
+        "agua": 0.7,
+        "piano": 0.4
+      },
+      "arc": {
+        "start": {
+          "encierro": 1.0,
+          "miedo": 1.0,
+          "agua": 1.0
+        },
+        "end": {
+          "escape": 1.0,
+          "alegria": 1.0,
+          "libertad": 1.0
+        }
+      },
+      "source": {
+        "about": "Aurel is its own world. It begins with a voice that feels trapped, moves into a beat, and opens into virtuosic piano. Given time, it carries the listener from one place to another.",
+        "scene": "A character struggles through water before escaping a chaotic situation. Gradually, the fear gives way to exhilaration, and the act of running away becomes unexpectedly joyful.",
+        "mood": "Atmospheric, Cinematic, Tense,"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "incertidumbre",
+          "encierro"
+        ],
+        [
+          "amor",
+          "compania"
+        ]
+      ],
+      "title": "Nebuú",
+      "album": "SDLC_01",
+      "interpretation": "Uncertainty and isolation gradually give way to love, familiarity and belonging.",
+      "profile": {
+        "amor": 1.6,
+        "compania": 1.4,
+        "incertidumbre": 1.2,
+        "adaptacion": 1.2,
+        "refugio": 0.7,
+        "agua": 0.5
+      },
+      "arc": {
+        "start": {
+          "encierro": 1.0,
+          "incertidumbre": 1.0,
+          "desarraigo": 1.0
+        },
+        "end": {
+          "amor": 1.0,
+          "compania": 1.0,
+          "confianza": 1.0
+        }
+      },
+      "source": {
+        "about": "Nebuú was originally titled “The Story of King Nebuú.” The track tells the life story of a fictional character who lives in my imagination. I later reshaped the ending into a more pop influenced experience, giving listeners a familiar and relatable way back from his world.",
+        "scene": "Trembling waves symbolize the uncertainty of life before gradually transforming into a warmer, more familiar world. A person emerges from isolation and learns to connect with others through love.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "cielo",
+          "vuelo"
+        ],
+        [
+          "contemplacion"
+        ]
+      ],
+      "title": "Crystal",
+      "album": "SDLC_01",
+      "interpretation": "A luminous, detached perspective: observing life from above, rather than pursuing a goal.",
+      "profile": {
+        "contemplacion": 1.8,
+        "cielo": 1.5,
+        "calma": 1.1,
+        "luz": 1.0,
+        "introspeccion": 0.8,
+        "asombro": 0.7
+      },
+      "arc": {
+        "start": {
+          "contemplacion": 1.0,
+          "calma": 1.0,
+          "cielo": 1.0
+        },
+        "end": {
+          "contemplacion": 1.0,
+          "calma": 1.0,
+          "cielo": 1.0
+        }
+      },
+      "source": {
+        "about": "Crystal is a song about living in the clouds and looking down at the world. It expresses the superego, an observing perspective that sees life from above. The song is meant to capture the feeling of stepping outside yourself and viewing everything from a distance.",
+        "scene": "A figure sits quietly among luminous clouds, looking out across a dreamlike sky washed in pink, violet, and gold. Suspended above the world, the figure observes from a distance, surrounded by softness, light, and peaceful introspection. A geometric window floats in the distance, suggesting another world or perspective.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "supervivencia"
+        ],
+        [
+          "responsabilidad",
+          "encierro"
+        ]
+      ],
+      "title": "Green Tea",
+      "album": "SDLC_01",
+      "interpretation": "A costly choice about what to protect under pressure; survival and responsibility.",
+      "profile": {
+        "supervivencia": 1.6,
+        "responsabilidad": 1.4,
+        "lucha": 1.2,
+        "encierro": 1.0,
+        "incertidumbre": 0.7,
+        "juego": 0.4
+      },
+      "arc": {
+        "start": {
+          "encierro": 1.0,
+          "miedo": 1.0,
+          "incertidumbre": 1.0
+        },
+        "end": {
+          "responsabilidad": 1.0,
+          "supervivencia": 1.0,
+          "lucha": 1.0
+        }
+      },
+      "source": {
+        "about": "Green Tea is a fight for survival. It begins with heaviness, settles into calm in the middle, and reaches a powerful resolution that feels less like an ending and more like a continuation. This is a story that rewards patient listening and allows its narrative to unfold over time.",
+        "scene": "A woman finds herself trapped in a game where every choice carries a cost. Surrounded by temptation, greed, and uncertainty, she must decide what she is willing to protect and what she might sacrifice to survive. As the world around her becomes increasingly chaotic, survival begins to feel like a game.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Tense"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "vuelo",
+          "despedida"
+        ],
+        [
+          "calma",
+          "renacer"
+        ]
+      ],
+      "title": "Aurelillo",
+      "album": "SDLC_01",
+      "interpretation": "Weightless relaxation closes one chapter while gently opening another.",
+      "profile": {
+        "calma": 1.7,
+        "vuelo": 1.3,
+        "despedida": 1.2,
+        "renacer": 0.9,
+        "color": 0.6,
+        "luz": 0.5
+      },
+      "arc": {
+        "start": {
+          "calma": 1.0,
+          "despedida": 1.0,
+          "vuelo": 1.0
+        },
+        "end": {
+          "calma": 1.0,
+          "renacer": 1.0,
+          "vuelo": 1.0
+        }
+      },
+      "source": {
+        "about": "Aurelillo is meant to be a deeply relaxing trance piece that serves as the album’s outro. After the chaos of Green Tea, it brings the listener into a place of calm, closing this album while gently leading into the next.",
+        "scene": "The sensation of floating weightlessly through a soft, open space as a gentle tingling spreads through the body. Colors and light slowly shift, signaling completion and carrying the moment from one chapter into the next.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "piano",
+          "creacion",
+          "aprendizaje"
+        ],
+        [
+          "duda",
+          "incertidumbre"
+        ]
+      ],
+      "title": "que Soñaba en el piano",
+      "album": "SDLC_02",
+      "interpretation": "Criticism from someone close unsettles confidence; reflection has not yet resolved the doubt.",
+      "profile": {
+        "duda": 1.7,
+        "introspeccion": 1.4,
+        "piano": 1.2,
+        "incertidumbre": 1.1,
+        "aprendizaje": 0.6,
+        "dolor": 0.6
+      },
+      "arc": {
+        "start": {
+          "duda": 1.0,
+          "dolor": 1.0,
+          "piano": 1.0
+        },
+        "end": {
+          "duda": 1.0,
+          "introspeccion": 1.0,
+          "incertidumbre": 1.0
+        }
+      },
+      "source": {
+        "about": "I wrote this song while sitting at the piano after receiving unexpected criticism from someone close to me about a musical collaboration. I was trying to process the response and the doubt it created. Was my judgment that far off? Could I no longer distinguish between something good and something sloppy? Was I becoming sloppy myself? The experience deeply unsettled me, and the song emerged from that confusion.",
+        "scene": "A quiet room after a difficult conversation. The piano remains still while the same words replay in the mind, creating a pause filled with questions. Nothing outwardly changes, but the familiar space feels different as confidence quietly gives way to uncertainty.",
+        "mood": "Cinematic, Dreamlike, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "creacion",
+          "autenticidad"
+        ],
+        [
+          "lucha",
+          "libertad"
+        ]
+      ],
+      "title": "David Jones Snow",
+      "album": "SDLC_02",
+      "interpretation": "Defending an authentic creative voice through resistance, vulnerability and scars.",
+      "profile": {
+        "autenticidad": 1.7,
+        "creacion": 1.4,
+        "lucha": 1.3,
+        "heridas": 1.0,
+        "libertad": 1.2,
+        "agua": 0.7
+      },
+      "arc": {
+        "start": {
+          "heridas": 1.0,
+          "duda": 1.0,
+          "lucha": 1.0
+        },
+        "end": {
+          "autenticidad": 1.0,
+          "libertad": 1.0,
+          "perseverancia": 1.0
+        }
+      },
+      "source": {
+        "about": "You want a tense song? David Jones Snow is your song. It answers the doubts raised by the previous track. Forget all of that. This is my world, and I create the sounds I want. I am willing to be vulnerable and share their chaos because they express something real to me. It is the feeling of saying, “Oh yes. No one is stopping me. Here we go again.”",
+        "scene": "A boat pushes forward through towering waves, carried by a melody that refuses to stop. The wind and water scrape against the skin, leaving scars from the journey, yet the boat continues through the storm regardless.",
+        "mood": "Atmospheric, Cinematic, Tense, Nightmare"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "agotamiento",
+          "suenos"
+        ],
+        [
+          "dolor"
+        ]
+      ],
+      "title": "Dream 2",
+      "album": "SDLC_02",
+      "interpretation": "The scene conveys exhaustion, continuing pain and blurred waking/dreaming; the playful production is secondary.",
+      "profile": {
+        "agotamiento": 1.8,
+        "suenos": 1.7,
+        "dolor": 1.3,
+        "distraccion": 0.8,
+        "encierro": 0.5,
+        "juego": 0.3
+      },
+      "arc": {
+        "start": {
+          "agotamiento": 1.0,
+          "dolor": 1.0,
+          "suenos": 1.0
+        },
+        "end": {
+          "agotamiento": 1.0,
+          "suenos": 1.0,
+          "dolor": 1.0
+        }
+      },
+      "source": {
+        "about": "This song builds on the foundation of another song that is dear to me, using its powerful synths to create something energetic and fun. My sister felt inspired by the music and sent me a set of English lyrics. I selected the lines that fit the song, edited them, and incorporated some of them into the final version. I sing them with a strong accent, since Spanish is my first language, and I embrace that playfulness throughout the track. At one point, I even say, “I don’t even know what I said, for real.”",
+        "scene": "A woman sits motionless in the center of a room while everything around her continues to move. She feels defeated, and even as she travels from place to place, the same pain follows and weighs on her. Life begins to feel like sleepwalking through a dream until she can no longer tell whether she is awake, asleep, or simply going through the motions. Exhausted, she wants only to return to sleep and dream again.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Tense, Dynamic"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "fuego"
+        ],
+        [
+          "autenticidad",
+          "juego"
+        ]
+      ],
+      "title": "Tortilla Song",
+      "album": "SDLC_02",
+      "interpretation": "Heat leaves marks that become part of an authentic whole; imperfect does not mean wrong.",
+      "profile": {
+        "autenticidad": 1.7,
+        "fuego": 1.5,
+        "juego": 1.1,
+        "creacion": 1.0,
+        "aprendizaje": 0.7,
+        "confianza": 0.6
+      },
+      "arc": {
+        "start": {
+          "fuego": 1.0,
+          "heridas": 1.0,
+          "creacion": 1.0
+        },
+        "end": {
+          "autenticidad": 1.0,
+          "confianza": 1.0,
+          "alegria": 1.0
+        }
+      },
+      "source": {
+        "about": "Tortilla Song is a funny song to me. It is tense and loud, yet it makes a quiet statement. It may seem like I do not know what I am doing, but I actually have a clear direction. It is playful, energetic, and filled with the sound of trumpets.",
+        "scene": "A tortilla cooks on a hot comal as dark spots slowly appear across its surface. Each mark forms where the heat is most intense, yet those toasted spots are what make the tortilla look familiar and complete. What might initially seem imperfect becomes a sign that it is ready, authentic, and exactly as it should be.",
+        "mood": "Atmospheric, Cinematic, Tense"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "vuelo",
+          "juego"
+        ],
+        [
+          "confianza",
+          "compania"
+        ]
+      ],
+      "title": "Cowgirl",
+      "album": "SDLC_02",
+      "interpretation": "Floating and laughing while trusting others to carry you safely through the night.",
+      "profile": {
+        "alegria": 1.5,
+        "confianza": 1.6,
+        "vuelo": 1.3,
+        "juego": 1.2,
+        "compania": 1.0,
+        "noche": 0.7
+      },
+      "arc": {
+        "start": {
+          "vuelo": 1.0,
+          "juego": 1.0,
+          "noche": 1.0
+        },
+        "end": {
+          "confianza": 1.0,
+          "compania": 1.0,
+          "alegria": 1.0
+        }
+      },
+      "source": {
+        "about": "Cowgirl Song is my interpretation of a phrase that has stayed in my head for a long time. I combined it with the idea of the heroes of the night and the catchy, repeated Ahooah!",
+        "scene": "A lightheaded moment of floating freely, laughing, and saying nonsense while still believing that heroes will come to carry you safely through the night",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "ciclo",
+          "juego"
+        ],
+        [
+          "busqueda",
+          "piano"
+        ]
+      ],
+      "title": "Wait for me UNO",
+      "album": "SDLC_02",
+      "interpretation": "A playful repeated pursuit of the beat, rather than a frightening repetition.",
+      "profile": {
+        "ciclo": 1.8,
+        "juego": 1.5,
+        "busqueda": 1.3,
+        "piano": 0.7,
+        "alegria": 0.7
+      },
+      "arc": {
+        "start": {
+          "ciclo": 1.0,
+          "busqueda": 1.0,
+          "juego": 1.0
+        },
+        "end": {
+          "ciclo": 1.0,
+          "juego": 1.0,
+          "busqueda": 1.0
+        }
+      },
+      "source": {
+        "about": "In music, counting is very important, especially finding your way back to the first beat so everything stays consistent. I sometimes struggle with that, so this song represents my constant chase of the one. That is why it is called “Wait for Me, Uno.” I am calling out, “Wait for me! Uno, wait!” The song turns that musical chase into its own story.",
+        "scene": "Numbers move in a repeating circle while the number one keeps slipping just out of reach. Each time the rhythm seems ready to settle, the pattern shifts and the chase begins again. The scene feels playful rather than desperate, like trying to catch the first beat before the music moves forward without you.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "responsabilidad",
+          "entrega"
+        ],
+        [
+          "miedo",
+          "esperanza"
+        ]
+      ],
+      "title": "Dar",
+      "album": "SDLC_07",
+      "interpretation": "Fear, humility and hope accompany accepting a responsibility, inspired by Mary's Annunciation.",
+      "profile": {
+        "entrega": 1.7,
+        "responsabilidad": 1.5,
+        "esperanza": 1.4,
+        "miedo": 0.9,
+        "confianza": 0.8,
+        "asombro": 0.7
+      },
+      "arc": {
+        "start": {
+          "miedo": 1.0,
+          "incertidumbre": 1.0,
+          "asombro": 1.0
+        },
+        "end": {
+          "entrega": 1.0,
+          "esperanza": 1.0,
+          "responsabilidad": 1.0
+        }
+      },
+      "source": {
+        "about": "Dar is a song I created around the B major and B minor scales. Moving between them creates captivating melodic lines and a sense of emotional tension. The song represents giving yourself fully to a mission.",
+        "scene": "The scene captures the Annunciation at the moment the Angel Gabriel reveals the Virgin Mary’s mission. Fear comes first, followed by humility, wonder, and a growing sense of hope. She feels overwhelmed that she has been chosen, yet she recognizes her strength and accepts what lies ahead. Her emotions move through the uncertainty of “Yes. Yes! Yes? Wait... I said yes, YES.” holding emotions at the same time.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "piano"
+        ],
+        [
+          "amor",
+          "mundo"
+        ]
+      ],
+      "title": "romA",
+      "album": "SDLC_07",
+      "interpretation": "Love opens into everyday life: piano, birds, a window and the world continuing outside.",
+      "profile": {
+        "amor": 1.7,
+        "piano": 1.3,
+        "mundo": 1.1,
+        "compania": 1.0,
+        "calma": 0.8,
+        "cielo": 0.6
+      },
+      "arc": {
+        "start": {
+          "amor": 1.0,
+          "piano": 1.0,
+          "mundo": 1.0
+        },
+        "end": {
+          "amor": 1.0,
+          "calma": 1.0,
+          "mundo": 1.0
+        }
+      },
+      "source": {
+        "about": "romA is written backward, which is why the capital letter appears at the end. When reversed, it becomes Amor, the Spanish word for love. The track captures a moment created with love, with birds chirping live, life unfolding in the background, and my piano flowing alongside it. I love you.",
+        "scene": "A room with large windows overlooking trees and palm trees, with birds flying across a blue Nevada sky filled with cinematic clouds. A piano sits near the window while cars pass below, a bus stops, and everyday life continues. The scene feels open and alive, as though the song itself is breathing with the world outside.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "agua",
+          "noche"
+        ],
+        [
+          "miedo",
+          "supervivencia"
+        ]
+      ],
+      "title": "OOO2",
+      "album": "SDLC_07",
+      "interpretation": "A nocturnal sinking ship, panic and bodily struggle against drowning; no peaceful shore is promised.",
+      "profile": {
+        "miedo": 1.8,
+        "supervivencia": 1.6,
+        "agua": 1.5,
+        "noche": 1.1,
+        "lucha": 1.1,
+        "encierro": 0.8
+      },
+      "arc": {
+        "start": {
+          "incertidumbre": 1.0,
+          "noche": 1.0,
+          "agua": 1.0
+        },
+        "end": {
+          "miedo": 1.0,
+          "supervivencia": 1.0,
+          "encierro": 1.0
+        }
+      },
+      "source": {
+        "about": "I spent an entire day writing OOO2, completely dedicated to it. There was no food and no distractions, only the song and its flow. Inspired by the sinking boat scene in Life of Pi, the track feels both tense and weightless. You move through it as if struggling against a persistent droning current.",
+        "scene": "A ship moves through the night toward an unfamiliar destination. Inside a small cabin, anticipation is mixed with unease. Then the vessel begins to sink. Panic spreads through the corridors as alarms and Morse code distress signals cut through the darkness. Everything tilts, shifts, and falls. The deep blue ocean becomes now this black liquid before your eyes, demanding your body, your blood, and your soul as the struggle against drowning takes over.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "piano",
+          "entrega"
+        ],
+        [
+          "distraccion",
+          "confianza"
+        ]
+      ],
+      "title": "Anoche",
+      "album": "SDLC_10",
+      "interpretation": "Remaining faithful and focused amid distractions; then bringing daily life back to the piano.",
+      "profile": {
+        "entrega": 1.5,
+        "distraccion": 1.3,
+        "piano": 1.4,
+        "confianza": 1.3,
+        "introspeccion": 1.0,
+        "mundo": 0.7
+      },
+      "arc": {
+        "start": {
+          "distraccion": 1.0,
+          "duda": 1.0,
+          "introspeccion": 1.0
+        },
+        "end": {
+          "entrega": 1.0,
+          "confianza": 1.0,
+          "piano": 1.0
+        }
+      },
+      "source": {
+        "about": "Anoche is a reinterpretation of “Que Soñaba en el Piano” from the album SDLC_02. It combines different genres, styles, and harmonies, all moving toward one goal: making the song fun to listen to.",
+        "scene": "A vast, quiet room filled with soft light. A woman kneels in the center, facing the Tabernacle, while another version of herself speaks to her and tries to pull her away. She remains still and focused. The scene then shifts into ordinary daily life, where she sits at her piano as news, conversations, and human experiences continue to reach her. She takes everything in and tries to understand it, firmly repeating, “No, no,” because nothing will separate her from Him.",
+        "mood": "Energetic, Playful, Experimental, Eclectic"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "injusticia"
+        ],
+        [
+          "encierro",
+          "rabia"
+        ]
+      ],
+      "title": "The Rebellion",
+      "album": "SDLC_10",
+      "interpretation": "Anger at injustice inside an inescapable system: opposed forces remain in conflict.",
+      "profile": {
+        "rabia": 1.7,
+        "injusticia": 1.7,
+        "encierro": 1.4,
+        "lucha": 1.2
+      },
+      "arc": {
+        "start": {
+          "injusticia": 1.0,
+          "encierro": 1.0,
+          "rabia": 1.0
+        },
+        "end": {
+          "injusticia": 1.0,
+          "encierro": 1.0,
+          "lucha": 1.0
+        }
+      },
+      "source": {
+        "about": "The Rebellion moves through two competing flows, with the piano and drums constantly colliding to create a restless, confrontational sound. It carries anger toward the injustices found in human relationships and everyday life. It is the feeling of being unable to leave while becoming increasingly frustrated with staying.",
+        "scene": "Two opposing currents move through the same confined space, one fluid and deliberate, the other sharp and relentless. They collide again and again, but neither can escape or overpower the other. The space fills with tension as every impact reflects the frustration of being forced to remain inside a system",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Tense"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "amor",
+          "compasion",
+          "entrega"
+        ],
+        [
+          "contemplacion",
+          "calma"
+        ]
+      ],
+      "title": "John 3:16",
+      "album": "SDLC_10",
+      "interpretation": "A quiet space for God's self-giving love, prayer and reflection; care and generosity are the emotional bridge.",
+      "profile": {
+        "amor": 1.6,
+        "entrega": 1.5,
+        "compasion": 1.4,
+        "contemplacion": 1.4,
+        "calma": 1.2
+      },
+      "arc": {
+        "start": {
+          "amor": 1.0,
+          "contemplacion": 1.0,
+          "compasion": 1.0
+        },
+        "end": {
+          "entrega": 1.0,
+          "amor": 1.0,
+          "calma": 1.0
+        }
+      },
+      "source": {
+        "about": "I attended Mass, where John 3:16 was part of the Gospel reading. I felt inspired to create a melody that could accompany the passage, giving the listener space to read, pray, and reflect.",
+        "scene": "\"For God so loved the world that he gave his only Son\". John 3:16",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful, Faith"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "piano"
+        ],
+        [
+          "creacion",
+          "color"
+        ]
+      ],
+      "title": "Sandais",
+      "album": "SDLC_10",
+      "interpretation": "An exploratory piano pulse in anticipation suddenly releases color and movement.",
+      "profile": {
+        "piano": 1.6,
+        "creacion": 1.4,
+        "color": 1.3,
+        "incertidumbre": 1.0,
+        "juego": 1.0,
+        "asombro": 0.7
+      },
+      "arc": {
+        "start": {
+          "incertidumbre": 1.0,
+          "piano": 1.0,
+          "calma": 1.0
+        },
+        "end": {
+          "creacion": 1.0,
+          "color": 1.0,
+          "alegria": 1.0
+        }
+      },
+      "source": {
+        "about": "This was an unexpected recording. I simply started playing, and the piece evolved while I was lucky enough to be recording. It became a beautiful transitional song filled with unexpected changes. It feels playful, constant, intriguing, and completely centered on the piano.",
+        "scene": "A quiet space suspended in anticipation, filled with the feeling that something is about to happen. A steady pulse moves beneath the silence, creating tension that continues to build. Suddenly, the space opens into a rush of color, movement, and emotion, releasing everything that had been waiting underneath.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Tense, Warm"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "familia",
+          "entrega"
+        ],
+        [
+          "desarraigo",
+          "renacer"
+        ]
+      ],
+      "title": "Lo que vibra en la vida",
+      "album": "SDLC_10",
+      "interpretation": "Starting over in a foreign land through honorable sacrifice for one's family.",
+      "profile": {
+        "desarraigo": 1.7,
+        "familia": 1.6,
+        "entrega": 1.5,
+        "responsabilidad": 1.4,
+        "renacer": 1.2,
+        "perseverancia": 1.1,
+        "mundo": 0.8
+      },
+      "arc": {
+        "start": {
+          "desarraigo": 1.0,
+          "agotamiento": 1.0,
+          "incertidumbre": 1.0
+        },
+        "end": {
+          "familia": 1.0,
+          "entrega": 1.0,
+          "esperanza": 1.0
+        }
+      },
+      "source": {
+        "about": "I created this song using a scale of Neapolitan Dorian (Spanish origin) to honor the stories of my grandfather and great grandfather. It reflects their struggles and the honorable choices they made, which helped make the life I live today possible.",
+        "scene": "At dawn, a shipwrecked man reaches the shore of an unfamiliar land. Exhausted and carrying almost nothing, he looks back at the ocean and understands that everything he once knew has been left behind. He gathers the courage to walk toward a new life. As the unfamiliar town begins to wake, he finds work and accepts every sacrifice placed before him. His labor allows his siblings to study and build futures of their own. While they open books and enter classrooms, he continues working quietly, finding dignity and purpose in giving them the opportunities he had to leave behind.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Tense, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "creacion",
+          "aprendizaje"
+        ],
+        [
+          "perseverancia",
+          "heridas"
+        ]
+      ],
+      "title": "I hate to love you",
+      "album": "SDLC_10",
+      "interpretation": "Accepting uncomfortable criticism to learn and continue a creative practice one loves.",
+      "profile": {
+        "aprendizaje": 1.8,
+        "creacion": 1.5,
+        "perseverancia": 1.5,
+        "heridas": 1.1,
+        "amor": 0.7,
+        "lucha": 1.0
+      },
+      "arc": {
+        "start": {
+          "duda": 1.0,
+          "heridas": 1.0,
+          "creacion": 1.0
+        },
+        "end": {
+          "aprendizaje": 1.0,
+          "perseverancia": 1.0,
+          "creacion": 1.0
+        }
+      },
+      "source": {
+        "about": "This track explores a relationship of love and hate with something you feel compelled to do. You love the process, even though the task leaves scars. You know the struggle is necessary because it will help you grow, so you continue. In the end, you hate how much you love it.",
+        "scene": "A small classroom with only a musician and a teacher. The musician presents work that has never been shared this openly before. The teacher listens closely and offers a direct critique. The moment feels vulnerable and uncomfortable, but it is also necessary. The choice becomes clear. Accept the discomfort, learn from it, and continue moving forward without stopping.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Tense"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "juego",
+          "compania"
+        ],
+        [
+          "libertad",
+          "autenticidad"
+        ]
+      ],
+      "title": "Don Perro",
+      "album": "SDLC_10",
+      "interpretation": "Shared laughter, rebellious play and an unapologetically personal voice.",
+      "profile": {
+        "juego": 1.8,
+        "libertad": 1.6,
+        "autenticidad": 1.4,
+        "compania": 1.2,
+        "alegria": 1.1,
+        "creacion": 0.6
+      },
+      "arc": {
+        "start": {
+          "juego": 1.0,
+          "compania": 1.0,
+          "libertad": 1.0
+        },
+        "end": {
+          "autenticidad": 1.0,
+          "alegria": 1.0,
+          "libertad": 1.0
+        }
+      },
+      "source": {
+        "about": "My teacher challenged me to create a song with a more “solid beat”. For some reason, my brain interpreted that as, “Do they want me to make something predictable, like reggaeton? Ugh.” So I did. I created a reggaeton song in my own style. It is Susi’s one and only reggaeton song, built around a single lyric: “What are you gonna do, Mr. Dog?” Irreverent and playful.",
+        "scene": "A lively Spanish bar filled with small wooden tables, shared plates, cold drinks, bright lights, and overlapping conversations. Friends move between tables, laughing loudly and saying whatever comes to mind. The scene feels familiar yet rebellious, as if everyone belongs while refusing to behave like everyone else. It is playful, unapologetic, and completely comfortable with its own absurdity.",
+        "mood": "Cinematic, Playful, energetic, irreverent, humorous, bold, rhythmic."
+      }
+    },
+    {
+      "anchors": [
+        [
+          "envidia",
+          "injusticia"
+        ],
+        [
+          "introspeccion",
+          "identidad"
+        ]
+      ],
+      "title": "Disdain",
+      "album": "SDLC_10",
+      "interpretation": "Examining envy and unfairness, then rejecting the resentment and returning to one's own path.",
+      "profile": {
+        "envidia": 1.8,
+        "injusticia": 1.2,
+        "introspeccion": 1.4,
+        "identidad": 1.0,
+        "libertad": 0.7
+      },
+      "arc": {
+        "start": {
+          "envidia": 1.0,
+          "injusticia": 1.0,
+          "rabia": 1.0
+        },
+        "end": {
+          "introspeccion": 1.0,
+          "identidad": 1.0,
+          "libertad": 1.0
+        }
+      },
+      "source": {
+        "about": "Disdain is about an ugly feeling that surfaced one day when I experienced genuine envy toward someone. I examined the emotion and realized how much it felt like poison spreading through my heart and entire body. I wrote the song from the perspective of rejecting that feeling, addressing it directly and declaring that I never want to experience it again.",
+        "scene": "An employee has spent years arriving early, staying late, and becoming highly capable at the work. A new person joins the company and immediately receives the same salary without having the same experience or abilities. Resentment begins to grow as the employee watches the unfairness unfold. Then comes the realization that envy is causing more harm than the situation itself. Disgusted by the feeling, the employee chooses to release it and return attention to their own path before the bitterness takes control.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Tense"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "cueva",
+          "piano"
+        ],
+        [
+          "creacion",
+          "esperanza"
+        ]
+      ],
+      "title": "Te Quiero",
+      "album": "SDLC_10",
+      "interpretation": "Rebuilding oneself in a dark cave; discovering piano as expression, survival and a way toward hope.",
+      "profile": {
+        "cueva": 1.7,
+        "piano": 1.5,
+        "creacion": 1.4,
+        "confianza": 1.2,
+        "esperanza": 1.2,
+        "amor": 1.0,
+        "renacer": 1.0
+      },
+      "arc": {
+        "start": {
+          "encierro": 1.0,
+          "duda": 1.0,
+          "cueva": 1.0
+        },
+        "end": {
+          "confianza": 1.0,
+          "creacion": 1.0,
+          "esperanza": 1.0
+        }
+      },
+      "source": {
+        "about": "Te Quiero is a song I wrote after being ill for some time in a foreign country. It is about moving through a tunnel and finally seeing a distant light. Even the smallest glimpse brings hope, along with the realization that the only way to reach it is by learning true self love.",
+        "scene": "A winged figure sits inside a dark cave, her wings three times the size of her body. Mud covers the feathers, hiding their natural pearl white color. Deep within the cave, she discovers an old grand piano. She does not know what it is or how to use it, but she sits down and gently places one finger on a key. A sweet sound fills the cave and immediately captures her. She begins pressing more keys, discovering endless combinations of notes capable of expressing every part of her life. The melodies are not created so she will be remembered. They are necessary for her survival. Everything she has carried inside can finally leave her through the music. The sounds feel as though they must be released and shared rather than kept within her.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "familia",
+          "compania"
+        ],
+        [
+          "memoria",
+          "refugio"
+        ]
+      ],
+      "title": "...25 (Bonus Track)",
+      "album": "SDLC_10",
+      "interpretation": "The warm memory of a shared Catholic Christmas carol: family, community and belonging on a cold night.",
+      "profile": {
+        "familia": 1.7,
+        "compania": 1.7,
+        "memoria": 1.3,
+        "alegria": 1.0,
+        "refugio": 1.1,
+        "noche": 0.7
+      },
+      "arc": {
+        "start": {
+          "familia": 1.0,
+          "noche": 1.0,
+          "memoria": 1.0
+        },
+        "end": {
+          "compania": 1.0,
+          "alegria": 1.0,
+          "refugio": 1.0
+        }
+      },
+      "source": {
+        "about": "This is a traditional Catholic Christmas carol from Spain, I believe. My husband Francisco and I were in DrummerLab’s practice studio. As he played, I began singing the carol and suddenly decided to record it and add harmonies. I consider it a bonus track because it preserves the feeling of a rehearsal. At the end, I intentionally left in a conversation about editing the song and its pitch. I chose not to clean it up because that unpolished moment became part of the song’s character.",
+        "scene": "A group of family and friends gathers on a quiet street in Spain on a cold Christmas night. They are wrapped in winter coats, scarves, hats, and gloves as their breath becomes visible in the air. Warm streetlights illuminate the buildings and stone pavement while the group sings together, filling the night with voices, laughter, and the repeated sound of “fum, fum, fum.” Neighbors listen from nearby windows and doorways as the familiar carol brings warmth and community into the winter street.",
+        "mood": "Atmospheric, Dreamlike, Warm, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "agua"
+        ],
+        [
+          "incertidumbre"
+        ],
+        [
+          "estabilidad",
+          "calma"
+        ]
+      ],
+      "title": "Linden Ocean",
+      "album": "SDLC_11",
+      "interpretation": "An unsettled sea moves through mounting tension and a disturbance to relief on firm ground.",
+      "profile": {
+        "agua": 1.7,
+        "incertidumbre": 1.4,
+        "estabilidad": 1.4,
+        "calma": 1.2,
+        "escape": 0.7
+      },
+      "arc": {
+        "start": {
+          "agua": 1.0,
+          "incertidumbre": 1.0,
+          "miedo": 1.0
+        },
+        "end": {
+          "estabilidad": 1.0,
+          "calma": 1.0,
+          "escape": 1.0
+        }
+      },
+      "source": {
+        "about": "It starts with a sense of tension, but keeps moving forward before easing into restful piano chords. Then it shifts abruptly to a deep synth that really comes through on headphones; on other speakers, it can sound too heavy. Finally, it settles into a calm, dry sound that feels like relief.",
+        "scene": "A calm sea at first. The water gradually gathers force, as if something is approaching. A sudden disturbance breaks the surface, leaving the sea restless and uncertain. Then the water recedes. Dry land, finally.",
+        "mood": "Cinematic, Dreamlike, Tense"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "ciclo"
+        ],
+        [
+          "incertidumbre",
+          "distraccion"
+        ]
+      ],
+      "title": "Logic",
+      "album": "SDLC_11",
+      "interpretation": "Repetition slowly makes a familiar place strange; subtle unease grows without a sudden crisis.",
+      "profile": {
+        "ciclo": 1.8,
+        "incertidumbre": 1.5,
+        "distraccion": 1.1,
+        "adaptacion": 0.8,
+        "noche": 0.7,
+        "mundo": 0.7
+      },
+      "arc": {
+        "start": {
+          "ciclo": 1.0,
+          "calma": 1.0,
+          "mundo": 1.0
+        },
+        "end": {
+          "ciclo": 1.0,
+          "incertidumbre": 1.0,
+          "distraccion": 1.0
+        }
+      },
+      "source": {
+        "about": "Logic is a trance track built around a repeating pattern. Melodies layer over it, sometimes transforming the underlying beat. The changes unfold gradually, without abrupt shifts.",
+        "scene": "An ordinary town at dusk. Streetlights hum, windows glow, and the wind moves through the trees. The same view returns throughout the scene, but each time, the light, shadows, and distant movement have shifted slightly. Nothing announces the change. The repetition becomes hypnotic, then quietly unsettling, as the familiar town begins to feel wrong.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "compania",
+          "juego"
+        ],
+        [
+          "memoria",
+          "alegria"
+        ]
+      ],
+      "title": "El Tuki Tuki",
+      "album": "SDLC_11",
+      "interpretation": "Remembering an ordinary shared day: games, conversation, friends and small joyful moments.",
+      "profile": {
+        "compania": 1.7,
+        "memoria": 1.5,
+        "juego": 1.4,
+        "alegria": 1.3,
+        "mundo": 0.7,
+        "fuego": 0.4,
+        "agua": 0.3
+      },
+      "arc": {
+        "start": {
+          "memoria": 1.0,
+          "compania": 1.0,
+          "juego": 1.0
+        },
+        "end": {
+          "compania": 1.0,
+          "alegria": 1.0,
+          "memoria": 1.0
+        }
+      },
+      "source": {
+        "about": "It’s a collection of melodies that simply work together, mixed with background sounds that add texture and weave in the experience that inspired the song.",
+        "scene": "It's 4th of July, you are with the group of friends playing games in a very nice place. Then alot of different scenes happen where they were walking in the parking lot. Talking in the lobby, grilling and eating, and at the end, at the pool wathichng the fireworks",
+        "mood": "Atmospheric, Dreamlike, Ethereal, Reflective"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "naturaleza",
+          "luz"
+        ],
+        [
+          "paciencia",
+          "asombro"
+        ]
+      ],
+      "title": "Magical Project",
+      "album": "SDLC_11",
+      "interpretation": "Patient attention to a peaceful woodland leads to wonder; the source scene reveals Our Lady of Champion.",
+      "profile": {
+        "contemplacion": 1.6,
+        "paciencia": 1.6,
+        "asombro": 1.5,
+        "luz": 1.4,
+        "naturaleza": 1.2,
+        "calma": 1.0
+      },
+      "arc": {
+        "start": {
+          "paciencia": 1.0,
+          "naturaleza": 1.0,
+          "calma": 1.0
+        },
+        "end": {
+          "asombro": 1.0,
+          "luz": 1.0,
+          "contemplacion": 1.0
+        }
+      },
+      "source": {
+        "about": "It has a calm, unhurried flow that rewards patient listening, then takes an unexpected turn at the end.",
+        "scene": "A quiet forest in early autumn. The camera moves slowly along a trail, lingering on light through the leaves and the gentle movement of the trees. Nothing seems unusual at first. As the music continues, a soft light between two trees becomes more noticeable. At the final turn, the camera returns to that spot and reveals a radiant figure in white. The late reveal draws on the account of Our Lady of Champion’s appearance in the woods.",
+        "mood": "Atmospheric, Dreamlike, Ethereal, Warm, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "asombro",
+          "busqueda"
+        ],
+        [
+          "responsabilidad",
+          "aprendizaje"
+        ]
+      ],
+      "title": "songon B",
+      "album": "SDLC_11",
+      "interpretation": "Discovery expands into wonder, responsibility and the effort of growing into a hero.",
+      "profile": {
+        "asombro": 1.6,
+        "responsabilidad": 1.5,
+        "busqueda": 1.3,
+        "aprendizaje": 1.2,
+        "lucha": 1.1,
+        "mundo": 1.0
+      },
+      "arc": {
+        "start": {
+          "asombro": 1.0,
+          "busqueda": 1.0,
+          "mundo": 1.0
+        },
+        "end": {
+          "responsabilidad": 1.0,
+          "aprendizaje": 1.0,
+          "perseverancia": 1.0
+        }
+      },
+      "source": {
+        "about": "This track feels like someone telling you a story. The music follows a character’s journey through discovery, the weight of responsibility, and the gradual growth into a hero. It has the scale and wonder of an adventure.",
+        "scene": "Subdued piano keys accompany an arrival at a ballroom: leaving a coat, taking a drink, exchanging pleasantries. Then the doors open to the main room, and its scale and architecture inspire awe. A hymn rises, and everyone begins to hum along.\nThe moment bursts apart. Crystals fly through the air and fall into a space where metal rods bounce up from the floor. Finally, the scene settles in a New York park. A bicycle is hard to get moving, so the rider shifts their weight forward with each push of the pedals.",
+        "mood": "Ethereal, Tense, Storytelling"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "incertidumbre",
+          "lucha"
+        ],
+        [
+          "perseverancia",
+          "esperanza"
+        ]
+      ],
+      "title": "Project 0",
+      "album": "SDLC_11",
+      "interpretation": "Holding steady one day at a time: continuing to try despite difficult circumstances and uncertainty.",
+      "profile": {
+        "perseverancia": 1.8,
+        "esperanza": 1.5,
+        "incertidumbre": 1.4,
+        "estabilidad": 1.0,
+        "aprendizaje": 0.8,
+        "lucha": 0.8
+      },
+      "arc": {
+        "start": {
+          "incertidumbre": 1.0,
+          "lucha": 1.0,
+          "duda": 1.0
+        },
+        "end": {
+          "perseverancia": 1.0,
+          "esperanza": 1.0,
+          "estabilidad": 1.0
+        }
+      },
+      "source": {
+        "about": "A Day at a Time is another possible title for this track. It’s about living with uncertainty and still choosing to move forward. A tense, grounding bass holds the music steady while a light melody roams above it.",
+        "scene": "A student struggles to pass his courses while facing difficult circumstances in his life. He keeps pushing, choosing to continue and try one more time. He stays focused on the present while holding on to hope for the future.",
+        "mood": "Cinematic, Dreamlike, Tense, Reflective"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "distraccion",
+          "introspeccion"
+        ],
+        [
+          "contemplacion",
+          "calma"
+        ]
+      ],
+      "title": "Oración A Jesús",
+      "album": "SDLC_11",
+      "interpretation": "The effort of quieting a distracted mind opens into prayer and contemplation in God.",
+      "profile": {
+        "distraccion": 1.7,
+        "contemplacion": 1.6,
+        "calma": 1.4,
+        "introspeccion": 1.3,
+        "paciencia": 0.8
+      },
+      "arc": {
+        "start": {
+          "distraccion": 1.0,
+          "incertidumbre": 1.0,
+          "introspeccion": 1.0
+        },
+        "end": {
+          "contemplacion": 1.0,
+          "calma": 1.0,
+          "paciencia": 1.0
+        }
+      },
+      "source": {
+        "about": "Esta cancion es sobre la oracion. como es que cuando comenzamos a rezr pasamos por este ciclo de distracciones, adaptacion hasta que realmente logramos alcanzar esa paz y estado de meditacion en Dios.",
+        "scene": "A person sits down to pray. As she remains still, her thoughts come to life around her, showing how difficult it is to quiet her mind and enter a contemplative state.",
+        "mood": "Atmospheric, Dreamlike, Reflective, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "estabilidad",
+          "refugio"
+        ],
+        [
+          "calma",
+          "agua"
+        ]
+      ],
+      "title": "Elbe",
+      "album": "SDLC_11",
+      "interpretation": "A steady, safe place: gentle water, warm fire and home stay secure throughout.",
+      "profile": {
+        "estabilidad": 1.8,
+        "refugio": 1.8,
+        "calma": 1.5,
+        "confianza": 1.1,
+        "agua": 0.8,
+        "fuego": 0.6
+      },
+      "arc": {
+        "start": {
+          "estabilidad": 1.0,
+          "refugio": 1.0,
+          "calma": 1.0
+        },
+        "end": {
+          "estabilidad": 1.0,
+          "refugio": 1.0,
+          "calma": 1.0
+        }
+      },
+      "source": {
+        "about": "Elbe is about reaching stability. It feels comfortable and steady throughout, with no sudden turns or surprises.",
+        "scene": "A house overlooking the ocean. At dusk, a fire burns on the sand while the waves roll in gently. Warm light glows from the house behind it. The scene lingers there, calm and secure, with everything feeling just right.",
+        "mood": "Dreamlike, Ethereal, Warm, Peaceful"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "despedida",
+          "memoria"
+        ],
+        [
+          "calma",
+          "vuelo",
+          "color"
+        ]
+      ],
+      "title": "Lala",
+      "album": "SDLC_11",
+      "interpretation": "The culmination of a chapter and the quiet release of letting it end; purple, suspended space.",
+      "profile": {
+        "despedida": 1.8,
+        "calma": 1.3,
+        "memoria": 1.1,
+        "color": 1.0,
+        "vuelo": 0.9
+      },
+      "arc": {
+        "start": {
+          "memoria": 1.0,
+          "despedida": 1.0,
+          "color": 1.0
+        },
+        "end": {
+          "despedida": 1.0,
+          "calma": 1.0,
+          "vuelo": 1.0
+        }
+      },
+      "source": {
+        "about": "This is a transitional track. It feels like the end of something, the culmination of everything that came before it.",
+        "scene": "A vast, weightless space surrounded by a purple gradient that shifts from deep violet to lavender. A few indistinct forms float slowly through it, hinting at what came before. Their movement gradually slows until everything seems suspended in one moment. It feels like a culmination, followed by the quiet release of letting it end.",
+        "mood": "Atmospheric, Dreamlike, Tense"
+      }
+    },
+    {
+      "anchors": [
+        [
+          "piano"
+        ],
+        [
+          "luz",
+          "naturaleza"
+        ],
+        [
+          "despedida",
+          "calma"
+        ]
+      ],
+      "title": "Seda",
+      "album": "SDLC_11",
+      "interpretation": "A graceful piano farewell framed by trees and golden sunlight: completion, warmth and quiet appreciation.",
+      "profile": {
+        "despedida": 1.6,
+        "piano": 1.7,
+        "luz": 1.5,
+        "naturaleza": 1.0,
+        "calma": 1.2,
+        "gratitud": 0.9,
+        "contemplacion": 0.6
+      },
+      "arc": {
+        "start": {
+          "calma": 1.0,
+          "contemplacion": 1.0,
+          "piano": 1.0,
+          "naturaleza": 1.0,
+          "luz": 1.0
+        },
+        "end": {
+          "despedida": 1.0,
+          "gratitud": 1.0,
+          "calma": 1.0
+        }
+      },
+      "source": {
+        "about": "This track feels like an encore, the song an artist plays when the audience applauds for one more. It’s a graceful piano piece that gives the album its final, golden bow.",
+        "scene": "A pianist plays a piano among tall trees, facing the sunlight filtering through their leaves. As the final notes ring out, the camera rises from the keys to the view on the album cover: branches framing a bright sun against the sky. The shot holds there as the music fades, giving the album a peaceful ending.",
+        "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful"
+      }
+    }
+  ]
+}

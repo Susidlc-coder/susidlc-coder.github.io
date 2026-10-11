@@ -1,0 +1,389 @@
+{
+  "Linden Ocean": {
+    "about": "Comienza con una sensación de tensión, pero sigue avanzando hasta descansar en unos acordes de piano. Después cambia bruscamente a un sintetizador profundo que se percibe especialmente con auriculares; en otros altavoces puede sonar demasiado pesado. Finalmente, se asienta en un sonido tranquilo y seco que se siente como un alivio.",
+    "scene": "Un mar en calma al principio. El agua va cobrando fuerza, como si algo se acercara. Una perturbación repentina rompe la superficie y deja el mar inquieto e incierto. Después, el agua retrocede. Tierra firme, por fin.",
+    "profile": {
+      "agua": 1.7,
+      "incertidumbre": 1.4,
+      "estabilidad": 1.4,
+      "calma": 1.2,
+      "escape": 0.7
+    },
+    "idea": "atravesar un mar inquieto e incierto hasta llegar al alivio de la tierra firme",
+    "enIdea": "moving through restless, uncertain waters towards the relief of dry land",
+    "interpretation": "An unsettled sea moves through mounting tension and a disturbance to relief on firm ground.",
+    "arc": {
+      "start": {
+        "agua": 1.0,
+        "incertidumbre": 1.0,
+        "miedo": 1.0
+      },
+      "end": {
+        "estabilidad": 1.0,
+        "calma": 1.0,
+        "escape": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "agua"
+      ],
+      [
+        "incertidumbre"
+      ],
+      [
+        "estabilidad",
+        "calma"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "Logic": {
+    "about": "Logic es una pieza de trance construida alrededor de un patrón que se repite. Las melodías se superponen y a veces transforman el ritmo de base. Los cambios se desarrollan gradualmente, sin giros bruscos.",
+    "scene": "Un pueblo corriente al anochecer. Las farolas zumban, las ventanas brillan y el viento mueve los árboles. La misma vista reaparece a lo largo de la escena, pero cada vez han cambiado un poco la luz, las sombras y el movimiento a lo lejos. Nada anuncia el cambio. La repetición se vuelve hipnótica y luego discretamente inquietante, mientras el pueblo familiar empieza a sentirse extraño.",
+    "profile": {
+      "ciclo": 1.8,
+      "incertidumbre": 1.5,
+      "distraccion": 1.1,
+      "adaptacion": 0.8,
+      "noche": 0.7,
+      "mundo": 0.7
+    },
+    "idea": "volver a un paisaje cotidiano que cambia poco a poco hasta sentirse extraño",
+    "enIdea": "returning to an everyday landscape that gradually changes until it feels unfamiliar",
+    "interpretation": "Repetition slowly makes a familiar place strange; subtle unease grows without a sudden crisis.",
+    "arc": {
+      "start": {
+        "ciclo": 1.0,
+        "calma": 1.0,
+        "mundo": 1.0
+      },
+      "end": {
+        "ciclo": 1.0,
+        "incertidumbre": 1.0,
+        "distraccion": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "ciclo"
+      ],
+      [
+        "incertidumbre",
+        "distraccion"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "El Tuki Tuki": {
+    "about": "Es una colección de melodías que sencillamente funcionan juntas, mezcladas con sonidos de fondo que aportan textura e incorporan la experiencia que inspiró la canción.",
+    "scene": "Es el 4 de julio. Estás con un grupo de amigos, jugando en un lugar muy agradable. Después se suceden distintas escenas: caminan por el estacionamiento, conversan en el vestíbulo, preparan comida a la parrilla y comen. Al final, están junto a la piscina viendo los fuegos artificiales.",
+    "profile": {
+      "compania": 1.7,
+      "memoria": 1.5,
+      "juego": 1.4,
+      "alegria": 1.3,
+      "mundo": 0.7,
+      "fuego": 0.4,
+      "agua": 0.3
+    },
+    "idea": "recordar un día de juegos, conversaciones y comida con amigos que termina junto a la piscina bajo los fuegos artificiales",
+    "enIdea": "remembering a day of games, conversation and food with friends, ending by the pool under fireworks",
+    "interpretation": "Remembering an ordinary shared day: games, conversation, friends and small joyful moments.",
+    "arc": {
+      "start": {
+        "memoria": 1.0,
+        "compania": 1.0,
+        "juego": 1.0
+      },
+      "end": {
+        "compania": 1.0,
+        "alegria": 1.0,
+        "memoria": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "compania",
+        "juego"
+      ],
+      [
+        "memoria",
+        "alegria"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "Magical Project": {
+    "about": "Tiene un fluir tranquilo y sin prisa que recompensa la escucha paciente, y al final toma un giro inesperado.",
+    "scene": "Un bosque tranquilo a comienzos del otoño. La cámara avanza despacio por un sendero y se detiene en la luz entre las hojas y el movimiento suave de los árboles. Al principio, nada parece inusual. Mientras continúa la música, una luz tenue entre dos árboles se vuelve más perceptible. En el giro final, la cámara regresa a ese lugar y revela una figura radiante vestida de blanco. Esta revelación tardía se inspira en el relato de la aparición de Nuestra Señora de Champion en el bosque.",
+    "profile": {
+      "contemplacion": 1.6,
+      "paciencia": 1.6,
+      "asombro": 1.5,
+      "luz": 1.4,
+      "naturaleza": 1.2,
+      "calma": 1.0
+    },
+    "idea": "contemplar la luz de un bosque en calma hasta una revelación inspirada en Nuestra Señora de Champion",
+    "enIdea": "contemplating light in a peaceful forest before a reveal inspired by Our Lady of Champion",
+    "interpretation": "Patient attention to a peaceful woodland leads to wonder; the source scene reveals Our Lady of Champion.",
+    "arc": {
+      "start": {
+        "paciencia": 1.0,
+        "naturaleza": 1.0,
+        "calma": 1.0
+      },
+      "end": {
+        "asombro": 1.0,
+        "luz": 1.0,
+        "contemplacion": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "naturaleza",
+        "luz"
+      ],
+      [
+        "paciencia",
+        "asombro"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "songon B": {
+    "about": "Esta pieza se siente como si alguien te contara una historia. La música acompaña el recorrido de un personaje: el descubrimiento, el peso de la responsabilidad y su crecimiento gradual hasta convertirse en un héroe. Tiene la escala y el asombro de una aventura.",
+    "scene": "Unas teclas de piano discretas acompañan la llegada a un salón de baile: dejar el abrigo, tomar una bebida e intercambiar saludos. Después se abren las puertas de la sala principal, cuya escala y arquitectura despiertan asombro. Se eleva un himno y todos comienzan a tararearlo.\nEl momento estalla. Cristales vuelan por el aire y caen en un espacio donde unas barras metálicas rebotan desde el suelo. Finalmente, la escena se asienta en un parque de Nueva York. Cuesta poner en marcha una bicicleta, así que quien la monta inclina su peso hacia delante con cada impulso de los pedales.",
+    "profile": {
+      "asombro": 1.6,
+      "responsabilidad": 1.5,
+      "busqueda": 1.3,
+      "aprendizaje": 1.2,
+      "lucha": 1.1,
+      "mundo": 1.0
+    },
+    "idea": "crecer entre descubrimientos, responsabilidad y esfuerzo en una aventura de gran escala",
+    "enIdea": "growing through discovery, responsibility and effort in a large-scale adventure",
+    "interpretation": "Discovery expands into wonder, responsibility and the effort of growing into a hero.",
+    "arc": {
+      "start": {
+        "asombro": 1.0,
+        "busqueda": 1.0,
+        "mundo": 1.0
+      },
+      "end": {
+        "responsabilidad": 1.0,
+        "aprendizaje": 1.0,
+        "perseverancia": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "asombro",
+        "busqueda"
+      ],
+      [
+        "responsabilidad",
+        "aprendizaje"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "Project 0": {
+    "about": "A Day at a Time es otro posible título para esta pieza. Trata de vivir con incertidumbre y aun así elegir seguir adelante. Un bajo tenso y firme sostiene la música mientras una melodía ligera se mueve por encima.",
+    "scene": "Un estudiante lucha por aprobar sus cursos mientras enfrenta circunstancias difíciles en su vida. Sigue esforzándose y elige continuar e intentarlo una vez más. Se concentra en el presente sin perder la esperanza en el futuro.",
+    "profile": {
+      "perseverancia": 1.8,
+      "esperanza": 1.5,
+      "incertidumbre": 1.4,
+      "estabilidad": 1.0,
+      "aprendizaje": 0.8,
+      "lucha": 0.8
+    },
+    "idea": "seguir esforzándose en el presente a pesar de la incertidumbre, sin perder la esperanza en el futuro",
+    "enIdea": "continuing to make an effort in the present despite uncertainty, while holding on to hope for the future",
+    "interpretation": "Holding steady one day at a time: continuing to try despite difficult circumstances and uncertainty.",
+    "arc": {
+      "start": {
+        "incertidumbre": 1.0,
+        "lucha": 1.0,
+        "duda": 1.0
+      },
+      "end": {
+        "perseverancia": 1.0,
+        "esperanza": 1.0,
+        "estabilidad": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "incertidumbre",
+        "lucha"
+      ],
+      [
+        "perseverancia",
+        "esperanza"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "Oración A Jesús": {
+    "about": "Esta canción trata sobre la oración: al comenzar a rezar, pasamos por un ciclo de distracciones y adaptación hasta alcanzar la paz y un estado de contemplación en Dios.",
+    "enAbout": "This song is about prayer: when we begin to pray, we move through a cycle of distractions and adjustment until we reach peace and a state of contemplation in God.",
+    "scene": "Una persona se sienta a rezar. Mientras permanece quieta, sus pensamientos cobran vida a su alrededor y muestran lo difícil que es acallar la mente y entrar en un estado contemplativo.",
+    "profile": {
+      "distraccion": 1.7,
+      "contemplacion": 1.6,
+      "calma": 1.4,
+      "introspeccion": 1.3,
+      "paciencia": 0.8
+    },
+    "idea": "atravesar las distracciones de la oración hasta encontrar calma y contemplación en Dios",
+    "enIdea": "moving through the distractions of prayer towards calm and contemplation in God",
+    "interpretation": "The effort of quieting a distracted mind opens into prayer and contemplation in God.",
+    "arc": {
+      "start": {
+        "distraccion": 1.0,
+        "incertidumbre": 1.0,
+        "introspeccion": 1.0
+      },
+      "end": {
+        "contemplacion": 1.0,
+        "calma": 1.0,
+        "paciencia": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "distraccion",
+        "introspeccion"
+      ],
+      [
+        "contemplacion",
+        "calma"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "Elbe": {
+    "about": "Elbe trata de alcanzar la estabilidad. Se siente cómoda y firme de principio a fin, sin giros repentinos ni sorpresas.",
+    "scene": "Una casa frente al océano. Al anochecer, una fogata arde en la arena mientras las olas llegan suavemente. Detrás, la casa desprende una luz cálida. La escena permanece allí, tranquila y segura, con la sensación de que todo está en su lugar.",
+    "profile": {
+      "estabilidad": 1.8,
+      "refugio": 1.8,
+      "calma": 1.5,
+      "confianza": 1.1,
+      "agua": 0.8,
+      "fuego": 0.6
+    },
+    "idea": "encontrar estabilidad y un refugio cálido junto a las olas suaves del océano",
+    "enIdea": "finding stability and a warm refuge beside gentle ocean waves",
+    "interpretation": "A steady, safe place: gentle water, warm fire and home stay secure throughout.",
+    "arc": {
+      "start": {
+        "estabilidad": 1.0,
+        "refugio": 1.0,
+        "calma": 1.0
+      },
+      "end": {
+        "estabilidad": 1.0,
+        "refugio": 1.0,
+        "calma": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "estabilidad",
+        "refugio"
+      ],
+      [
+        "calma",
+        "agua"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "Lala": {
+    "about": "Es una pieza de transición. Se siente como el final de algo, la culminación de todo lo que vino antes.",
+    "scene": "Un espacio inmenso y sin peso, rodeado por un degradado púrpura que pasa del violeta profundo al lavanda. Unas pocas formas indistintas flotan despacio y sugieren lo que hubo antes. Su movimiento va ralentizándose hasta que todo parece suspendido en un instante. Se siente como una culminación, seguida por el alivio silencioso de dejar que termine.",
+    "profile": {
+      "despedida": 1.8,
+      "calma": 1.3,
+      "memoria": 1.1,
+      "color": 1.0,
+      "vuelo": 0.9
+    },
+    "idea": "dejar que un espacio púrpura y suspendido llegue a su culminación y a un final tranquilo",
+    "enIdea": "letting a suspended purple space reach its culmination and a quiet ending",
+    "interpretation": "The culmination of a chapter and the quiet release of letting it end; purple, suspended space.",
+    "arc": {
+      "start": {
+        "memoria": 1.0,
+        "despedida": 1.0,
+        "color": 1.0
+      },
+      "end": {
+        "despedida": 1.0,
+        "calma": 1.0,
+        "vuelo": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "despedida",
+        "memoria"
+      ],
+      [
+        "calma",
+        "vuelo",
+        "color"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  },
+  "Seda": {
+    "about": "Esta pieza se siente como un bis: la canción que un artista toca cuando el público aplaude para pedir una más. Es una delicada pieza de piano que ofrece al álbum su última despedida dorada.",
+    "scene": "Un pianista toca entre árboles altos, de cara a la luz del sol que se filtra entre sus hojas. Cuando resuenan las últimas notas, la cámara se eleva desde las teclas hasta la vista de la portada del álbum: ramas que enmarcan un sol brillante contra el cielo. La imagen permanece mientras la música se desvanece y le da al álbum un final sereno.",
+    "profile": {
+      "despedida": 1.6,
+      "piano": 1.7,
+      "luz": 1.5,
+      "naturaleza": 1.0,
+      "calma": 1.2,
+      "gratitud": 0.9,
+      "contemplacion": 0.6
+    },
+    "idea": "despedirse en calma con un piano entre árboles iluminados por el sol",
+    "enIdea": "closing peacefully with a piano among sunlit trees",
+    "interpretation": "A graceful piano farewell framed by trees and golden sunlight: completion, warmth and quiet appreciation.",
+    "arc": {
+      "start": {
+        "calma": 1.0,
+        "contemplacion": 1.0,
+        "piano": 1.0,
+        "naturaleza": 1.0,
+        "luz": 1.0
+      },
+      "end": {
+        "despedida": 1.0,
+        "gratitud": 1.0,
+        "calma": 1.0
+      }
+    },
+    "anchors": [
+      [
+        "piano"
+      ],
+      [
+        "luz",
+        "naturaleza"
+      ],
+      [
+        "despedida",
+        "calma"
+      ]
+    ],
+    "semanticVersion": "editorial-context-v2"
+  }
+}

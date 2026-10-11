@@ -93,3 +93,25 @@
 .book-highlight:hover{text-decoration:underline;text-underline-offset:7px}
 .bread-social{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:24px}
 .bread-social .quiet-link{margin:0;min-height:44px}
+
+/* Centered architectural study, with the same 5.5s colour-wave rhythm as Poems. */
+.moradas-cover .castle-study{width:100%;max-width:460px;justify-self:center;margin-inline:auto;min-height:0;padding:28px 24px 30px;gap:8px;text-align:center}
+.castle-arches{display:block;width:100%;height:auto;max-width:400px;margin-inline:auto;overflow:visible}
+.castle-band{opacity:.78}
+.castle-wave{animation:castle-colour-wave 5.5s cubic-bezier(.45,0,.55,1) infinite}
+.castle-center{fill:var(--bg)}
+.castle-outline{fill:none;stroke:var(--muted);stroke-width:1.25;opacity:.68}
+.castle-numerals{fill:var(--muted);font:italic 36px Georgia,serif}
+.moradas-cover .castle-study>.eyebrow{margin-top:0;font-size:10px;letter-spacing:2px;color:var(--muted)}
+@keyframes castle-colour-wave{0%,100%{opacity:0}50%{opacity:1}}
+@media(max-width:720px){.moradas-cover .castle-study{max-width:380px;padding:24px 20px 28px}.castle-arches{max-width:310px}}
+@media(prefers-reduced-motion:reduce){.castle-wave{animation:none;opacity:.3}}
+
+/* Copper and bronze: the light passes from the outer band toward the doorway. */
+.castle-band{opacity:1}
+.castle-wave{opacity:0;animation-name:castle-inward-light;animation-duration:5.5s;animation-fill-mode:both}
+@keyframes castle-inward-light{0%,54%,100%{opacity:0}26%{opacity:1}}
+.castle-caption{display:block;margin:0;color:var(--muted);line-height:1.65;text-align:center}
+.castle-caption>span{display:block;font-size:11px;letter-spacing:1.4px;text-transform:uppercase}
+.castle-caption>small{display:block;font-size:11px;letter-spacing:.1px}
+@media(prefers-reduced-motion:reduce){.castle-wave{animation:none;opacity:.25}}

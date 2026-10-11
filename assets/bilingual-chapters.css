@@ -62,7 +62,7 @@
  .bilingual-reader .chapter-summary small { font-size:9px; }
  .bilingual-reader .reading-tools { flex-direction:column;align-items:flex-start;gap:12px;padding-top:8px;margin-bottom:17px; }
  .bilingual-reader .reading-tools .eyebrow { font-size:8px; }
- .bilingual-reader .reading-tools>div { width:100%;justify-content:space-between; }
+ .bilingual-reader .reading-tools>div { width:100%;justify-content:flex-end; }
  .bilingual-reader .reading-tools button { font-size:10px;padding:12px; }
  .bilingual-reader .reading-column { font-size:19px;line-height:1.72; }
  .bilingual-reader .reading-column h3 { font-size:9px;margin-bottom:23px; }
@@ -88,3 +88,29 @@
 .bilingual-reader .part-jumps a{font-size:inherit;min-height:44px}
 .bilingual-reader .reading-body[data-reading-mode=ambos] [data-version=adaptado]{border-top:0;padding-top:0}
 @media(max-width:720px){.bilingual-reader .reading-body[data-reading-mode=ambos] [data-version=original]{border-top:1px solid var(--line);padding-top:25px}}
+
+/* Reading controls sit at the text boundary, immediately below each part's video. */
+.bilingual-reader .reading-part>.reading-tools{max-width:730px;margin:0 auto 30px}
+.bilingual-reader .reading-part>.reading-language-note{max-width:730px}
+/* The selected mode is already visible in the controls. Keep column headings for parallel reading. */
+.bilingual-reader .reading-body:not([data-reading-mode=ambos]) .reading-column>h3{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:720px){.bilingual-reader .reading-part>.reading-tools{margin-bottom:25px}}
+
+/* Narrow screens offer one reading version at a time. */
+@media(max-width:720px){.bilingual-reader [data-reader-mode="ambos"]{display:none}}
+
+/* Unsplit chapters begin directly with their video or reading controls. */
+.bilingual-reader .reading-body{padding-top:0}
+.bilingual-reader .chapter-summary{margin-bottom:24px}
+@media(max-width:720px){.bilingual-reader .chapter-summary{margin-bottom:20px}}
+
+/* Quiet, compact version switcher, aligned at the text's right margin. */
+.bilingual-reader .reading-tools{justify-content:flex-end;padding-block:8px;gap:0}
+.bilingual-reader .chapter-summary{margin-bottom:10px}
+@media(max-width:720px){.bilingual-reader .reading-tools{flex-direction:row;align-items:center;padding-block:7px}.bilingual-reader .chapter-summary{margin-bottom:10px}}
+
+/* Equal space above and below the right-aligned buttons between dividing lines. */
+.bilingual-reader .chapter-summary{margin-bottom:0}
+.bilingual-reader .reading-tools{padding-block:12px}
+
+.bilingual-reader .reader-page:has(.chapter-video) .chapter-summary{margin-bottom:10px}

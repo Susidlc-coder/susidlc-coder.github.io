@@ -454,74 +454,124 @@
           "number": 1,
           "id": "track-01-linden-ocean",
           "title": "Linden Ocean",
-          "spotifyUrl": "https://open.spotify.com/track/0VDMTcgDbNsSpoRpsJXIyz?si=db21f57d21574441",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/0VDMTcgDbNsSpoRpsJXIyz?si=0d0f29f98765438e",
+          "about": "It starts with a sense of tension, but keeps moving forward before easing into restful piano chords. Then it shifts abruptly to a deep synth that really comes through on headphones; on other speakers, it can sound too heavy. Finally, it settles into a calm, dry sound that feels like relief.",
+          "mood": "Cinematic, Dreamlike, Tense",
+          "genre": "Cinematic / soundtrack, Contemporary instrumental, Neoclassical / piano-led",
+          "instrumentation": "Piano, synths",
+          "scene": "A calm sea at first. The water gradually gathers force, as if something is approaching. A sudden disturbance breaks the surface, leaving the sea restless and uncertain. Then the water recedes. Dry land, finally.",
+          "duration": "3:22",
+          "additional_credits": "Piano: Francisco Nanne"
         },
         {
           "number": 2,
           "id": "track-02-logic",
           "title": "Logic",
-          "spotifyUrl": "https://open.spotify.com/track/0AOL1Fv2DBxzeRmF65HPda?si=edb38af9298749e1",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/0AOL1Fv2DBxzeRmF65HPda?si=093ec3292a164978",
+          "about": "Logic is a trance track built around a repeating pattern. Melodies layer over it, sometimes transforming the underlying beat. The changes unfold gradually, without abrupt shifts.",
+          "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Peaceful",
+          "genre": "New Age / meditative, Cinematic / soundtrack, Ambient / atmospheric, Contemporary instrumental, Neoclassical / piano-led",
+          "instrumentation": "Piano, synths",
+          "scene": "An ordinary town at dusk. Streetlights hum, windows glow, and the wind moves through the trees. The same view returns throughout the scene, but each time, the light, shadows, and distant movement have shifted slightly. Nothing announces the change. The repetition becomes hypnotic, then quietly unsettling, as the familiar town begins to feel wrong.",
+          "duration": "3:56"
         },
         {
           "number": 3,
           "id": "track-03-el-tuki-tuki",
           "title": "El Tuki Tuki",
-          "spotifyUrl": "https://open.spotify.com/track/0Y3dsfQjj334gpGZChCsfp?si=54cbb86ab4cb4271",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/0Y3dsfQjj334gpGZChCsfp?si=627669feb02e475c",
+          "about": "It’s a collection of melodies that simply work together, mixed with background sounds that add texture and weave in the experience that inspired the song.",
+          "mood": "Atmospheric, Dreamlike, Ethereal, Reflective",
+          "genre": "Cinematic / soundtrack, Ambient / atmospheric, Contemporary instrumental, Neoclassical / piano-led",
+          "instrumentation": "Piano, synths",
+          "scene": "It's 4th of July, you are with the group of friends playing games in a very nice place. Then alot of different scenes happen where they were walking in the parking lot. Talking in the lobby, grilling and eating, and at the end, at the pool wathichng the fireworks",
+          "duration": "2:36"
         },
         {
           "number": 4,
           "id": "track-04-magical-project",
           "title": "Magical Project",
-          "spotifyUrl": "https://open.spotify.com/track/14ow0DnfRXg7CRpONSVpTH?si=b2280e4e6bfc4151",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/14ow0DnfRXg7CRpONSVpTH?si=04e3491213744e95",
+          "about": "It has a calm, unhurried flow that rewards patient listening, then takes an unexpected turn at the end.",
+          "mood": "Atmospheric, Dreamlike, Ethereal, Warm, Reflective, Peaceful",
+          "genre": "Ambient / atmospheric, Contemporary instrumental, Neoclassical / piano-led",
+          "instrumentation": "Piano, electronic pianos",
+          "scene": "A quiet forest in early autumn. The camera moves slowly along a trail, lingering on light through the leaves and the gentle movement of the trees. Nothing seems unusual at first. As the music continues, a soft light between two trees becomes more noticeable. At the final turn, the camera returns to that spot and reveals a radiant figure in white. The late reveal draws on the account of Our Lady of Champion’s appearance in the woods.",
+          "duration": "5:15"
         },
         {
           "number": 5,
           "id": "track-05-songon-b",
           "title": "songon B",
-          "spotifyUrl": "https://open.spotify.com/track/1zo7lgwUzudMEH1sG3OhkD?si=1a6fd736362d4f12",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/1zo7lgwUzudMEH1sG3OhkD?si=b9e25049b72f4eb5",
+          "about": "This track feels like someone telling you a story. The music follows a character’s journey through discovery, the weight of responsibility, and the gradual growth into a hero. It has the scale and wonder of an adventure.",
+          "mood": "Ethereal, Tense, Storytelling",
+          "genre": "Contemporary instrumental, Neoclassical / piano-led, Electronic / experimental",
+          "instrumentation": "Piano, synths",
+          "scene": "Subdued piano keys accompany an arrival at a ballroom: leaving a coat, taking a drink, exchanging pleasantries. Then the doors open to the main room, and its scale and architecture inspire awe. A hymn rises, and everyone begins to hum along.\nThe moment bursts apart. Crystals fly through the air and fall into a space where metal rods bounce up from the floor. Finally, the scene settles in a New York park. A bicycle is hard to get moving, so the rider shifts their weight forward with each push of the pedals.",
+          "duration": "2:55"
         },
         {
           "number": 6,
           "id": "track-06-project-0",
           "title": "Project 0",
-          "spotifyUrl": "https://open.spotify.com/track/0taxwy9jN8m2KilAPOkgJc?si=cb30af88074942cf",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/0taxwy9jN8m2KilAPOkgJc?si=3f165203a784419c",
+          "about": "A Day at a Time is another possible title for this track. It’s about living with uncertainty and still choosing to move forward. A tense, grounding bass holds the music steady while a light melody roams above it.",
+          "mood": "Cinematic, Dreamlike, Tense, Reflective",
+          "genre": "Cinematic / soundtrack, Ambient / atmospheric, Neoclassical / piano-led",
+          "instrumentation": "Piano, bass",
+          "scene": "A student struggles to pass his courses while facing difficult circumstances in his life. He keeps pushing, choosing to continue and try one more time. He stays focused on the present while holding on to hope for the future.",
+          "duration": "2:26"
         },
         {
           "number": 7,
           "id": "track-07-oracion-a-jesus",
           "title": "Oración A Jesús",
-          "spotifyUrl": "https://open.spotify.com/track/5dW6iYf3pe6NonI0hMmLee?si=c6a3db0e7a2d4db4",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/5dW6iYf3pe6NonI0hMmLee?si=bf07a1f39a4c4914",
+          "about": "Esta cancion es sobre la oracion. como es que cuando comenzamos a rezr pasamos por este ciclo de distracciones, adaptacion hasta que realmente logramos alcanzar esa paz y estado de meditacion en Dios.",
+          "mood": "Atmospheric, Dreamlike, Reflective, Peaceful",
+          "genre": "New Age / meditative, Ambient / atmospheric, Contemporary instrumental, Neoclassical / piano-led",
+          "instrumentation": "Piano, synths",
+          "scene": "A person sits down to pray. As she remains still, her thoughts come to life around her, showing how difficult it is to quiet her mind and enter a contemplative state.",
+          "duration": "3:38"
         },
         {
           "number": 8,
           "id": "track-08-elbe",
           "title": "Elbe",
-          "spotifyUrl": "https://open.spotify.com/track/4v7I3uTNB3Turu15iYeJTA?si=102debcfe228487e",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/4v7I3uTNB3Turu15iYeJTA?si=a7e941e576324bdb",
+          "about": "Elbe is about reaching stability. It feels comfortable and steady throughout, with no sudden turns or surprises.",
+          "mood": "Dreamlike, Ethereal, Warm, Peaceful",
+          "genre": "Cinematic / soundtrack, Neoclassical / piano-led",
+          "instrumentation": "Piano",
+          "scene": "A house overlooking the ocean. At dusk, a fire burns on the sand while the waves roll in gently. Warm light glows from the house behind it. The scene lingers there, calm and secure, with everything feeling just right.",
+          "duration": "2:23"
         },
         {
           "number": 9,
           "id": "track-09-lala",
           "title": "Lala",
-          "spotifyUrl": "https://open.spotify.com/track/4TY02J6McUe5sNuQaKU0KH?si=20b576c342974686",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/4TY02J6McUe5sNuQaKU0KH?si=1f5282feece744a0",
+          "about": "This is a transitional track. It feels like the end of something, the culmination of everything that came before it.",
+          "mood": "Atmospheric, Dreamlike, Tense",
+          "genre": "Ambient / atmospheric, Contemporary instrumental, Neoclassical / piano-led",
+          "instrumentation": "Synths",
+          "scene": "A vast, weightless space surrounded by a purple gradient that shifts from deep violet to lavender. A few indistinct forms float slowly through it, hinting at what came before. Their movement gradually slows until everything seems suspended in one moment. It feels like a culmination, followed by the quiet release of letting it end.",
+          "duration": "2:07"
         },
         {
           "number": 10,
           "id": "track-10-seda",
           "title": "Seda",
-          "spotifyUrl": "https://open.spotify.com/track/51yRUSnAZPVSzcj1uhOZhH?si=c035e3c2cfa94f20",
-          "detailsPending": true
+          "spotifyUrl": "https://open.spotify.com/track/51yRUSnAZPVSzcj1uhOZhH?si=80767abd5f804dde",
+          "about": "This track feels like an encore, the song an artist plays when the audience applauds for one more. It’s a graceful piano piece that gives the album its final, golden bow.",
+          "mood": "Atmospheric, Cinematic, Dreamlike, Ethereal, Warm, Reflective, Peaceful",
+          "genre": "New Age / meditative, Cinematic / soundtrack, Ambient / atmospheric, Contemporary instrumental, Neoclassical / piano-led",
+          "instrumentation": "Piano",
+          "scene": "A pianist plays a piano among tall trees, facing the sunlight filtering through their leaves. As the final notes ring out, the camera rises from the keys to the view on the album cover: branches framing a bright sun against the sky. The shot holds there as the music fades, giving the album a peaceful ending.",
+          "duration": "2:24"
         }
-      ],
-      "trackDetailsPending": true
+      ]
     }
   ],
   "collectionOrder": [
