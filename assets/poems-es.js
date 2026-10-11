@@ -1,12 +1,12 @@
-import {prepareResultNavigation} from './result-navigation.js?v=20261011-approved-social-1';
-import {selectReflections} from './result-reflections.js?v=20261011-approved-social-1';
-import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261011-approved-social-1';
-import {POEM_EN} from './poem-translations.js?v=20261011-approved-social-1';
-import {createPoemReader} from './poem-reader.js?v=20261011-approved-social-1';
-import {createColorMotion} from './poem-color-motion.js?v=20261011-approved-social-1';
-import {prepareResultSharing} from './result-sharing.js?v=20261011-approved-social-1';
-import {createRecommender} from './recommendation.js?v=20261011-approved-social-1';
-import {EDITORIAL_VERSION,POEM_WORD_BANKS,WORD_CONTEXTS,THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-approved-social-1';
+import {prepareResultNavigation} from './result-navigation.js?v=20261011-horizontal-link-only-1';
+import {selectReflections} from './result-reflections.js?v=20261011-horizontal-link-only-1';
+import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261011-horizontal-link-only-1';
+import {POEM_EN} from './poem-translations.js?v=20261011-horizontal-link-only-1';
+import {createPoemReader} from './poem-reader.js?v=20261011-horizontal-link-only-1';
+import {createColorMotion} from './poem-color-motion.js?v=20261011-horizontal-link-only-1';
+import {prepareResultSharing} from './result-sharing.js?v=20261011-horizontal-link-only-1';
+import {createRecommender} from './recommendation.js?v=20261011-horizontal-link-only-1';
+import {EDITORIAL_VERSION,POEM_WORD_BANKS,WORD_CONTEXTS,THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-horizontal-link-only-1';
 
 (()=>{
   const stateHost={get widgetState(){try{return JSON.parse(sessionStorage.getItem('susidlc-bilingual-journey')||'null');}catch{return null;}},setWidgetState(state){try{sessionStorage.setItem('susidlc-bilingual-journey',JSON.stringify(state));}catch{}return Promise.resolve();}};
@@ -1369,7 +1369,7 @@ function buildPoemGeometry(kind,compact=false){
     const geometryKey=PAGES[page].kind+':'+compact;
     if(!geometryCache.has(geometryKey)){
       const generated=buildPoemGeometry(PAGES[page].kind,compact);
-      if(compact)generated.cells=generated.cells.map(c=>({...c,colorY:c.cy,cy:c.cy*1.5,d:c.d.replace(/(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/g,(_,x,y)=>x+','+(Number(y)*1.5).toFixed(2)),box:{...c.box,y:c.box.y*1.5,h:c.box.h*1.5}}));
+      if(compact&&PAGES[page].kind!=='fibonacci')generated.cells=generated.cells.map(c=>({...c,colorY:c.cy,cy:c.cy*1.5,d:c.d.replace(/(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/g,(_,x,y)=>x+','+(Number(y)*1.5).toFixed(2)),box:{...c.box,y:c.box.y*1.5,h:c.box.h*1.5}}));
       geometryCache.set(geometryKey,generated);
     }
     const model=geometryCache.get(geometryKey),pageBank=PAGES[page].words,bank=compact?PAGES[page].compactWords.map(text=>pageBank.find(word=>word.text===text)):pageBank;
@@ -1538,7 +1538,7 @@ function buildPoemGeometry(kind,compact=false){
     const key=active+':'+compact+':'+Math.round(width)+':'+opts.textScale+':'+totalClicks+':'+choices.slice(-(totalClicks%7||0)).map(c=>c.word).join('|');
     layoutKey=key;let cells=cache.get(key);if(!cells){cells=plannedCells(active,compact,scale);cache.set(key,cells);}cells=cells.map((cell,i)=>({...cell,dest:routeDeck[i%routeDeck.length]})).map(cell=>cell.decorative?cell:displayCell(cell,scale));
     const defs=q('[data-defs]'),group=q('[data-cells]');defs.replaceChildren();group.replaceChildren();
-    const bounds=GEOMETRIES[PAGES[active].kind][compact?'compact':'wide'].bounds,ys=compact?1.5:1;root.style.setProperty('--sp-figure-left',(bounds.x/960*100)+'%');root.style.setProperty('--sp-figure-width',(bounds.width/960*100)+'%');q('[data-art]').setAttribute('viewBox','0 '+((bounds.y-18)*ys)+' 960 '+((bounds.height+36)*ys));
+    const bounds=GEOMETRIES[PAGES[active].kind][compact?'compact':'wide'].bounds,ys=compact&&PAGES[active].kind!=='fibonacci'?1.5:1;root.style.setProperty('--sp-figure-left',(bounds.x/960*100)+'%');root.style.setProperty('--sp-figure-width',(bounds.width/960*100)+'%');q('[data-art]').setAttribute('viewBox','0 '+((bounds.y-18)*ys)+' 960 '+((bounds.height+36)*ys));
     cells.forEach((cell,i)=>{
       const surface=cellRelief(active,cell,i),hiddenSurface=cellRelief(active,cell,i,true),baseColors=surface.colors,revealColors=hiddenSurface.colors;
       const baseID='susi-p-base-'+i,hiddenID='susi-p-hidden-'+i;

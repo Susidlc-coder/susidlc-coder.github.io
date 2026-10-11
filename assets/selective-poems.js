@@ -1,4 +1,4 @@
-import {createRecommender} from './recommendation.js?v=20261011-approved-social-1';
+import {createRecommender} from './recommendation.js?v=20261011-horizontal-link-only-1';
 
 (()=>{
   const stateHost={get widgetState(){try{return JSON.parse(sessionStorage.getItem('susidlc-selective-journey')||'null');}catch{return null;}},setWidgetState(state){try{sessionStorage.setItem('susidlc-selective-journey',JSON.stringify(state));}catch{}return Promise.resolve();}};

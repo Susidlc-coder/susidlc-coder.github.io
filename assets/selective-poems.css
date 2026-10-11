@@ -73,3 +73,6 @@ body.evening #susi-poems{--paper:#241b18;--ink:#f0e7d5;--quiet:#bdab95;--rule:#5
 
 /* Give the mobile start action breathing room before the artwork. */
 @media(max-width:700px){.poems-gateway .gateway-main{row-gap:12.5px}}
+
+/* Mobile Fibonacci stays horizontal, with its original proportions. */
+@media(max-width:700px){.poems-gateway .gold-stage{height:auto;min-height:0;margin:22px 0 18px}.poems-gateway .gold-fibonacci{transform:none;max-width:none;width:100%;height:auto;aspect-ratio:786 / 486}}

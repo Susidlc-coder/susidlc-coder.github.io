@@ -1,7 +1,7 @@
-import {CHAPTER_READINGS} from './chapter-recommendations.js?v=20261011-approved-social-1';
-import {RESULT_VERSES} from './result-verses.js?v=20261011-approved-social-1';
-import {REVIEWED_PROFILES} from './recommendation.js?v=20261011-approved-social-1';
-import {THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-approved-social-1';
+import {CHAPTER_READINGS} from './chapter-recommendations.js?v=20261011-horizontal-link-only-1';
+import {RESULT_VERSES} from './result-verses.js?v=20261011-horizontal-link-only-1';
+import {REVIEWED_PROFILES} from './recommendation.js?v=20261011-horizontal-link-only-1';
+import {THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-horizontal-link-only-1';
 // Editorial affinities, not psychological probabilities. Every candidate must
 // Chapters retain 95% and verses 90% of their best semantic match. Recent
 // verse history only breaks close matches; it never admits unrelated verses.
