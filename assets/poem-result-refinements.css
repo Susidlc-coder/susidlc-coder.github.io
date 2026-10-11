@@ -268,3 +268,11 @@
 }
 
 #susi-poems a.sp-result-continue{text-decoration:none}
+
+/* The footer returns from a recommendation; restarting stays in the overview. */
+#susi-poems .sp-result-continue[hidden]{display:none!important}
+#susi-poems .sp-result .sp-mobile-result-back,
+#susi-poems .sp-result .sp-desktop-result-back{display:none!important}
+
+/* Repeat the result's warm gold in the expanded song title. */
+#susi-poems .sp-result-option:has(.sp-result-disclosure[open]) [data-result-title]{color:#f0d28a}

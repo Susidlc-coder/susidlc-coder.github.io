@@ -7,10 +7,13 @@ export function prepareResultNavigation(dialog){
  const icons=[...dialog.querySelectorAll('[data-mobile-open-recommendation]')];
  const titles=[...dialog.querySelectorAll('[data-title-open-recommendation]')];
  const back=dialog.querySelector('[data-mobile-result-back]');
+ const footerBack=dialog.querySelector('[data-result-footer-back]');
+ const restart=dialog.querySelector('[data-continue-quiz]');
  const mobile=window.matchMedia('(max-width:640px)');
  const update=()=>{
   const active=panels.findIndex(p=>p.open);
-  bar.hidden=active<0;back.hidden=active<0;
+  bar.hidden=active<0;back.hidden=true;
+  footerBack.hidden=active<0;restart.hidden=active>=0;
   icons.forEach((b,i)=>b.setAttribute('aria-expanded',String(i===active)));
   titles.forEach((b,i)=>b.setAttribute('aria-expanded',String(i===active)));
   if(active>=0){const heading=panels[active].closest('.sp-result-option').querySelector('.sp-result-option-heading');if(bar.parentElement!==heading)heading.append(bar);}
@@ -29,6 +32,7 @@ export function prepareResultNavigation(dialog){
    if(mobile.matches)dialog.scrollTop=0;
   };
   back.addEventListener('click',collapse);
+  footerBack.addEventListener('click',collapse);
   icons.forEach((b,i)=>b.addEventListener('click',()=>open(i)));
   titles.forEach((b,i)=>b.addEventListener('click',()=>open(i)));
   bar.querySelectorAll('[data-collapse-recommendations]').forEach(b=>b.addEventListener('click',collapse));

@@ -1,4 +1,4 @@
-import {prepareResultNavigation} from './result-navigation.js?v=20261011-horizontal-link-only-1';
+import {prepareResultNavigation} from './result-navigation.js?v=20261011-song-popup-gold-1';
 import {selectReflections} from './result-reflections.js?v=20261011-horizontal-link-only-1';
 import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261011-horizontal-link-only-1';
 import {POEM_EN} from './poem-translations.js?v=20261011-horizontal-link-only-1';
@@ -1404,6 +1404,9 @@ function buildPoemGeometry(kind,compact=false){
     q('[data-result-theme]').textContent=theme.label;
     const essenceNode=q('[data-result-essence]');
     const quotedTitle=LANG==='es'?'«'+s.title+'»':'“'+s.title+'”';
+    const reasonNode=q('[data-result-reason]'),reasonAt=r.reason.indexOf(quotedTitle);
+    reasonNode.replaceChildren();
+    if(reasonAt>=0){reasonNode.append(document.createTextNode(r.reason.slice(0,reasonAt)),html('span','sp-reflection-quote',quotedTitle[0]),html('em','sp-reflection-song',s.title),html('span','sp-reflection-quote',quotedTitle.at(-1)),document.createTextNode(r.reason.slice(reasonAt+quotedTitle.length)));}else reasonNode.textContent=r.reason;
     const titleAt=essence.indexOf(quotedTitle);
     essenceNode.replaceChildren();
     if(titleAt>=0){essenceNode.append(document.createTextNode(essence.slice(0,titleAt)),html('span','sp-reflection-quote',quotedTitle[0]),html('em','sp-reflection-song',s.title),html('span','sp-reflection-quote',quotedTitle.at(-1)),document.createTextNode(essence.slice(titleAt+quotedTitle.length)));}else essenceNode.textContent=essence;
