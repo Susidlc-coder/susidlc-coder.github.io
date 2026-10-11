@@ -1,4 +1,4 @@
-import {spreadLabels} from './spread-labels.js?v=20261011-approved-editorial';
+import {spreadLabels} from './spread-labels.js?v=20261011-approved-quiz-1';
 // Maximum matching: a word labels at most one cell; cells without a fitting
 // source word remain decorative. The shape and animated color surfaces persist.
 export const normalizeWord=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();

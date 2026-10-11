@@ -4,7 +4,7 @@
   const key = 'susidlc-language';
   const fallbackParam = 'susi-language';
   const allowed = value => value === 'es' || value === 'en';
-  const ignored = /^\/(assets|referencia|propuesta-anterior|estudio)(?:\/|$)|^\/preview\.html/;
+  const ignored = /^\/(assets|referencia|propuesta-anterior|estudio|quiz)(?:\/|$)|^\/preview\.html/;
   if (ignored.test(location.pathname)) return;
   const match = /^\/(es|en)(?:\/|$)/.exec(location.pathname);
   let preference = null;

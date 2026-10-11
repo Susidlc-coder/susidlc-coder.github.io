@@ -236,3 +236,23 @@
  #susi-poems .sp-result:has(.sp-result-options .sp-result-disclosure[open]) .sp-result-intro>.sp-result-cover a{width:64px;max-width:64px}
  #susi-poems .sp-result:has(.sp-result-options .sp-result-disclosure[open]) .sp-result-theme{margin:0}
 }
+
+@media(min-width:641px){#susi-poems .sp-result:has(.sp-result-options .sp-result-disclosure[open]) .sp-result-theme{margin:0!important}#susi-poems .sp-result:has(.sp-result-options .sp-result-disclosure[open]) .sp-result-intro-copy{display:flex;align-items:center;min-height:64px}}
+
+/* Owner preview: outlined cross and labelled mobile recommendation controls. */
+#susi-poems .sp-cross-icon{fill:none!important;stroke:currentColor!important;stroke-width:1.4}
+#susi-poems .sp-reflection-song{color:#e8a4b7;font-style:italic}
+@media(max-width:640px){
+ #susi-poems .sp-mobile-recommendations{align-items:flex-start;gap:8px}
+ #susi-poems .sp-mobile-recommendations button{display:flex;flex-direction:column;align-items:center;gap:6px;width:calc((100% - 16px)/3);min-width:0;min-height:72px;border:0;background:transparent}
+ #susi-poems .sp-mobile-recommendation-name{color:#e8a4b7;font-size:11px;line-height:1.25;font-weight:500;text-align:center;overflow-wrap:anywhere}
+ #susi-poems .sp-mobile-recommendation-icon{display:grid;place-items:center;width:64px;height:48px;border:1px solid #a88d674d;border-radius:2px;background:#d5ad6910}
+ #susi-poems .sp-mobile-recommendations button:hover{background:transparent}
+ #susi-poems .sp-mobile-recommendations button:hover .sp-mobile-recommendation-icon{background:#d5ad6925}
+}
+
+#susi-poems .sp-reflection-song{font-weight:700}
+#susi-poems .sp-reflection-quote{color:#e0bf76}
+
+/* Readable warm gold, preserving bold italic emphasis. */
+#susi-poems .sp-reflection-song{color:#f0d28a}

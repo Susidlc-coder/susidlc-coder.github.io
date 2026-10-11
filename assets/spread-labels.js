@@ -77,8 +77,10 @@ export function spreadLabels(assigned,cells,fit,scale=1,shape='',compact=false){
   const p=position(candidate.box);
   const crowding=placements.reduce((sum,other,k)=>{if(k===j)return sum;const q=position(other.box);return sum+1/(.025+(p.x-q.x)**2+(p.y-q.y)**2);},0);
   // Readability wins when two placements offer essentially the same spacing.
-  const gravity=22*((p.x-.5)**2+(p.y-.5)**2);
-  return crowding+gravity+.08*Math.max(0,18-candidate.fit.screenSize);
+  const gravity=(compact?22:180)*((p.x-.5)**2+(p.y-.5)**2);
+  const original=cells[candidate.i].box;
+  const localCenter=compact?0:18*((candidate.box.x+candidate.box.w/2-original.x-original.w/2)**2/(original.w**2)+(candidate.box.y+candidate.box.h/2-original.y-original.h/2)**2/(original.h**2));
+  return (compact?1:.48)*crowding+gravity+localCenter+.15*Math.max(0,24-candidate.fit.screenSize);
  };
  for(let pass=0;pass<4;pass++){
   let changed=false;

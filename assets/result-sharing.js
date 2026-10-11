@@ -79,7 +79,7 @@ function install(dialog){
 export function prepareResultSharing(dialog,data){
  const state=states.get(dialog)||install(dialog),t=copy[data.lang]||copy.es;
  const token=++state.token;if(state.blobURL)URL.revokeObjectURL(state.blobURL);
- state.data=data;state.labels=t;state.file=null;state.url=new URL('/'+data.lang+'/poemas/','https://susidlc.com').href;
+ state.data=data;state.labels=t;state.file=null;state.url=new URL('/quiz','https://susidlc.com').href;
  state.group.open=false;state.toggleLabel.textContent=t.toggle;state.share.textContent=t.share;state.download.textContent=t.download;state.link.textContent=t.link;state.group.setAttribute('aria-label',t.label);state.status.textContent=t.preparing;state.fallback.hidden=true;state.share.disabled=true;state.download.removeAttribute('href');state.download.setAttribute('aria-disabled','true');
  state.preview.open=false;state.preview.hidden=true;state.previewLabel.textContent=t.preview;state.previewImage.removeAttribute('src');state.previewImage.alt=[data.theme,data.title,data.album,data.essence,data.reading?.title,data.verse?.reference,data.words.join(' → '),'Susidlc.com'].filter(Boolean).join(' · ');
  renderCard(data,t).then(({blob,width,height})=>{

@@ -1,14 +1,14 @@
-import {prepareResultNavigation} from './result-navigation.js?v=20261011-approved-editorial';
-import {selectReflections} from './result-reflections.js?v=20261011-approved-editorial';
-import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261011-approved-editorial';
-import {POEM_EN} from './poem-translations.js?v=20261011-approved-editorial';
-import {createPoemReader} from './poem-reader.js?v=20261011-approved-editorial';
-import {createColorMotion} from './poem-color-motion.js?v=20261011-approved-editorial';
-import {prepareResultSharing} from './result-sharing.js?v=20261011-approved-editorial';
+import {prepareResultNavigation} from './result-navigation.js?v=20261011-approved-quiz-1';
+import {selectReflections} from './result-reflections.js?v=20261011-approved-quiz-1';
+import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261011-approved-quiz-1';
+import {POEM_EN} from './poem-translations.js?v=20261011-approved-quiz-1';
+import {createPoemReader} from './poem-reader.js?v=20261011-approved-quiz-1';
+import {createColorMotion} from './poem-color-motion.js?v=20261011-approved-quiz-1';
+import {prepareResultSharing} from './result-sharing.js?v=20261011-approved-quiz-1';
 const EN_IDEAS={"Sorrow'sDeep":"quietly observing ripples and reflections in the water","The Bongos":"moving from blurred thoughts towards clear ideas, with spaces of stillness","Aurel":"escaping chaos until fear turns into momentum and joy","Nebuú":"emerging from isolation into a more familiar world through love","Crystal":"contemplating life from luminous clouds and a distant perspective","Green Tea":"choosing what to protect in a test where survival comes at a cost","Aurelillo":"floating peacefully as light and colour open the next chapter","que Soñaba en el piano":"sitting at the piano with the doubts left by criticism from someone close","David Jones Snow":"defending a creative voice of your own and continuing through waves and scars","Dream 2":"feeling exhausted between sleep and wakefulness, with pain accompanying every movement","Tortilla Song":"recognising an authentic, individual form in the marks left by pressure","Cowgirl":"floating, laughing and trusting those who carry you safely through the night","Wait for me UNO":"playfully chasing the first beat of a pattern that keeps moving","Dar":"accepting a mission while fear and growing hope coexist","romA":"letting piano and love breathe with life beyond a window","OOO2":"facing the panic of a night-time shipwreck and struggling against the current","Anoche":"remaining faithful inwardly while everyday life continues to reach the piano","The Rebellion":"feeling the anger of two forces colliding inside a system they cannot escape","John 3:16":"creating a calm space to read, pray and reflect on the love of God","Sandais":"letting a suspended pulse suddenly open into colour and movement","Lo que vibra en la vida":"starting again in another land and working to give the family opportunities","I hate to love you":"accepting uncomfortable criticism and continuing a beloved practice even when it leaves marks","Don Perro":"playing with an individual, irreverent voice at ease with its own absurdity","Disdain":"recognising envy, rejecting its harm and returning to one’s own path","Te Quiero":"discovering a piano in a cave, a means of expression and a light connected to self-love","...25 (Bonus Track)":"sharing the warmth of a Christmas carol with family, friends and neighbours on a cold night","Linden Ocean":"moving through restless, uncertain waters towards the relief of dry land","Logic":"returning to an everyday landscape that gradually changes until it feels unfamiliar","El Tuki Tuki":"remembering a day of games, conversation and food with friends, ending by the pool under fireworks","Magical Project":"contemplating light in a peaceful forest before a reveal inspired by Our Lady of Champion","songon B":"growing through discovery, responsibility and effort in a large-scale adventure","Project 0":"continuing to make an effort in the present despite uncertainty, while holding on to hope for the future","Oración A Jesús":"moving through the distractions of prayer towards calm and contemplation in God","Elbe":"finding stability and a warm refuge beside gentle ocean waves","Lala":"an outro-like culmination that remains floating and in transition","Seda":"closing peacefully with a piano among sunlit trees"};
 const EN_THEMES={"vuelo": "flight", "encierro": "confinement", "cueva": "the cave", "piano": "music", "heridas": "wounds", "supervivencia": "survival", "renacer": "a new beginning", "luz": "light", "amor": "love", "miedo": "fear", "agua": "water", "noche": "night", "mundo": "a new world", "lucha": "struggle", "calma": "calm", "introspeccion": "reflection", "rabia": "anger", "injusticia": "injustice", "creacion": "creation", "fe": "faith", "duda": "doubt", "busqueda": "searching", "color": "colour", "ciclo": "returning", "juego": "play", "esperanza": "hope", "incertidumbre": "uncertainty", "claridad": "clarity", "envidia": "envy", "libertad": "freedom", "fuego": "fire", "dolor": "pain", "agotamiento": "exhaustion", "suenos": "dreams", "familia": "shared warmth", "escape": "finding a way out", "cielo": "the sky"};
-import {createRecommender} from './recommendation.js?v=20261011-approved-editorial';
-import {EDITORIAL_VERSION,POEM_WORD_BANKS,WORD_CONTEXTS,THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-approved-editorial';
+import {createRecommender} from './recommendation.js?v=20261011-approved-quiz-1';
+import {EDITORIAL_VERSION,POEM_WORD_BANKS,WORD_CONTEXTS,THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-approved-quiz-1';
 
 (()=>{
   const stateHost={get widgetState(){try{return JSON.parse(sessionStorage.getItem('susidlc-bilingual-journey')||'null');}catch{return null;}},setWidgetState(state){try{sessionStorage.setItem('susidlc-bilingual-journey',JSON.stringify(state));}catch{}return Promise.resolve();}};
@@ -1356,7 +1356,8 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Triangul
   function textColors(a,b){const bg=mix(a,b,.5),l=luminance(bg),light=(luminance('#f8f4ec')+.05)/(l+.05),dark=(l+.05)/(luminance('#241b18')+.05);return light>=dark?{fill:'#f8f4ec',stroke:'#33241e66'}:{fill:'#241b18',stroke:'#f2eee566'};}
   function fit(word,box,scale,textScale=opts.textScale){
     const tokens=word.split(/\s+/),usableW=Math.max(1,box.w-4/scale),usableH=Math.max(1,box.h-4/scale);
-    const minPx=11.5,targetPx=Math.min(20,Math.max(14,Math.sqrt(box.w*box.h)*scale/6))*textScale/100;
+    const desktop=(q('[data-art]').getBoundingClientRect().width>=650);
+    const minPx=desktop?14:11.5,targetPx=Math.min(desktop?27:20,Math.max(desktop?19:14,Math.sqrt(box.w*box.h)*scale/(desktop?4.5:6)))*textScale/100;
     let best=null;
     const arrangements=[tokens.length===2?[word]:tokens];if(tokens.length===2)arrangements.push(tokens);
     for(const lines of arrangements){
@@ -1404,7 +1405,12 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Triangul
     q('[data-result-title]').textContent=s.title;q('[data-result-reason]').textContent=r.reason;
     const essence=r.reflection;
     q('[data-result-theme]').textContent=theme.label;
-    q('[data-result-essence]').textContent=essence;q('[data-result-story]').open=false;
+    const essenceNode=q('[data-result-essence]');
+    const quotedTitle=LANG==='es'?'«'+s.title+'»':'“'+s.title+'”';
+    const titleAt=essence.indexOf(quotedTitle);
+    essenceNode.replaceChildren();
+    if(titleAt>=0){essenceNode.append(document.createTextNode(essence.slice(0,titleAt)),html('span','sp-reflection-quote',quotedTitle[0]),html('em','sp-reflection-song',s.title),html('span','sp-reflection-quote',quotedTitle.at(-1)),document.createTextNode(essence.slice(titleAt+quotedTitle.length)));}else essenceNode.textContent=essence;
+    q('[data-result-story]').open=false;
     q('[data-listen]').href=s.listen;q('[data-listen]').setAttribute('aria-label',(LANG==='es'?'Escuchar ':'Listen to ')+s.title);q('[data-song-source]').href=window.SusiLocale.url(s.page);
     const album=/\/music\/(sdlc-\d+)\//.exec(s.page)?.[1];
     if(album){
@@ -1422,6 +1428,10 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Triangul
     q('[data-suggested-reading-link]').setAttribute('aria-label',(LANG==='es'?'Abrir resumen de ':'Open summary of ')+reading.title);
     q('[data-suggested-verse]').open=false;
     q('[data-suggested-verse-reference]').textContent=verse.reference;
+    q('[data-mobile-recommendation-name="0"]').textContent=verse.reference;
+    q('[data-mobile-recommendation-name="1"]').textContent=s.title;
+    q('[data-mobile-recommendation-name="2"]').textContent=LANG==='es'?dwellingTitle.replace(' Morada',' morada'):dwellingTitle;
+    
     q('[data-suggested-verse-text]').textContent=LANG==='es'?'«'+verse.text+'»':'“'+verse.text+'”';
     q('[data-suggested-verse-context]').textContent=verse.context;
     q('[data-suggested-verse-version]').textContent=verse.version;
@@ -1580,7 +1590,7 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Triangul
   colorMotion=createColorMotion({root,stage:q('[data-art]'),getCells:()=>q('[data-cells]').children,button:q('[data-demo]'),lang:LANG});
   save();
   if(new URLSearchParams(location.search).get('resultado')==='preview'){
-    const previewExamples={"tortilla":[{"page":0,"word":"felicidad"},{"page":11,"word":"escribo"},{"page":3,"word":"pasión"},{"page":8,"word":"sabiduría"},{"page":4,"word":"verdad"},{"page":6,"word":"fallé"},{"page":2,"word":"orgullo"}],"piano":[{"page":0,"word":"felicidad"},{"page":8,"word":"dolor"},{"page":6,"word":"fallé"},{"page":1,"word":"inalcanzable"},{"page":9,"word":"quise ser"},{"page":11,"word":"impotencia"},{"page":5,"word":"piano"}]};
+    const previewExamples={"envy":[{"page":0,"word":"celos"},{"page":10,"word":"hogar"},{"page":9,"word":"nombre"},{"page":11,"word":"vida"},{"page":5,"word":"imposible"},{"page":4,"word":"oportunidad"},{"page":1,"word":"corriente"}],"tortilla":[{"page":0,"word":"felicidad"},{"page":11,"word":"escribo"},{"page":3,"word":"pasión"},{"page":8,"word":"sabiduría"},{"page":4,"word":"verdad"},{"page":6,"word":"fallé"},{"page":2,"word":"orgullo"}],"piano":[{"page":0,"word":"felicidad"},{"page":8,"word":"dolor"},{"page":6,"word":"fallé"},{"page":1,"word":"inalcanzable"},{"page":9,"word":"quise ser"},{"page":11,"word":"impotencia"},{"page":5,"word":"piano"}]};
     const previewChoices=previewExamples[new URLSearchParams(location.search).get('ejemplo')]||[{page:0,word:'ligeros'},{page:3,word:'alma'},{page:7,word:'noche desvelada'},{page:2,word:'nómada'},{page:4,word:'cambió'},{page:5,word:'atajo'},{page:11,word:'agonía'}];
     showResult(previewChoices,{preview:true});
     // A demonstration is shown once; refreshing or continuing uses the real journey.
