@@ -8,6 +8,14 @@
 #susi-poems .sp-read-invite{display:flex;justify-content:center;align-items:center;padding:6px 0 3px;margin:0}
 #susi-poems .sp-seven-progress{margin:0;justify-self:center;text-align:center;min-width:210px;width:max-content;max-width:100%;box-sizing:border-box}
 @media(max-width:640px){
+ #susi-poems .sp-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:12px;row-gap:0;align-items:center}
+ #susi-poems .sp-heading > div:first-child{display:contents}
+ #susi-poems .sp-heading h1{grid-column:1 / -1;grid-row:1}
+ #susi-poems .sp-heading .sp-poem-title{grid-column:1 / -1;grid-row:2;margin-bottom:8px}
+ #susi-poems .sp-heading .sp-read-action{grid-column:1;grid-row:3}
+ #susi-poems .sp-heading .sp-heading-side{grid-column:2;grid-row:3;width:auto;justify-self:end;align-self:center}
+ #susi-poems .sp-heading .sp-swatches{margin-top:0}
+
  #susi-poems .sp-heading .sp-read-action{min-height:44px;margin-top:0}
  #susi-poems .sp-seven-progress{font-size:12px;padding:8px 12px;line-height:1.35}
  #susi-poems .sp-seven-progress::after{margin-top:6px}
