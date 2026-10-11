@@ -142,6 +142,15 @@ body{margin:0;background:#f2eee5;-webkit-font-smoothing:antialiased}button,a,sel
 @media(max-width:420px){#susi-poems .sp-music-controls{width:100%;justify-content:flex-end}#susi-poems .sp-atlas-item{grid-template-columns:21px minmax(0,1fr) 44px}#susi-poems .sp-dialog-inner{padding:23px 22px}#susi-poems .sp-result-title{font-size:36px}#susi-poems .sp-read-dialog .sp-dialog-title{font-size:28px}}
 @media(pointer:coarse){#susi-poems .sp-music-controls button{width:44px;height:44px}}
 @media(prefers-reduced-motion:reduce){#susi-poems .sp-plus-mark,#susi-poems .sp-listen{transition:none}}
+/* Keep the music strip on one line, including narrow phone widths. */
+@media(max-width:700px){
+ #susi-poems .sp-music-banner{flex-wrap:nowrap;gap:10px}
+ #susi-poems .sp-music-copy{display:flex;align-items:baseline;gap:8px;flex:1;min-width:0}
+ #susi-poems .sp-music-kicker{flex:none;margin-right:0;white-space:nowrap}
+ #susi-poems .sp-music-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ #susi-poems .sp-music-controls{flex:none;width:auto;gap:0;justify-content:flex-end}
+ #susi-poems .sp-music-link{margin-left:0}
+}
 #susi-poems{--in:220ms;--out:1400ms}
 #susi-poems .sp-nav{margin-bottom:23px}
 #susi-poems .sp-heading{margin-bottom:18px;align-items:center}
