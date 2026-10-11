@@ -1,9 +1,9 @@
-/* Colour only. CSS carries a 6.5-second spatial wave; JavaScript never ticks it.
+/* Colour only. CSS carries a 5.5-second spatial wave; JavaScript never ticks it.
  * Call refresh() after replacing SVG cells. Pausing changes play-state only, so
  * resuming preserves phase. No randomness, geometry edits or poem navigation.
  */
 // Shared timing/direction for poem surfaces and the two Fibonacci gateways.
-export const COLOR_WAVE=Object.freeze({durationMs:6500,xWeight:.68,yWeight:.32,easing:'cubic-bezier(.45,0,.55,1)'});
+export const COLOR_WAVE=Object.freeze({durationMs:5500,xWeight:.68,yWeight:.32,easing:'cubic-bezier(.45,0,.55,1)'});
 const labels={
  es:{pause:'Pausar color',resume:'Reanudar color',staticOn:'Activar color estático',staticOff:'Desactivar color estático'},
  en:{pause:'Pause colour',resume:'Resume colour',staticOn:'Enable static colour',staticOff:'Disable static colour'}

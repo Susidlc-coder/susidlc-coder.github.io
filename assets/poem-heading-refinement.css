@@ -1,0 +1,12 @@
+@media(max-width:700px){#susi-poems .sp-heading-side{justify-content:flex-end}#susi-poems .sp-heading-side .sp-swatches{margin-top:0}}
+
+#susi-poems[data-page='0'] h1{font-size:34px;line-height:1.12;letter-spacing:-1.05px}
+@media(max-width:700px){#susi-poems[data-page='0'] h1{font-size:29px;letter-spacing:-.7px}}
+
+#susi-poems .sp-word-instruction{box-sizing:border-box;font:400 17px/1.5 var(--selective-serif);font-style:normal;letter-spacing:0;color:var(--ink);text-align:left;width:var(--sp-figure-width,81.25%);max-width:none;margin:20px 0 2px var(--sp-figure-left,9.375%);text-wrap:pretty}
+@media(max-width:700px){#susi-poems .sp-word-instruction{font-size:15px;line-height:1.5;margin-top:18px;margin-bottom:0}}
+
+/* The artwork keeps its colour wave when its labels are hidden. */
+#susi-poems[data-words-hidden="true"] [data-color-wave-stage] .sp-cell>.sp-ink{display:none}
+#susi-poems[data-words-hidden="true"] .sp-selection{visibility:hidden}
+#susi-poems .sp-tools{justify-content:flex-end}

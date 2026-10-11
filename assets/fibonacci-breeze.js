@@ -1,6 +1,6 @@
 /* The home and gateway use their existing golden surfaces and shared wave timing.
  * Only opacity animates in CSS. Geometry, gradients, links and text stay intact. */
-import {COLOR_WAVE} from './poem-color-motion.js?v=20261010-refinements';
+import {COLOR_WAVE} from './poem-color-motion.js?v=20261010-words-view-2';
 
 export function createFibonacciBreeze(svg){
  const doc=svg.ownerDocument,view=doc.defaultView;
