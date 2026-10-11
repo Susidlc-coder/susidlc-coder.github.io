@@ -1,0 +1,14 @@
+/* Shared compact poem heading; reading continues to open the full poem. */
+#susi-poems main > .sp-nav,
+#susi-poems main > .sp-heading .sp-eyebrow{display:none}
+#susi-poems .sp-heading .sp-read-action{display:inline-flex;align-items:center;gap:4px;border:0;background:transparent;border-radius:0;color:#e8a4b7;font:400 14px/1.4 'Helvetica Neue',Arial,sans-serif;padding:4px 0;min-height:32px;margin-top:4px;justify-self:start;cursor:pointer}
+#susi-poems .sp-heading .sp-read-action:hover{background:transparent;color:#f3c1cf}
+#susi-poems .sp-heading .sp-read-action:focus-visible{outline:2px solid #e8a4b7;outline-offset:3px}
+#susi-poems .sp-read-triangle{font-size:13px}
+#susi-poems .sp-read-invite{display:flex;justify-content:center;align-items:center;padding:6px 0 3px;margin:0}
+#susi-poems .sp-seven-progress{margin:0;justify-self:center;text-align:center;min-width:210px;width:max-content;max-width:100%;box-sizing:border-box}
+@media(max-width:640px){
+ #susi-poems .sp-heading .sp-read-action{min-height:44px;margin-top:0}
+ #susi-poems .sp-seven-progress{font-size:12px;padding:8px 12px;line-height:1.35}
+ #susi-poems .sp-seven-progress::after{margin-top:6px}
+}

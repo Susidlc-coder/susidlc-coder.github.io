@@ -1,12 +1,12 @@
-import {prepareResultNavigation} from './result-navigation.js?v=20261011-approved-quiz-1';
-import {selectReflections} from './result-reflections.js?v=20261011-approved-quiz-1';
-import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261011-approved-quiz-1';
-import {POEM_EN} from './poem-translations.js?v=20261011-approved-quiz-1';
-import {createPoemReader} from './poem-reader.js?v=20261011-approved-quiz-1';
-import {createColorMotion} from './poem-color-motion.js?v=20261011-approved-quiz-1';
-import {prepareResultSharing} from './result-sharing.js?v=20261011-approved-quiz-1';
-import {createRecommender} from './recommendation.js?v=20261011-approved-quiz-1';
-import {EDITORIAL_VERSION,POEM_WORD_BANKS,WORD_CONTEXTS,THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-approved-quiz-1';
+import {prepareResultNavigation} from './result-navigation.js?v=20261011-approved-start-again-1';
+import {selectReflections} from './result-reflections.js?v=20261011-approved-start-again-1';
+import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261011-approved-start-again-1';
+import {POEM_EN} from './poem-translations.js?v=20261011-approved-start-again-1';
+import {createPoemReader} from './poem-reader.js?v=20261011-approved-start-again-1';
+import {createColorMotion} from './poem-color-motion.js?v=20261011-approved-start-again-1';
+import {prepareResultSharing} from './result-sharing.js?v=20261011-approved-start-again-1';
+import {createRecommender} from './recommendation.js?v=20261011-approved-start-again-1';
+import {EDITORIAL_VERSION,POEM_WORD_BANKS,WORD_CONTEXTS,THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-approved-start-again-1';
 
 (()=>{
   const stateHost={get widgetState(){try{return JSON.parse(sessionStorage.getItem('susidlc-bilingual-journey')||'null');}catch{return null;}},setWidgetState(state){try{sessionStorage.setItem('susidlc-bilingual-journey',JSON.stringify(state));}catch{}return Promise.resolve();}};
