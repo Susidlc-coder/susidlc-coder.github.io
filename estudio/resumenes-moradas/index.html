@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Updated chapter summaries · Editorial review</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#241b18;color:#f2eee5;font:17px/1.65 Georgia,serif}main{max-width:1060px;margin:auto;padding:40px 24px 80px}h1{font-size:clamp(28px,5vw,42px);font-weight:normal;line-height:1.2;color:#f0d28a}h2{font-size:26px;font-weight:normal;margin:0 0 18px;color:#f0d28a}p{margin:8px 0 18px}header{margin-bottom:40px}header p{color:#d4c8b8;font:15px/1.7 Arial,sans-serif}article{padding:30px 0;border-top:1px solid #766859}.pair{display:grid;grid-template-columns:1fr 1fr;gap:36px}.lang{font:12px/1.3 Arial,sans-serif;color:#e8a4b7;letter-spacing:.12em}a{color:#e8a4b7;font:14px/1.4 Arial,sans-serif;text-underline-offset:4px}#status{font:13px/1.5 Arial,sans-serif;color:#cabcaa}#status:empty{display:none}@media(max-width:640px){.pair{grid-template-columns:1fr;gap:12px}}@media print{body{background:white;color:black}h1,h2,a,.lang{color:black}article{break-inside:avoid}.pair{gap:20px}#status{display:none}}
+</style></head><body><main><header><h1>Updated chapter summaries</h1><p>24 chapters · Spanish and English<br>Editorial interpretations of the complete updated adapted text. Each summary focuses on the chapter’s meaning and its consequences in the spiritual life Teresa describes.</p></header><section id="chapters" aria-label="Chapter summaries"></section></main><script type="module">
+import {CHAPTER_READINGS} from '/assets/chapter-recommendations.js?v=20261012-adapted-meanings-1';
+const list=document.getElementById('chapters');
+for(const c of CHAPTER_READINGS){
+ const article=document.createElement('article');article.dataset.chapter=c.id;
+ const heading=document.createElement('h2');heading.textContent=c.titleEN;
+ const pair=document.createElement('div');pair.className='pair';
+ for(const [lang,suffix] of [['es','ES'],['en','EN']]){const box=document.createElement('div');box.lang=lang;const label=document.createElement('span');label.className='lang';label.textContent=lang.toUpperCase();const p=document.createElement('p');p.textContent=c['fullSummary'+suffix];box.append(label,p);pair.append(box);}
+ const source=document.createElement('a');source.href=c.urlES;source.textContent='Read the updated adapted chapter';source.target='_blank';source.rel='noopener';article.append(heading,pair,source);list.append(article);
+}
+</script></body></html>

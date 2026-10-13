@@ -1,12 +1,12 @@
-import {prepareResultNavigation} from './result-navigation.js?v=20261012-close-back-1';
-import {selectReflections} from './result-reflections.js?v=20261011-horizontal-link-only-1';
-import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261011-horizontal-link-only-1';
-import {POEM_EN} from './poem-translations.js?v=20261011-horizontal-link-only-1';
-import {createPoemReader} from './poem-reader.js?v=20261011-horizontal-link-only-1';
-import {createColorMotion} from './poem-color-motion.js?v=20261011-horizontal-link-only-1';
-import {prepareResultSharing} from './result-sharing.js?v=20261011-horizontal-link-only-1';
-import {createRecommender} from './recommendation.js?v=20261011-horizontal-link-only-1';
-import {EDITORIAL_VERSION,POEM_WORD_BANKS,WORD_CONTEXTS,THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261011-horizontal-link-only-1';
+import {prepareResultNavigation} from './result-navigation.js?v=20261013-story-adapted-meanings-1';
+import {selectReflections} from './result-reflections.js?v=20261013-story-adapted-meanings-1';
+import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261013-story-adapted-meanings-1';
+import {POEM_EN} from './poem-translations.js?v=20261013-story-adapted-meanings-1';
+import {createPoemReader} from './poem-reader.js?v=20261013-story-adapted-meanings-1';
+import {createColorMotion} from './poem-color-motion.js?v=20261013-story-adapted-meanings-1';
+import {prepareResultSharing} from './result-sharing.js?v=20261013-story-adapted-meanings-1';
+import {createRecommender} from './recommendation.js?v=20261013-story-adapted-meanings-1';
+import {EDITORIAL_VERSION,POEM_WORD_BANKS,WORD_CONTEXTS,THEME_LABELS_ES,THEME_LABELS_EN} from './poem-word-semantics.js?v=20261013-story-adapted-meanings-1';
 
 (()=>{
   const stateHost={get widgetState(){try{return JSON.parse(sessionStorage.getItem('susidlc-bilingual-journey')||'null');}catch{return null;}},setWidgetState(state){try{sessionStorage.setItem('susidlc-bilingual-journey',JSON.stringify(state));}catch{}return Promise.resolve();}};
@@ -1436,7 +1436,7 @@ function buildPoemGeometry(kind,compact=false){
     q('[data-suggested-verse-context]').textContent=verse.context;
     q('[data-suggested-verse-version]').textContent=verse.version;
     q('[data-suggested-verse-source]').href=verse.source;
-    prepareResultSharing(dialog,{lang:LANG,title:s.title,album:album?.toUpperCase().replace('-', '_')||'',cover:'/assets/music/covers/'+album+'-640.webp',words:chosen.map(item=>displayWord(item.word,item.page)),reason:r.reason,essence,theme:theme.label,reading,verse});
+    prepareResultSharing(dialog,{lang:LANG,title:s.title,album:album?.toUpperCase().replace('-', '_')||'',cover:'/assets/music/covers/'+album+'-640.webp',theme:theme.label,themeId:theme.id,weights:reviewedRecommend.weights(chosen),reading,verse});
     prepareResultNavigation(dialog);
     dialog.showModal();
   }
@@ -1591,7 +1591,11 @@ function buildPoemGeometry(kind,compact=false){
   save();
   if(new URLSearchParams(location.search).get('resultado')==='preview'){
     const previewExamples={"envy":[{"page":0,"word":"celos"},{"page":10,"word":"hogar"},{"page":9,"word":"nombre"},{"page":11,"word":"vida"},{"page":5,"word":"imposible"},{"page":4,"word":"oportunidad"},{"page":1,"word":"corriente"}],"tortilla":[{"page":0,"word":"felicidad"},{"page":11,"word":"escribo"},{"page":3,"word":"pasión"},{"page":8,"word":"sabiduría"},{"page":4,"word":"verdad"},{"page":6,"word":"fallé"},{"page":2,"word":"orgullo"}],"piano":[{"page":0,"word":"felicidad"},{"page":8,"word":"dolor"},{"page":6,"word":"fallé"},{"page":1,"word":"inalcanzable"},{"page":9,"word":"quise ser"},{"page":11,"word":"impotencia"},{"page":5,"word":"piano"}]};
-    const previewChoices=previewExamples[new URLSearchParams(location.search).get('ejemplo')]||[{page:0,word:'ligeros'},{page:3,word:'alma'},{page:7,word:'noche desvelada'},{page:2,word:'nómada'},{page:4,word:'cambió'},{page:5,word:'atajo'},{page:11,word:'agonía'}];
+    previewExamples.asombro=[{page:0,word:'cuidado'},{page:11,word:'libertad'},{page:2,word:'brillante'},{page:3,word:'cueva'},{page:8,word:'maravilla'},{page:5,word:'busco'},{page:6,word:'eucalipto'}];
+    previewExamples.memoria=[{page:0,word:'colores'},{page:6,word:'extraño'},{page:4,word:'voz'},{page:1,word:'ojos'},{page:10,word:'miedo'},{page:2,word:'inhalo'},{page:10,word:'día'}];
+    const example=new URLSearchParams(location.search).get('ejemplo');
+    const randomExamples=[previewExamples.asombro,previewExamples.memoria];
+    const previewChoices=example==='azar'?randomExamples[Math.floor(Math.random()*randomExamples.length)]:(previewExamples[example]||[{page:0,word:'ligeros'},{page:3,word:'alma'},{page:7,word:'noche desvelada'},{page:2,word:'nómada'},{page:4,word:'cambió'},{page:5,word:'atajo'},{page:11,word:'agonía'}]);
     showResult(previewChoices,{preview:true});
     // A demonstration is shown once; refreshing or continuing uses the real journey.
     const liveUrl=new URL(location.href);liveUrl.searchParams.delete('resultado');liveUrl.searchParams.delete('ejemplo');window.history.replaceState(window.history.state,'',liveUrl);

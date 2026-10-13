@@ -1,0 +1,345 @@
+{
+  "chapters": 24,
+  "bilingualSummaries": 48,
+  "source": "Complete Texto adaptado sections",
+  "readingTextUnchanged": true,
+  "coverageComplete": true,
+  "pages": [
+    {
+      "id": "primera-1",
+      "lang": "es",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 2,
+      "readingHash": "2388f9e1927d516eb98f6b847496e4a6c4948faf77d7a9e59c847eeacff264ff"
+    },
+    {
+      "id": "primera-1",
+      "lang": "en",
+      "summaryWords": 39,
+      "readingPartsUnchanged": 2,
+      "readingHash": "f82c63d5c45d46f491ab2c158ff39c83bd15c2fbe3c4729d0527c2cb5be777ee"
+    },
+    {
+      "id": "primera-2",
+      "lang": "es",
+      "summaryWords": 44,
+      "readingPartsUnchanged": 4,
+      "readingHash": "2ad506b26a0d81f88806acf3408b837d4a6707f9627d2ad85709b7baed93c819"
+    },
+    {
+      "id": "primera-2",
+      "lang": "en",
+      "summaryWords": 38,
+      "readingPartsUnchanged": 4,
+      "readingHash": "14366fbc9961061bbc659a57142cf4c791aac2c3ffed2b4623bac4ace400f297"
+    },
+    {
+      "id": "segunda-1",
+      "lang": "es",
+      "summaryWords": 44,
+      "readingPartsUnchanged": 2,
+      "readingHash": "e176d320deb2eb7424e4e37e8db5d86eafc5c1a400d773fe85282fdc3ef99bc8"
+    },
+    {
+      "id": "segunda-1",
+      "lang": "en",
+      "summaryWords": 40,
+      "readingPartsUnchanged": 2,
+      "readingHash": "a2eba6a400ba7328df68429e85606e182f040cb69ff617f45a8701ae922ccc71"
+    },
+    {
+      "id": "tercera-1",
+      "lang": "es",
+      "summaryWords": 45,
+      "readingPartsUnchanged": 2,
+      "readingHash": "6018079400dcb72472a8887759bc1d9d190df7d283db4e7f376ffb5f32917d64"
+    },
+    {
+      "id": "tercera-1",
+      "lang": "en",
+      "summaryWords": 42,
+      "readingPartsUnchanged": 2,
+      "readingHash": "69aa0b5a4cf00de0732f42f22c936829488f9ae6b32684fd503ac5ee569cfbdb"
+    },
+    {
+      "id": "tercera-2",
+      "lang": "es",
+      "summaryWords": 44,
+      "readingPartsUnchanged": 2,
+      "readingHash": "60bea85cfdb86dca7bdd263ecd34fe28683eee916992f18c57a1176ec016ed84"
+    },
+    {
+      "id": "tercera-2",
+      "lang": "en",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 2,
+      "readingHash": "f6be9b513bc50b74f90a7a5eb5c60e8d22377cef5caf1825226b9509489480c7"
+    },
+    {
+      "id": "cuarta-1",
+      "lang": "es",
+      "summaryWords": 41,
+      "readingPartsUnchanged": 2,
+      "readingHash": "cad61d3a1988d9a2fcf17d5122803e8bdb66c40bcbf457496cc96152b1dd091c"
+    },
+    {
+      "id": "cuarta-1",
+      "lang": "en",
+      "summaryWords": 33,
+      "readingPartsUnchanged": 2,
+      "readingHash": "9f09c7215b183e547b791f0bc652cf4fb0e32a8988f078626014a18cff3c09be"
+    },
+    {
+      "id": "cuarta-2",
+      "lang": "es",
+      "summaryWords": 44,
+      "readingPartsUnchanged": 2,
+      "readingHash": "203a5595523a18e72e33cba5553b68d7a4059f62c4088caeaa86e3af27649c61"
+    },
+    {
+      "id": "cuarta-2",
+      "lang": "en",
+      "summaryWords": 40,
+      "readingPartsUnchanged": 2,
+      "readingHash": "c81df80e49244f7773e129f0a2fbb9b97d9c0577735ab04a331308f3edcc7c02"
+    },
+    {
+      "id": "cuarta-3",
+      "lang": "es",
+      "summaryWords": 40,
+      "readingPartsUnchanged": 2,
+      "readingHash": "33ab1fb9fb94c9a7dd3d800d4027f0c5a32c9e02b04a2271bece1bb2d3759ce4"
+    },
+    {
+      "id": "cuarta-3",
+      "lang": "en",
+      "summaryWords": 40,
+      "readingPartsUnchanged": 2,
+      "readingHash": "27cfc4401614634196d8f94e37c99f5aba35174e39d80fc4754fedee194b6710"
+    },
+    {
+      "id": "quinta-1",
+      "lang": "es",
+      "summaryWords": 42,
+      "readingPartsUnchanged": 2,
+      "readingHash": "c9a0c3707cb39496c6f96cfb65d8fe068fef69556e3b27cefbf710f4e5a5e898"
+    },
+    {
+      "id": "quinta-1",
+      "lang": "en",
+      "summaryWords": 39,
+      "readingPartsUnchanged": 2,
+      "readingHash": "67da2eb1abf067e36fffccd87e2f395aa9c3fd6e2828ff821df363c33222028f"
+    },
+    {
+      "id": "quinta-2",
+      "lang": "es",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 2,
+      "readingHash": "7dcd7f7b7c3bae7205b81fc800eda4be5c74c6ce10686b59297ef4b67297fcd8"
+    },
+    {
+      "id": "quinta-2",
+      "lang": "en",
+      "summaryWords": 40,
+      "readingPartsUnchanged": 2,
+      "readingHash": "31624f3ce7342978ba76c004b9918c9a76dacec7d0f3d2f13cc7040be4970b45"
+    },
+    {
+      "id": "quinta-3",
+      "lang": "es",
+      "summaryWords": 42,
+      "readingPartsUnchanged": 2,
+      "readingHash": "5890ec30e9b15b2e0a5b68c278c4a29485a32dfa635e7ed5614e81d2112a5fcc"
+    },
+    {
+      "id": "quinta-3",
+      "lang": "en",
+      "summaryWords": 38,
+      "readingPartsUnchanged": 2,
+      "readingHash": "d6fa8feb00e6bdfd2cdae3808bd0409010fd7e08dac052139c63990d2b5c033f"
+    },
+    {
+      "id": "quinta-4",
+      "lang": "es",
+      "summaryWords": 44,
+      "readingPartsUnchanged": 2,
+      "readingHash": "27162510cc26fe9a6c3a86af529b2ab0385d2924eca9f50163016d09a9e381fd"
+    },
+    {
+      "id": "quinta-4",
+      "lang": "en",
+      "summaryWords": 42,
+      "readingPartsUnchanged": 2,
+      "readingHash": "91542a026d9665ead002a43baf15b9f117a0a2034c9d9e9c36b14dd4b00e0332"
+    },
+    {
+      "id": "sexta-1",
+      "lang": "es",
+      "summaryWords": 42,
+      "readingPartsUnchanged": 2,
+      "readingHash": "3dcfdd3d90f8c506a3fdf91e49dc4614a5b8b7de12a04f03293645bf005c1be8"
+    },
+    {
+      "id": "sexta-1",
+      "lang": "en",
+      "summaryWords": 39,
+      "readingPartsUnchanged": 2,
+      "readingHash": "0c04b18427c65d034dbbbb1e7eb8eb4bd3333de2ab0c4038ce66e1e42f728f7d"
+    },
+    {
+      "id": "sexta-2",
+      "lang": "es",
+      "summaryWords": 42,
+      "readingPartsUnchanged": 2,
+      "readingHash": "fbba215ea6992404f204ff2ce614e2e061945f5c4754f06d16ed5656dab66e68"
+    },
+    {
+      "id": "sexta-2",
+      "lang": "en",
+      "summaryWords": 32,
+      "readingPartsUnchanged": 2,
+      "readingHash": "97ca27cf30a9cd4b4a6efccc875955f33b1a853c10304092b020c6271a75f384"
+    },
+    {
+      "id": "sexta-3",
+      "lang": "es",
+      "summaryWords": 42,
+      "readingPartsUnchanged": 4,
+      "readingHash": "01358117714af64f813b6c85175b37753ca9104f6ea196119489d33e6d663deb"
+    },
+    {
+      "id": "sexta-3",
+      "lang": "en",
+      "summaryWords": 40,
+      "readingPartsUnchanged": 4,
+      "readingHash": "f4667c4b9a30463690e23db17c0cdac0b5a4e1778ec2a637de16b31df3c535ed"
+    },
+    {
+      "id": "sexta-4",
+      "lang": "es",
+      "summaryWords": 45,
+      "readingPartsUnchanged": 4,
+      "readingHash": "15fc5e1a156a62afe4e39d9697c4b0a3d5a8de00a53ab92de29fe7acfceb6078"
+    },
+    {
+      "id": "sexta-4",
+      "lang": "en",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 4,
+      "readingHash": "d6dd1566c0a48ed3adb7d902024d0847e4f73e3e245288306a07bc2467f19bd1"
+    },
+    {
+      "id": "sexta-5",
+      "lang": "es",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 4,
+      "readingHash": "021db50401a2a8617284277386b89864536eba821556cab3f1c7a155cef8df3b"
+    },
+    {
+      "id": "sexta-5",
+      "lang": "en",
+      "summaryWords": 41,
+      "readingPartsUnchanged": 4,
+      "readingHash": "e3816d1773631f7dcd78ae473a16db28aa88b181f0ffab1fabcbbb777b240035"
+    },
+    {
+      "id": "sexta-6",
+      "lang": "es",
+      "summaryWords": 48,
+      "readingPartsUnchanged": 2,
+      "readingHash": "1167e10a3efc4b867c04fa7edeb4971dcc23933a3d9775fa2b2181518da89a69"
+    },
+    {
+      "id": "sexta-6",
+      "lang": "en",
+      "summaryWords": 39,
+      "readingPartsUnchanged": 2,
+      "readingHash": "c59450a2a157b56a5f2a01ece6036def1a17778eb9966b2234ee1d71ca418389"
+    },
+    {
+      "id": "sexta-7",
+      "lang": "es",
+      "summaryWords": 44,
+      "readingPartsUnchanged": 2,
+      "readingHash": "017c01afc9730924853c3fb9750cde47430977adb2e40200090e60647d94f58a"
+    },
+    {
+      "id": "sexta-7",
+      "lang": "en",
+      "summaryWords": 37,
+      "readingPartsUnchanged": 2,
+      "readingHash": "170c75c1e59c4bc378040582010a95314d87130fe0f57a53c4a36c6b037ade0a"
+    },
+    {
+      "id": "sexta-8",
+      "lang": "es",
+      "summaryWords": 48,
+      "readingPartsUnchanged": 2,
+      "readingHash": "0a48fd4fc3e0eb45e63dd7c19a32793bfede1f5e78ee96156d9844a8a3ecf6ab"
+    },
+    {
+      "id": "sexta-8",
+      "lang": "en",
+      "summaryWords": 40,
+      "readingPartsUnchanged": 2,
+      "readingHash": "4efd98f7f6b7a75589396278b70a8baeaaddedb7f0109fddd79757dd9ab982f0"
+    },
+    {
+      "id": "sexta-9",
+      "lang": "es",
+      "summaryWords": 46,
+      "readingPartsUnchanged": 2,
+      "readingHash": "c9a64e14b294f32453f3d3e3e7ff94485989d876204eb80eec7eae22c6a98412"
+    },
+    {
+      "id": "sexta-9",
+      "lang": "en",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 2,
+      "readingHash": "1532953dd4127801bae57395dd05542b4609363b8a0fe96f10f9edf1edb44c98"
+    },
+    {
+      "id": "sexta-10",
+      "lang": "es",
+      "summaryWords": 45,
+      "readingPartsUnchanged": 2,
+      "readingHash": "2666bb17670141699e743d6ac8a0709260cb3df184c2637ff326a3b1e4dfbf99"
+    },
+    {
+      "id": "sexta-10",
+      "lang": "en",
+      "summaryWords": 41,
+      "readingPartsUnchanged": 2,
+      "readingHash": "e2d26c4f98742ccf361ae1cf8ed3afe04dabf8f965d496fd104562f7d4e2026b"
+    },
+    {
+      "id": "sexta-11",
+      "lang": "es",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 2,
+      "readingHash": "4c02afb0e72f1332aef547a685478f5577bf0532e5093a96e55adc9a59a2fcc0"
+    },
+    {
+      "id": "sexta-11",
+      "lang": "en",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 2,
+      "readingHash": "2ca03047ba9c0d0d77aa5bb53b11b46324855c4963adac8fff0ecd9163ccf87d"
+    },
+    {
+      "id": "septima-1",
+      "lang": "es",
+      "summaryWords": 48,
+      "readingPartsUnchanged": 2,
+      "readingHash": "b38606bbc298c5181fc7fd7552b8015a62772bd1e5339a533f5a63735dc480b6"
+    },
+    {
+      "id": "septima-1",
+      "lang": "en",
+      "summaryWords": 43,
+      "readingPartsUnchanged": 2,
+      "readingHash": "fef7f7ce9c273fc3fc8ff7ad6f8bf39ee8e838e2ff397787394ca317773f79c8"
+    }
+  ]
+}
