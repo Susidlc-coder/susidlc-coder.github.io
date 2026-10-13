@@ -9,9 +9,12 @@ export function prepareResultNavigation(dialog){
  const back=dialog.querySelector('[data-mobile-result-back]');
  const footerBack=dialog.querySelector('[data-result-footer-back]');
  const restart=dialog.querySelector('[data-continue-quiz]');
+ const close=dialog.querySelector('[data-close-result]');
+ const spanish=dialog.closest('[lang]')?.lang!=='en';
  const mobile=window.matchMedia('(max-width:640px)');
  const update=()=>{
   const active=panels.findIndex(p=>p.open);
+  close.setAttribute('aria-label',active>=0?(spanish?'Regresar al resultado':'Back to result'):(spanish?'Cerrar resultado':'Close result'));
   bar.hidden=active<0;back.hidden=true;
   footerBack.hidden=active<0;restart.hidden=active>=0;
   icons.forEach((b,i)=>b.setAttribute('aria-expanded',String(i===active)));
@@ -33,6 +36,7 @@ export function prepareResultNavigation(dialog){
   };
   back.addEventListener('click',collapse);
   footerBack.addEventListener('click',collapse);
+  close.addEventListener('click',()=>{if(panels.some(p=>p.open)){collapse();dialog.scrollTop=0;}else dialog.close();});
   icons.forEach((b,i)=>b.addEventListener('click',()=>open(i)));
   titles.forEach((b,i)=>b.addEventListener('click',()=>open(i)));
   bar.querySelectorAll('[data-collapse-recommendations]').forEach(b=>b.addEventListener('click',collapse));
