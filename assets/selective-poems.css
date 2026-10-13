@@ -76,3 +76,9 @@ body.evening #susi-poems{--paper:#241b18;--ink:#f0e7d5;--quiet:#bdab95;--rule:#5
 
 /* Mobile Fibonacci stays horizontal, with its original proportions. */
 @media(max-width:700px){.poems-gateway .gold-stage{height:auto;min-height:0;margin:22px 0 18px}.poems-gateway .gold-fibonacci{transform:none;max-width:none;width:100%;height:auto;aspect-ratio:786 / 486}}
+/* Desktop quiz entrance: show the original landscape composition. */
+@media(min-width:701px){
+ .poems-gateway .gateway-main{grid-template-columns:1fr 1.35fr;gap:4vw;min-height:clamp(420px,40vw,600px);padding:24px 0}
+ .poems-gateway .gold-stage{height:auto;min-height:0}
+ .poems-gateway .gold-fibonacci{transform:none;width:100%;height:auto;max-width:none;aspect-ratio:786 / 486}
+}
