@@ -655,3 +655,16 @@
 }
 #rules-dialog [data-play]:hover { filter:brightness(1.05); }
 #rules-dialog [data-play]:focus-visible { outline:2px solid #d7b166;outline-offset:4px; }
+
+/* Give the game's language chooser its own spacing instead of the edge-to-edge card layout. */
+.faith-game dialog.locale-dialog { padding:54px 42px 38px; }
+.faith-game .locale-dialog .locale-dialog-brand {
+  margin:0 0 32px;
+  font-size:28px;
+  background:linear-gradient(110deg,#f4e6c8,#e8c784 37%,#fff5d5 53%,#cf9d48 76%,#edd1a0);
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.faith-game .locale-dialog-brand :is(b,em,span) { background-image:none;-webkit-text-fill-color:inherit; }
+@media(max-width:430px) { .faith-game dialog.locale-dialog { padding:52px 24px 30px; } }
