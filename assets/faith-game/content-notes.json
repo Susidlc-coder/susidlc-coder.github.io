@@ -1,0 +1,162 @@
+{
+  "source": "User-provided IMG_9472.HEIC through IMG_9504.HEIC, plus IMG_9505 2.HEIC; visually reviewed as JPEG copies.",
+  "cardCount": 26,
+  "numberedCards": 24,
+  "schema": {
+    "localizedText": "{es: string, en: string}; fill segments/answers/words and order items instead use arrays.",
+    "fill": "activity.segments[lang] contains sentence strings with global zero-based {0}, {1}, ... placeholders. activity.answers[lang] and activity.words[lang] are answer arrays. Duplicate words must be represented by distinct token indices.",
+    "order": "activity.items[lang] contains the 13 source phrase strips in correct order. Shuffle their indices for the envelope. activity.solution contains indices in correct order.",
+    "classify": "activity.categories contains stable IDs and bilingual labels. Each activity.items entry has id, text, and category (answer).",
+    "match": "activity.pairs contains id, left and right; both labels are bilingual. Each pair is a correct association.",
+    "examples": "Three examples per category. Review is human: the app must not claim to judge spiritual discernment from simple keyword matching. On incorrect review, lose one turn and retry.",
+    "move": "move.to is numeric or amen. move.condition=complete occurs only on card 9. Other moves follow reading the card. Only one special movement per turn.",
+    "visual": "paper names approximate original cardstock colors. decorations names identify visible source motifs; stickers offer fallback symbols but are not exact reproductions. photo paths are asset expectations for the integrating app."
+  },
+  "sourcePhotos": {
+    "0": [
+      9478,
+      9479
+    ],
+    "1": [
+      9480
+    ],
+    "2": [
+      9481,
+      9505
+    ],
+    "3": [
+      9482
+    ],
+    "4": [
+      9483
+    ],
+    "5": [
+      9484
+    ],
+    "6": [
+      9485
+    ],
+    "7": [
+      9486
+    ],
+    "8": [
+      9487
+    ],
+    "9": [
+      9472,
+      9488
+    ],
+    "10": [
+      9489
+    ],
+    "11": [
+      9473,
+      9490
+    ],
+    "12": [
+      9491
+    ],
+    "13": [
+      9492
+    ],
+    "14": [
+      9493
+    ],
+    "15": [
+      9494
+    ],
+    "16": [
+      9474,
+      9475,
+      9495
+    ],
+    "17": [
+      9496
+    ],
+    "18": [
+      9476,
+      9497
+    ],
+    "19": [
+      9498
+    ],
+    "20": [
+      9499
+    ],
+    "21": [
+      9500
+    ],
+    "22": [
+      9501
+    ],
+    "23": [
+      9502
+    ],
+    "24": [
+      9477,
+      9503
+    ],
+    "amen": [
+      9504
+    ]
+  },
+  "uncertainties": [],
+  "resolvedEvidence": [
+    {
+      "card": 2,
+      "field": "word bank",
+      "status": "visually confirmed",
+      "source": "IMG_9505 2.HEIC",
+      "detail": "The new photograph shows all seven gold paper pieces placed in the blanks: Eve, Tempted, Eve, friendship, Original Sin, Savior, Jesus. It confirms friendship, not relationship. The original spelling and capitalization are retained in the English bank. The former provisional warning is removed and activity.confirmed is true.",
+      "displayPhoto": "assets/faith-game/cards/genesis-1-words.jpg",
+      "displayOrientation": "Upright landscape, rotated 270 degrees from the decoded portrait original; do not apply the 90-degree rotation used for the older card photos."
+    }
+  ],
+  "transcriptionChoices": [
+    {
+      "card": 11,
+      "detail": "Original contains the duplicated words 'He chose chose'. Display removes that accidental duplicate while preserving meaning and answer disciples."
+    },
+    {
+      "card": 15,
+      "detail": "Original misspells Strength as Strenght. Display uses Strength; associations follow the hand-drawn arrows: Baptism/New Life, Confession/Reconciled, Eucharist/Nourished, Confirmation/Strength."
+    },
+    {
+      "card": 21,
+      "detail": "Preserves the original wording 'Three different figures, one same Light' and triangle labels Father, Son, Holy Spirit without doctrinal rewriting."
+    },
+    {
+      "card": 4,
+      "detail": "Uses all nine visible handwritten examples with punctuation/spelling normalization. This source shows examples already placed in columns; making it a sorting interaction is a digital adaptation, not a new penalty."
+    },
+    {
+      "card": 19,
+      "detail": "Pencil marks appear to be player answers, not printed instructions. They are not prefilled into the new-game activity."
+    },
+    {
+      "card": 9,
+      "detail": "The physical source uses a transparent bag and 13 white paper phrase strips. The interactive envelope is explicitly requested by the user. Spanish uses the corresponding Ave María phrases split into 13 pieces."
+    },
+    {
+      "card": 0,
+      "detail": "Card says HE IS RISEN; the user's later message calls it 'He has risen' and confirms that it is the start. Display preserves the photographed title."
+    },
+    {
+      "card": 9,
+      "detail": "Owner requested the short Ave María / Hail Mary title and child-friendly sequential tap instructions. Original ladder movement is retained as a highlighted action."
+    }
+  ],
+  "confirmedByUser": [
+    "HE IS RISEN is the start.",
+    "Current digital version is single-player. AMEN shows a rotating Vatican-sourced saint popup and does not skip a turn, superseding the tabletop AMEN/angel rescue mechanic.",
+    "After AMEN, resume from the numbered card that sent the player there.",
+    "Only one special jump or backward move per throw; destination moves do not chain.",
+    "Current game title is Padre Nuestro oración / Our Father prayer. Card9 title is Ave María / Hail Mary."
+  ],
+  "previewChoicesToDisclose": [
+    "The photos do not establish the physical board arrangement. Layout is a digital reconstruction.",
+    "Finishing after passing numbered card 24 is a preview convention; exact original finish and die rules are not shown in the photos.",
+    "There is no original automatic validation policy for freeform examples; self-review is used for the solo adaptation.",
+    "No penalties have been invented for incorrect fill, order, classify or match activities. Only card 19 explicitly says to skip a turn and retry."
+  ]
+}

@@ -1,0 +1,54 @@
+/* Scoped final card. Its yellow/lime paper is the original HE IS RISEN color. */
+dialog.faith-reward-dialog{width:min(780px,94vw);max-width:94vw;max-height:94dvh;margin:auto;padding:0;border:1px solid #98ad4480;border-radius:5px;background:#d8ef55;color:#29331c;overflow:auto;box-shadow:0 30px 100px #0006;}
+dialog.faith-reward-dialog::backdrop{background:#191918bc;backdrop-filter:blur(9px);}
+.faith-reward-dialog .faith-reward{padding:22px 34px 27px;background:linear-gradient(145deg,#e0f575,#d8ef55 55%,#c4dd4f);min-width:0;}
+.faith-reward-dialog .faith-reward-top{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px dashed #29331c50;padding-bottom:10px;font:10px/1.5 Arial,sans-serif;letter-spacing:1.1px;}
+.faith-reward-top i{margin:0 9px;font-style:normal;opacity:.5;}
+.faith-reward-dialog button{cursor:pointer;font-family:Arial,sans-serif;touch-action:manipulation;}
+.faith-reward-dialog .faith-reward-close{flex:0 0 44px;min-width:44px;min-height:44px;border:0;background:transparent;color:#29331c;font:30px/1 Georgia,serif;}
+.faith-reward-dialog .faith-reward-sun{width:97px;height:67px;margin:22px auto 5px;color:#5a6b24;}
+.faith-reward-sun svg{display:block;width:100%;height:100%;}
+.faith-reward-dialog h2{font:clamp(35px,5.5vw,58px)/1.03 var(--serif,Georgia,serif);letter-spacing:-1.6px;text-align:center;margin:4px auto 29px;max-width:590px;text-wrap:balance;color:#29331c;}
+.faith-reward-dialog .faith-reward-writing{max-width:590px;margin:auto;}
+.faith-reward-dialog .faith-reward-writing label{display:block;margin-bottom:12px;color:#29331c;font:20px/1.35 var(--serif,Georgia,serif);}
+.faith-reward-dialog textarea{display:block;width:100%;box-sizing:border-box;min-height:140px;max-height:35dvh;resize:vertical;border:1px solid #4d592840;border-bottom:1px solid #4d59288c;border-radius:2px;background:#ffffeb70;color:#29331c;padding:14px 16px;font:18px/1.55 var(--serif,Georgia,serif);}
+.faith-reward-dialog textarea::placeholder{color:#596134;opacity:.85;}
+.faith-reward-dialog .faith-reward-count{display:block;text-align:right;margin-top:7px;font:11px/1.4 Arial,sans-serif;color:#536025;}
+.faith-reward-dialog .faith-reward-actions{display:flex;justify-content:space-between;align-items:center;gap:16px;max-width:590px;margin:24px auto 0;padding-top:17px;border-top:1px solid #29331c30;}
+.faith-reward-dialog .faith-reward-gold{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:46px;padding:12px 23px;border:1px solid #866a23;border-radius:2px;background:linear-gradient(125deg,#f9e8a8,#d2ac52 44%,#f6dc92 72%,#bb9546);color:#302713;box-shadow:0 2px 0 #69562320,inset 0 1px #fff6;font:14px/1.3 Arial,sans-serif;}
+.faith-reward-dialog .faith-reward-gold:hover{filter:brightness(1.05);}
+.faith-reward-dialog .faith-reward-text{min-height:44px;padding:10px 0;border:0;border-bottom:1px solid #29331c45;border-radius:0;background:transparent;color:#384320;font:13px/1.4 Arial,sans-serif;}
+.faith-reward-dialog button:disabled{opacity:.45;cursor:default;}
+.faith-reward-dialog :is(button,textarea):focus-visible{outline:2px solid #3d5f52;outline-offset:4px;}
+.faith-reward-dialog [hidden]{display:none!important;}
+.faith-reward-dialog:has(.faith-reward-story:not([hidden])){width:min(690px,94vw);background:#30231f;border-color:#b49b6550;}
+.faith-reward-dialog .faith-reward:has(.faith-reward-story:not([hidden])){background:#30231f;color:#f2eee5;padding:13px 22px 20px;}
+.faith-reward-dialog:has(.faith-reward-story:not([hidden])) :is(.faith-reward-top,.faith-reward-close){color:#e3d5bd;border-color:#e3d5bd35;}
+.faith-reward-dialog .faith-reward-story-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:5px 0 12px;}
+.faith-reward-dialog .faith-reward-story-heading p{font:11px/1.4 Arial,sans-serif;color:#d4c8b8;margin:0;text-align:right;}
+.faith-reward-dialog .faith-reward-story .faith-reward-text{color:#e3d5bd;border-color:#e3d5bd45;}
+.faith-reward-dialog .faith-reward-image{display:flex;align-items:center;justify-content:center;min-height:50px;}
+.faith-reward-dialog .faith-reward-image img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(94dvh - 240px);object-fit:contain;border:1px solid #806d5355;}
+.faith-reward-dialog .faith-reward-share-actions{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:15px;}
+.faith-reward-dialog .faith-reward-status{margin:12px 0 0;color:#ddd1be;font:12px/1.5 Arial,sans-serif;text-align:center;}
+.faith-reward-dialog .faith-reward-status:empty{display:none;}
+@media(max-width:560px){
+ .faith-reward-dialog .faith-reward{padding:15px 20px 20px;}
+ .faith-reward-dialog .faith-reward-top{font-size:9px;letter-spacing:.6px;gap:8px;}
+ .faith-reward-top i{margin:0 4px;}
+ .faith-reward-dialog .faith-reward-sun{width:80px;height:52px;margin-top:14px;}
+ .faith-reward-dialog h2{font-size:38px;letter-spacing:-.9px;margin-bottom:24px;}
+ .faith-reward-dialog .faith-reward-writing label{font-size:19px;}
+ .faith-reward-dialog textarea{font-size:17px;min-height:135px;padding:12px;}
+ .faith-reward-dialog .faith-reward-actions{margin-top:16px;gap:12px;}
+ .faith-reward-dialog .faith-reward-gold{padding:12px 17px;gap:12px;}
+ .faith-reward-dialog .faith-reward:has(.faith-reward-story:not([hidden])){padding:10px 13px 15px;}
+ .faith-reward-dialog .faith-reward-story-heading p{max-width:105px;font-size:10px;}
+ .faith-reward-dialog .faith-reward-share-actions{gap:15px;}
+}
+@media(max-width:360px){.faith-reward-dialog .faith-reward{padding-inline:16px;}.faith-reward-dialog h2{font-size:34px;}.faith-reward-dialog .faith-reward-text{font-size:12px;}}
+/* The surrounding preview stays solid; all artwork belongs to the shared image. */
+dialog.faith-reward-dialog:has(.faith-reward-story:not([hidden])) { background:#30231f;box-shadow:none; }
+dialog.faith-reward-dialog:has(.faith-reward-story:not([hidden]))::backdrop { background:#241c18;backdrop-filter:none; }
+.faith-reward-dialog .faith-reward:has(.faith-reward-story:not([hidden])) { background:#30231f; }
+.faith-reward-dialog .faith-reward-image img { border:0; }

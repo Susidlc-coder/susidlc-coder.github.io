@@ -1,0 +1,657 @@
+/* Card-only refinements. The paper, copy and individual decorations retain
+   their source-card colours. Gold pieces use the Poems keepsake treatment. */
+#card-dialog .word-piece,
+#card-dialog .word-slot.filled,
+#card-dialog .order-slot.filled {
+  position:relative;
+  isolation:isolate;
+  background:linear-gradient(110deg,#956327 0%,#dab475 18%,#fff0bd 33%,#c38d42 49%,#f9e5a8 64%,#b38039 83%,#eacb88 100%);
+  background-size:260% 100%;
+  color:#382511;
+  border:1px solid #e9c680;
+  border-radius:2px;
+  box-shadow:inset 0 1px #fff5d9b3,inset 0 -1px #79552255,0 3px 15px #0002;
+  animation:faith-piece-gold-flow 9s ease-in-out infinite alternate;
+  letter-spacing:.02em;
+}
+@keyframes faith-piece-gold-flow {
+  from { background-position:0% 50%; }
+  to { background-position:100% 50%; }
+}
+#card-dialog .word-piece { line-height:1.3; }
+#card-dialog .word-slot.filled { vertical-align:baseline; }
+#card-dialog .order-slot.filled small { opacity:.8; }
+#card-dialog .word-piece:focus-visible,
+#card-dialog .word-slot:focus-visible,
+#card-dialog .order-slot:focus-visible {
+  outline:2px solid #243d49;
+  outline-offset:3px;
+}
+#card-dialog .word-bank { scrollbar-gutter:stable; }
+.faith-game #card-dialog {
+  padding:0;
+  max-height:min(92dvh,calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)));
+  overflow:hidden;
+  overscroll-behavior:contain;
+}
+#card-dialog .card-paper {
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  max-height:min(92dvh,calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)));
+  padding:0 42px;
+  overflow:hidden;
+}
+#card-dialog .card-toolbar {
+  flex:none;
+  min-height:67px;
+  margin:0;
+  padding:15px 0 11px;
+}
+#card-dialog .card-title-row { flex:none; }
+#card-dialog .card-main {
+  flex:1 1 auto;
+  min-height:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+  overscroll-behavior:contain;
+  scrollbar-width:thin;
+  scrollbar-gutter:stable;
+  scroll-padding-block:18px;
+  padding:0 10px 23px 2px;
+  -webkit-overflow-scrolling:touch;
+}
+#card-dialog .card-bottom {
+  flex:none;
+  position:relative;
+  z-index:6;
+  margin:0;
+  padding:17px 0 20px;
+  background:var(--paper);
+  box-shadow:0 -10px 15px -15px #22332966;
+}
+#card-dialog .card-review-bar { flex-shrink:0; }
+#card-dialog .card-title-row > div,
+#card-dialog .card-review-bar,
+#card-dialog .activity-lines { min-width:0; }
+#card-dialog .card-feedback:empty { display:none; }
+#card-dialog .card-paper button { touch-action:manipulation; }
+
+@media(min-width:641px) {
+  /* A scrolling sheet cannot borrow space from the fixed title. Keep the
+     original stickers together in a small, visible margin of their own. */
+  #card-dialog .fg-decorations {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:10px;
+    padding-top:15px;
+  }
+  #card-dialog .fg-decorations > .fg-deco-svg:not(.fg-deco-trinity) {
+    position:static;
+    inset:auto;
+    width:42px;
+    height:44px;
+    flex:none;
+  }
+  #card-dialog .fg-decorations > .fg-deco-bulb { width:52px; height:58px; }
+  #card-dialog .fg-decorations > .fg-deco-star { width:17px; height:20px; }
+  #card-dialog .fg-deco-hearts {
+    position:static;
+    inset:auto;
+    display:flex;
+    gap:13px;
+    width:100%;
+    height:auto;
+    padding:4px 0;
+  }
+  #card-dialog .fg-deco-heart { position:static; inset:auto; width:13px; height:14px; }
+  #card-dialog .fg-deco-faithful-body,
+  #card-dialog .fg-deco-prayer-strips { flex-basis:100%; min-width:0; }
+  #card-dialog .fg-deco-hallowed .fg-deco-purple-sentence,
+  #card-dialog .card-main:has(.fg-deco-bulb) > .card-copy { padding-right:0; }
+}
+
+@media(min-width:641px) and (max-width:850px) {
+  #card-dialog .card-paper { padding-inline:25px; }
+}
+
+@media(max-width:640px) {
+  .faith-game #card-dialog {
+    width:calc(100vw - 14px);
+    max-width:calc(100vw - 14px);
+    max-height:calc(100dvh - 14px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    padding:0;
+    overflow:hidden;
+    border-radius:8px;
+    overscroll-behavior:contain;
+  }
+  #card-dialog .card-paper {
+    display:flex;
+    flex-direction:column;
+    min-height:0;
+    max-height:calc(100dvh - 14px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    padding:0 max(16px,env(safe-area-inset-right)) 0 max(16px,env(safe-area-inset-left));
+    overflow:hidden;
+  }
+  #card-dialog .card-toolbar {
+    flex:none;
+    gap:8px;
+    min-height:48px;
+    padding:5px 0;
+    margin:0;
+    font-size:8px;
+    line-height:1.45;
+    letter-spacing:.065em;
+  }
+  #card-dialog .card-toolbar > span { max-width:58%; }
+  #card-dialog .card-toolbar .card-tools { flex:none; gap:2px; }
+  #card-dialog .card-toolbar button {
+    min-height:40px;
+    padding:7px 4px;
+    font-size:10px;
+    white-space:nowrap;
+  }
+  #card-dialog .card-toolbar button.close-card {
+    width:38px;
+    min-height:40px;
+    padding:4px;
+    font-size:28px;
+  }
+  #card-dialog .card-title-row {
+    flex:none;
+    align-items:center;
+    gap:12px;
+    padding:7px 0 13px;
+  }
+  #card-dialog .card-number {
+    min-width:43px;
+    padding-right:12px;
+    font-size:38px;
+  }
+  #card-dialog .card-paper h2 {
+    font-size:clamp(25px,7.1vw,32px);
+    letter-spacing:-.8px;
+    line-height:1.08;
+    overflow-wrap:break-word;
+  }
+  #card-dialog .card-subtitle { font-size:11px; line-height:1.4; margin-top:5px; }
+  #card-dialog .card-main {
+    flex:1 1 auto;
+    min-height:0;
+    overflow-y:auto;
+    overflow-x:hidden;
+    overscroll-behavior:contain;
+    scrollbar-width:thin;
+    scroll-padding-block:180px 18px;
+    padding:0 2px 18px;
+    -webkit-overflow-scrolling:touch;
+  }
+  #card-dialog .card-paper p { font-size:16px; line-height:1.6; margin-top:16px; }
+  #card-dialog .card-paper p.instructions { font-size:14px; line-height:1.55; margin:15px 0; }
+  #card-dialog .card-copy.large-copy { font-size:22px; line-height:1.5; }
+  #card-dialog .card-bottom {
+    flex:none;
+    flex-direction:column;
+    align-items:stretch;
+    gap:8px;
+    z-index:6;
+    margin:0;
+    padding:10px 0 max(12px,env(safe-area-inset-bottom));
+    background:var(--paper);
+    box-shadow:0 -10px 15px -15px #22332966;
+  }
+  #card-dialog .card-feedback { font-size:11px; line-height:1.4; min-height:0; }
+  #card-dialog .card-review-bar { display:flex; gap:7px; justify-content:flex-end; width:100%; }
+  #card-dialog .card-review-bar button {
+    min-height:44px;
+    padding:10px 12px;
+    font-size:12px;
+    line-height:1.3;
+  }
+  #card-dialog .card-review-bar .primary-button { flex:1 1 auto; }
+  #card-dialog .card-review-bar #needs-retry { flex:1 1 50%; }
+  #card-dialog .activity-layout { grid-template-columns:minmax(0,1fr); gap:18px; margin-top:15px; }
+  #card-dialog .activity-lines,
+  #card-dialog .order-slots { grid-column:1; grid-row:2; }
+  #card-dialog .activity-lines { gap:14px; }
+  #card-dialog .fill-line { font-size:20px; line-height:2.1; padding-left:13px; }
+  #card-dialog .fill-line:before { top:20px; width:5px; height:5px; }
+  #card-dialog .word-slot { min-height:40px; min-width:66px; margin:2px 3px; padding:1px 7px; }
+  #card-dialog .word-slot.filled { font-size:17px; }
+  #card-dialog .order-slots { gap:8px; }
+  #card-dialog .order-slot { min-height:54px; font-size:16px; line-height:1.35; }
+  #card-dialog .order-slot span { min-width:0; overflow-wrap:break-word; }
+  #card-dialog .envelope-panel,
+  #card-dialog .envelope-panel:has(.envelope.open) {
+    grid-column:1;
+    grid-row:1;
+    position:sticky;
+    top:0;
+    z-index:5;
+    display:grid;
+    grid-template-columns:88px minmax(0,1fr);
+    gap:7px 12px;
+    align-items:center;
+    padding:22px 2px 10px;
+    background:var(--paper);
+    border-bottom:1px solid #26302c26;
+    box-shadow:0 8px 12px -12px #26302c80;
+  }
+  #card-dialog .envelope { width:88px; height:62px; grid-column:1; grid-row:1; }
+  #card-dialog .envelope.open:before { transform:rotateX(120deg); }
+  #card-dialog .envelope .seal { top:23px; left:43%; font-size:13px; }
+  #card-dialog .envelope .env-label { bottom:7px; font-size:12px; }
+  #card-dialog .envelope-note {
+    grid-column:2;
+    grid-row:1;
+    margin:0!important;
+    font-size:11px!important;
+    text-align:left!important;
+    line-height:1.5!important;
+  }
+  #card-dialog .envelope-panel:has(.word-bank) .envelope-note { grid-column:1/-1; grid-row:2; font-size:10px!important; }
+  #card-dialog .word-bank {
+    grid-column:2;
+    grid-row:1;
+    max-height:110px;
+    min-height:0;
+    margin:0;
+    padding:5px 5px 8px;
+    gap:7px;
+    align-content:start;
+    overflow-y:auto;
+  }
+  #card-dialog .word-piece { min-height:40px; padding:8px 9px; font-size:16px; }
+  #card-dialog .word-piece:hover { transform:rotate(var(--tilt,-1deg)); }
+  #card-dialog .columns-activity,
+  #card-dialog .classify-list { grid-template-columns:minmax(0,1fr); gap:16px; }
+  #card-dialog .discern-column h3 { font-size:22px; padding-bottom:10px; }
+  #card-dialog .discern-item { font-size:17px; }
+  #card-dialog .discern-item select { min-height:44px; font-size:16px; }
+  #card-dialog .card-paper textarea { font-size:16px; }
+  #card-dialog .example-input textarea { min-height:70px; }
+  #card-dialog .example-input label { font-size:11px; }
+  #card-dialog .match-layout { grid-template-columns:minmax(0,1fr) 26px minmax(0,1fr); gap:4px; }
+  #card-dialog .match-choice { min-width:0; font-size:16px; padding:6px; }
+  /* Keep every sticker, reserving real space instead of covering the text. */
+  #card-dialog .fg-decorations { display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding-top:12px; }
+  #card-dialog .fg-decorations > .fg-deco-svg:not(.fg-deco-trinity) {
+    position:static;
+    inset:auto;
+    width:34px!important;
+    height:38px;
+    flex:none;
+  }
+  #card-dialog .fg-decorations > .fg-deco-bulb { width:39px!important; height:44px; }
+  #card-dialog .fg-decorations > .fg-deco-star { width:14px!important; height:18px; }
+  #card-dialog .fg-deco-hearts { position:static; inset:auto; width:100%; height:auto; display:flex; gap:10px; padding:5px 1px; }
+  #card-dialog .fg-deco-heart { position:static; inset:auto; width:11px; height:12px; }
+  #card-dialog .fg-deco-trinity { width:min(100%,360px); height:auto; max-height:250px; margin:4px auto; }
+  #card-dialog .fg-deco-clipping { width:90px; margin:8px 12px 8px 5px; }
+  #card-dialog .fg-deco-faithful-body,
+  #card-dialog .fg-deco-prayer-strips { flex-basis:100%; min-width:0; }
+  #card-dialog .fg-deco-prayer-strips { gap:13px; padding:15px 4px 18px; }
+  #card-dialog .fg-deco-prayer-piece { max-width:100%; padding:8px 11px; overflow-wrap:break-word; }
+  #card-dialog .fg-deco-prayer-one .fg-deco-prayer-piece { font-size:21px; line-height:1.5; }
+  #card-dialog .fg-deco-hallowed .fg-deco-purple-sentence,
+  #card-dialog .card-main:has(.fg-deco-bulb) > .card-copy { padding-right:0; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  #card-dialog .word-piece,
+  #card-dialog .word-slot.filled,
+  #card-dialog .order-slot.filled {
+    animation:none;
+    background-position:45% 50%;
+  }
+  #card-dialog .envelope:before,
+  #card-dialog .envelope .seal { transition:none; }
+}
+
+/* The envelope holds a quiet celeste interior and the same gold keepsakes. */
+#card-dialog .word-bank {
+  background:#effaff;
+  border:1px solid #c9e3ec;
+  border-radius:4px;
+  padding:11px 10px 13px;
+  box-shadow:inset 0 1px #fff;
+}
+#card-dialog .envelope.open { background:#edfaff; }
+#card-dialog .card-bottom { display:block; }
+#card-dialog .card-feedback { max-width:none;text-align:center; }
+#card-dialog .card-feedback:not(:empty) { margin-bottom:10px; }
+#card-dialog .card-review-bar {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  align-items:center;
+  gap:12px;
+  width:100%;
+}
+#card-dialog #reset-activity { grid-column:1;grid-row:1;justify-self:start;display:flex;align-items:center;gap:5px; }
+#card-dialog #card-primary { grid-column:2;grid-row:1;justify-self:center;min-width:155px; }
+#card-dialog #needs-retry { grid-column:3;grid-row:1;justify-self:end; }
+#card-dialog .gold-button,
+.faith-game .saint-go {
+  border:1px solid #e0c684;
+  border-radius:2px;
+  background:#fff2cc;
+  color:#33241e;
+  font:400 14px/1.4 'Helvetica Neue',Arial,sans-serif;
+  min-height:44px;
+  padding:11px 20px;
+  box-shadow:inset 0 1px #fff8e6;
+  cursor:pointer;
+}
+#card-dialog .gold-button:hover,
+.faith-game .saint-go:hover { background:#ffe7a3; }
+#card-dialog .gold-button:focus-visible,
+.faith-game .saint-go:focus-visible { outline:2px solid #916b2d;outline-offset:3px; }
+#card-dialog .card-feedback.good.card-celebration {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:#31503b;
+  font:italic 17px/1.4 var(--serif);
+  animation:faith-celebrate-arrive .5s ease-out both;
+}
+#card-dialog .card-celebration > span {
+  color:#8f6625;
+  font-style:normal;
+  font-size:22px;
+  animation:faith-celebrate-spark .8s ease-in-out 2;
+}
+#card-dialog .is-complete .word-slot.filled,
+#card-dialog .is-complete .order-slot.filled { border-color:#fff0ba; }
+#card-dialog .card-paper .move-highlight {
+  display:table;
+  margin:22px 0 6px;
+  padding:10px 15px;
+  border-left:3px solid #ae8135;
+  background:#fff0ba55;
+  color:#682d4c;
+  font:italic 24px/1.4 var(--serif);
+  letter-spacing:-.3px;
+}
+#card-dialog .amen-invitation { display:flex;align-items:center;gap:14px;margin:25px 0 8px;flex-wrap:wrap; }
+#card-dialog .amen-invitation > small { font-size:11px;letter-spacing:.06em; }
+#card-dialog .amen-action { font-size:15px;padding:13px 23px; }
+@keyframes faith-celebrate-arrive { from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)} }
+@keyframes faith-celebrate-spark { 50%{transform:scale(1.35) rotate(18deg)} }
+
+.faith-game dialog:has(> .saint-card) {
+  max-width:min(830px,94vw);
+  width:max-content;
+  max-height:90dvh;
+  border:1px solid #c5a66b77;
+  border-radius:5px;
+  overflow:auto;
+}
+.faith-game .saint-card {
+  display:grid;
+  grid-template-columns:1.08fr 1fr;
+  width:min(820px,94vw - 2px);
+  min-height:460px;
+  position:relative;
+  overflow:hidden;
+  color:#f0e7d5;
+  background:#241b18;
+}
+.faith-game .saint-close {
+  position:absolute;
+  right:12px;
+  top:10px;
+  z-index:2;
+  display:grid;
+  place-items:center;
+  width:40px;
+  height:40px;
+  padding:0;
+  border:1px solid #f5dfad66;
+  border-radius:50%;
+  background:#241b1880;
+  color:#fff2cc;
+  font:26px/1 Georgia,serif;
+  cursor:pointer;
+}
+.faith-game .saint-copy { display:flex;flex-direction:column;align-items:flex-start;padding:39px 34px 32px;min-width:0; }
+.faith-game .saint-copy .saint-kicker { margin:0 0 24px;font:10px/1.5 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#d9bd82; }
+.faith-game .saint-copy h2 { margin:0;font:42px/1.06 var(--serif);letter-spacing:-1.2px;color:#f2e9d7;text-wrap:balance; }
+.faith-game .saint-copy .saint-fact { margin:22px 0 27px;font:17px/1.65 var(--serif);color:#e4d8c4; }
+.faith-game .saint-source { margin-top:auto;padding-top:17px;width:100%;border-top:1px solid #756348;font-size:11px;line-height:1.6; }
+.faith-game .saint-source small { display:block;color:#bda985;letter-spacing:.09em;font-size:9px;text-transform:uppercase;margin-bottom:5px; }
+.faith-game .saint-source a { color:#ead4a7;text-underline-offset:3px;overflow-wrap:anywhere; }
+.faith-game .saint-go { align-self:flex-start;margin-top:24px;min-width:92px; }
+.faith-game .saint-portrait { position:relative;margin:0;min-width:0;min-height:100%;overflow:hidden; }
+.faith-game .saint-portrait img { position:absolute;inset:0;display:block;width:100%;height:100%;max-height:none;object-fit:cover; }
+.faith-game .saint-portrait figcaption { position:absolute;bottom:0;left:0;right:0;padding:16px 14px 10px;background:linear-gradient(transparent,#18100bcc);color:#f0e7d5;font:8px/1.4 'Helvetica Neue',Arial,sans-serif; }
+@media(max-width:640px) {
+  #card-dialog .word-bank { padding:8px; }
+  #card-dialog .card-review-bar { grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:6px; }
+  #card-dialog #reset-activity,
+  #card-dialog #needs-retry { padding:8px 6px;font-size:10px;min-width:0;line-height:1.25; }
+  #card-dialog #reset-activity { gap:4px; }
+  #card-dialog #reset-activity span { max-width:52px; }
+  #card-dialog #card-primary { min-width:118px;padding:10px 12px;font-size:12px; }
+  #card-dialog .card-feedback.good.card-celebration { font-size:15px; }
+  #card-dialog .card-paper .move-highlight { font-size:21px;padding:9px 12px; }
+  #card-dialog .amen-invitation { gap:10px;margin-top:19px; }
+  #card-dialog .amen-action { font-size:13px; }
+  .faith-game dialog:has(> .saint-card) { max-width:calc(100vw - 20px);max-height:calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
+  .faith-game .saint-card { width:calc(100vw - 22px);grid-template-columns:1.2fr 1fr;min-height:420px; }
+  .faith-game .saint-copy { padding:25px 18px 22px; }
+  .faith-game .saint-copy .saint-kicker { font-size:8px;letter-spacing:.1em;margin-bottom:19px; }
+  .faith-game .saint-copy h2 { font-size:clamp(25px,7.2vw,37px);letter-spacing:-.7px;line-height:1.1; }
+  .faith-game .saint-copy .saint-fact { font-size:15px;line-height:1.55;margin:17px 0 21px; }
+  .faith-game .saint-source { font-size:10px;padding-top:12px; }
+  .faith-game .saint-go { min-width:76px;margin-top:19px; }
+  .faith-game .saint-close { width:36px;height:36px;right:8px;top:8px; }
+  .faith-game .saint-portrait figcaption { font-size:7px;padding:20px 8px 8px; }
+}
+@media(max-width:350px) {
+  .faith-game .saint-card { grid-template-columns:1fr; }
+  .faith-game .saint-portrait { grid-row:1;min-height:210px; }
+  .faith-game .saint-copy { grid-row:2; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #card-dialog .card-celebration,
+  #card-dialog .card-celebration > span { animation:none; }
+}
+
+/* The AMEN invitation matches the metallic word keepsake itself. */
+#card-dialog .amen-action.gold-button {
+ background:linear-gradient(110deg,#956327 0%,#dab475 18%,#fff0bd 33%,#c38d42 49%,#f9e5a8 64%,#b38039 83%,#eacb88 100%);
+ background-size:260% 100%;color:#382511;border-color:#e9c680;
+ box-shadow:inset 0 1px #fff5d9b3,inset 0 -1px #79552255,0 3px 15px #0002;
+ animation:faith-piece-gold-flow 9s ease-in-out infinite alternate;
+}
+.faith-game :is(button,a):focus-visible {outline-color:#b58a42;}
+.faith-game .original-frame.framed-photo {height:auto;width:min(84vw,1050px);margin-top:12px;}
+.faith-game .framed-photo .original-photo {display:block;width:100%;height:auto;max-height:76dvh;animation:none;transition:none;}
+@media(prefers-reduced-motion:reduce){#card-dialog .amen-action.gold-button{animation:none;}}
+#card-dialog .card-paper.is-complete .envelope-panel{display:none;}
+#card-dialog .is-complete .activity-layout{grid-template-columns:minmax(0,1fr);}
+#card-dialog .is-complete :is(.activity-lines,.order-slots){grid-column:1;grid-row:auto;}
+/* Keep the portrait on the right even on the narrowest phones. */
+@media(max-width:350px){
+ .faith-game .saint-card{grid-template-columns:1.35fr 1fr;height:calc(100dvh - 28px);min-height:0;}
+ .faith-game .saint-copy{grid-column:1;grid-row:1;overflow-y:auto;padding:24px 14px 20px;}
+ .faith-game .saint-portrait{grid-column:2;grid-row:1;min-height:100%;}
+ .faith-game .saint-copy h2{font-size:25px;}
+ .faith-game .saint-copy .saint-fact{font-size:14px;}
+}
+
+/* Compact title and a generous, original light-bulb sticker at its right. */
+#card-dialog .card-toolbar { min-height:46px;padding:5px 0;margin:0; }
+#card-dialog .card-title-row { gap:18px;padding:1px 0 12px;align-items:center; }
+#card-dialog .card-title-row > div:not(.card-title-bulb) { flex:1 1 auto; }
+#card-dialog .card-paper h2 { font-size:34px;line-height:1.08;letter-spacing:-1px; }
+#card-dialog .card-number { min-width:60px;padding-right:18px;font-size:47px; }
+#card-dialog .card-subtitle { font-size:12px;margin-top:5px;line-height:1.35; }
+#card-dialog .card-title-bulb {
+  display:grid;
+  place-items:center;
+  flex:0 0 98px;
+  width:98px;
+  height:108px;
+  position:relative;
+  inset:auto;
+  margin-left:auto;
+  pointer-events:none;
+}
+#card-dialog .card-title-bulb > svg,
+#card-dialog .card-title-bulb .fg-deco-bulb {
+  display:block;
+  position:static;
+  inset:auto;
+  width:98px!important;
+  height:108px!important;
+  max-width:none;
+  transform:rotate(5deg);
+}
+#card-dialog .card-paper p.instructions { margin:12px 0;font-size:14px;line-height:1.45; }
+#card-dialog .activity-layout { margin-top:15px;gap:22px; }
+#card-dialog .card-bottom { padding:11px 0 14px; }
+#card-dialog #reset-activity { max-width:135px;padding:8px 10px;font-size:11px;line-height:1.2; }
+#card-dialog #reset-activity span { max-width:none; }
+#card-dialog .envelope .seal { color:#dc86ac;text-shadow:0 1px #fff8; }
+#card-dialog .columns-activity { grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:13px; }
+#card-dialog .discern-column h3 { font-size:21px;line-height:1.2;padding-bottom:9px; }
+#card-dialog .example-input { margin-top:8px; }
+#card-dialog .example-input label { font-size:10px;margin-bottom:4px; }
+#card-dialog .example-input textarea { height:51px;min-height:51px;padding:8px 10px;font-size:15px;line-height:1.4; }
+#card-dialog .discern-column[hidden] { display:none!important; }
+#card-dialog .example-tabs { display:none; }
+
+/* A visible frame around the saint gallery, with explicit browsing controls. */
+.faith-game dialog:has(> .saint-card) {
+  border:7px solid #aa8146;
+  border-radius:7px;
+  box-shadow:inset 0 0 0 1px #f5d79d,0 24px 90px #100b0988;
+}
+.faith-game .saint-card { width:min(806px,calc(94vw - 14px));height:min(655px,calc(90dvh - 14px));min-height:0; }
+.faith-game .saint-copy { overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin; }
+.faith-game .saint-go { display:inline-flex;align-items:center;justify-content:center;text-decoration:none; }
+.faith-game .saint-gallery-nav { display:flex;align-items:center;gap:11px;width:100%;margin:12px 0 4px; }
+.faith-game .saint-gallery-nav button {
+  display:grid;
+  place-items:center;
+  flex:none;
+  width:44px;
+  height:44px;
+  padding:0;
+  color:#f4d994;
+  background:#dbb75c0d;
+  border:1px solid #d6b46777;
+  border-radius:2px;
+  font:24px/1 var(--serif);
+  cursor:pointer;
+}
+.faith-game .saint-gallery-nav button:hover { background:#d5ad692b; }
+.faith-game .saint-gallery-nav button:disabled { opacity:.3;cursor:default; }
+.faith-game .saint-gallery-nav > span { flex:1;text-align:center;font:12px/1.4 'Helvetica Neue',Arial,sans-serif;letter-spacing:.08em;color:#d9c6a1; }
+.faith-game .saint-gallery-note { font:11px/1.5 'Helvetica Neue',Arial,sans-serif;color:#c8b898;margin:12px 0 5px; }
+.faith-game .saint-actions { display:flex;align-items:center;flex-wrap:wrap;gap:12px;width:100%;margin-top:20px; }
+.faith-game .saint-actions .saint-go { margin:0; }
+.faith-game .saint-continue { padding:10px 0;font:12px/1.4 'Helvetica Neue',Arial,sans-serif;text-decoration:underline;text-underline-offset:4px; }
+#card-dialog .example-tabs small { display:block;margin-top:4px;font:10px/1.1 'Helvetica Neue',Arial,sans-serif;opacity:.7; }
+@media(max-width:640px) {
+  #card-dialog .card-toolbar { min-height:41px;padding-block:2px; }
+  #card-dialog .card-title-row { gap:9px;padding:0 0 9px; }
+  #card-dialog .card-paper h2 { font-size:25px;line-height:1.08;letter-spacing:-.7px; }
+  #card-dialog .card-number { min-width:34px;padding-right:9px;font-size:35px; }
+  #card-dialog .card-title-bulb { width:76px;height:84px;flex-basis:76px; }
+  #card-dialog .card-title-bulb > svg,
+  #card-dialog .card-title-bulb .fg-deco-bulb { width:76px!important;height:84px!important; }
+  #card-dialog .card-subtitle { font-size:10px;line-height:1.3; }
+  #card-dialog .card-paper p.instructions { font-size:13px;line-height:1.4;margin:9px 0; }
+  #card-dialog .card-main { padding-bottom:13px; }
+  #card-dialog .card-bottom { padding:9px 0 max(10px,env(safe-area-inset-bottom)); }
+  #card-dialog #reset-activity { max-width:100%;padding:7px 5px;font-size:10px; }
+  #card-dialog #reset-activity span { flex:1;min-width:0;max-width:67px;text-align:left; }
+  #card-dialog .card-review-bar { gap:5px; }
+  #card-dialog #card-primary { width:clamp(106px,calc(100vw - 226px),164px);min-width:0;max-width:164px;padding:10px;font-size:12px;line-height:1.25; }
+  #card-dialog .example-tabs {
+    display:flex;
+    gap:5px;
+    position:sticky;
+    top:0;
+    z-index:4;
+    padding:8px 0;
+    background:var(--paper);
+  }
+  #card-dialog .example-tabs button {
+    flex:1 1 0;
+    min-width:0;
+    min-height:41px;
+    border:1px solid #40533d55;
+    background:#ffffff28;
+    color:var(--card-ink);
+    padding:7px 4px;
+    font:12px/1.2 var(--serif);
+    border-radius:2px;
+  }
+  #card-dialog .example-tabs button[aria-selected=true],
+  #card-dialog .example-tabs button.active { border-color:#937334;background:#fff2cc;color:#33241e; }
+  #card-dialog .columns-activity { grid-template-columns:minmax(0,1fr);gap:0;margin-top:5px; }
+  #card-dialog .discern-column h3 { font-size:19px;padding-bottom:6px; }
+  #card-dialog .example-input { margin-top:7px; }
+  #card-dialog .example-input textarea { height:54px;min-height:54px;font-size:16px;padding:7px 9px; }
+  .faith-game dialog:has(> .saint-card) { border-width:6px;max-width:calc(100vw - 20px); }
+  .faith-game .saint-card { width:calc(100vw - 32px);height:calc(100dvh - 54px - env(safe-area-inset-top) - env(safe-area-inset-bottom));min-height:0; }
+  .faith-game .saint-copy { padding:24px 16px 20px; }
+  .faith-game .saint-gallery-nav { gap:6px;margin-top:10px; }
+  .faith-game .saint-gallery-nav button { width:36px;height:42px;font-size:23px; }
+  .faith-game .saint-gallery-nav > span { font-size:10px;letter-spacing:.02em; }
+  .faith-game .saint-gallery-note { font-size:10px;line-height:1.4; }
+}
+@media(max-width:350px) {
+  #card-dialog .card-title-row h2 { font-size:20px;letter-spacing:-.6px; }
+  #card-dialog .card-title-bulb { width:64px;height:72px;flex-basis:64px; }
+  #card-dialog .card-title-bulb > svg,
+  #card-dialog .card-title-bulb .fg-deco-bulb { width:64px!important;height:72px!important; }
+}
+
+/* Clear first throw, calm result, and an explicit destination on the board. */
+#start-dialog { width:min(330px,90vw);border:1px solid #b69150;border-radius:12px;padding:0;background:var(--bg);color:var(--ink); }
+.start-card { position:relative;padding:34px 28px 30px;text-align:center;background:linear-gradient(135deg,#8e723218,transparent); }
+.start-card > p { font:9px/1.4 Arial,sans-serif;letter-spacing:2px;color:var(--muted);margin:0 0 12px; }
+.start-card h2 { font:42px/1.1 var(--serif);margin:0;letter-spacing:1px; }
+.start-card .start-close { position:absolute;top:7px;right:10px;border:0;background:none;color:var(--muted);font-size:22px;padding:5px 8px; }
+.start-die { display:flex;justify-content:center;margin:26px 0 30px; }
+.start-card #first-roll { width:100%;background:#fff2cc;color:#33241e;border:1px solid #dabd74; }
+.faith-game .die.rolling { animation:faith-die-gentle .45s ease-in-out; }
+@keyframes faith-die-gentle { 0%,100%{transform:rotate(-10deg)}35%{transform:rotate(5deg) translateY(-3px)}70%{transform:rotate(-16deg)} }
+.faith-game .roll-caption { position:absolute;bottom:calc(100% + 9px);left:50%;transform:translateX(-50%);white-space:nowrap;padding:6px 12px;border-radius:20px;background:#fff2cc;color:#33241e;font:12px/1.4 Arial,sans-serif;box-shadow:0 3px 12px #0002; }
+.faith-game .pending-card-token { display:grid;place-items:center;width:43px;height:57px;border:1px solid #cfb879;border-radius:4px;color:#eed89e;background:linear-gradient(135deg,#aa834323,#42301d28);font:30px/1 var(--serif);transform:rotate(-7deg); }
+.faith-game .pending-cue { border:0;border-bottom:1px solid #b49359;background:transparent;color:var(--ink);padding:8px 4px;cursor:pointer; }
+#card-dialog .paper-red .card-main { color:#2d1b20; }
+#card-dialog .paper-red :is(.card-copy,.large-copy,.move-highlight,.fg-deco-prayer-piece) { font-weight:700; }
+#card-dialog .fg-deco-trust .trust-prayer { text-align:center;max-width:none;width:100%; }
+.faith-game .saint-source a { display:inline;padding:2px 4px;background:#fff2cc;color:#43321e;box-decoration-break:clone;-webkit-box-decoration-break:clone;line-height:1.9;text-decoration:none; }
+.faith-game .saint-actions .saint-continue { background:#d8ef55;border:1px solid #c3d879;color:#29331c;padding:13px 16px;font:14px/1.3 Arial,sans-serif;text-decoration:none;min-height:46px;width:100%; }
+.faith-game .saint-actions .saint-continue:hover { background:#e7f792; }
+@media(max-width:640px){.faith-game .pending-card-token{width:34px;height:44px;font-size:25px;}.faith-game .saint-actions .saint-continue{font-size:12px;padding:12px 8px;}}
+@media(prefers-reduced-motion:reduce){.faith-game .die.rolling{animation:none;}}
+
+#card-dialog .paper-red .card-title-row h2 { font-weight:600; }
+.faith-game .pending-cue { font-size:13px;font-weight:500; }
+
+/* Center the original Trinity statement beneath its interactive diagram. */
+#card-dialog .card-main:has(.trinity-light) > .card-copy { width:100%;max-width:none;text-align:center; }
+
+#rules-dialog [data-play] {
+  display:block;
+  width:fit-content;
+  min-width:160px;
+  font-size:18px;
+  font-weight:700;
+  margin:24px auto 0;
+  background:linear-gradient(110deg,#b78a49 0%,#edd399 32%,#fff0ba 54%,#d7b166 82%,#b58844 100%);
+  border:1px solid #f8dfa3;
+  color:#302315;
+  box-shadow:inset 0 1px #fff5d5;
+}
+#rules-dialog [data-play]:hover { filter:brightness(1.05); }
+#rules-dialog [data-play]:focus-visible { outline:2px solid #d7b166;outline-offset:4px; }

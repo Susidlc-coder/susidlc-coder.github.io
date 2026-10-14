@@ -115,3 +115,9 @@
 .castle-caption>span{display:block;font-size:11px;letter-spacing:1.4px;text-transform:uppercase}
 .castle-caption>small{display:block;font-size:11px;letter-spacing:.1px}
 @media(prefers-reduced-motion:reduce){.castle-wave{animation:none;opacity:.25}}
+
+/* Peer contents within Pan de Cada Día: reading and interactive prayer. */
+.moradas-page #faith-library { grid-template-columns:repeat(2,minmax(0,1fr));gap:60px; }
+#faith-library .bread-game-title em { font-size:.58em;margin-left:.12em; }
+#faith-library .quiet-link { font-size:clamp(18px,1.6vw,22px); }
+@media(max-width:720px){.moradas-page #faith-library{grid-template-columns:1fr;gap:40px;}}
