@@ -1,0 +1,31 @@
+/* Compact Pan layouts, aligned with the site's other mobile sections. */
+@media(max-width:720px){
+ .moradas-page .bread-hero{padding:18px 0 28px!important;gap:24px}
+ .moradas-page .bread-hero h1{font-size:clamp(42px,12.4vw,62px);line-height:1.04;margin:16px 0 18px}
+ .moradas-page .bread-hero>div>p:not(.eyebrow){font-size:14px;line-height:1.65}
+ .moradas-page .bread-social{gap:0 20px;margin-top:14px}
+ .moradas-page .bread-social .quiet-link{font-size:12px;min-height:44px}
+ .moradas-page .bread-hero figure{max-width:240px!important}
+ .moradas-page #faith-library{gap:28px;padding-bottom:40px}
+ .moradas-page #faith-library article{padding-top:20px;min-width:0}
+ .moradas-page #faith-library h2{font-size:clamp(30px,8.8vw,40px);line-height:1.12;margin:16px 0}
+ .moradas-page #faith-library article>p:not(.eyebrow){font-size:14px;line-height:1.65}
+ .moradas-page #faith-library .quiet-link{font-size:16px!important;min-height:44px;line-height:1.4;gap:18px}
+ .moradas-page .breadcrumbs{padding-top:16px;line-height:1.5}
+ .moradas-page .moradas-cover{padding:24px 0 32px;gap:24px}
+ .moradas-page .moradas-cover h1{font-size:clamp(42px,12.4vw,62px);line-height:1.04;margin:16px 0 18px}
+ .moradas-page .moradas-cover .quiet-link{margin-top:12px;min-height:44px}
+ .moradas-page .moradas-cover .castle-study{max-width:260px;padding:18px 16px 20px}
+ .moradas-page .index-heading{gap:12px;padding-bottom:22px}
+ .moradas-page .index-heading h2{font-size:32px}
+ .moradas-page .moradas-grid{gap:28px}
+ .moradas-page .morada-group h3{font-size:24px}
+ .moradas-page .chapter-entry{min-height:44px}
+ .moradas-page .chapter-intro{padding:24px 0;gap:22px}
+ .moradas-page .chapter-intro h1{font-size:clamp(36px,10vw,52px)}
+ .moradas-page.bilingual-reader .reader-back{margin-top:14px}
+ .moradas-page.bilingual-reader .reader-heading{margin:18px 0 22px}
+ .moradas-page.bilingual-reader .reader-heading h1{font-size:clamp(36px,10vw,52px);line-height:1.08;letter-spacing:-1.5px;margin-top:14px}
+ .moradas-page.bilingual-reader .reader-heading .eyebrow{line-height:1.6}
+ .moradas-page.bilingual-reader .chapter-video{margin-bottom:24px}
+}
