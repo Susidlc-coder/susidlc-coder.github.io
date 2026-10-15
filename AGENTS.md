@@ -4,6 +4,8 @@ This is the active static susidlc.com website project. Follow the owner's latest
 
 Homepage detail preferences: the main introductory paragraph has no dot. Both update banners use the same gold yellow dot. Discover and the two update banners have no arrows; arrows elsewhere remain part of the approved design.
 
+Pan de Cada Día and Music use the shared `home-gold-header.css` and `home-gold-header.js` for the same desktop and mobile header as Home. Include these after section and language assets on all landing, album, contents and reading pages in Spanish and English. Use `pan-mobile-compact.css` or `music-mobile-compact.css` for the respective compact mobile introductions. Keep reading text, credits, videos and track controls intact. The local `.development/pan-mobile-preview.html` review shell is not a publication file. Poemas enters through `/quiz`, then its localized `/es/poemas/` or `/en/poemas/` route; include these pages and their assets when preparing an interactive local preview.
+
 ## Homepage updates are part of content updates
 
 Whenever the owner supplies a new music release, song, chapter, reading, or video, update its destination content and the corresponding homepage banner together. The other banner keeps its latest content. Routine spacing, typo, styling, and credit corrections do not replace a content announcement unless the owner asks.

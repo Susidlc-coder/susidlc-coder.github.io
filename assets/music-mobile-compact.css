@@ -1,0 +1,33 @@
+/* Compact mobile Music introductions; listening and track controls stay intact. */
+@media(max-width:720px){
+ .music-page .music-intro{grid-template-areas:"label artist" "title artist" "description description";padding-block:24px 22px;column-gap:16px}
+ .music-page .music-intro>.eyebrow{font-size:8px;letter-spacing:1.1px;align-self:start}
+ .music-page .music-intro h1{font-size:clamp(36px,10.3vw,56px);line-height:1.03;margin:14px 0 18px}
+ .music-page .music-intro .intro-line>p{font-size:14px;line-height:1.65}
+ .music-page .artist-spotify{width:84px;height:84px;flex-basis:84px;font-size:10px;gap:4px}
+ .music-page .artist-spotify strong{font-size:12px}
+ .music-page .artist-spotify svg{width:18px;height:18px}
+ .music-page .artist-spotify .artist-arrow{right:12px;top:10px;font-size:11px}
+ .music-page .upcoming-release{min-height:178px;margin-bottom:22px}
+ .music-page .upcoming-copy{padding:16px;gap:6px}
+ .music-page .upcoming-copy .release-label{font-size:8px;letter-spacing:1.1px}
+ .music-page .upcoming-copy h2{font-size:clamp(24px,6.8vw,32px)}
+ .music-page .upcoming-status{font-size:11px}
+ .music-page .upcoming-art{min-height:178px;padding:14px}
+ .music-page .upcoming-art img{height:150px}
+ .music-page .collection-heading{padding:20px 0;gap:14px}
+ .music-page .collection-heading h2{font-size:28px}
+ .music-page .album-collection{gap:26px 20px}
+ .music-page .cover-mount{height:clamp(200px,62vw,290px);aspect-ratio:auto;padding:18px}
+ .music-page .cover-caption{padding-block:16px}
+ .music-page .cover-caption h3{font-size:28px}
+ .music-page .music-contact{margin-top:32px;padding-block:28px 36px}
+ .music-page .music-contact h2{font-size:30px}
+ .music-page .album-page .album-opening{gap:20px;margin:8px 0 28px}
+ .music-page .album-page .album-opening figure{width:100%;height:240px;max-width:320px;justify-self:center}
+ .music-page .album-page .album-heading h1{font-size:clamp(42px,12.4vw,62px);letter-spacing:-2px;margin:12px 0 14px}
+ .music-page .album-page .album-subtitle{font-size:28px;margin-bottom:16px}
+ .music-page .album-page .album-heading .button{min-height:44px;padding:10px 18px}
+ .music-page .album-page .album-credit{margin-top:18px}
+ .music-page .album-page .section-heading h2{font-size:28px}
+}
