@@ -198,9 +198,9 @@ export const cards = [
     ]), t(['milagros', 'discípulos', 'cruz', 'tumba', 'resucitado'], ['miracles', 'disciples', 'cross', 'tomb', 'Risen'])),
   }),
   card(19, t('Discernimiento', 'Discernment'), 'examples', 'blue',
-    t('Escribe tres ejemplos personales en cada categoría.', 'Write three personal examples in each category.'), {
+    t('Escribe un pensamiento en cada espacio: uno tuyo, uno del Espíritu Santo y uno del mal.', 'Write one thought in each space: one of your own, one from the Holy Spirit, and one from evil.'), {
       subtitle: t('', ''), stickers: ['💡'], decorations: ['bulb'],
-      activity: { categories, perCategory: 3, review: 'personal-writing' },
+      activity: { categories, perCategory: 1, review: 'personal-writing' },
     }),
   card(20, t('Danos hoy nuestro pan de cada día', 'Give us this day our daily bread'), 'reflection', 'red',
     t('Dios, ayúdame a reconocer todo lo bueno que TÚ nos das cada día.',

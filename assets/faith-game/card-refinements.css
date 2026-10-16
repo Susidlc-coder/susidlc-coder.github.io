@@ -682,3 +682,14 @@
 }
 .faith-game .locale-dialog-brand :is(b,em,span) { background-image:none;-webkit-text-fill-color:inherit; }
 @media(max-width:430px) { .faith-game dialog.locale-dialog { padding:52px 24px 30px; } }
+
+/* Discernment: one thought per category, all three visible together. */
+#card-dialog .card-type-examples .columns-activity { margin-top:18px; }
+#card-dialog .card-type-examples .example-input { margin-top:0; }
+#card-dialog .card-type-examples .example-input label { display:block;font:18px/1.25 var(--serif);margin-bottom:9px; }
+#card-dialog .card-type-examples .example-input textarea { height:100px;min-height:100px; }
+@media(max-width:640px) {
+  #card-dialog .card-type-examples .columns-activity { gap:15px;margin-top:15px; }
+  #card-dialog .card-type-examples .example-input label { font-size:16px;margin-bottom:6px; }
+  #card-dialog .card-type-examples .example-input textarea { height:64px;min-height:64px; }
+}

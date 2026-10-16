@@ -11,7 +11,7 @@ export function activityStatus(card, draft, lang) {
   if (card.type === 'match') return {complete:a.pairs.every(x=>Boolean(draft.matches[x.id])),correct:a.pairs.every(x=>draft.matches[x.id]===x.id)};
   if (card.type === 'examples') {
     const entries=draft.examples||{};
-    const complete=a.categories.every(cat=>[0,1,2].every(i=>String(entries[`${cat.id}-${i}`]??'').trim().length>0));
+    const complete=a.categories.every(cat=>Array.from({length:a.perCategory},(_,i)=>i).every(i=>String(entries[`${cat.id}-${i}`]??'').trim().length>0));
     return {complete,correct:false};
   }
   return {complete:false,correct:false};
