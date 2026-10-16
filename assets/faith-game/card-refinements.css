@@ -698,9 +698,15 @@
 .faith-game .saint-copy .saint-actions { margin-top:0; }
 .faith-game .saint-copy .saint-source { margin-top:20px; }
 
-/* On phones, copper-brown markers stay distinct from the gold playing piece. */
+/* Small bronze outlines stay distinct from the gold playing piece on phones. */
 @media(max-width:640px) {
-  .faith-game .geometric-map .cell-icon { fill:url(#faith-bronze-metal);stroke:#613a2a; }
+  .faith-game .geometric-map .cell-icon.cell-mobile-icon {
+    fill:none;
+    stroke:#bd8965;
+    stroke-width:4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
 }
 
 /* Larger instructions keep the existing typefaces and compact card hierarchy. */

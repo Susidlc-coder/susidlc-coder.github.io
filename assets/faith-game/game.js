@@ -8,7 +8,7 @@ import {saints,selectSaint} from './saints.js?v=20261015-saint-rotation-1';
 import {originalPhotoMarkup} from './original-framing.js';
 import {currentPlayer,serializeGame,restoreGame} from './engine.js';
 import {createSoloGame,advanceAndRoll,completeSoloCard,normalizeSoloState} from './solo.js?v=20261015-return-dice-1';
-import {oceanMarkup} from './ocean.js?v=20261015-mobile-bronze-1';
+import {oceanMarkup} from './ocean.js?v=20261015-mobile-outline-1';
 import {decorationsMarkup,decorationsStyles,decorationsIncludeBody,titleBulb} from './decorations.js';
 const lang=window.SusiLocale?.lang||document.documentElement.lang||'es';
 const L=(es,en)=>lang==='en'?en:es;

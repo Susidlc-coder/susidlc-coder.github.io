@@ -13,6 +13,17 @@ function metalGradient(id,palette,reverse=false) {
 function pawn(compact) {
   return `<g class="traveler-pawn" transform="translate(${compact?82:61} ${compact?-32:-25}) scale(${compact?1.48:1})" aria-hidden="true"><ellipse class="pawn-shadow" cx="1" cy="43" rx="25" ry="8"/><g class="pawn-figure"><path class="pawn-body" fill="url(#faith-gold-metal)" d="M0-43a12 12 0 1 1 0 24a12 12 0 1 1 0-24ZM-9-12Q0-18 9-12C15-7 14 4 17 14L25 31Q27 38 19 40Q0 46-19 40Q-27 38-25 31L-17 14C-14 4-15-7-9-12Z"/><path class="pawn-glint" d="M-4-38Q-11-34-7-27M-6-8Q-11-1-9 8L-16 28"/></g></g>`;
 }
+// Draw phone markers as paths so emoji fonts cannot turn them into solid blocks.
+function mobileMarker(c, n) {
+  let shape='';
+  if(c.type==='fill')shape='<rect x="-24" y="-17" width="48" height="34" rx="2"/><path d="M-24-17 0 3 24-17"/>';
+  else if(c.type==='temptation')shape='<path d="M18-18-18 18M-18-4v22H4"/>';
+  else if(n===21)shape='<path d="M0-24 24 19H-24Z"/>';
+  else if(n===24)shape='<path d="M0 22C-7 15-24 3-24-9C-24-25-5-28 0-14C5-28 24-25 24-9C24 3 7 15 0 22Z"/>';
+  else if(c.type==='match')shape='<path d="M-24 0H24M-15-9-24 0-15 9M15-9 24 0 15 9"/>';
+  else if(['order','classify','examples'].includes(c.type))shape='<path d="M0-24C4-8 8-4 24 0C8 4 4 8 0 24C-4 8-8 4-24 0C-8-4-4-8 0-24Z"/>';
+  return shape?`<g class="cell-icon cell-mobile-icon" transform="translate(0 66)" aria-hidden="true">${shape}</g>`:'';
+}
 function lines(value, length) {
   const out = [''];
   for (const word of value.split(' ')) {
@@ -43,7 +54,7 @@ export function oceanMarkup({cards, lang, player, started, compact=false, names}
     const icon=c.type==='fill'?'✉':c.type==='order'?'✧':c.type==='temptation'?'↙':n===21?'△':n===24?'♡':c.type==='classify'||c.type==='examples'?'✦':c.type==='match'?'↔':'';
     const current=started&&player.pos===n&&!player.amen;
     const delay=-5500*(cx/width*.68+cy/height*.32);
-    cells+=`<g class="map-piece ${current?'is-current':''}" role="button" tabindex="0" data-card="${n}" aria-label="${n}. ${escape(c.title[lang])}" ${current?'aria-current="step"':''} style="--cell-ink:${c.paper==='red'?'#432b2d':'#203b3b'};--metal-delay:${delay.toFixed(1)}ms"><polygon class="cell-metal" fill="url(#metal-${n})" points="${pointString}"/><polygon class="cell-glow" fill="url(#metal-light-${n})" points="${pointString}"/><polygon class="cell-face" fill="url(#paper-${n})" points="${pointString}"/><polygon class="cell-hit" points="${pointString}"/><g class="cell-content" transform="translate(${cx} ${cy})"><text class="cell-number" text-anchor="middle" y="5">${String(n).padStart(2,'0')}</text><text class="cell-icon ${c.type==='fill'?'cell-envelope':''}" fill="url(#faith-gold-metal)" text-anchor="middle" y="${compact?89:53}">${icon}</text><text class="cell-name" text-anchor="middle">${lines(title,compact?16:21).map((line,i)=>`<tspan x="0" y="${i*(compact?30:23)+10}">${escape(line)}</tspan>`).join('')}</text>${current?pawn(compact):''}</g></g>`;
+    cells+=`<g class="map-piece ${current?'is-current':''}" role="button" tabindex="0" data-card="${n}" aria-label="${n}. ${escape(c.title[lang])}" ${current?'aria-current="step"':''} style="--cell-ink:${c.paper==='red'?'#432b2d':'#203b3b'};--metal-delay:${delay.toFixed(1)}ms"><polygon class="cell-metal" fill="url(#metal-${n})" points="${pointString}"/><polygon class="cell-glow" fill="url(#metal-light-${n})" points="${pointString}"/><polygon class="cell-face" fill="url(#paper-${n})" points="${pointString}"/><polygon class="cell-hit" points="${pointString}"/><g class="cell-content" transform="translate(${cx} ${cy})"><text class="cell-number" text-anchor="middle" y="5">${String(n).padStart(2,'0')}</text>${compact?mobileMarker(c,n):`<text class="cell-icon ${c.type==='fill'?'cell-envelope':''}" fill="url(#faith-gold-metal)" text-anchor="middle" y="53">${icon}</text>`}<text class="cell-name" text-anchor="middle">${lines(title,compact?16:21).map((line,i)=>`<tspan x="0" y="${i*(compact?30:23)+10}">${escape(line)}</tspan>`).join('')}</text>${current?pawn(compact):''}</g></g>`;
   }
   return `<svg class="ocean-map geometric-map" viewBox="0 0 ${width} ${height}" aria-label="${lang==='es'?'Padre Nuestro, 24 casillas':'Our Father, 24 spaces'}"><defs>${gradients}<linearGradient id="faith-gold-metal" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#956327"/><stop offset="18%" stop-color="#dab475"/><stop offset="33%" stop-color="#fff0bd"/><stop offset="49%" stop-color="#c38d42"/><stop offset="64%" stop-color="#f9e5a8"/><stop offset="83%" stop-color="#b38039"/><stop offset="100%" stop-color="#eacb88"/></linearGradient><linearGradient id="faith-bronze-metal" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#75402e"/><stop offset="23%" stop-color="#b97850"/><stop offset="42%" stop-color="#d6a579"/><stop offset="61%" stop-color="#8f5035"/><stop offset="82%" stop-color="#bc8058"/><stop offset="100%" stop-color="#82442f"/></linearGradient></defs>${cells}</svg>`;
 }
