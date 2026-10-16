@@ -613,17 +613,31 @@
   #card-dialog .card-title-bulb .fg-deco-bulb { width:64px!important;height:72px!important; }
 }
 
-/* Clear first throw, calm result, and an explicit destination on the board. */
-#start-dialog { width:min(330px,90vw);border:1px solid #b69150;border-radius:12px;padding:0;background:var(--bg);color:var(--ink); }
-.start-card { position:relative;padding:34px 28px 30px;text-align:center;background:linear-gradient(135deg,#8e723218,transparent); }
-.start-card > p { font:9px/1.4 Arial,sans-serif;letter-spacing:2px;color:var(--muted);margin:0 0 12px; }
-.start-card h2 { font:42px/1.1 var(--serif);margin:0;letter-spacing:1px; }
-.start-card .start-close { position:absolute;top:7px;right:10px;border:0;background:none;color:var(--muted);font-size:22px;padding:5px 8px; }
-.start-die { display:flex;justify-content:center;margin:26px 0 30px; }
-.start-card #first-roll { width:100%;background:#fff2cc;color:#33241e;border:1px solid #dabd74; }
+/* Each turn pauses for a deliberate, tactile throw. The pips carry the result. */
+.faith-game #roll-dialog {
+  width:min(248px,calc(100vw - 40px));
+  border:1px solid #b69150;
+  border-radius:18px;
+  padding:0;
+  background:#30231f;
+  color:#f0dca4;
+  box-shadow:0 18px 60px #0004,inset 0 1px #f5dca326;
+}
+.faith-game #roll-dialog::backdrop { background:#17231f66;backdrop-filter:blur(3px); }
+.roll-prompt { position:relative;padding:38px 30px 27px; }
+.roll-close { position:absolute;top:6px;right:9px;display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;background:none;color:#dbc79e;font:23px/1 Arial,sans-serif; }
+.roll-close:disabled { visibility:hidden; }
+.roll-trigger { display:flex;flex-direction:column;align-items:center;gap:24px;width:100%;padding:13px 0 2px;border:0;border-radius:10px;background:none;color:#f0dca4;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent; }
+.roll-trigger #roll-title { font:600 28px/1.2 var(--serif);background:linear-gradient(110deg,#d1ab65,#fff0bd 50%,#ddbb7b);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent; }
+.roll-trigger:focus-visible { outline:1px solid #e8c784;outline-offset:8px; }
+.roll-trigger:disabled { opacity:1;cursor:default; }
+.roll-face { display:grid;place-items:center;width:100px;height:96px; }
+.roll-trigger .die { width:84px;height:84px;padding:14px;gap:6px;border-radius:16px;box-shadow:inset 0 1px #fffdf1,4px 5px 0 #aa8a62,6px 9px 14px #0003; }
+.roll-trigger .die .pip { width:11px;height:11px; }
+.roll-trigger:not(:disabled):hover .die { transform:rotate(-4deg) translateY(-2px); }
+.roll-trigger:not(:disabled):active .die { transform:rotate(-4deg) translateY(1px); }
 .faith-game .die.rolling { animation:faith-die-gentle .45s ease-in-out; }
 @keyframes faith-die-gentle { 0%,100%{transform:rotate(-10deg)}35%{transform:rotate(5deg) translateY(-3px)}70%{transform:rotate(-16deg)} }
-.faith-game .roll-caption { position:absolute;bottom:calc(100% + 9px);left:50%;transform:translateX(-50%);white-space:nowrap;padding:6px 12px;border-radius:20px;background:#fff2cc;color:#33241e;font:12px/1.4 Arial,sans-serif;box-shadow:0 3px 12px #0002; }
 .faith-game .pending-card-token { display:grid;place-items:center;width:43px;height:57px;border:1px solid #cfb879;border-radius:4px;color:#eed89e;background:linear-gradient(135deg,#aa834323,#42301d28);font:30px/1 var(--serif);transform:rotate(-7deg); }
 .faith-game .pending-cue { border:0;border-bottom:1px solid #b49359;background:transparent;color:var(--ink);padding:8px 4px;cursor:pointer; }
 #card-dialog .paper-red .card-main { color:#2d1b20; }
