@@ -23,6 +23,19 @@ const categories = [
 const fillInstructions = t('Toca las palabras en orden. Cada una llena el siguiente espacio.', 'Tap the words in order. Each one fills the next blank.');
 const fill = (segments, answers, confirmed = true) => ({ segments, answers, words: answers, confirmed });
 
+// Scenarios adapted for the digital discernment activity at Susi's request.
+const discernmentScenarios = [
+  { id: 'self-drawing', text: t('Aunque mis amigos quieran jugar, yo prefiero dibujar.', 'Even if my friends want to play, I would rather draw.'), category: 'self' },
+  { id: 'self-rest', text: t('Hoy prefiero descansar un rato a solas.', 'Today I would rather spend a little time resting alone.'), category: 'self' },
+  { id: 'self-practice', text: t('Quiero aprender guitarra, aunque cueste practicar.', 'I want to learn guitar, even if practice is hard.'), category: 'self' },
+  { id: 'spirit-repair', text: t('Me da vergüenza, pero admitiré y repararé mi error.', 'I feel embarrassed, but I will admit and fix my mistake.'), category: 'spirit' },
+  { id: 'spirit-honesty', text: t('Aunque nadie me vea, voy a devolver lo que encontré.', 'Even if no one sees me, I will return what I found.'), category: 'spirit' },
+  { id: 'spirit-listen', text: t('Antes de juzgarlo, voy a escuchar su versión.', 'Before judging, I will listen to their side of the story.'), category: 'spirit' },
+  { id: 'evil-halftruth', text: t('Si cuento solo parte de la verdad, puedo evitar el castigo.', 'If I tell only part of the truth, I can avoid getting in trouble.'), category: 'evil' },
+  { id: 'evil-retaliation', text: t('Como se burló de mí, está bien que yo también lo humille.', 'They made fun of me, so it is fine for me to humiliate them too.'), category: 'evil' },
+  { id: 'evil-exclusion', text: t('No lo incluiré para que los demás me acepten.', 'I will leave them out so the others accept me.'), category: 'evil' },
+];
+
 export const cards = [
   card(0, t('ÉL HA RESUCITADO', 'HE IS RISEN'), 'reward', 'yellow',
     t('Da gracias a Dios con tus propias palabras:', 'Thank God in your own words:'), {
@@ -60,14 +73,13 @@ export const cards = [
       items: [
         { id: 'self-dinner', text: t('¿Qué vamos a cenar?', 'What are we having for dinner?'), category: 'self' },
         { id: 'self-pizza', text: t('Quiero pizza para cenar.', 'I want pizza for dinner.'), category: 'self' },
-        { id: 'self-game', text: t('Voy a jugar después de hacer la tarea.', 'I will play a game after homework.'), category: 'self' },
         { id: 'spirit-morning', text: t('Siempre rezo por la mañana y por la noche.', 'I pray always in the morning and night.'), category: 'spirit' },
         { id: 'spirit-meal', text: t('Reza antes de comer.', 'Pray before you eat.'), category: 'spirit' },
-        { id: 'spirit-bed', text: t('Reza antes de acostarte.', 'Pray before you go to bed.'), category: 'spirit' },
         { id: 'evil-boring', text: t('Nunca reces; es aburrido.', 'Never pray, it is boring.'), category: 'evil' },
         { id: 'evil-love', text: t('Dios nunca te ama.', 'God never loves you.'), category: 'evil' },
-        { id: 'evil-listen', text: t('Dios nunca te escucha.', 'God never listens to you.'), category: 'evil' },
+        ...discernmentScenarios.filter(item=>['self-practice','spirit-repair','evil-exclusion'].includes(item.id)),
       ],
+      mobileItems: discernmentScenarios,
     } }),
   card(5, t('En la tierra como en el cielo', 'On Earth as it is in Heaven'), 'reflection', 'white',
     t('En el cielo todo sigue el orden perfecto de Dios. Estamos llamados a traer esa misma paz y armonía a la tierra.',
