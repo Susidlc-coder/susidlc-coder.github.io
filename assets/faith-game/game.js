@@ -20,7 +20,7 @@ const tokenColors=['#bd477a','#488fa6','#b39337','#6e8b46'];
 const shortES=['','No nos dejes caer','Génesis I','Perdona nuestras ofensas','Discernimiento','En la tierra como en el cielo','Tentación','Como nosotros perdonamos','Tentación','Ave María','Padre nuestro','La vida de Jesús I','Santificado sea Tu nombre','Tentación','Líbranos del mal','Sacramentos','Génesis II','Que estás en el cielo','La vida de Jesús II','Discernimiento','El pan de cada día','La Trinidad','Hágase Tu voluntad','Tentación','Venga Tu reino'];
 const shortEN=['','Lead us not into temptation','Genesis I','Forgive us our trespasses','Discernment','On Earth as in Heaven','Temptation','As we forgive others','Temptation','Hail Mary','Our Father','Jesus’ Life I','Hallowed be Thy Name','Temptation','Deliver us from evil','Sacraments','Genesis II','Who art in Heaven','Jesus’ Life II','Discernment','Our daily bread','Holy Trinity','Thy will be done','Temptation','Thy Kingdom Come'];
 const compact=matchMedia('(max-width:640px)'), reduced=matchMedia('(prefers-reduced-motion:reduce)');
-let state=null,started=false,rolling=false,pausing=false,opened=null,live=false,drafts={},storageAvailable=true,finishing=false,moving=false,displayPosition=null,saintVisit=0,lastSaintId=null,rewardValue='';
+let state=null,started=false,entered=false,rolling=false,pausing=false,opened=null,live=false,drafts={},storageAvailable=true,finishing=false,moving=false,displayPosition=null,saintVisit=0,lastSaintId=null,rewardValue='';
 try{const raw=localStorage.getItem(SAVE);if(raw){state=normalizeSoloState(restoreGame(raw));if(state.players.length!==1)throw Error('solo');started=true;}const ui=JSON.parse(sessionStorage.getItem(UI)||'{}');drafts=ui.drafts||{};opened=ui.opened??null;live=Boolean(ui.live);}catch{state=null;started=false;drafts={};opened=null;live=false;}
 try{saintVisit=Math.max(0,Number(localStorage.getItem('susidlc-faith-saint-visit'))||0);lastSaintId=localStorage.getItem('susidlc-faith-last-saint');}catch{}
 try{rewardValue=localStorage.getItem(REWARD)||drafts['p1:0']?.reflection||'';}catch{}
@@ -39,25 +39,26 @@ const icons={help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 
 const icon=name=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]}</svg>`;
 function render(){
  const p={...currentPlayer(state),pos:displayPosition??currentPlayer(state).pos},done=state.phase==='game-over',pending=['awaiting-card','awaiting-retry'].includes(state.phase);
+ const active=started&&entered;
  const dieLabel=pending?L('Abrir mi tarjeta','Open my card'):L('Lanzar el dado','Roll the die');
- root.innerHTML=`<section class="game-heading"><div><a class="game-breadcrumb" href="/${lang}/pan-de-cada-dia/">PAN DE CADA DÍA</a><h1>${L('Padre Nuestro <em>oración</em>','Our Father <em>prayer</em>')}</h1></div><div class="map-tools"><button class="icon-button" id="rules" aria-label="${L('Instrucciones','Instructions')}" title="${L('Instrucciones','Instructions')}">${icon('help')}</button>${started?`<button class="icon-button" id="new-game" aria-label="${L('Nueva partida','New game')}" ${rolling||pausing||moving?'disabled':''}>${icon('reset')}</button>`:''}</div></section>
- <section class="ocean-board ${started?'journey-started':'journey-intro'} ${rolling?'is-rolling':''} ${moving?'is-stepping':''} ${pausing?'is-pausing':''}" aria-label="${L('Tablero completo','Complete board')}"><div class="map-water">${oceanMarkup({cards,lang,player:p,started,compact:compact.matches,names:lang==='en'?shortEN:shortES})}</div><div class="shore"><button class="start-gate ${!started?'is-invitation':''}" id="start-gate" aria-label="${L('INICIO','START')}"><strong>${L('INICIO','START')}</strong></button><button class="amen-shore" data-card="amen"><span>AMEN</span><i aria-hidden="true">✧</i></button></div>${started?`<div class="dice-dock"><button class="dice-button ${pending?'has-pending':''}" id="primary" aria-label="${done?L('Has llegado','You have arrived'):dieLabel}" title="${done?L('Has llegado','You have arrived'):dieLabel}" ${rolling||pausing||moving?'disabled':''}>${done?'<span class="arrival-symbol" aria-hidden="true">✧</span>':pending&&!rolling&&!moving?`<span class="pending-card-token" aria-hidden="true">${state.pendingCard}</span>`:dieMarkup(state.lastRoll||5)}</button></div>`:''}${pausing?`<div class="amen-pause" role="status"><span>AMEN</span><small>${L('Una pausa. Vuelve a la','A pause. Return to')} ${p.pos}.</small></div>`:''}</section><div class="map-baseline"><span>${started?`${String(Math.min(p.pos,24)).padStart(2,'0')} <span aria-hidden="true">/</span> 24`:L('26 tarjetas · un camino','26 cards · one journey')}</span>${started&&pending&&!rolling&&!moving?`<button class="baseline-hint pending-cue" id="open-pending">${L('Abrir casilla ','Open space ')+state.pendingCard} ↗</button>`:`<span class="baseline-hint">${done?L('Has llegado','You have arrived'):started?L('Toca el dado para seguir','Tap the die to continue'):L('Toca el inicio','Tap the start')}</span>`}<span class="saved-mark" aria-label="${L('Partida guardada en este dispositivo','Game saved on this device')}" title="${L('Se guarda en este dispositivo','Saved on this device')}">${storageAvailable?'◦':'!'}</span></div>`;
+ root.innerHTML=`<section class="game-heading"><div><a class="game-breadcrumb" href="/${lang}/pan-de-cada-dia/">PAN DE CADA DÍA</a><h1>${L('Padre Nuestro <em>oración</em>','Our Father <em>prayer</em>')}</h1></div><div class="map-tools"><button class="icon-button" id="rules" aria-label="${L('Instrucciones','Instructions')}" title="${L('Instrucciones','Instructions')}">${icon('help')}</button>${active?`<button class="icon-button" id="new-game" aria-label="${L('Nueva partida','New game')}" ${rolling||pausing||moving?'disabled':''}>${icon('reset')}</button>`:''}</div></section>
+ <section class="ocean-board ${active?'journey-started':'journey-intro'} ${rolling?'is-rolling':''} ${moving?'is-stepping':''} ${pausing?'is-pausing':''}" aria-label="${L('Tablero completo','Complete board')}"><div class="map-water">${oceanMarkup({cards,lang,player:p,started:active,compact:compact.matches,names:lang==='en'?shortEN:shortES})}</div><div class="shore"><button class="start-gate ${!entered?'is-invitation':''}" id="start-gate" aria-label="${L('INICIO','START')}">${!entered?'<span class="start-light" aria-hidden="true"></span>':''}<strong>${L('INICIO','START')}</strong></button><button class="amen-shore" data-card="amen"><span>AMEN</span><i aria-hidden="true">✧</i></button></div>${active?`<div class="dice-dock"><button class="dice-button ${pending?'has-pending':''}" id="primary" aria-label="${done?L('Has llegado','You have arrived'):dieLabel}" title="${done?L('Has llegado','You have arrived'):dieLabel}" ${rolling||pausing||moving?'disabled':''}>${done?'<span class="arrival-symbol" aria-hidden="true">✧</span>':pending&&!rolling&&!moving?`<span class="pending-card-token" aria-hidden="true">${state.pendingCard}</span>`:dieMarkup(state.lastRoll||5)}</button></div>`:''}${pausing?`<div class="amen-pause" role="status"><span>AMEN</span><small>${L('Una pausa. Vuelve a la','A pause. Return to')} ${p.pos}.</small></div>`:''}</section><div class="map-baseline"><span>${active?`${String(Math.min(p.pos,24)).padStart(2,'0')} <span aria-hidden="true">/</span> 24`:L('26 tarjetas · un camino','26 cards · one journey')}</span>${active&&pending&&!rolling&&!moving?`<button class="baseline-hint pending-cue" id="open-pending">${L('Abrir casilla ','Open space ')+state.pendingCard} ↗</button>`:`<span class="baseline-hint">${!entered?L('Toca INICIO para jugar','Tap START to play'):done?L('Has llegado','You have arrived'):L('Toca el dado para seguir','Tap the die to continue')}</span>`}<span class="saved-mark" aria-label="${L('Partida guardada en este dispositivo','Game saved on this device')}" title="${L('Se guarda en este dispositivo','Saved on this device')}">${storageAvailable?'◦':'!'}</span></div>`;
  root.querySelectorAll('[data-card]').forEach(b=>{
    const id=b.dataset.card==='amen'?'amen':+b.dataset.card;
-   const browse=()=>{if(rolling||pausing||moving)return;b.classList.add('is-revealed');if(id==='amen')showSaint(false,true);else openCard(id,started&&state.pendingCard===id);};
+   const browse=()=>{if(rolling||pausing||moving)return;b.classList.add('is-revealed');if(id==='amen')showSaint(false,true);else openCard(id,active&&state.pendingCard===id);};
    b.onclick=browse;if(b.tagName.toLowerCase()==='g')b.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();browse();}};
  });
- document.getElementById('start-gate').onclick=()=>{if(rolling||pausing||moving)return;if(!started||state.phase==='game-over')startJourney();else primaryAction();};
+ document.getElementById('start-gate').onclick=()=>{if(rolling||pausing||moving)return;if(!started||state.phase==='game-over')startJourney();else{entered=true;render();primaryAction();}};
  document.getElementById('primary')?.addEventListener('click',primaryAction);
  document.getElementById('new-game')?.addEventListener('click',startJourney);
  document.getElementById('rules').onclick=showRules;
  document.getElementById('open-pending')?.addEventListener('click',()=>openCard(state.pendingCard,true));
 
 }
-function startJourney(){if(rolling||moving)return;dialog.close();opened=null;live=false;state=createSoloGame(L('Tú','You'));started=true;drafts={};save();render();return showRollPrompt();}
+function startJourney(){if(rolling||moving)return;dialog.close();opened=null;live=false;state=createSoloGame(L('Tú','You'));started=true;entered=true;drafts={};save();render();return showRollPrompt();}
 function showRollPrompt(){
  const d=document.getElementById('roll-dialog');
- if(d.open||rolling||moving)return;
+ if(!entered||d.open||rolling||moving)return;
  const firstRoll=currentPlayer(state).pos===0&&state.lastRoll===null;
  d.innerHTML=`<div class="roll-prompt"><button class="roll-close" aria-label="${L('Cerrar','Close')}">×</button><button class="roll-trigger" aria-label="${firstRoll?L('Empezar: tira el dado','Start: roll the die'):L('Tira el dado','Roll the die')}"><span class="roll-face">${dieMarkup(5)}</span><span id="roll-title">${firstRoll?L('Empezar','Start'):L('Tira','Roll')}</span></button></div>`;
  d.querySelector('.roll-close').onclick=()=>d.close();
@@ -67,6 +68,7 @@ function showRollPrompt(){
 }
 function primaryAction(){
  if(rolling||pausing||moving||finishing)return;
+ if(!entered){document.getElementById('start-gate').focus();return;}
  if(!started){startJourney();return;}
  if(state.phase==='game-over'){showArrival();return;}
  if(['awaiting-card','awaiting-retry'].includes(state.phase)){openCard(state.pendingCard,true);return;}
@@ -78,7 +80,9 @@ async function performRoll(){
  const before=state,button=d.querySelector('.roll-trigger'),close=d.querySelector('.roll-close'),face=d.querySelector('.roll-face');
  rolling=true;button.disabled=true;close.disabled=true;button.setAttribute('aria-busy','true');
  face.innerHTML=dieMarkup(5,true);render();
- await new Promise(r=>setTimeout(r,reduced.matches?100:450));
+ const spin=face.querySelector('.die').getAnimations()[0];
+ if(spin)await spin.finished.catch(()=>{});
+ else await new Promise(r=>setTimeout(r,reduced.matches?100:1300));
  if(state!==before){rolling=false;d.close();render();return;}
  const from=currentPlayer(state).pos;
  state=advanceAndRoll(state);displayPosition=from;save();render();
@@ -162,7 +166,6 @@ async function handleCard(c,d){
  if(c.move?.to==='amen'){showSaint(wasLive);return;}
  if(wasLive&&c.move){await walkTo(from,currentPlayer(state).pos,350);announce(L('Llegaste a la casilla ','You reached space ')+currentPlayer(state).pos);if(state.pendingCard!==null)openCard(state.pendingCard,true);else primaryAction();return;}
  if(!wasLive&&c.move){openCard(c.move.to,false);return;}
- if(!started){startJourney();return;}
  await primaryAction();
 }
 function showSaint(fromCard=false,browseGallery=false){
@@ -180,4 +183,5 @@ const headerMedia=matchMedia('(max-width:669px)'),light=document.querySelector('
 function placeLight(){if(light)(headerMedia.matches?navigation:utilities).append(light);}
 headerMedia.addEventListener('change',placeLight);placeLight();
 document.addEventListener('visibilitychange',()=>{document.body.classList.toggle('tab-hidden',document.hidden);});
-render();if(opened!==null){const candidate=getCard(opened);if(candidate)openCard(opened,live&&state.pendingCard===opened);}else if(state.pendingCard===19){openCard(19,true);}else if(started&&state.pendingCard===null&&state.phase!=='game-over'){showRollPrompt();}save();
+// Each page entry begins at START; saved progress and card drafts resume after it.
+opened=null;live=false;render();save();

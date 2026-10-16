@@ -636,8 +636,8 @@
 .roll-trigger .die .pip { width:11px;height:11px; }
 .roll-trigger:not(:disabled):hover .die { transform:rotate(-4deg) translateY(-2px); }
 .roll-trigger:not(:disabled):active .die { transform:rotate(-4deg) translateY(1px); }
-.faith-game .die.rolling { animation:faith-die-gentle .45s ease-in-out; }
-@keyframes faith-die-gentle { 0%,100%{transform:rotate(-10deg)}35%{transform:rotate(5deg) translateY(-3px)}70%{transform:rotate(-16deg)} }
+.faith-game .die.rolling { animation:faith-die-spin 1.3s cubic-bezier(.25,.5,.4,1) both; }
+@keyframes faith-die-spin { from{transform:rotate(-10deg)}to{transform:rotate(710deg)} }
 .faith-game .pending-card-token { display:grid;place-items:center;width:43px;height:57px;border:1px solid #cfb879;border-radius:4px;color:#eed89e;background:linear-gradient(135deg,#aa834323,#42301d28);font:30px/1 var(--serif);transform:rotate(-7deg); }
 .faith-game .pending-cue { border:0;border-bottom:1px solid #b49359;background:transparent;color:var(--ink);padding:8px 4px;cursor:pointer; }
 #card-dialog .paper-red .card-main { color:#2d1b20; }
@@ -723,4 +723,42 @@
   .faith-game #rules-dialog .rules-list { font-size:17px;line-height:1.6; }
   #card-dialog .card-paper p.instructions { font-size:17px;line-height:1.5; }
   #card-dialog .word-bank-wrap { grid-column:2;grid-row:1;margin-top:0; }
+}
+
+/* The green entry light travels right to left only until START is pressed. */
+.faith-game .journey-intro .shore { background:var(--bg); }
+.faith-game .journey-intro .start-gate {
+  flex:1;
+  width:auto;
+  min-width:0;
+  max-width:none;
+  justify-content:flex-start;
+  overflow:hidden;
+  background:#b5d536;
+  color:#29331c;
+  text-align:left;
+}
+.faith-game .start-gate.is-invitation strong {
+  position:relative;
+  z-index:1;
+  color:inherit;
+}
+.faith-game .start-gate.is-invitation::after { content:none; }
+.faith-game .start-light {
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,transparent,#d8ef55 25%,#e6f29f 50%,#d8ef55 75%,transparent);
+  pointer-events:none;
+  animation:faith-start-light 2.8s linear infinite;
+}
+@keyframes faith-start-light {
+  from { transform:translateX(100%); }
+  to { transform:translateX(-100%); }
+}
+.faith-game .journey-started .shore { background:linear-gradient(105deg,#382d25,#56452f 62%,#75603c); }
+.faith-game .journey-started .start-gate { background:transparent;color:#f6edd2; }
+.faith-game:has(dialog[open]) .start-light,
+.faith-game.tab-hidden .start-light { animation-play-state:paused; }
+@media(prefers-reduced-motion:reduce) {
+  .faith-game .start-light { animation:none;transform:none; }
 }
