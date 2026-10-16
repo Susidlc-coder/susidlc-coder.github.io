@@ -7,6 +7,9 @@
   const ignored = /^\/(assets|referencia|propuesta-anterior|estudio|quiz)(?:\/|$)|^\/preview\.html/;
   if (ignored.test(location.pathname)) return;
   const match = /^\/(es|en)(?:\/|$)/.exec(location.pathname);
+  const shortGame = /^\/(padrenuestro|ourfather)(?:\/(?:index\.html)?)?$/.exec(location.pathname);
+  const gamePaths = /^\/(?:(?:es|en)\/)?(?:padrenuestro|ourfather|pan-de-cada-dia\/el-camino)(?:\/(?:index\.html)?)?$/;
+  const gameURLs = {es:'/padrenuestro/', en:'/ourfather/'};
   let preference = null;
   let useQueryFallback = false;
   try { const value = localStorage.getItem(key); if (allowed(value)) preference = value; } catch {}
@@ -17,17 +20,20 @@
     const value = new URL(location.href).searchParams.get(fallbackParam);
     if (allowed(value)) { preference = value; useQueryFallback = true; }
   }
-  const lang = match?.[1] || preference || 'es';
+  const lang = match?.[1] || (shortGame ? (shortGame[1] === 'ourfather' ? 'en' : 'es') : null) || preference || 'es';
   function localURL(value, language = lang) {
     const url = new URL(value, location.href);
     if (!/^https?:$/.test(url.protocol) || url.origin !== location.origin || ignored.test(url.pathname)) return url.href;
-    const path = url.pathname.replace(/^\/(es|en)(?=\/|$)/, '') || '/';
-    url.pathname = '/' + language + path;
+    if (gamePaths.test(url.pathname)) url.pathname = gameURLs[language];
+    else {
+      const path = url.pathname.replace(/^\/(es|en)(?=\/|$)/, '') || '/';
+      url.pathname = '/' + language + path;
+    }
     if (useQueryFallback && preference) url.searchParams.set(fallbackParam, preference);
     return url.href;
   }
   window.SusiLocale = {lang, url:localURL, refresh, openChooser};
-  if (!match) {
+  if ((!match && !shortGame) || (gamePaths.test(location.pathname) && location.pathname !== gameURLs[lang])) {
     // Hide the unprefixed fallback links while moving to the temporary/default locale.
     // This redirect does not confirm or store a language preference.
     document.documentElement.hidden = true;

@@ -12,14 +12,22 @@ function requireSolo(state) {
   }
 }
 
-/** Resume old card19 retries or an omitted jump prompt without a penalty. */
+/** Resume card19 writing and return older backward-move saves to the die. */
 export function normalizeSoloState(state) {
   requireSolo(state);
   const player = state.players[0];
   const previousEvent = state.events.at(-2), lastEvent = state.events.at(-1);
+  const backwardPrompt = state.phase === 'awaiting-card' && state.pendingCard === player.pos
+    && lastEvent?.type === 'move' && lastEvent.to === player.pos && lastEvent.to < lastEvent.from;
+  if (backwardPrompt) {
+    const next = JSON.parse(JSON.stringify(state));
+    next.phase = 'turn-complete';
+    next.pendingCard = null;
+    return nextTurn(next);
+  }
   const omittedPrompt = state.phase === 'ready' && state.pendingCard === null
     && previousEvent?.type === 'move' && previousEvent.to === player.pos
-    && (previousEvent.to < previousEvent.from || (previousEvent.card === 9 && previousEvent.to === 19)) && lastEvent?.type === 'turn';
+    && previousEvent.card === 9 && previousEvent.to === 19 && lastEvent?.type === 'turn';
   if (!omittedPrompt && player.retry !== 19 && !(state.phase === 'awaiting-retry' && state.pendingCard === 19)) return state;
   const next = JSON.parse(JSON.stringify(state));
   next.players[0].retry = null;
@@ -47,7 +55,7 @@ export function advanceAndRoll(state, value) {
 /**
  * Complete the card, then prepare the next action without a Next Turn button.
  * Normal completion and AMEN return ready. A jump to19 opens its writing prompt.
- * Backward destinations open their reflection. Forward moves never chain another move.
+ * A backward move returns to the die after walking. Destination moves never chain.
  * In this solo version AMEN is an informational saint popup, with no lost turn.
  * Its sending square is retained. The view controls the popup and its dismissal.
  */
@@ -58,7 +66,7 @@ export function completeSoloCard(state, resolution = { kind: 'complete' }) {
   const action = resolution.kind === 'amen' || (current.pendingCard === 19 && resolution.kind === 'retry')
     ? { ...resolution, kind: 'complete' } : resolution;
   const next = resolveCard(current, action);
-  if (action.kind === 'move' && (action.to === 19 || action.to < current.players[0].pos) && action.success !== false) {
+  if (action.kind === 'move' && action.to === 19 && action.success !== false) {
     next.phase = 'awaiting-card';
     next.pendingCard = action.to;
     return next;

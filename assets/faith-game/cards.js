@@ -236,7 +236,7 @@ export const cardsById = Object.fromEntries(cards.map((entry) => [entry.id, entr
 export const gameRules = {
   start: 0,
   singleSpecialMovePerTurn: true,
-  activateDestinationAfterSpecialMove: [1,3,7,12,19,20],
+  activateDestinationAfterSpecialMove: [19],
   amenSkipTurns: 0,
   rewardCard: 0,
   // This is an implementation choice for the preview, not printed on the cards.

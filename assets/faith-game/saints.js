@@ -153,27 +153,30 @@ function calendarDate(value, timeZone) {
   return Object.fromEntries(parts.filter(part => ['year', 'month', 'day'].includes(part.type)).map(part => [part.type, Number(part.value)]));
 }
 
-/**
- * Today wins when a catalog entry matches the date. Otherwise rotate through
- * this month's entries, or through the verified collection for other months.
- * rotation can advance with each AMEN encounter without changing the date.
- * Only kind === 'day' is a claim that this is today's calendar celebration.
+/** Rotate through the whole verified collection, prioritising today's saint once.
+ * Only kind === 'day' claims that the selected saint is celebrated today.
+ * The previous card can be excluded across reloads, date changes and gallery use.
  */
-export function selectSaint(date = new Date(), rotation = 0, { timeZone = 'America/Los_Angeles' } = {}) {
+export function selectSaint(date = new Date(), rotation = 0, { timeZone = 'America/Los_Angeles', previousSaintId = null } = {}) {
   const { year, month, day } = calendarDate(date, timeZone);
   const step = Number.isFinite(rotation) ? Math.trunc(rotation) : 0;
   const dateKey = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
   const daily = saints.filter(saint => saint.feastMonth === month && saint.feastDay === day);
-  if (daily.length) {
-    return { saint: daily[mod(step, daily.length)], kind: 'day', label: { es: 'Santoral de hoy', en: 'Today’s saint' }, dateKey };
-  }
   const monthly = saints.filter(saint => saint.feastMonth === month);
-  if (monthly.length) {
+  const pool = [...daily, ...monthly.filter(saint => !daily.includes(saint)), ...saints.filter(saint => !monthly.includes(saint))];
+  const dayIndex = Math.floor(Date.UTC(year, month - 1, day) / 86400000);
+  const offset = daily.length ? 0 : monthly.length ? day - 1 : dayIndex;
+  let index = mod(offset + step, pool.length);
+  if (pool.length > 1 && pool[index].id === previousSaintId) index = mod(index + 1, pool.length);
+  const saint = pool[index];
+  if (saint.feastMonth === month && saint.feastDay === day) {
+    return { saint, kind: 'day', label: { es: 'Santoral de hoy', en: 'Today’s saint' }, dateKey };
+  }
+  if (saint.feastMonth === month) {
     const displayDate = new Date(Date.UTC(year, month - 1, 15, 12));
     const monthEs = new Intl.DateTimeFormat('es', { month: 'long', timeZone: 'UTC' }).format(displayDate);
     const monthEn = new Intl.DateTimeFormat('en', { month: 'long', timeZone: 'UTC' }).format(displayDate);
-    return { saint: monthly[mod(day - 1 + step, monthly.length)], kind: 'month', label: { es: `Santos de ${monthEs}`, en: `${monthEn} saints` }, dateKey };
+    return { saint, kind: 'month', label: { es: `Santos de ${monthEs}`, en: `${monthEn} saints` }, dateKey };
   }
-  const dayIndex = Math.floor(Date.UTC(year, month - 1, day) / 86400000);
-  return { saint: saints[mod(dayIndex + step, saints.length)], kind: 'discovery', label: { es: 'Un santo por descubrir', en: 'A saint to discover' }, dateKey };
+  return { saint, kind: 'discovery', label: { es: 'Un santo por descubrir', en: 'A saint to discover' }, dateKey };
 }

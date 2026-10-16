@@ -693,3 +693,12 @@
   #card-dialog .card-type-examples .example-input label { font-size:16px;margin-bottom:6px; }
   #card-dialog .card-type-examples .example-input textarea { height:64px;min-height:64px; }
 }
+
+/* Keep the next game action above its supporting reference. */
+.faith-game .saint-copy .saint-actions { margin-top:0; }
+.faith-game .saint-copy .saint-source { margin-top:20px; }
+
+/* On phones, copper-brown markers stay distinct from the gold playing piece. */
+@media(max-width:640px) {
+  .faith-game .geometric-map .cell-icon { fill:url(#faith-bronze-metal);stroke:#613a2a; }
+}

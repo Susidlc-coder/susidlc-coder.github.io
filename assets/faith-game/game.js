@@ -3,11 +3,11 @@ import {cards} from './cards.js?v=20261015-discernment-three-1';
 import {activityStatus} from './activity.js?v=20261015-discernment-three-1';
 import {mountReward} from './reward.js';
 import {shuffle} from './random.js';
-import {saints,selectSaint} from './saints.js';
+import {saints,selectSaint} from './saints.js?v=20261015-saint-rotation-1';
 import {originalPhotoMarkup} from './original-framing.js';
 import {currentPlayer,serializeGame,restoreGame} from './engine.js';
-import {createSoloGame,advanceAndRoll,completeSoloCard,normalizeSoloState} from './solo.js';
-import {oceanMarkup} from './ocean.js';
+import {createSoloGame,advanceAndRoll,completeSoloCard,normalizeSoloState} from './solo.js?v=20261015-return-dice-1';
+import {oceanMarkup} from './ocean.js?v=20261015-mobile-bronze-1';
 import {decorationsMarkup,decorationsStyles,decorationsIncludeBody,titleBulb} from './decorations.js';
 const lang=window.SusiLocale?.lang||document.documentElement.lang||'es';
 const L=(es,en)=>lang==='en'?en:es;
@@ -19,12 +19,13 @@ const tokenColors=['#bd477a','#488fa6','#b39337','#6e8b46'];
 const shortES=['','No nos dejes caer','Génesis I','Perdona nuestras ofensas','Discernimiento','En la tierra como en el cielo','Tentación','Como nosotros perdonamos','Tentación','Ave María','Padre nuestro','La vida de Jesús I','Santificado sea Tu nombre','Tentación','Líbranos del mal','Sacramentos','Génesis II','Que estás en el cielo','La vida de Jesús II','Discernimiento','El pan de cada día','La Trinidad','Hágase Tu voluntad','Tentación','Venga Tu reino'];
 const shortEN=['','Lead us not into temptation','Genesis I','Forgive us our trespasses','Discernment','On Earth as in Heaven','Temptation','As we forgive others','Temptation','Hail Mary','Our Father','Jesus’ Life I','Hallowed be Thy Name','Temptation','Deliver us from evil','Sacraments','Genesis II','Who art in Heaven','Jesus’ Life II','Discernment','Our daily bread','Holy Trinity','Thy will be done','Temptation','Thy Kingdom Come'];
 const compact=matchMedia('(max-width:640px)'), reduced=matchMedia('(prefers-reduced-motion:reduce)');
-let state=null,started=false,rolling=false,pausing=false,opened=null,live=false,drafts={},storageAvailable=true,finishing=false,moving=false,displayPosition=null,saintVisit=0,rewardValue='';
+let state=null,started=false,rolling=false,pausing=false,opened=null,live=false,drafts={},storageAvailable=true,finishing=false,moving=false,displayPosition=null,saintVisit=0,lastSaintId=null,rewardValue='';
 try{const raw=localStorage.getItem(SAVE);if(raw){state=normalizeSoloState(restoreGame(raw));if(state.players.length!==1)throw Error('solo');started=true;}const ui=JSON.parse(sessionStorage.getItem(UI)||'{}');drafts=ui.drafts||{};opened=ui.opened??null;live=Boolean(ui.live);}catch{state=null;started=false;drafts={};opened=null;live=false;}
-try{saintVisit=Math.max(0,Number(localStorage.getItem('susidlc-faith-saint-visit'))||0);}catch{}
+try{saintVisit=Math.max(0,Number(localStorage.getItem('susidlc-faith-saint-visit'))||0);lastSaintId=localStorage.getItem('susidlc-faith-last-saint');}catch{}
 try{rewardValue=localStorage.getItem(REWARD)||drafts['p1:0']?.reflection||'';}catch{}
 if(opened===0)opened=null;
 if(!state)state=createSoloGame(L('Tú','You'));
+if(live&&opened!==null&&state.pendingCard!==opened){opened=null;live=false;}
 const style=document.createElement('style');style.textContent=decorationsStyles;document.head.append(style);
 function getCard(id){return cards.find(c=>c.id===id);}
 function cardTitle(c){const title=text(c.title);return c.type==='reflection'?`“${title}”`:title;}
@@ -85,13 +86,14 @@ async function performRoll(){
  announce(L('Casilla ','Space ')+currentPlayer(state).pos);
  if(state.phase==='game-over')showArrival();else if(state.pendingCard!==null)openCard(state.pendingCard,true);
 }
-async function walkTo(from,to){
+async function walkTo(from,to,pauseAtEnd=0){
  if(from===to||reduced.matches){displayPosition=null;moving=false;render();return;}
  moving=true;const step=to>from?1:-1,delay=Math.min(250,1500/Math.abs(to-from));
  for(let n=from+step;step>0?n<=to:n>=to;n+=step){displayPosition=n;render();await new Promise(r=>setTimeout(r,delay));}
+ if(pauseAtEnd)await new Promise(r=>setTimeout(r,pauseAtEnd));
  displayPosition=null;moving=false;render();
 }
-function showRules(){const d=document.getElementById('rules-dialog');d.innerHTML=`<div class="small-dialog"><div class="dialog-top"><h2 id="rules-title">${L('Instrucciones','Instructions')}</h2><button class="text-button" data-close aria-label="${L('Cerrar','Close')}">×</button></div><ol class="rules-list"><li>${L('Pulsa INICIO. Cuando aparezca el dado, toca «Tira» y sigue al peón.','Tap START. When the die appears, tap “Roll” and follow your piece.')}</li><li>${L('Lee, toca las palabras en orden o escribe tus respuestas.','Read, tap words in order, or write your answers.')}</li><li>${L('Usa el botón inferior para seguir. Si retrocedes, toca la casilla marcada para abrir su tarjeta.','Use the bottom button to continue. After moving back, tap the marked space to open its card.')}</li><li>${L('AMEN muestra santos. Pulsa «Seguir jugando» para continuar.','AMEN shows saints. Tap “Keep playing” to continue.')}</li><li>${L('Al pasar la casilla 24 recibes «Él ha resucitado». Escribe tu agradecimiento y compártelo.','Pass space 24 to receive “He is risen”. Write your thanks and share them.')}</li></ol><button class="primary-button" data-play>${L('Jugar','Play')}</button></div>`;d.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>d.close());d.querySelector('[data-play]').onclick=()=>{d.close();primaryAction();};d.showModal();}
+function showRules(){const d=document.getElementById('rules-dialog');d.innerHTML=`<div class="small-dialog"><div class="dialog-top"><h2 id="rules-title">${L('Instrucciones','Instructions')}</h2><button class="text-button" data-close aria-label="${L('Cerrar','Close')}">×</button></div><ol class="rules-list"><li>${L('Pulsa INICIO. Cuando aparezca el dado, toca «Tira» y sigue al peón.','Tap START. When the die appears, tap “Roll” and follow your piece.')}</li><li>${L('Lee, toca las palabras en orden o escribe tus respuestas.','Read, tap words in order, or write your answers.')}</li><li>${L('Usa el botón inferior para seguir. Si retrocedes, espera a que llegue el peón y vuelve a tirar.','Use the bottom button to continue. After moving back, wait for your piece to arrive, then roll again.')}</li><li>${L('AMEN muestra santos. Pulsa «Seguir jugando» para continuar.','AMEN shows saints. Tap “Keep playing” to continue.')}</li><li>${L('Al pasar la casilla 24 recibes «Él ha resucitado». Escribe tu agradecimiento y compártelo.','Pass space 24 to receive “He is risen”. Write your thanks and share them.')}</li></ol><button class="primary-button" data-play>${L('Jugar','Play')}</button></div>`;d.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>d.close());d.querySelector('[data-play]').onclick=()=>{d.close();primaryAction();};d.showModal();}
 function showArrival(){mountReward(document.getElementById('reward-dialog'),{lang,value:rewardValue,onChange:value=>{rewardValue=value;try{localStorage.setItem(REWARD,value);}catch{}},onRestart:()=>startJourney()});}
 compact.addEventListener('change',()=>{render();if(dialog.open&&opened!==null)renderCard();});
 
@@ -154,16 +156,16 @@ async function handleCard(c,d){
  if(wasLive&&c.id!==0&&state.pendingCard===c.id){state=completeSoloCard(state,c.move?(c.move.to==='amen'?{kind:'amen'}:{kind:'move',to:c.move.to}):{kind:'complete'});delete drafts[draftKey(c.id)];}
  closeCard();save();render();
  if(c.move?.to==='amen'){showSaint(wasLive);return;}
- if(wasLive&&c.move){await walkTo(from,currentPlayer(state).pos);announce(L('Llegaste a la casilla ','You reached space ')+currentPlayer(state).pos);if(c.id===9&&state.pendingCard!==null)openCard(state.pendingCard,true);else if(state.pendingCard!==null)document.getElementById('open-pending')?.focus({preventScroll:true});else primaryAction();return;}
+ if(wasLive&&c.move){await walkTo(from,currentPlayer(state).pos,350);announce(L('Llegaste a la casilla ','You reached space ')+currentPlayer(state).pos);if(state.pendingCard!==null)openCard(state.pendingCard,true);else primaryAction();return;}
  if(!wasLive&&c.move){openCard(c.move.to,false);return;}
  if(!started){startJourney();return;}
  await primaryAction();
 }
 function showSaint(fromCard=false){
- const info=selectSaint(new Date(),saintVisit++),d=document.getElementById('saint-dialog');let index=saints.findIndex(s=>s.id===info.saint.id);
+ const info=selectSaint(new Date(),saintVisit++,{previousSaintId:lastSaintId}),d=document.getElementById('saint-dialog');let index=saints.findIndex(s=>s.id===info.saint.id);
  try{localStorage.setItem('susidlc-faith-saint-visit',String(saintVisit));}catch{}
- function draw(){const saint=saints[index],source=saint.source[lang];
- d.innerHTML=`<article class="saint-card" data-saint="${esc(saint.id)}"><button class="saint-close" aria-label="${L('Cerrar','Close')}">×</button><div class="saint-copy"><p class="saint-kicker">AMEN · ${L('SANTOS POR DESCUBRIR','SAINTS TO DISCOVER')}</p><div class="saint-gallery-nav" role="group" aria-label="${L('Colección de santos','Saint collection')}"><button id="saint-prev" aria-label="${L('Santo anterior','Previous saint')}">←</button><span>${index+1} / ${saints.length}</span><button id="saint-next" aria-label="${L('Siguiente santo','Next saint')}">→</button></div><p class="saint-gallery-note">${fromCard?L('Te tocó esta carta. También puedes explorar las demás.','This is your card. You can explore the others too.'):L('Una colección de seis cartas que van cambiando durante el juego.','Six cards that change as you play.')}</p><h2 id="saint-title">${esc(text(saint.name))}</h2><p class="saint-fact">${esc(text(saint.fact))}</p><div class="saint-source"><small>${L('Bibliografía','Source')}</small><a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Vatican News · ${esc(text(saint.name))} ↗</a></div><div class="saint-actions"><button class="saint-continue primary-button" id="saint-continue">${L('Seguir jugando','Keep playing')}</button></div></div><figure class="saint-portrait"><img src="${esc(saint.image)}" alt="${esc(text(saint.imageAlt||saint.name))}" style="object-position:${saint.imagePosition||'50% 25%'}"><figcaption>${esc(saint.attribution||'Vatican News')}</figcaption></figure></article>`;
+ function draw(){const saint=saints[index],source=saint.source[lang];lastSaintId=saint.id;try{localStorage.setItem('susidlc-faith-last-saint',lastSaintId);}catch{}
+ d.innerHTML=`<article class="saint-card" data-saint="${esc(saint.id)}"><button class="saint-close" aria-label="${L('Cerrar','Close')}">×</button><div class="saint-copy"><p class="saint-kicker">AMEN · ${L('SANTOS POR DESCUBRIR','SAINTS TO DISCOVER')}</p><div class="saint-gallery-nav" role="group" aria-label="${L('Colección de santos','Saint collection')}"><button id="saint-prev" aria-label="${L('Santo anterior','Previous saint')}">←</button><span>${index+1} / ${saints.length}</span><button id="saint-next" aria-label="${L('Siguiente santo','Next saint')}">→</button></div><p class="saint-gallery-note">${fromCard?L('Te tocó esta carta. También puedes explorar las demás.','This is your card. You can explore the others too.'):L('Una colección de seis cartas que van cambiando durante el juego.','Six cards that change as you play.')}</p><h2 id="saint-title">${esc(text(saint.name))}</h2><p class="saint-fact">${esc(text(saint.fact))}</p><div class="saint-actions"><button class="saint-continue primary-button" id="saint-continue">${L('Seguir jugando','Keep playing')}</button></div><div class="saint-source"><small>${L('Bibliografía','Source')}</small><a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Vatican News · ${esc(text(saint.name))} ↗</a></div></div><figure class="saint-portrait"><img src="${esc(saint.image)}" alt="${esc(text(saint.imageAlt||saint.name))}" style="object-position:${saint.imagePosition||'50% 25%'}"><figcaption>${esc(saint.attribution||'Vatican News')}</figcaption></figure></article>`;
  d.querySelector('.saint-close').onclick=()=>d.close();d.querySelector('#saint-prev').onclick=()=>{index=(index+saints.length-1)%saints.length;draw();};d.querySelector('#saint-next').onclick=()=>{index=(index+1)%saints.length;draw();};d.querySelector('#saint-continue').onclick=async()=>{d.close();if(fromCard)await primaryAction();};}
  draw();d.showModal();
 }
@@ -174,4 +176,4 @@ const headerMedia=matchMedia('(max-width:669px)'),light=document.querySelector('
 function placeLight(){if(light)(headerMedia.matches?navigation:utilities).append(light);}
 headerMedia.addEventListener('change',placeLight);placeLight();
 document.addEventListener('visibilitychange',()=>{document.body.classList.toggle('tab-hidden',document.hidden);});
-render();if(opened!==null){const candidate=getCard(opened);if(candidate)openCard(opened,live&&state.pendingCard===opened);}else if(state.pendingCard===19){openCard(19,true);}else if(started&&state.lastRoll===null&&currentPlayer(state).pos===0){showRollPrompt();}save();
+render();if(opened!==null){const candidate=getCard(opened);if(candidate)openCard(opened,live&&state.pendingCard===opened);}else if(state.pendingCard===19){openCard(19,true);}else if(started&&state.pendingCard===null&&state.phase!=='game-over'){showRollPrompt();}save();
