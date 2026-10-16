@@ -1,3 +1,4 @@
+import {bindWordBankScroll} from './word-bank-scroll.js?v=20261015-readable-instructions-1';
 import { bindTrinity } from './trinity.js';
 import {cards} from './cards.js?v=20261015-discernment-three-1';
 import {activityStatus} from './activity.js?v=20261015-discernment-three-1';
@@ -26,6 +27,7 @@ try{rewardValue=localStorage.getItem(REWARD)||drafts['p1:0']?.reflection||'';}ca
 if(opened===0)opened=null;
 if(!state)state=createSoloGame(L('Tú','You'));
 if(live&&opened!==null&&state.pendingCard!==opened){opened=null;live=false;}
+let releaseWordBankScroll=()=>{};
 const style=document.createElement('style');style.textContent=decorationsStyles;document.head.append(style);
 function getCard(id){return cards.find(c=>c.id===id);}
 function cardTitle(c){const title=text(c.title);return c.type==='reflection'?`“${title}”`:title;}
@@ -101,9 +103,9 @@ compact.addEventListener('change',()=>{render();if(dialog.open&&opened!==null)re
 function draftKey(id){return `${live?currentPlayer(state).id:'explore'}:${id}`;}
 function getDraft(c){const key=draftKey(c.id);let d=drafts[key];if(!d){d={slots:[],open:false,selected:null,checked:false,feedback:'',matches:{},left:null,choices:{},examples:{},reflection:'',shuffled:[]};const count=c.activity?.answers?.[lang]?.length||c.activity?.items?.[lang]?.length||0;d.slots=Array(count).fill(null);d.shuffled=shuffle(Array.from({length:count},(_,i)=>i));drafts[key]=d;}if(c.type==='classify'&&(!Array.isArray(d.questionOrder)||d.questionOrder.length!==c.activity.items.length))d.questionOrder=shuffle(c.activity.items.map(item=>item.id));if(c.type==='examples'){d.checked=false;d.feedback='';}return d;}
 function openCard(id,isLive=false){if(id===0){if(state.phase==='game-over')showArrival();return;}const fresh=opened!==id||!dialog.open;opened=id;live=isLive;const c=getCard(id);if(!c)return;if(fresh){const main=dialog.querySelector('.card-main'),bank=dialog.querySelector('.word-bank');if(main)main.scrollTop=0;if(bank)bank.scrollTop=0;}getDraft(c);renderCard();if(!dialog.open)dialog.showModal();save();}
-function closeCard(){dialog.close();opened=null;live=false;save();root.querySelectorAll('.is-revealed').forEach(el=>el.classList.remove('is-revealed'));}
+function closeCard(){releaseWordBankScroll();releaseWordBankScroll=()=>{};dialog.close();opened=null;live=false;save();root.querySelectorAll('.is-revealed').forEach(el=>el.classList.remove('is-revealed'));}
 dialog.addEventListener('cancel',e=>{e.preventDefault();closeCard();});
-function envelope(c,d){const list=c.type==='order'?c.activity.items[lang]:c.activity.words[lang];return `<aside class="envelope-panel"><button class="envelope ${d.open?'open':''}" id="envelope" aria-expanded="${d.open}" aria-label="${L('Abrir banco de palabras','Open word bank')}"><span class="seal" aria-hidden="true">♥</span><span class="env-label">${L('Banco de palabras','Word Bank')}</span></button><p class="envelope-note">${d.open?L('Toca en orden: cada pieza llena el siguiente espacio.','Tap in order: each piece fills the next space.'):L('Abre el sobre y toca las piezas en orden.','Open the envelope and tap the pieces in order.')}</p>${d.open?`<div class="word-bank">${d.shuffled.map(i=>`<button class="word-piece ${d.slots.includes(i)?'used':''}" data-piece="${i}"  style="--tilt:${i%2?1.5:-1}deg" ${d.slots.includes(i)?'disabled':''}>${esc(list[i])}</button>`).join('')}</div>`:''}</aside>`;}
+function envelope(c,d){const list=c.type==='order'?c.activity.items[lang]:c.activity.words[lang];return `<aside class="envelope-panel"><button class="envelope ${d.open?'open':''}" id="envelope" aria-expanded="${d.open}" aria-label="${L('Abrir banco de palabras','Open word bank')}"><span class="seal" aria-hidden="true">♥</span><span class="env-label">${L('Banco de palabras','Word Bank')}</span></button><p class="envelope-note">${d.open?L('Toca en orden: cada pieza llena el siguiente espacio.','Tap in order: each piece fills the next space.'):L('Abre el sobre y toca las piezas en orden.','Open the envelope and tap the pieces in order.')}</p>${d.open?`<div class="word-bank-wrap"><div class="word-bank" tabindex="0" role="region" aria-label="${L('Palabras disponibles','Available words')}">${d.shuffled.map(i=>`<button class="word-piece ${d.slots.includes(i)?'used':''}" data-piece="${i}"  style="--tilt:${i%2?1.5:-1}deg" ${d.slots.includes(i)?'disabled':''}>${esc(list[i])}</button>`).join('')}</div><div class="word-bank-scrollbar" aria-hidden="true" hidden><span class="word-bank-scroll-thumb"></span></div></div>`:''}</aside>`;}
 function activityMarkup(c,d){
  if(c.type==='fill'){return `<div class="activity-layout"><div class="activity-lines">${c.activity.segments[lang].map(line=>`<div class="fill-line">${esc(line).replace(/\{(\d+)\}/g,(_,s)=>{const i=+s;return `<button class="word-slot ${d.slots[i]!==null?'filled':''} ${d.selected===i?'selected':''}" data-slot="${i}" aria-label="${L('Espacio','Blank')} ${i+1}${d.slots[i]!==null?': '+esc(c.activity.words[lang][d.slots[i]]):''}">${d.slots[i]!==null?esc(c.activity.words[lang][d.slots[i]]):'&nbsp;&nbsp;&nbsp;&nbsp;'}</button>`;})}</div>`).join('')}</div>${envelope(c,d)}</div>`;}
  if(c.type==='order'){return `<div class="activity-layout"><div class="order-slots">${c.activity.items[lang].map((_,i)=>`<button class="order-slot ${d.slots[i]!==null?'filled':''} ${d.selected===i?'selected':''}" data-slot="${i}" aria-label="${L('Frase','Phrase')} ${i+1}${d.slots[i]!==null?': '+esc(c.activity.items[lang][d.slots[i]]):''}"><small>${String(i+1).padStart(2,'0')}</small><span>${d.slots[i]!==null?esc(c.activity.items[lang][d.slots[i]]):'________________'}</span></button>`).join('')}</div>${envelope(c,d)}</div>`;}
@@ -127,6 +129,7 @@ function updateActivity(c,d){
 }
 function renderCard(){
  const scrollMain=dialog.querySelector('.card-main')?.scrollTop||0,scrollBank=dialog.querySelector('.word-bank')?.scrollTop||0;
+ releaseWordBankScroll();releaseWordBankScroll=()=>{};
  const c=getCard(opened),d=getDraft(c),interactive=['fill','order','classify','match','examples'].includes(c.type),deco=decorationsMarkup({...c,decorations:c.decorations.filter(x=>x!=='bulb')},lang);
  const primary=c.type==='examples'?L('Siguiente','Next'):c.id===9&&!d.checked?L('Completar → 19','Complete → 19'):interactive&&!d.checked?L('Revisar','Check'):nextLabel(c);
  const move=c.move&&c.id!==9?c.move.to==='amen'?`<div class="amen-invitation"><small>${L('Toca aquí','Tap here')}</small><button class="amen-action gold-button" id="amen-action">${esc(text(c.action))} ↗</button></div>`:`<p class="move-highlight">${esc(text(c.action))}</p>`:'';
@@ -144,7 +147,7 @@ function renderCard(){
  dialog.querySelectorAll('[data-match-left]').forEach(b=>b.onclick=()=>{d.left=b.dataset.matchLeft;delete d.matches[d.left];updateActivity(c,d);});
  dialog.querySelectorAll('[data-match-right]').forEach(b=>b.onclick=()=>{if(!d.left)return;for(const k of Object.keys(d.matches))if(d.matches[k]===b.dataset.matchRight)delete d.matches[k];d.matches[d.left]=b.dataset.matchRight;d.left=null;updateActivity(c,d);});
  dialog.querySelectorAll('[data-example]').forEach(b=>b.oninput=()=>{d.examples[b.dataset.example]=b.value;dialog.querySelector('#card-primary').disabled=!activityStatus(c,d,lang).complete;save();});
- const main=dialog.querySelector('.card-main'),bank=dialog.querySelector('.word-bank');if(main)main.scrollTop=scrollMain;if(bank)bank.scrollTop=scrollBank;
+ const main=dialog.querySelector('.card-main'),bank=dialog.querySelector('.word-bank');if(main)main.scrollTop=scrollMain;if(bank){bank.scrollTop=scrollBank;releaseWordBankScroll=bindWordBankScroll(bank);}
 }
 async function handleCard(c,d){
  if(finishing||moving||rolling)return;

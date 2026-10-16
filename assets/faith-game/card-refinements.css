@@ -702,3 +702,25 @@
 @media(max-width:640px) {
   .faith-game .geometric-map .cell-icon { fill:url(#faith-bronze-metal);stroke:#613a2a; }
 }
+
+/* Larger instructions keep the existing typefaces and compact card hierarchy. */
+.faith-game #rules-dialog .rules-list { font-size:18px;line-height:1.6; }
+#card-dialog .card-paper p.instructions { font-size:18px;line-height:1.5; }
+#card-dialog .card-paper .small-note { font-size:16px;line-height:1.5; }
+#card-dialog .envelope-panel .envelope-note,
+#card-dialog .envelope-panel:has(.word-bank) .envelope-note { font-size:16px!important;line-height:1.5!important; }
+
+/* A four-pixel rail stays visible even where the OS hides native scrollbars. */
+#card-dialog .word-bank-wrap { position:relative;min-width:0;min-height:0;margin-top:20px; }
+#card-dialog .word-bank-wrap .word-bank { margin:0;padding-right:16px; }
+#card-dialog .word-bank.has-scroll-rail { scrollbar-width:none; }
+#card-dialog .word-bank.has-scroll-rail::-webkit-scrollbar { display:none; }
+#card-dialog .word-bank-scrollbar { position:absolute;top:4px;right:0;bottom:5px;width:14px;touch-action:none;cursor:pointer; }
+#card-dialog .word-bank-scrollbar::before { content:'';position:absolute;inset:0 5px;border-radius:4px;background:#8063412b; }
+#card-dialog .word-bank-scroll-thumb { position:absolute;top:0;left:5px;width:4px;min-height:22px;border-radius:4px;background:#94713f; }
+#card-dialog .word-bank-scrollbar:hover .word-bank-scroll-thumb { background:#77562c; }
+@media(max-width:640px) {
+  .faith-game #rules-dialog .rules-list { font-size:17px;line-height:1.6; }
+  #card-dialog .card-paper p.instructions { font-size:17px;line-height:1.5; }
+  #card-dialog .word-bank-wrap { grid-column:2;grid-row:1;margin-top:0; }
+}
