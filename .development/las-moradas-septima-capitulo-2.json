@@ -1,0 +1,36 @@
+{
+  "chapter": "7-2",
+  "summary": {
+    "es": "Teresa describe el matrimonio espiritual como una unión con Dios que sostiene la paz en el centro del alma, aun entre sufrimientos y ocupaciones. Esa cercanía no asegura que el alma no pueda caer: la llama a cuidar su relación con Dios, reconocer lo recibido y desear servirle con mayor entrega.",
+    "en": "Teresa describes spiritual marriage as a union with God that sustains peace at the soul’s centre, even amid suffering and daily concerns. This closeness does not mean the soul cannot fall: it calls the soul to care for its relationship with God, acknowledge what it has received, and desire to serve Him more wholeheartedly."
+  },
+  "moradaSummary": {
+    "es": "Los capítulos disponibles presentan la compañía de la Santísima Trinidad y el matrimonio espiritual. Teresa describe una unión con Dios que sostiene la paz interior entre trabajos y sufrimientos, y despierta un mayor deseo de servirle.",
+    "en": "The available chapters present the companionship of the Most Holy Trinity and spiritual marriage. Teresa describes a union with God that sustains inward peace amid work and suffering, and awakens a greater desire to serve Him."
+  },
+  "editorialNotice": "Resumen editorial del sitio; no forma parte del texto de Santa Teresa.",
+  "sources": [
+    {
+      "source": "7_Septima Morada/Cap 2_M7/Texto original (1577) _ Capítulo 2_Séptima Morada.docx",
+      "sha256": "93be0a5bb40d260358cb85d08f311693bd4ffb9245b9c9dbf5c92628ec24a776",
+      "morada": 7,
+      "chapter": 2,
+      "part": 0,
+      "version": "original",
+      "paragraphs": 68,
+      "characters": 10530
+    },
+    {
+      "source": "7_Septima Morada/Cap 2_M7/Texto Adaptado _ Capítulo 2_Séptima Morada.docx",
+      "sha256": "c81008d5d7e3d822f4a0b4887309f26b0fbac1806f78d48f1640bf8c6ea6f373",
+      "morada": 7,
+      "chapter": 2,
+      "part": 0,
+      "version": "adaptado",
+      "paragraphs": 71,
+      "characters": 11016
+    }
+  ],
+  "video": null,
+  "englishAdaptation": "las-moradas-septima-capitulo-2-english.json"
+}
