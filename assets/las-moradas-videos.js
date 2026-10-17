@@ -1,2 +1,2 @@
 /* Owner-supplied YouTube videos. Key: morada-chapter-part (0 for an unsplit chapter). */
-window.LAS_MORADAS_VIDEOS = {"1-1-0":"https://youtu.be/h9oNDW4i6WE","1-2-1":"https://youtu.be/gaJlXD92ap8","3-1-0":"https://youtu.be/s5nsQg71WWU","6-10-0":"https://youtu.be/e4klvQIVVIs","6-11-0":"https://youtu.be/TDDVX-oGbjo","7-1-0":"https://youtu.be/zAtqmINUsi0"};
+window.LAS_MORADAS_VIDEOS = {"1-1-0":"https://youtu.be/h9oNDW4i6WE","1-2-1":"https://youtu.be/gaJlXD92ap8","3-1-0":"https://youtu.be/s5nsQg71WWU","6-10-0":"https://youtu.be/e4klvQIVVIs","6-11-0":"https://youtu.be/TDDVX-oGbjo","7-1-0":"https://youtu.be/zAtqmINUsi0","7-2-0":"https://youtu.be/MByau6BArTU"};
