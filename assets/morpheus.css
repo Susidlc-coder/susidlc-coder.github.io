@@ -170,3 +170,11 @@
 .m-feature-2{width:28%;height:420px;left:36%;top:25px}
 .m-feature-2 img{object-fit:contain;object-position:center;background:#000}
 @media(max-width:669px){.m-exhibition{padding-top:55px}.m-feature-2{width:35%;height:240px;left:32%;top:25px}}
+
+/* The Cloud: aligned pairs, consistent spacing, full artwork proportions. */
+.m-gallery.m-gallery-cloud{grid-template-columns:repeat(2,minmax(0,1fr));gap:52px 48px;padding:45px 0 65px}
+.m-gallery-cloud .m-art:nth-child(n){grid-column:auto;padding:0;width:100%;align-self:start}
+.m-gallery-cloud .m-art img{width:100%;height:clamp(250px,35vw,480px);max-height:none;object-fit:contain;box-shadow:none}
+.m-gallery-cloud .m-art figcaption{margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+.m-gallery-cloud .m-art:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 24px);justify-self:center}
+@media(max-width:669px){.m-gallery.m-gallery-cloud{grid-template-columns:1fr;gap:36px;padding:30px 0 40px}.m-gallery-cloud .m-art:nth-child(n){width:100%;grid-column:auto}.m-gallery-cloud .m-art img{height:auto;max-height:540px}}
