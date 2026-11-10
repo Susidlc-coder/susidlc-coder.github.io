@@ -1,0 +1,287 @@
+{
+  "01": {
+    "colors": [
+      "#272631",
+      "#d33b20",
+      "#717875",
+      "#acada0",
+      "#ddb230"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/01.webp",
+      "width": 106,
+      "height": 160,
+      "artwork": "01-001"
+    }
+  },
+  "02": {
+    "colors": [
+      "#211d17",
+      "#51453b",
+      "#cd7a52",
+      "#e2d9d4",
+      "#ffffff"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/02.webp",
+      "width": 160,
+      "height": 146,
+      "artwork": "02-001"
+    }
+  },
+  "03": {
+    "colors": [
+      "#272122",
+      "#775649",
+      "#a9695a",
+      "#c6b969",
+      "#e5e1d8"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/03.webp",
+      "width": 120,
+      "height": 160,
+      "artwork": "03-001"
+    }
+  },
+  "04": {
+    "colors": [
+      "#4c4237",
+      "#e33d2e",
+      "#6e5c58",
+      "#cb7a5c",
+      "#8b909e"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/04.webp",
+      "width": 160,
+      "height": 160,
+      "artwork": "04-001"
+    }
+  },
+  "05": {
+    "colors": [
+      "#4a160f",
+      "#a53b52",
+      "#674e4e",
+      "#d53935",
+      "#fcfae8"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/05.webp",
+      "width": 160,
+      "height": 160,
+      "artwork": "05-001"
+    }
+  },
+  "06": {
+    "colors": [
+      "#575554",
+      "#6e777d",
+      "#a0876d",
+      "#959c9f",
+      "#bed4d7"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/06.webp",
+      "width": 120,
+      "height": 160,
+      "artwork": "06-001"
+    }
+  },
+  "07": {
+    "colors": [
+      "#6f5848",
+      "#948b80",
+      "#ce8d7a",
+      "#a79a8d",
+      "#d5cdc2"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/07.webp",
+      "width": 90,
+      "height": 160,
+      "artwork": "07-001"
+    }
+  },
+  "08": {
+    "colors": [
+      "#140a09",
+      "#13127b",
+      "#35314b",
+      "#785f50",
+      "#b9b0a0"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/08.webp",
+      "width": 90,
+      "height": 160,
+      "artwork": "08-001"
+    }
+  },
+  "09": {
+    "colors": [
+      "#0e0f14",
+      "#a37956",
+      "#9a9790",
+      "#bfbbb4",
+      "#e8e8e4"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/09.webp",
+      "width": 160,
+      "height": 120,
+      "artwork": "09-001"
+    }
+  },
+  "10": {
+    "colors": [
+      "#010101",
+      "#0177c6",
+      "#90594e",
+      "#787b7d",
+      "#9caeaf"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/10.webp",
+      "width": 160,
+      "height": 160,
+      "artwork": "10-001"
+    }
+  },
+  "11": {
+    "colors": [
+      "#070708",
+      "#62199a",
+      "#2c399c",
+      "#dd179e",
+      "#a3398e"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/11.webp",
+      "width": 127,
+      "height": 160,
+      "artwork": "11-001"
+    }
+  },
+  "12": {
+    "colors": [
+      "#060201",
+      "#a21321",
+      "#51667a",
+      "#b1503d",
+      "#fefdd0"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/12.webp",
+      "width": 160,
+      "height": 160,
+      "artwork": "12-001"
+    }
+  },
+  "13": {
+    "colors": [
+      "#5b513b",
+      "#82775d",
+      "#9f9d96",
+      "#aeada8",
+      "#bdbdbb"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/13.webp",
+      "width": 116,
+      "height": 160,
+      "artwork": "13-001"
+    }
+  },
+  "14": {
+    "colors": [
+      "#1b1a1f",
+      "#5a5959",
+      "#956451",
+      "#c19468",
+      "#ede9e0"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/14.webp",
+      "width": 128,
+      "height": 160,
+      "artwork": "14-002"
+    }
+  },
+  "15": {
+    "colors": [
+      "#4c4a47",
+      "#857364",
+      "#9e988e",
+      "#c0c0bb",
+      "#e8e2dc"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/15.webp",
+      "width": 120,
+      "height": 160,
+      "artwork": "15-002"
+    }
+  },
+  "16": {
+    "colors": [
+      "#0a0304",
+      "#5b5859",
+      "#9e9088",
+      "#bbbcbb",
+      "#e1dcd6"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/16.webp",
+      "width": 120,
+      "height": 160,
+      "artwork": "16-001"
+    }
+  },
+  "17": {
+    "colors": [
+      "#31343f",
+      "#695f6c",
+      "#84828e",
+      "#68aed4",
+      "#c8cacc"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/17.webp",
+      "width": 160,
+      "height": 160,
+      "artwork": "17-002"
+    }
+  },
+  "18": {
+    "colors": [
+      "#1e1a1b",
+      "#523a38",
+      "#5a6162",
+      "#b68d5c",
+      "#d0cabd"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/18.webp",
+      "width": 90,
+      "height": 160,
+      "artwork": "18-001"
+    }
+  },
+  "19": {
+    "colors": [
+      "#302b2c",
+      "#394350",
+      "#534f51",
+      "#9b9793",
+      "#cbc7bd"
+    ],
+    "thumbnail": {
+      "src": "/assets/morpheus/thumbs/19.webp",
+      "width": 124,
+      "height": 160,
+      "artwork": "19-001"
+    }
+  }
+}

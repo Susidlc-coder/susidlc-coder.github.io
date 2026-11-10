@@ -1,0 +1,2201 @@
+{
+  "worlds": [
+    {
+      "name": "Between Folk and Silk Cities - Tricksters",
+      "number": "01",
+      "slug": "between-folk-and-silk-cities-tricksters",
+      "artworks": [
+        {
+          "id": "01-001",
+          "source": "Between Folk and Silk Cities - Tricksters/Findings in the woods.png",
+          "src": "/assets/morpheus/01-001.webp",
+          "width": 531,
+          "height": 800,
+          "bytes": 47216,
+          "sourceBytes": 2667032
+        },
+        {
+          "id": "01-002",
+          "source": "Between Folk and Silk Cities - Tricksters/Flee Market.png",
+          "src": "/assets/morpheus/01-002.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 42686,
+          "sourceBytes": 3778405
+        },
+        {
+          "id": "01-003",
+          "source": "Between Folk and Silk Cities - Tricksters/Gypsies crawling from shadows and fires.png",
+          "src": "/assets/morpheus/01-003.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 70410,
+          "sourceBytes": 4067057
+        },
+        {
+          "id": "01-004",
+          "source": "Between Folk and Silk Cities - Tricksters/Manflower.jpg",
+          "src": "/assets/morpheus/01-004.webp",
+          "width": 636,
+          "height": 800,
+          "bytes": 55082,
+          "sourceBytes": 444123
+        },
+        {
+          "id": "01-005",
+          "source": "Between Folk and Silk Cities - Tricksters/Red Door tricksters vision.PNG",
+          "src": "/assets/morpheus/01-005.webp",
+          "width": 512,
+          "height": 800,
+          "bytes": 13130,
+          "sourceBytes": 1351199
+        },
+        {
+          "id": "01-006",
+          "source": "Between Folk and Silk Cities - Tricksters/The Woods.JPEG",
+          "src": "/assets/morpheus/01-006.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 33994,
+          "sourceBytes": 194804
+        }
+      ]
+    },
+    {
+      "name": "Between Hillside and Silk CIties - Outcasts",
+      "number": "02",
+      "slug": "between-hillside-and-silk-cities-outcasts",
+      "artworks": [
+        {
+          "id": "02-001",
+          "source": "Between Hillside and Silk CIties - Outcasts/Becoming a Refugee.JPEG",
+          "src": "/assets/morpheus/02-001.webp",
+          "width": 800,
+          "height": 728,
+          "bytes": 20160,
+          "sourceBytes": 172699
+        },
+        {
+          "id": "02-002",
+          "source": "Between Hillside and Silk CIties - Outcasts/Evergreen Veiling.JPEG",
+          "src": "/assets/morpheus/02-002.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 15600,
+          "sourceBytes": 105832
+        },
+        {
+          "id": "02-003",
+          "source": "Between Hillside and Silk CIties - Outcasts/Refugee Closeup.PNG",
+          "src": "/assets/morpheus/02-003.webp",
+          "width": 800,
+          "height": 728,
+          "bytes": 17522,
+          "sourceBytes": 2647320
+        },
+        {
+          "id": "02-004",
+          "source": "Between Hillside and Silk CIties - Outcasts/Stranded woman.JPEG",
+          "src": "/assets/morpheus/02-004.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 63844,
+          "sourceBytes": 220679
+        },
+        {
+          "id": "02-005",
+          "source": "Between Hillside and Silk CIties - Outcasts/The Passenger.png",
+          "src": "/assets/morpheus/02-005.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 12936,
+          "sourceBytes": 2616293
+        },
+        {
+          "id": "02-006",
+          "source": "Between Hillside and Silk CIties - Outcasts/Transit Market.PNG",
+          "src": "/assets/morpheus/02-006.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 43630,
+          "sourceBytes": 1313276
+        }
+      ]
+    },
+    {
+      "name": "Between Hillsides and Sandais Hills - Birds",
+      "number": "03",
+      "slug": "between-hillsides-and-sandais-hills-birds",
+      "artworks": [
+        {
+          "id": "03-001",
+          "source": "Between Hillsides and Sandais Hills - Birds/Anticipation.PNG",
+          "src": "/assets/morpheus/03-001.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 48156,
+          "sourceBytes": 1282813
+        },
+        {
+          "id": "03-002",
+          "source": "Between Hillsides and Sandais Hills - Birds/Camouflage.PNG",
+          "src": "/assets/morpheus/03-002.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 63144,
+          "sourceBytes": 1266381
+        },
+        {
+          "id": "03-003",
+          "source": "Between Hillsides and Sandais Hills - Birds/Debouchery.png",
+          "src": "/assets/morpheus/03-003.webp",
+          "width": 800,
+          "height": 650,
+          "bytes": 21782,
+          "sourceBytes": 2799538
+        },
+        {
+          "id": "03-004",
+          "source": "Between Hillsides and Sandais Hills - Birds/Eliza.JPEG",
+          "src": "/assets/morpheus/03-004.webp",
+          "width": 662,
+          "height": 800,
+          "bytes": 18056,
+          "sourceBytes": 114549
+        },
+        {
+          "id": "03-005",
+          "source": "Between Hillsides and Sandais Hills - Birds/Hiding.JPEG",
+          "src": "/assets/morpheus/03-005.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 51958,
+          "sourceBytes": 209675
+        },
+        {
+          "id": "03-006",
+          "source": "Between Hillsides and Sandais Hills - Birds/Soaking the Horizon.PNG",
+          "src": "/assets/morpheus/03-006.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 55884,
+          "sourceBytes": 1291358
+        },
+        {
+          "id": "03-007",
+          "source": "Between Hillsides and Sandais Hills - Birds/Tansit of the herbs.PNG",
+          "src": "/assets/morpheus/03-007.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 33836,
+          "sourceBytes": 1042851
+        },
+        {
+          "id": "03-008",
+          "source": "Between Hillsides and Sandais Hills - Birds/Waiting for Revenge.JPEG",
+          "src": "/assets/morpheus/03-008.webp",
+          "width": 667,
+          "height": 800,
+          "bytes": 19392,
+          "sourceBytes": 152310
+        }
+      ]
+    },
+    {
+      "name": "Between Saint Victoria Lands and Sandais Hills",
+      "number": "04",
+      "slug": "between-saint-victoria-lands-and-sandais-hills",
+      "artworks": [
+        {
+          "id": "04-001",
+          "source": "Between Saint Victoria Lands and Sandais Hills/82903474-3824-44C9-B7D9-B1624C3C44DA.JPEG",
+          "src": "/assets/morpheus/04-001.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 30726,
+          "sourceBytes": 177457
+        },
+        {
+          "id": "04-002",
+          "source": "Between Saint Victoria Lands and Sandais Hills/B525A2C2-FCDF-4131-899F-AB6626AFF538.PNG",
+          "src": "/assets/morpheus/04-002.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 21056,
+          "sourceBytes": 762260
+        },
+        {
+          "id": "04-003",
+          "source": "Between Saint Victoria Lands and Sandais Hills/BFSC-1 Red door.JPEG",
+          "src": "/assets/morpheus/04-003.webp",
+          "width": 512,
+          "height": 800,
+          "bytes": 16392,
+          "sourceBytes": 101893
+        },
+        {
+          "id": "04-004",
+          "source": "Between Saint Victoria Lands and Sandais Hills/E19B68EC-B52F-4487-B548-70F94E7E25F9.PNG",
+          "src": "/assets/morpheus/04-004.webp",
+          "width": 662,
+          "height": 800,
+          "bytes": 18054,
+          "sourceBytes": 790273
+        }
+      ]
+    },
+    {
+      "name": "Between SaintVictoriaLands and Folk - Tricksters",
+      "number": "05",
+      "slug": "between-saintvictorialands-and-folk-tricksters",
+      "artworks": [
+        {
+          "id": "05-001",
+          "source": "Between SaintVictoriaLands and Folk - Tricksters/Dead Fishes.png",
+          "src": "/assets/morpheus/05-001.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 27576,
+          "sourceBytes": 3670955
+        },
+        {
+          "id": "05-002",
+          "source": "Between SaintVictoriaLands and Folk - Tricksters/Even the notebooks cry.JPEG",
+          "src": "/assets/morpheus/05-002.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 27468,
+          "sourceBytes": 157233
+        },
+        {
+          "id": "05-003",
+          "source": "Between SaintVictoriaLands and Folk - Tricksters/Shun the Thought of Shackles.png",
+          "src": "/assets/morpheus/05-003.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 37306,
+          "sourceBytes": 3461549
+        },
+        {
+          "id": "05-004",
+          "source": "Between SaintVictoriaLands and Folk - Tricksters/The Thread.PNG",
+          "src": "/assets/morpheus/05-004.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 18960,
+          "sourceBytes": 645183
+        },
+        {
+          "id": "05-005",
+          "source": "Between SaintVictoriaLands and Folk - Tricksters/Vaneshka in transit from Folk.JPEG",
+          "src": "/assets/morpheus/05-005.webp",
+          "width": 433,
+          "height": 800,
+          "bytes": 13108,
+          "sourceBytes": 117477
+        },
+        {
+          "id": "05-006",
+          "source": "Between SaintVictoriaLands and Folk - Tricksters/Waiting for the train.JPEG",
+          "src": "/assets/morpheus/05-006.webp",
+          "width": 512,
+          "height": 800,
+          "bytes": 13188,
+          "sourceBytes": 94002
+        }
+      ]
+    },
+    {
+      "name": "Between SaintVictoriaLands and TheCloud - The border",
+      "number": "06",
+      "slug": "between-saintvictorialands-and-thecloud-the-border",
+      "artworks": [
+        {
+          "id": "06-001",
+          "source": "Between SaintVictoriaLands and TheCloud - The border/Awaiting on the Hill.png",
+          "src": "/assets/morpheus/06-001.webp",
+          "width": 602,
+          "height": 800,
+          "bytes": 15926,
+          "sourceBytes": 638926
+        },
+        {
+          "id": "06-002",
+          "source": "Between SaintVictoriaLands and TheCloud - The border/Floating Hope.png",
+          "src": "/assets/morpheus/06-002.webp",
+          "width": 631,
+          "height": 800,
+          "bytes": 51580,
+          "sourceBytes": 3957524
+        },
+        {
+          "id": "06-003",
+          "source": "Between SaintVictoriaLands and TheCloud - The border/Hope Waiting.JPEG",
+          "src": "/assets/morpheus/06-003.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 12268,
+          "sourceBytes": 96255
+        },
+        {
+          "id": "06-004",
+          "source": "Between SaintVictoriaLands and TheCloud - The border/Merchants Runaway.PNG",
+          "src": "/assets/morpheus/06-004.webp",
+          "width": 631,
+          "height": 800,
+          "bytes": 47114,
+          "sourceBytes": 1270296
+        },
+        {
+          "id": "06-005",
+          "source": "Between SaintVictoriaLands and TheCloud - The border/Portraits of Us at the Beach.PNG",
+          "src": "/assets/morpheus/06-005.webp",
+          "width": 572,
+          "height": 800,
+          "bytes": 25564,
+          "sourceBytes": 851184
+        },
+        {
+          "id": "06-006",
+          "source": "Between SaintVictoriaLands and TheCloud - The border/Ship Wreck in morpheus.png",
+          "src": "/assets/morpheus/06-006.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 91236,
+          "sourceBytes": 6230607
+        },
+        {
+          "id": "06-007",
+          "source": "Between SaintVictoriaLands and TheCloud - The border/The beaches.png",
+          "src": "/assets/morpheus/06-007.webp",
+          "width": 570,
+          "height": 800,
+          "bytes": 23934,
+          "sourceBytes": 3402233
+        }
+      ]
+    },
+    {
+      "name": "Between Sandais and TheCloud - Admirers",
+      "number": "07",
+      "slug": "between-sandais-and-thecloud-admirers",
+      "artworks": [
+        {
+          "id": "07-001",
+          "source": "Between Sandais and TheCloud - Admirers/Admirer 1.JPEG",
+          "src": "/assets/morpheus/07-001.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 13854,
+          "sourceBytes": 77804
+        },
+        {
+          "id": "07-002",
+          "source": "Between Sandais and TheCloud - Admirers/Admirer 2.JPEG",
+          "src": "/assets/morpheus/07-002.webp",
+          "width": 800,
+          "height": 730,
+          "bytes": 13778,
+          "sourceBytes": 120159
+        },
+        {
+          "id": "07-003",
+          "source": "Between Sandais and TheCloud - Admirers/Admirer 3.JPEG",
+          "src": "/assets/morpheus/07-003.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11904,
+          "sourceBytes": 92890
+        },
+        {
+          "id": "07-004",
+          "source": "Between Sandais and TheCloud - Admirers/Balletista Holdup.PNG",
+          "src": "/assets/morpheus/07-004.webp",
+          "width": 800,
+          "height": 730,
+          "bytes": 13970,
+          "sourceBytes": 641781
+        }
+      ]
+    },
+    {
+      "name": "Between Sandais Hills and Folk",
+      "number": "08",
+      "slug": "between-sandais-hills-and-folk",
+      "artworks": [
+        {
+          "id": "08-001",
+          "source": "Between Sandais Hills and Folk/Fuck Off we're eating.JPEG",
+          "src": "/assets/morpheus/08-001.webp",
+          "width": 452,
+          "height": 800,
+          "bytes": 27356,
+          "sourceBytes": 157050
+        },
+        {
+          "id": "08-002",
+          "source": "Between Sandais Hills and Folk/Tellers.PNG",
+          "src": "/assets/morpheus/08-002.webp",
+          "width": 800,
+          "height": 636,
+          "bytes": 32256,
+          "sourceBytes": 888767
+        },
+        {
+          "id": "08-003",
+          "source": "Between Sandais Hills and Folk/The Overlook.PNG",
+          "src": "/assets/morpheus/08-003.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 75992,
+          "sourceBytes": 1774932
+        }
+      ]
+    },
+    {
+      "name": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float",
+      "number": "09",
+      "slug": "between-sandais-hills-and-thecloud-saintvictorialands-float",
+      "artworks": [
+        {
+          "id": "09-001",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Exodus.png",
+          "src": "/assets/morpheus/09-001.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 28570,
+          "sourceBytes": 3398507
+        },
+        {
+          "id": "09-002",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Floating Boats in morpheus city.png",
+          "src": "/assets/morpheus/09-002.webp",
+          "width": 641,
+          "height": 800,
+          "bytes": 9054,
+          "sourceBytes": 2836796
+        },
+        {
+          "id": "09-003",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Just more boats in morpheus city.png",
+          "src": "/assets/morpheus/09-003.webp",
+          "width": 667,
+          "height": 800,
+          "bytes": 25216,
+          "sourceBytes": 3488678
+        },
+        {
+          "id": "09-004",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Macropus the Steed.png",
+          "src": "/assets/morpheus/09-004.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 15550,
+          "sourceBytes": 2326334
+        },
+        {
+          "id": "09-005",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Morning walks in morpheus city with anklecycles.png",
+          "src": "/assets/morpheus/09-005.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 6300,
+          "sourceBytes": 359292
+        },
+        {
+          "id": "09-006",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Morpheuse's Lover.jpeg",
+          "src": "/assets/morpheus/09-006.webp",
+          "width": 634,
+          "height": 800,
+          "bytes": 10212,
+          "sourceBytes": 99626
+        },
+        {
+          "id": "09-007",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Sandais City View from the Ocean.PNG",
+          "src": "/assets/morpheus/09-007.webp",
+          "width": 800,
+          "height": 283,
+          "bytes": 10040,
+          "sourceBytes": 345018
+        },
+        {
+          "id": "09-008",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Stallions from morpheus city.png",
+          "src": "/assets/morpheus/09-008.webp",
+          "width": 800,
+          "height": 556,
+          "bytes": 39542,
+          "sourceBytes": 3805568
+        },
+        {
+          "id": "09-009",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/The Plunge.PNG",
+          "src": "/assets/morpheus/09-009.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 54802,
+          "sourceBytes": 1256367
+        },
+        {
+          "id": "09-010",
+          "source": "Between Sandais Hills and TheCloud-SaintVictoriaLands - Float/Tile Clean.png",
+          "src": "/assets/morpheus/09-010.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 7436,
+          "sourceBytes": 2714181
+        }
+      ]
+    },
+    {
+      "name": "Between TheCloud and Wetlands - SinLands",
+      "number": "10",
+      "slug": "between-thecloud-and-wetlands-sinlands",
+      "artworks": [
+        {
+          "id": "10-001",
+          "source": "Between TheCloud and Wetlands - SinLands/1BE79CE4-B152-43DF-9FE5-FDF2A6D7B9B1.PNG",
+          "src": "/assets/morpheus/10-001.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 66196,
+          "sourceBytes": 1673892
+        },
+        {
+          "id": "10-002",
+          "source": "Between TheCloud and Wetlands - SinLands/79372EE3-00FC-4C34-ADC7-42475F711E30.JPEG",
+          "src": "/assets/morpheus/10-002.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 66588,
+          "sourceBytes": 274793
+        },
+        {
+          "id": "10-003",
+          "source": "Between TheCloud and Wetlands - SinLands/D3227192-6E18-4F08-AA4B-C510A612775E.PNG",
+          "src": "/assets/morpheus/10-003.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 51708,
+          "sourceBytes": 1221257
+        },
+        {
+          "id": "10-004",
+          "source": "Between TheCloud and Wetlands - SinLands/Sin after the night falls.png",
+          "src": "/assets/morpheus/10-004.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 32930,
+          "sourceBytes": 3334013
+        },
+        {
+          "id": "10-005",
+          "source": "Between TheCloud and Wetlands - SinLands/The dreamer.png",
+          "src": "/assets/morpheus/10-005.webp",
+          "width": 797,
+          "height": 800,
+          "bytes": 30696,
+          "sourceBytes": 5072843
+        }
+      ]
+    },
+    {
+      "name": "Between Wetlands and Hillsides",
+      "number": "11",
+      "slug": "between-wetlands-and-hillsides",
+      "artworks": [
+        {
+          "id": "11-001",
+          "source": "Between Wetlands and Hillsides/2D5CE2ED-A3E1-4480-8477-06ABFC2D8CCD.PNG",
+          "src": "/assets/morpheus/11-001.webp",
+          "width": 633,
+          "height": 800,
+          "bytes": 15372,
+          "sourceBytes": 549366
+        },
+        {
+          "id": "11-002",
+          "source": "Between Wetlands and Hillsides/4ECDB983-BE02-4DF9-B72A-DF30B2BFD8EB.PNG",
+          "src": "/assets/morpheus/11-002.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 60486,
+          "sourceBytes": 1400726
+        }
+      ]
+    },
+    {
+      "name": "Folk ",
+      "number": "12",
+      "slug": "folk",
+      "artworks": [
+        {
+          "id": "12-001",
+          "source": "Folk /002AB07C-1FEB-441E-9980-9334A07DD044.JPEG",
+          "src": "/assets/morpheus/12-001.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 74224,
+          "sourceBytes": 331549
+        },
+        {
+          "id": "12-002",
+          "source": "Folk /23F14363-D6AD-4F05-9E6B-07908128E550.remini-enhanced.png",
+          "src": "/assets/morpheus/12-002.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 48844,
+          "sourceBytes": 4894430
+        },
+        {
+          "id": "12-003",
+          "source": "Folk /26FFF6BB-66AF-4E40-9994-4BE963E41858.PNG",
+          "src": "/assets/morpheus/12-003.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 58762,
+          "sourceBytes": 1246386
+        },
+        {
+          "id": "12-004",
+          "source": "Folk /74CEDE9E-8A13-466B-A44F-713495B70DEB.JPEG",
+          "src": "/assets/morpheus/12-004.webp",
+          "width": 800,
+          "height": 558,
+          "bytes": 21602,
+          "sourceBytes": 160987
+        },
+        {
+          "id": "12-005",
+          "source": "Folk /14282C5F-ABD2-48E2-B88E-7E53C645F36D.PNG",
+          "src": "/assets/morpheus/12-005.webp",
+          "width": 800,
+          "height": 559,
+          "bytes": 33200,
+          "sourceBytes": 967398
+        },
+        {
+          "id": "12-006",
+          "source": "Folk /A0625A87-06F2-41D5-95EE-545029E2AE15.JPEG",
+          "src": "/assets/morpheus/12-006.webp",
+          "width": 641,
+          "height": 800,
+          "bytes": 55990,
+          "sourceBytes": 286625
+        },
+        {
+          "id": "12-007",
+          "source": "Folk /Are you here_ 2.png",
+          "src": "/assets/morpheus/12-007.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 32434,
+          "sourceBytes": 2554325
+        },
+        {
+          "id": "12-008",
+          "source": "Folk /Are you here_.png",
+          "src": "/assets/morpheus/12-008.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 32434,
+          "sourceBytes": 2554325
+        },
+        {
+          "id": "12-009",
+          "source": "Folk /Baptism mc (morpheus city).png",
+          "src": "/assets/morpheus/12-009.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 72834,
+          "sourceBytes": 5496845
+        },
+        {
+          "id": "12-010",
+          "source": "Folk /DAEC4661-6115-4CB5-AB9F-7EBF29DD27ED.PNG",
+          "src": "/assets/morpheus/12-010.webp",
+          "width": 800,
+          "height": 558,
+          "bytes": 24314,
+          "sourceBytes": 775076
+        },
+        {
+          "id": "12-011",
+          "source": "Folk /F51F81A4-B810-44AE-AD83-12AD65C4A11F.PNG",
+          "src": "/assets/morpheus/12-011.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 59282,
+          "sourceBytes": 1297054
+        },
+        {
+          "id": "12-012",
+          "source": "Folk /F95EEEF8-3851-483B-A36B-CEE43E33E0BB.JPEG",
+          "src": "/assets/morpheus/12-012.webp",
+          "width": 559,
+          "height": 800,
+          "bytes": 20732,
+          "sourceBytes": 125723
+        },
+        {
+          "id": "12-013",
+          "source": "Folk /Folk Night_Fashion Culture in morpheus city.png",
+          "src": "/assets/morpheus/12-013.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 66032,
+          "sourceBytes": 13403479
+        },
+        {
+          "id": "12-014",
+          "source": "Folk /Folk Nights in morpheus city.png",
+          "src": "/assets/morpheus/12-014.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 62718,
+          "sourceBytes": 4729457
+        },
+        {
+          "id": "12-015",
+          "source": "Folk /Folk Nights_Mother Birth of the Folk in morpheus city.png",
+          "src": "/assets/morpheus/12-015.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 70250,
+          "sourceBytes": 3782211
+        },
+        {
+          "id": "12-016",
+          "source": "Folk /Merchant Trades.png",
+          "src": "/assets/morpheus/12-016.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 70168,
+          "sourceBytes": 5046691
+        },
+        {
+          "id": "12-017",
+          "source": "Folk /Sunsets in Folk Era - folk nights upbringing.png",
+          "src": "/assets/morpheus/12-017.webp",
+          "width": 452,
+          "height": 800,
+          "bytes": 50222,
+          "sourceBytes": 3305172
+        }
+      ]
+    },
+    {
+      "name": "Hillsides (HS)",
+      "number": "13",
+      "slug": "hillsides-hs",
+      "artworks": [
+        {
+          "id": "13-001",
+          "source": "Hillsides (HS)/Vendange.png",
+          "src": "/assets/morpheus/13-001.webp",
+          "width": 581,
+          "height": 800,
+          "bytes": 48266,
+          "sourceBytes": 3821784
+        }
+      ]
+    },
+    {
+      "name": "Saint Victoria Lands (SVL)",
+      "number": "14",
+      "slug": "saint-victoria-lands-svl",
+      "artworks": [
+        {
+          "id": "14-001",
+          "source": "Saint Victoria Lands (SVL)/0E478217-46F1-459E-8251-CA3BC9DF4266.JPEG",
+          "src": "/assets/morpheus/14-001.webp",
+          "width": 670,
+          "height": 800,
+          "bytes": 59780,
+          "sourceBytes": 275447
+        },
+        {
+          "id": "14-002",
+          "source": "Saint Victoria Lands (SVL)/1B1D4D65-FF23-4CF2-813C-8B8BB282CA83.JPEG",
+          "src": "/assets/morpheus/14-002.webp",
+          "width": 639,
+          "height": 800,
+          "bytes": 15810,
+          "sourceBytes": 115665
+        },
+        {
+          "id": "14-003",
+          "source": "Saint Victoria Lands (SVL)/5E8F1342-02B9-48F8-856C-440FB1DE57EA.PNG",
+          "src": "/assets/morpheus/14-003.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 44582,
+          "sourceBytes": 1152996
+        },
+        {
+          "id": "14-004",
+          "source": "Saint Victoria Lands (SVL)/7E4C1F49-AF49-40CC-AB07-CEDEC6BFD5B0.JPEG",
+          "src": "/assets/morpheus/14-004.webp",
+          "width": 800,
+          "height": 389,
+          "bytes": 7260,
+          "sourceBytes": 63008
+        },
+        {
+          "id": "14-005",
+          "source": "Saint Victoria Lands (SVL)/7FECF385-341C-4AE7-AE69-007658B1B799.JPEG",
+          "src": "/assets/morpheus/14-005.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 51882,
+          "sourceBytes": 214821
+        },
+        {
+          "id": "14-006",
+          "source": "Saint Victoria Lands (SVL)/8BA560DF-098C-4C23-B41E-085B683E4C8F.PNG",
+          "src": "/assets/morpheus/14-006.webp",
+          "width": 639,
+          "height": 800,
+          "bytes": 15822,
+          "sourceBytes": 662333
+        },
+        {
+          "id": "14-007",
+          "source": "Saint Victoria Lands (SVL)/9A0B21AC-2B8C-41D4-9B67-854F6B002938.PNG",
+          "src": "/assets/morpheus/14-007.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 24440,
+          "sourceBytes": 844476
+        },
+        {
+          "id": "14-008",
+          "source": "Saint Victoria Lands (SVL)/28EF6D80-46BA-4086-B862-FC01777F9F35.JPEG",
+          "src": "/assets/morpheus/14-008.webp",
+          "width": 633,
+          "height": 800,
+          "bytes": 24746,
+          "sourceBytes": 175577
+        },
+        {
+          "id": "14-009",
+          "source": "Saint Victoria Lands (SVL)/48F36DFE-D366-47C2-90FC-F58C9CFF829B.PNG",
+          "src": "/assets/morpheus/14-009.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 22110,
+          "sourceBytes": 891867
+        },
+        {
+          "id": "14-010",
+          "source": "Saint Victoria Lands (SVL)/0265E511-01FA-49FC-96CA-57FEFC85160D.remini-enhanced.png",
+          "src": "/assets/morpheus/14-010.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 21840,
+          "sourceBytes": 8955308
+        },
+        {
+          "id": "14-011",
+          "source": "Saint Victoria Lands (SVL)/304C4B24-E968-4BD3-8FB9-9419D6D8DB93.remini-enhanced.png",
+          "src": "/assets/morpheus/14-011.webp",
+          "width": 633,
+          "height": 800,
+          "bytes": 25272,
+          "sourceBytes": 3654778
+        },
+        {
+          "id": "14-012",
+          "source": "Saint Victoria Lands (SVL)/791B0E03-9BEA-47B9-B63F-3FB6D87FD8AE.PNG",
+          "src": "/assets/morpheus/14-012.webp",
+          "width": 667,
+          "height": 800,
+          "bytes": 18360,
+          "sourceBytes": 807465
+        },
+        {
+          "id": "14-013",
+          "source": "Saint Victoria Lands (SVL)/7145C9FF-D8F5-4F38-8826-0D7BADCE533B.JPEG",
+          "src": "/assets/morpheus/14-013.webp",
+          "width": 800,
+          "height": 389,
+          "bytes": 7878,
+          "sourceBytes": 67972
+        },
+        {
+          "id": "14-014",
+          "source": "Saint Victoria Lands (SVL)/AE2B2701-AE21-4F61-8358-F75C4CBC550C.remini-enhanced.png",
+          "src": "/assets/morpheus/14-014.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 37150,
+          "sourceBytes": 3500380
+        },
+        {
+          "id": "14-015",
+          "source": "Saint Victoria Lands (SVL)/AEBDCD0F-1946-4096-81FB-60AC81209E6B.JPEG",
+          "src": "/assets/morpheus/14-015.webp",
+          "width": 622,
+          "height": 800,
+          "bytes": 28578,
+          "sourceBytes": 185833
+        },
+        {
+          "id": "14-016",
+          "source": "Saint Victoria Lands (SVL)/CEF525B2-8726-4524-957B-6792B2030486.PNG",
+          "src": "/assets/morpheus/14-016.webp",
+          "width": 800,
+          "height": 389,
+          "bytes": 7302,
+          "sourceBytes": 334792
+        },
+        {
+          "id": "14-017",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/0A0C2CB0-54B3-4ABE-9B1A-EB871CAACD62.PNG",
+          "src": "/assets/morpheus/14-017.webp",
+          "width": 800,
+          "height": 283,
+          "bytes": 9156,
+          "sourceBytes": 313831
+        },
+        {
+          "id": "14-018",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/0ED92E19-0596-4474-8E47-0CD02895FD50.PNG",
+          "src": "/assets/morpheus/14-018.webp",
+          "width": 622,
+          "height": 800,
+          "bytes": 30934,
+          "sourceBytes": 998677
+        },
+        {
+          "id": "14-019",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/2CBC183A-6C0C-4DFA-B721-29F22EC5C181.remini-enhanced.png",
+          "src": "/assets/morpheus/14-019.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 27274,
+          "sourceBytes": 3539110
+        },
+        {
+          "id": "14-020",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/3CD170DB-A20C-4241-994A-D11A9E493E1D.remini-enhanced.png",
+          "src": "/assets/morpheus/14-020.webp",
+          "width": 452,
+          "height": 800,
+          "bytes": 15592,
+          "sourceBytes": 2634648
+        },
+        {
+          "id": "14-021",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/5F641F32-3920-4563-BD4B-03FE69643F36.PNG",
+          "src": "/assets/morpheus/14-021.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 63308,
+          "sourceBytes": 1232763
+        },
+        {
+          "id": "14-022",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/7EB258BD-B28E-403D-80BA-BCEE3575A624.remini-enhanced.png",
+          "src": "/assets/morpheus/14-022.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 42380,
+          "sourceBytes": 2201527
+        },
+        {
+          "id": "14-023",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/7F6595C4-3B6B-4AC7-AE23-2421993DA3A4.remini-enhanced.png",
+          "src": "/assets/morpheus/14-023.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 33692,
+          "sourceBytes": 3811136
+        },
+        {
+          "id": "14-024",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/8B62B22C-FEA3-41F2-BD5B-6380B84EAE11.remini-enhanced.png",
+          "src": "/assets/morpheus/14-024.webp",
+          "width": 730,
+          "height": 800,
+          "bytes": 66284,
+          "sourceBytes": 4847160
+        },
+        {
+          "id": "14-025",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/9EB04BF4-6EAB-4F7A-9F44-0DD448416853.remini-enhanced.png",
+          "src": "/assets/morpheus/14-025.webp",
+          "width": 628,
+          "height": 800,
+          "bytes": 34972,
+          "sourceBytes": 4027242
+        },
+        {
+          "id": "14-026",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/09F5F71E-A2EF-44F8-9B82-30B8E28CE64D.remini-enhanced.png",
+          "src": "/assets/morpheus/14-026.webp",
+          "width": 419,
+          "height": 800,
+          "bytes": 31230,
+          "sourceBytes": 2671945
+        },
+        {
+          "id": "14-027",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/80BD2C23-3EB2-40C1-8512-F96FB006D54B.remini-enhanced.png",
+          "src": "/assets/morpheus/14-027.webp",
+          "width": 800,
+          "height": 283,
+          "bytes": 10680,
+          "sourceBytes": 1458075
+        },
+        {
+          "id": "14-028",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/290B23A8-2FB0-41CF-AD74-E85148C64FEE.remini-enhanced.png",
+          "src": "/assets/morpheus/14-028.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 16742,
+          "sourceBytes": 3323615
+        },
+        {
+          "id": "14-029",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/4409E293-0C0C-4ADD-8EC2-D5F2DBE7D3D7.JPEG",
+          "src": "/assets/morpheus/14-029.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 22496,
+          "sourceBytes": 148625
+        },
+        {
+          "id": "14-030",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/6699DA6C-4FFA-49DC-AE04-545CB0AE49E1.JPEG",
+          "src": "/assets/morpheus/14-030.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 52602,
+          "sourceBytes": 217986
+        },
+        {
+          "id": "14-031",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/6364598A-2AF5-43DA-A116-2B84EB37F1D3.remini-enhanced.png",
+          "src": "/assets/morpheus/14-031.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 43874,
+          "sourceBytes": 2156465
+        },
+        {
+          "id": "14-032",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/BC9389AF-A257-404A-8F7F-3ABC39844F2E.jpeg",
+          "src": "/assets/morpheus/14-032.webp",
+          "width": 656,
+          "height": 800,
+          "bytes": 34448,
+          "sourceBytes": 185544
+        },
+        {
+          "id": "14-033",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Can Can in the morpheus city.png",
+          "src": "/assets/morpheus/14-033.webp",
+          "width": 797,
+          "height": 800,
+          "bytes": 60824,
+          "sourceBytes": 3458914
+        },
+        {
+          "id": "14-034",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/City 1.png",
+          "src": "/assets/morpheus/14-034.webp",
+          "width": 800,
+          "height": 283,
+          "bytes": 10808,
+          "sourceBytes": 1468354
+        },
+        {
+          "id": "14-035",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Claudia, the morpheus city looney.png",
+          "src": "/assets/morpheus/14-035.webp",
+          "width": 591,
+          "height": 800,
+          "bytes": 33214,
+          "sourceBytes": 920111
+        },
+        {
+          "id": "14-036",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/E13AA45A-EAAB-4D7D-B5C0-45FDEAF0E0D1.remini-enhanced.png",
+          "src": "/assets/morpheus/14-036.webp",
+          "width": 800,
+          "height": 763,
+          "bytes": 59728,
+          "sourceBytes": 4882876
+        },
+        {
+          "id": "14-037",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Hojalata.png",
+          "src": "/assets/morpheus/14-037.webp",
+          "width": 641,
+          "height": 800,
+          "bytes": 23494,
+          "sourceBytes": 2023190
+        },
+        {
+          "id": "14-038",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Mascot.png",
+          "src": "/assets/morpheus/14-038.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 107562,
+          "sourceBytes": 5708070
+        },
+        {
+          "id": "14-039",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Matrioshka.png",
+          "src": "/assets/morpheus/14-039.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 82824,
+          "sourceBytes": 5151610
+        },
+        {
+          "id": "14-040",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Rain Traps.png",
+          "src": "/assets/morpheus/14-040.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 39356,
+          "sourceBytes": 1967858
+        },
+        {
+          "id": "14-041",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Sorrow of the Winners.png",
+          "src": "/assets/morpheus/14-041.webp",
+          "width": 559,
+          "height": 800,
+          "bytes": 24072,
+          "sourceBytes": 5632167
+        },
+        {
+          "id": "14-042",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Steel blades.png",
+          "src": "/assets/morpheus/14-042.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 23256,
+          "sourceBytes": 3650722
+        },
+        {
+          "id": "14-043",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/The Comfy Pants.png",
+          "src": "/assets/morpheus/14-043.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 37606,
+          "sourceBytes": 5385743
+        },
+        {
+          "id": "14-044",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Tomy From the Future .png",
+          "src": "/assets/morpheus/14-044.webp",
+          "width": 800,
+          "height": 636,
+          "bytes": 40944,
+          "sourceBytes": 9827612
+        },
+        {
+          "id": "14-045",
+          "source": "Saint Victoria Lands (SVL)/City-Urban/Uty.png",
+          "src": "/assets/morpheus/14-045.webp",
+          "width": 800,
+          "height": 627,
+          "bytes": 47980,
+          "sourceBytes": 4192230
+        },
+        {
+          "id": "14-046",
+          "source": "Saint Victoria Lands (SVL)/D4F4B310-9502-4C00-AFD8-8E989940CE4C.PNG",
+          "src": "/assets/morpheus/14-046.webp",
+          "width": 800,
+          "height": 728,
+          "bytes": 20662,
+          "sourceBytes": 914651
+        },
+        {
+          "id": "14-047",
+          "source": "Saint Victoria Lands (SVL)/DE9CDF1D-FFC3-431A-91D6-04607ED5709E.JPEG",
+          "src": "/assets/morpheus/14-047.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 51788,
+          "sourceBytes": 208057
+        },
+        {
+          "id": "14-048",
+          "source": "Saint Victoria Lands (SVL)/E610BA87-A134-4E75-AC9A-21C806AEC853.JPEG",
+          "src": "/assets/morpheus/14-048.webp",
+          "width": 667,
+          "height": 800,
+          "bytes": 18374,
+          "sourceBytes": 143185
+        },
+        {
+          "id": "14-049",
+          "source": "Saint Victoria Lands (SVL)/El Torero in morpheus city.png",
+          "src": "/assets/morpheus/14-049.webp",
+          "width": 478,
+          "height": 800,
+          "bytes": 7896,
+          "sourceBytes": 1870795
+        },
+        {
+          "id": "14-050",
+          "source": "Saint Victoria Lands (SVL)/F3733817-FF1E-48BC-AE2E-BAD9A59551C2.PNG",
+          "src": "/assets/morpheus/14-050.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 53120,
+          "sourceBytes": 1267366
+        },
+        {
+          "id": "14-051",
+          "source": "Saint Victoria Lands (SVL)/FA6B6B86-FCDF-4629-BC87-1EE94219DA2A.JPEG",
+          "src": "/assets/morpheus/14-051.webp",
+          "width": 512,
+          "height": 800,
+          "bytes": 20128,
+          "sourceBytes": 111047
+        },
+        {
+          "id": "14-052",
+          "source": "Saint Victoria Lands (SVL)/FD31669A-CD07-47BE-993D-89836B6C6B36.PNG",
+          "src": "/assets/morpheus/14-052.webp",
+          "width": 800,
+          "height": 605,
+          "bytes": 34898,
+          "sourceBytes": 1103388
+        },
+        {
+          "id": "14-053",
+          "source": "Saint Victoria Lands (SVL)/Lakes in morpheus city.png",
+          "src": "/assets/morpheus/14-053.webp",
+          "width": 800,
+          "height": 634,
+          "bytes": 42668,
+          "sourceBytes": 4363527
+        },
+        {
+          "id": "14-054",
+          "source": "Saint Victoria Lands (SVL)/Lenner the begger in morpheus city.png",
+          "src": "/assets/morpheus/14-054.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 28482,
+          "sourceBytes": 2979125
+        },
+        {
+          "id": "14-055",
+          "source": "Saint Victoria Lands (SVL)/Porcelain Doll (og).png",
+          "src": "/assets/morpheus/14-055.webp",
+          "width": 639,
+          "height": 800,
+          "bytes": 17246,
+          "sourceBytes": 3572982
+        },
+        {
+          "id": "14-056",
+          "source": "Saint Victoria Lands (SVL)/Porcelain doll.png",
+          "src": "/assets/morpheus/14-056.webp",
+          "width": 639,
+          "height": 800,
+          "bytes": 17868,
+          "sourceBytes": 9991656
+        },
+        {
+          "id": "14-057",
+          "source": "Saint Victoria Lands (SVL)/Religious man in morpheus city.png",
+          "src": "/assets/morpheus/14-057.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 28088,
+          "sourceBytes": 3401174
+        },
+        {
+          "id": "14-058",
+          "source": "Saint Victoria Lands (SVL)/Run to the ocean.png",
+          "src": "/assets/morpheus/14-058.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 32992,
+          "sourceBytes": 3696935
+        },
+        {
+          "id": "14-059",
+          "source": "Saint Victoria Lands (SVL)/Sophia (la bella del pueblo) in morpheus city.png",
+          "src": "/assets/morpheus/14-059.webp",
+          "width": 714,
+          "height": 800,
+          "bytes": 17366,
+          "sourceBytes": 3749246
+        }
+      ]
+    },
+    {
+      "name": "Sandais Hills (SH)",
+      "number": "15",
+      "slug": "sandais-hills-sh",
+      "artworks": [
+        {
+          "id": "15-001",
+          "source": "Sandais Hills (SH)/00E3BBF7-65B7-4A24-9499-358559DAE83B.JPEG",
+          "src": "/assets/morpheus/15-001.webp",
+          "width": 411,
+          "height": 800,
+          "bytes": 13258,
+          "sourceBytes": 98767
+        },
+        {
+          "id": "15-002",
+          "source": "Sandais Hills (SH)/1FFADD4A-7F61-460C-B9C0-160AEBD70158.JPEG",
+          "src": "/assets/morpheus/15-002.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11126,
+          "sourceBytes": 91212
+        },
+        {
+          "id": "15-003",
+          "source": "Sandais Hills (SH)/2C909BC5-3B70-4EAE-8501-9A69E4A4A396.PNG",
+          "src": "/assets/morpheus/15-003.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 6046,
+          "sourceBytes": 383027
+        },
+        {
+          "id": "15-004",
+          "source": "Sandais Hills (SH)/3A5D0060-A47B-49CC-8DBC-28AC4E022083.PNG",
+          "src": "/assets/morpheus/15-004.webp",
+          "width": 452,
+          "height": 800,
+          "bytes": 27456,
+          "sourceBytes": 820592
+        },
+        {
+          "id": "15-005",
+          "source": "Sandais Hills (SH)/5A9ACF21-4A66-4801-AF54-4127CFDF13FC.PNG",
+          "src": "/assets/morpheus/15-005.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 26786,
+          "sourceBytes": 717991
+        },
+        {
+          "id": "15-006",
+          "source": "Sandais Hills (SH)/5E7F777C-F143-4799-ADC5-29703582A829.PNG",
+          "src": "/assets/morpheus/15-006.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11148,
+          "sourceBytes": 1504801
+        },
+        {
+          "id": "15-007",
+          "source": "Sandais Hills (SH)/7A315EA3-7DB7-4987-8145-2902DEDA09B8.remini-enhanced.png",
+          "src": "/assets/morpheus/15-007.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 52892,
+          "sourceBytes": 16630593
+        },
+        {
+          "id": "15-008",
+          "source": "Sandais Hills (SH)/7FB0BDF9-DA48-42D8-91E4-3CDBC4784FEE.JPEG",
+          "src": "/assets/morpheus/15-008.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 31470,
+          "sourceBytes": 188751
+        },
+        {
+          "id": "15-009",
+          "source": "Sandais Hills (SH)/8CAC155A-454A-48BC-84A2-F420B6ABC6C5.JPEG",
+          "src": "/assets/morpheus/15-009.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 69820,
+          "sourceBytes": 291638
+        },
+        {
+          "id": "15-010",
+          "source": "Sandais Hills (SH)/74C9093A-8A9C-460E-A3E7-7BD144DEB2D6.JPEG",
+          "src": "/assets/morpheus/15-010.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 19972,
+          "sourceBytes": 121387
+        },
+        {
+          "id": "15-011",
+          "source": "Sandais Hills (SH)/77B143D3-CC99-45D5-B335-978E275A70C0.PNG",
+          "src": "/assets/morpheus/15-011.webp",
+          "width": 581,
+          "height": 800,
+          "bytes": 40830,
+          "sourceBytes": 1142705
+        },
+        {
+          "id": "15-012",
+          "source": "Sandais Hills (SH)/87EB22B4-5A84-48A2-848D-4371FD9B1E9F.PNG",
+          "src": "/assets/morpheus/15-012.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11230,
+          "sourceBytes": 602323
+        },
+        {
+          "id": "15-013",
+          "source": "Sandais Hills (SH)/2023 in morpheus city.png",
+          "src": "/assets/morpheus/15-013.webp",
+          "width": 602,
+          "height": 800,
+          "bytes": 16734,
+          "sourceBytes": 3053292
+        },
+        {
+          "id": "15-014",
+          "source": "Sandais Hills (SH)/9332E65C-153D-41C4-AAAF-A18B7CA9FB9F.jpeg",
+          "src": "/assets/morpheus/15-014.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 17212,
+          "sourceBytes": 80420
+        },
+        {
+          "id": "15-015",
+          "source": "Sandais Hills (SH)/9332E65C-153D-41C4-AAAF-A18B7CA9FB9F.remini-enhanced.jpg",
+          "src": "/assets/morpheus/15-015.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 21610,
+          "sourceBytes": 250130
+        },
+        {
+          "id": "15-016",
+          "source": "Sandais Hills (SH)/9684CD17-439D-4728-B200-8B89A6C29D81.remini-enhanced.png",
+          "src": "/assets/morpheus/15-016.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 19152,
+          "sourceBytes": 2854260
+        },
+        {
+          "id": "15-017",
+          "source": "Sandais Hills (SH)/A5DDAFE3-36CD-494E-9A54-95CC4FF6ACC6.remini-enhanced.png",
+          "src": "/assets/morpheus/15-017.webp",
+          "width": 641,
+          "height": 800,
+          "bytes": 8570,
+          "sourceBytes": 2788892
+        },
+        {
+          "id": "15-018",
+          "source": "Sandais Hills (SH)/B65D51FE-002E-465D-99B5-C108BF5D0362.JPEG",
+          "src": "/assets/morpheus/15-018.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11162,
+          "sourceBytes": 227223
+        },
+        {
+          "id": "15-019",
+          "source": "Sandais Hills (SH)/B97FE489-5A0D-4645-8ED2-838DC4B4B55D.remini-enhanced.png",
+          "src": "/assets/morpheus/15-019.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11448,
+          "sourceBytes": 2845273
+        },
+        {
+          "id": "15-020",
+          "source": "Sandais Hills (SH)/C9703671-934B-467D-AA9F-0FCE5C9159B6.remini-enhanced.png",
+          "src": "/assets/morpheus/15-020.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 38560,
+          "sourceBytes": 4605720
+        },
+        {
+          "id": "15-021",
+          "source": "Sandais Hills (SH)/CD712362-8403-495D-A659-C1A5176ABA1B.JPEG",
+          "src": "/assets/morpheus/15-021.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 55756,
+          "sourceBytes": 224790
+        },
+        {
+          "id": "15-022",
+          "source": "Sandais Hills (SH)/D702CC51-41AF-4665-9728-10B5F71DDAB0.PNG",
+          "src": "/assets/morpheus/15-022.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 31508,
+          "sourceBytes": 1059341
+        },
+        {
+          "id": "15-023",
+          "source": "Sandais Hills (SH)/D9720FE7-458E-4309-A19B-2A1D5B6B319D.PNG",
+          "src": "/assets/morpheus/15-023.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 42892,
+          "sourceBytes": 1308263
+        },
+        {
+          "id": "15-024",
+          "source": "Sandais Hills (SH)/DBD89B9D-ABEC-4EBE-9916-BEBEC1D4DA82.JPEG",
+          "src": "/assets/morpheus/15-024.webp",
+          "width": 581,
+          "height": 800,
+          "bytes": 41012,
+          "sourceBytes": 227534
+        },
+        {
+          "id": "15-025",
+          "source": "Sandais Hills (SH)/DC6F3C07-ECC6-4B70-9BCF-CAE1F7107E5E.PNG",
+          "src": "/assets/morpheus/15-025.webp",
+          "width": 800,
+          "height": 283,
+          "bytes": 9040,
+          "sourceBytes": 303703
+        },
+        {
+          "id": "15-026",
+          "source": "Sandais Hills (SH)/Dumpster in morpheus city.png",
+          "src": "/assets/morpheus/15-026.webp",
+          "width": 730,
+          "height": 800,
+          "bytes": 55640,
+          "sourceBytes": 4636617
+        },
+        {
+          "id": "15-027",
+          "source": "Sandais Hills (SH)/EAB8CBF7-8D64-4341-9F73-5DA9071F290A.PNG",
+          "src": "/assets/morpheus/15-027.webp",
+          "width": 800,
+          "height": 389,
+          "bytes": 5112,
+          "sourceBytes": 241900
+        },
+        {
+          "id": "15-028",
+          "source": "Sandais Hills (SH)/FCAF1E58-C48A-4A7F-B28E-43FFE22E998D.png",
+          "src": "/assets/morpheus/15-028.webp",
+          "width": 411,
+          "height": 800,
+          "bytes": 12972,
+          "sourceBytes": 525960
+        },
+        {
+          "id": "15-029",
+          "source": "Sandais Hills (SH)/Japanese Collar.png",
+          "src": "/assets/morpheus/15-029.webp",
+          "width": 748,
+          "height": 800,
+          "bytes": 25196,
+          "sourceBytes": 3586844
+        },
+        {
+          "id": "15-030",
+          "source": "Sandais Hills (SH)/Late for the bus.png",
+          "src": "/assets/morpheus/15-030.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 24778,
+          "sourceBytes": 3149510
+        },
+        {
+          "id": "15-031",
+          "source": "Sandais Hills (SH)/Little poor horsie son of morpheus city (old horse with widsom).png",
+          "src": "/assets/morpheus/15-031.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 48258,
+          "sourceBytes": 3995487
+        },
+        {
+          "id": "15-032",
+          "source": "Sandais Hills (SH)/Lovers in morpheus city.png",
+          "src": "/assets/morpheus/15-032.webp",
+          "width": 800,
+          "height": 728,
+          "bytes": 22112,
+          "sourceBytes": 926702
+        },
+        {
+          "id": "15-033",
+          "source": "Sandais Hills (SH)/Morpheuse's Warlock.jpeg",
+          "src": "/assets/morpheus/15-033.webp",
+          "width": 641,
+          "height": 800,
+          "bytes": 9494,
+          "sourceBytes": 100103
+        },
+        {
+          "id": "15-034",
+          "source": "Sandais Hills (SH)/Sculptures in morpheus city.png",
+          "src": "/assets/morpheus/15-034.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 46454,
+          "sourceBytes": 3892218
+        },
+        {
+          "id": "15-035",
+          "source": "Sandais Hills (SH)/Secrets of a father.png",
+          "src": "/assets/morpheus/15-035.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11386,
+          "sourceBytes": 2794425
+        },
+        {
+          "id": "15-036",
+          "source": "Sandais Hills (SH)/Tagline Transportaion in morpheus city.png",
+          "src": "/assets/morpheus/15-036.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 43534,
+          "sourceBytes": 3827033
+        }
+      ]
+    },
+    {
+      "name": "SilkCities (SC)",
+      "number": "16",
+      "slug": "silkcities-sc",
+      "artworks": [
+        {
+          "id": "16-001",
+          "source": "SilkCities (SC)/5D4D2FD0-426A-4FB6-B34C-BEA17048A1AB.PNG",
+          "src": "/assets/morpheus/16-001.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 21082,
+          "sourceBytes": 692083
+        },
+        {
+          "id": "16-002",
+          "source": "SilkCities (SC)/07A4E5E7-517B-4081-A59D-3C03427F90BB 2.remini-enhanced.png",
+          "src": "/assets/morpheus/16-002.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 38656,
+          "sourceBytes": 3495491
+        },
+        {
+          "id": "16-003",
+          "source": "SilkCities (SC)/8AD1CE9E-B1E3-4340-9186-C3E20AFA2F32.remini-enhanced.png",
+          "src": "/assets/morpheus/16-003.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 16554,
+          "sourceBytes": 2837226
+        },
+        {
+          "id": "16-004",
+          "source": "SilkCities (SC)/95B882D3-B4AB-44FF-830A-BD2D238D91CF.remini-enhanced.png",
+          "src": "/assets/morpheus/16-004.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 26598,
+          "sourceBytes": 3327886
+        },
+        {
+          "id": "16-005",
+          "source": "SilkCities (SC)/433437A8-4D9B-450C-B3A3-872A381CE1EE.png",
+          "src": "/assets/morpheus/16-005.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11340,
+          "sourceBytes": 580070
+        },
+        {
+          "id": "16-006",
+          "source": "SilkCities (SC)/A77FFC25-CC4B-4E76-A640-AE16E8AB59AF.remini-enhanced.png",
+          "src": "/assets/morpheus/16-006.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 13410,
+          "sourceBytes": 2898705
+        },
+        {
+          "id": "16-007",
+          "source": "SilkCities (SC)/D3D0330B-7F2C-463A-8DF3-0254E567554D.remini-enhanced.png",
+          "src": "/assets/morpheus/16-007.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 30678,
+          "sourceBytes": 3751053
+        },
+        {
+          "id": "16-008",
+          "source": "SilkCities (SC)/DC5227D2-4321-4340-BE38-E0E1854B2D68.JPEG",
+          "src": "/assets/morpheus/16-008.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 14426,
+          "sourceBytes": 112364
+        },
+        {
+          "id": "16-009",
+          "source": "SilkCities (SC)/E014F2FE-73FD-4F29-90C8-6E946098BE95.JPEG",
+          "src": "/assets/morpheus/16-009.webp",
+          "width": 550,
+          "height": 800,
+          "bytes": 14198,
+          "sourceBytes": 90985
+        },
+        {
+          "id": "16-010",
+          "source": "SilkCities (SC)/E9281CB5-C938-40EF-90D0-AB418EF013D7.remini-enhanced.png",
+          "src": "/assets/morpheus/16-010.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 44228,
+          "sourceBytes": 3963352
+        },
+        {
+          "id": "16-011",
+          "source": "SilkCities (SC)/Flee market .png",
+          "src": "/assets/morpheus/16-011.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 80092,
+          "sourceBytes": 5908715
+        },
+        {
+          "id": "16-012",
+          "source": "SilkCities (SC)/Floral twirl dance.png",
+          "src": "/assets/morpheus/16-012.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 36266,
+          "sourceBytes": 3054597
+        },
+        {
+          "id": "16-013",
+          "source": "SilkCities (SC)/Graduation Day 2.png",
+          "src": "/assets/morpheus/16-013.webp",
+          "width": 391,
+          "height": 800,
+          "bytes": 18842,
+          "sourceBytes": 2242489
+        },
+        {
+          "id": "16-014",
+          "source": "SilkCities (SC)/Graduation Day.png",
+          "src": "/assets/morpheus/16-014.webp",
+          "width": 391,
+          "height": 800,
+          "bytes": 18842,
+          "sourceBytes": 2242489
+        },
+        {
+          "id": "16-015",
+          "source": "SilkCities (SC)/light bedroom gown.png",
+          "src": "/assets/morpheus/16-015.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 12552,
+          "sourceBytes": 2061447
+        },
+        {
+          "id": "16-016",
+          "source": "SilkCities (SC)/Literaria.png",
+          "src": "/assets/morpheus/16-016.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 36596,
+          "sourceBytes": 4707577
+        },
+        {
+          "id": "16-017",
+          "source": "SilkCities (SC)/Loretta.png",
+          "src": "/assets/morpheus/16-017.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 37184,
+          "sourceBytes": 2248896
+        },
+        {
+          "id": "16-018",
+          "source": "SilkCities (SC)/Loretta’s Hallway .png",
+          "src": "/assets/morpheus/16-018.webp",
+          "width": 641,
+          "height": 800,
+          "bytes": 63210,
+          "sourceBytes": 4829172
+        },
+        {
+          "id": "16-019",
+          "source": "SilkCities (SC)/Maid playing Golf.png",
+          "src": "/assets/morpheus/16-019.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 41516,
+          "sourceBytes": 3936114
+        },
+        {
+          "id": "16-020",
+          "source": "SilkCities (SC)/Morpheus shape 1.png",
+          "src": "/assets/morpheus/16-020.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 11214,
+          "sourceBytes": 2829569
+        },
+        {
+          "id": "16-021",
+          "source": "SilkCities (SC)/Morpheuse's Towel Coouch.png",
+          "src": "/assets/morpheus/16-021.webp",
+          "width": 634,
+          "height": 800,
+          "bytes": 13062,
+          "sourceBytes": 613062
+        },
+        {
+          "id": "16-022",
+          "source": "SilkCities (SC)/Newspaper .png",
+          "src": "/assets/morpheus/16-022.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 19380,
+          "sourceBytes": 734859
+        },
+        {
+          "id": "16-023",
+          "source": "SilkCities (SC)/Princess Jenny in the Olympics.png",
+          "src": "/assets/morpheus/16-023.webp",
+          "width": 620,
+          "height": 800,
+          "bytes": 33852,
+          "sourceBytes": 4011778
+        },
+        {
+          "id": "16-024",
+          "source": "SilkCities (SC)/The spy.png",
+          "src": "/assets/morpheus/16-024.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 23332,
+          "sourceBytes": 2565855
+        },
+        {
+          "id": "16-025",
+          "source": "SilkCities (SC)/The Wedding .png",
+          "src": "/assets/morpheus/16-025.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 30164,
+          "sourceBytes": 2511661
+        },
+        {
+          "id": "16-026",
+          "source": "SilkCities (SC)/Tuesday Morning.png",
+          "src": "/assets/morpheus/16-026.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 16728,
+          "sourceBytes": 2854340
+        }
+      ]
+    },
+    {
+      "name": "The Cloud (TC)",
+      "number": "17",
+      "slug": "the-cloud-tc",
+      "artworks": [
+        {
+          "id": "17-001",
+          "source": "The Cloud (TC)/0CAC640E-9062-4BD1-898A-DE30CE4CDB8A.PNG",
+          "src": "/assets/morpheus/17-001.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 35122,
+          "sourceBytes": 1136471
+        },
+        {
+          "id": "17-002",
+          "source": "The Cloud (TC)/2D6B3D81-15E5-47D2-A2DB-DD8B50662644.PNG",
+          "src": "/assets/morpheus/17-002.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 10042,
+          "sourceBytes": 393338
+        },
+        {
+          "id": "17-003",
+          "source": "The Cloud (TC)/2DDCDAF7-60A0-4FB3-A180-E6B8E5E4FEDB.JPEG",
+          "src": "/assets/morpheus/17-003.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 20666,
+          "sourceBytes": 147629
+        },
+        {
+          "id": "17-004",
+          "source": "The Cloud (TC)/4A1D4A5F-C68E-41C5-A498-5FDE1FFAD2B5.PNG",
+          "src": "/assets/morpheus/17-004.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 55722,
+          "sourceBytes": 1290762
+        },
+        {
+          "id": "17-005",
+          "source": "The Cloud (TC)/6A46A531-2DB7-4165-AFB1-9DA493090DC6.JPEG",
+          "src": "/assets/morpheus/17-005.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 35036,
+          "sourceBytes": 221239
+        },
+        {
+          "id": "17-006",
+          "source": "The Cloud (TC)/7F259D4E-9E94-4789-B791-022A98840971.JPEG",
+          "src": "/assets/morpheus/17-006.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 10068,
+          "sourceBytes": 90111
+        },
+        {
+          "id": "17-007",
+          "source": "The Cloud (TC)/748D8040-03CD-4373-AF70-B3344B2526F1.remini-enhanced.png",
+          "src": "/assets/morpheus/17-007.webp",
+          "width": 800,
+          "height": 558,
+          "bytes": 18258,
+          "sourceBytes": 2637289
+        },
+        {
+          "id": "17-008",
+          "source": "The Cloud (TC)/A758EDBB-4636-42A6-A7AC-F56A969DB48E.JPEG",
+          "src": "/assets/morpheus/17-008.webp",
+          "width": 800,
+          "height": 728,
+          "bytes": 19574,
+          "sourceBytes": 167200
+        },
+        {
+          "id": "17-009",
+          "source": "The Cloud (TC)/dark bedroom gown.png",
+          "src": "/assets/morpheus/17-009.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 15068,
+          "sourceBytes": 2996950
+        },
+        {
+          "id": "17-010",
+          "source": "The Cloud (TC)/Des Volantes arriving in morpheus city.png",
+          "src": "/assets/morpheus/17-010.webp",
+          "width": 602,
+          "height": 800,
+          "bytes": 17798,
+          "sourceBytes": 2985040
+        },
+        {
+          "id": "17-011",
+          "source": "The Cloud (TC)/Sandy, the city princess.png",
+          "src": "/assets/morpheus/17-011.webp",
+          "width": 800,
+          "height": 558,
+          "bytes": 18602,
+          "sourceBytes": 2575688
+        }
+      ]
+    },
+    {
+      "name": "Unassigned",
+      "number": "18",
+      "slug": "unassigned",
+      "artworks": [
+        {
+          "id": "18-001",
+          "source": "Unassigned/01F6D433-948B-49CA-9F03-8395317C163E.JPEG",
+          "src": "/assets/morpheus/18-001.webp",
+          "width": 450,
+          "height": 800,
+          "bytes": 29602,
+          "sourceBytes": 147140
+        },
+        {
+          "id": "18-002",
+          "source": "Unassigned/79C50315-3EEB-4B32-B52C-4D385055D08E.PNG",
+          "src": "/assets/morpheus/18-002.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 21442,
+          "sourceBytes": 755324
+        },
+        {
+          "id": "18-003",
+          "source": "Unassigned/80BD2C23-3EB2-40C1-8512-F96FB006D54B.JPEG",
+          "src": "/assets/morpheus/18-003.webp",
+          "width": 800,
+          "height": 283,
+          "bytes": 9072,
+          "sourceBytes": 65248
+        },
+        {
+          "id": "18-004",
+          "source": "Unassigned/15530322-745D-4697-AD3C-F28C911716D7.JPEG",
+          "src": "/assets/morpheus/18-004.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 29906,
+          "sourceBytes": 180597
+        },
+        {
+          "id": "18-005",
+          "source": "Unassigned/A69D6695-AC04-4651-948D-A5E159AFE828.PNG",
+          "src": "/assets/morpheus/18-005.webp",
+          "width": 478,
+          "height": 800,
+          "bytes": 38078,
+          "sourceBytes": 893956
+        },
+        {
+          "id": "18-006",
+          "source": "Unassigned/A0146149-6878-4649-9F42-E1EB66401590.JPEG",
+          "src": "/assets/morpheus/18-006.webp",
+          "width": 637,
+          "height": 800,
+          "bytes": 40322,
+          "sourceBytes": 186964
+        },
+        {
+          "id": "18-007",
+          "source": "Unassigned/DCB680D3-3E68-4508-A026-43CECD77F3F2.PNG",
+          "src": "/assets/morpheus/18-007.webp",
+          "width": 800,
+          "height": 550,
+          "bytes": 12042,
+          "sourceBytes": 376005
+        },
+        {
+          "id": "18-008",
+          "source": "Unassigned/FC85A3FB-E1A8-4259-AF71-1766E7B8D4EF.remini-enhanced.png",
+          "src": "/assets/morpheus/18-008.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 57760,
+          "sourceBytes": 4293677
+        }
+      ]
+    },
+    {
+      "name": "Wetlands (WL)",
+      "number": "19",
+      "slug": "wetlands-wl",
+      "artworks": [
+        {
+          "id": "19-001",
+          "source": "Wetlands (WL)/6F8804DC-29E7-4CC2-B2E6-2D292E70B6EC.JPEG",
+          "src": "/assets/morpheus/19-001.webp",
+          "width": 622,
+          "height": 800,
+          "bytes": 33100,
+          "sourceBytes": 192640
+        },
+        {
+          "id": "19-002",
+          "source": "Wetlands (WL)/543F54D3-83C6-4850-8517-293710366B57 copy.JPEG",
+          "src": "/assets/morpheus/19-002.webp",
+          "width": 800,
+          "height": 634,
+          "bytes": 28190,
+          "sourceBytes": 169744
+        },
+        {
+          "id": "19-003",
+          "source": "Wetlands (WL)/543F54D3-83C6-4850-8517-293710366B57.JPEG",
+          "src": "/assets/morpheus/19-003.webp",
+          "width": 800,
+          "height": 634,
+          "bytes": 28190,
+          "sourceBytes": 169744
+        },
+        {
+          "id": "19-004",
+          "source": "Wetlands (WL)/42712479-81BD-4681-929A-8D7FD4DA31C6.PNG",
+          "src": "/assets/morpheus/19-004.webp",
+          "width": 797,
+          "height": 800,
+          "bytes": 32484,
+          "sourceBytes": 1095512
+        },
+        {
+          "id": "19-005",
+          "source": "Wetlands (WL)/B25E9506-CC36-49C7-9267-7F3E245A6194.PNG",
+          "src": "/assets/morpheus/19-005.webp",
+          "width": 622,
+          "height": 800,
+          "bytes": 32922,
+          "sourceBytes": 1121635
+        },
+        {
+          "id": "19-006",
+          "source": "Wetlands (WL)/Jesee .png",
+          "src": "/assets/morpheus/19-006.webp",
+          "width": 800,
+          "height": 742,
+          "bytes": 49236,
+          "sourceBytes": 5140235
+        },
+        {
+          "id": "19-007",
+          "source": "Wetlands (WL)/The Good Eye secutity for the people of morpheus city.png",
+          "src": "/assets/morpheus/19-007.webp",
+          "width": 800,
+          "height": 798,
+          "bytes": 16610,
+          "sourceBytes": 686315
+        },
+        {
+          "id": "19-008",
+          "source": "Wetlands (WL)/The sirens in morpheus city.png",
+          "src": "/assets/morpheus/19-008.webp",
+          "width": 800,
+          "height": 578,
+          "bytes": 47262,
+          "sourceBytes": 4250353
+        },
+        {
+          "id": "19-009",
+          "source": "Wetlands (WL)/White Eye.png",
+          "src": "/assets/morpheus/19-009.webp",
+          "width": 800,
+          "height": 798,
+          "bytes": 17348,
+          "sourceBytes": 4111939
+        },
+        {
+          "id": "19-010",
+          "source": "Wetlands (WL)/White Ninja.png",
+          "src": "/assets/morpheus/19-010.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 6042,
+          "sourceBytes": 2536693
+        }
+      ]
+    }
+  ],
+  "totalImages": 229,
+  "sourceBytes": 474384016,
+  "webBytes": 7254902
+}
