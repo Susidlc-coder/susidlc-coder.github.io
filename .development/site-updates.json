@@ -4,8 +4,10 @@
     "status": "New release"
   },
   "panDeCadaDia": {
-    "title": "Video · Capítulo 2",
-    "subtitle": "Séptima Morada",
-    "url": "/pan-de-cada-dia/las-moradas/septima-morada/capitulo-2/"
+    "title": "Las Moradas",
+    "subtitle": "Libro completo",
+    "url": "/pan-de-cada-dia/las-moradas/",
+    "titleEn": "Las Moradas",
+    "subtitleEn": "Complete book in Spanish"
   }
 }

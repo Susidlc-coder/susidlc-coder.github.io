@@ -22,8 +22,8 @@ def update_bilingual(root,catalog=None,check=False):
         if status:title+='<span class="update-status"> · '+esc(status)+'</span>'
         pan_title=pan['title'];pan_subtitle=pan.get('subtitle','')
         if en:
-            pan_title=pan_title.replace('Capítulo','Chapter')
-            pan_subtitle=pan_subtitle.replace('Séptima Morada','Seventh Dwelling')
+            pan_title=pan.get('titleEn',pan_title.replace('Capítulo','Chapter'))
+            pan_subtitle=pan.get('subtitleEn',pan_subtitle.replace('Séptima Morada','Seventh Dwelling'))
         pan_title=esc(pan_title)
         if pan_subtitle:pan_title+=' <span aria-hidden="true">·</span> <em>'+esc(pan_subtitle)+'</em>'
         block='''<!-- HOME UPDATES START -->

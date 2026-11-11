@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "source": "7_Septima Morada/Cap 3_M7/Texto Adaptado _ Capítulo 3_Septima Morada.docx",
+      "chapter": 3,
+      "version": "adaptado",
+      "sha256": "d15bd817244a46c86eb53904f879ecd4b48afafbccfbc9d8403f854fd62fdebf",
+      "paragraphs": 83
+    },
+    {
+      "source": "7_Septima Morada/Cap 3_M7/Texto original (1577) _ Capítulo 3_Septima Morada.docx",
+      "chapter": 3,
+      "version": "original",
+      "sha256": "ecdb37f07617eac7dca06b85105466fd034ecd7de1ce872a5603b0b253d79f5f",
+      "paragraphs": 73
+    },
+    {
+      "source": "7_Septima Morada/Cap 4_M7/Texto Adaptado _ Capítulo 4_Septima Morada.docx",
+      "chapter": 4,
+      "version": "adaptado",
+      "sha256": "ebee45c4ece66db64727bc68d11540701f565008bd1ca09b49bcaae9e6b73351",
+      "paragraphs": 118
+    },
+    {
+      "source": "7_Septima Morada/Cap 4_M7/Texto original (1577) _ Capítulo 4_Septima Morada.docx",
+      "chapter": 4,
+      "version": "original",
+      "sha256": "e322f978587d360b2cbb74995732ece65cef1ee2ae025089294a937022faca03",
+      "paragraphs": 71
+    }
+  ],
+  "summary": {
+    "3": "Teresa describe los frutos de la unión con Dios: el olvido de sí, el amor a quienes hacen daño y el deseo de vivir para servir. La paz interior no elimina los trabajos ni la necesidad de humildad, pero permite afrontarlos con mayor fortaleza y confianza en Dios.",
+    "4": "Teresa concluye que la oración y la unión con Dios deben dar fruto en obras. Marta y María han de caminar juntas: contemplar y servir. Invita a cultivar la humildad y el amor en lo que está a nuestro alcance, porque el valor de las obras está en el amor con que se hacen."
+  },
+  "englishSummary": {
+    "3": "Teresa describes the fruits of union with God: self-forgetfulness, love for those who cause harm, and the desire to live in service. Inner peace does not remove suffering or the need for humility, but helps the soul face them with greater strength and trust in God.",
+    "4": "Teresa concludes that prayer and union with God must bear fruit in deeds. Martha and Mary must walk together: contemplation and service. She encourages humility and love in what lies within our reach, because the value of our deeds rests in the love with which we do them."
+  },
+  "englishReading": "Spanish texts explicitly labeled; translation pending"
+}
