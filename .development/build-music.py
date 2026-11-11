@@ -38,6 +38,7 @@ def footer(data):
     return f'''<footer class="wrap site-footer editorial-footer"><div class="footer-inner"><div class="footer-main"><div class="footer-identity"><a class="footer-brand" href="/index.html" aria-label="Susidlc World, home">susidlc <em>world.</em></a></div><div class="footer-music"><a class="footer-heading" href="/music.html">MUSIC<span aria-hidden="true"> ↗</span></a><div class="footer-related"><a href="{esc(data['artistUrl'])}" target="_blank" rel="noopener noreferrer" aria-label="Spotify (opens in a new tab)">Spotify</a><a href="https://www.instagram.com/susidlc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)">Instagram</a></div></div><div class="footer-contact-group"><h2>Say hello</h2><a class="footer-action" href="mailto:{esc(data['contactEmail'])}">Contact me<span aria-hidden="true"> ↗</span></a></div></div><div class="footer-baseline"><p class="footer-copyright">© 2026 Susidlc</p><a href="#top">Go to top ↑</a></div></div></footer>'''
 
 def page(title, description, route, image, content, data, structured):
+    discovery_style = '<link rel="stylesheet" href="/assets/music-discovery.css?v=20261111-discovery-1">' if route == '/music.html' else ''
     schema = json.dumps(structured, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -47,19 +48,20 @@ def page(title, description, route, image, content, data, structured):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{DOMAIN}{image}">
 <link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=6"><link rel="stylesheet" href="/assets/music.css?v=9">
 <script src="/assets/app.js?v=2" defer></script><script src="/assets/music.js?v=2" defer></script>
-<script type="application/ld+json">{schema}</script></head><body id="top" class="music-page">
+<script type="application/ld+json">{schema}</script>{discovery_style}</head><body id="top" class="music-page">
 {header()}<main id="main">{content}</main>{footer(data)}
 </body></html>'''
 
 def album_route(album):
     return f'/music/{album["slug"]}/'
 
-def artist_link(url):
-    return f'<a class="artist-spotify" href="{esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="Listen to Susidlc on Spotify (opens in a new tab)">{ICON}<span>Listen on<br><strong>Spotify</strong></span><span class="artist-arrow" aria-hidden="true">↗</span></a>'
+def discovery_link():
+    return runpy.run_path(str(DEV / 'music-discovery.py'))['render']('en')
+
 
 def main_page(data, manifest):
     content = f'''<section class="page-intro music-intro wrap"><p class="eyebrow">01 / THE LISTENING ROOM</p><h1><span>001-SDLC</span><em>_music</em></h1>
-{artist_link(data['artistUrl'])}<div class="intro-line"><p>Cinematic and experimental music for listeners, filmmakers, movement artists, and visual storytellers. Available worldwide for original scores, licensing, and creative collaboration.</p></div></section>'''
+{discovery_link()}<div class="intro-line"><p>Cinematic and experimental music for listeners, filmmakers, movement artists, and visual storytellers. Available worldwide for original scores, licensing, and creative collaboration.</p></div></section>'''
     upcoming = data.get('latestRelease') or data.get('upcoming')
     if upcoming:
         art = f'<div class="upcoming-art">{picture(upcoming["cover"], upcoming["coverAlt"], manifest, True, "(max-width: 720px) 158px, 195px")}</div>' if upcoming.get('cover') else ''

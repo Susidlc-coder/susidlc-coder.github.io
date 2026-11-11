@@ -1,0 +1,109 @@
+/* Editorial music discovery: scoped to the landing intro, with no image/video payload. */
+.music-page .music-intro {
+  grid-template-columns:minmax(0,1fr) minmax(280px,1fr);
+  grid-template-areas:"label label" "title discovery" "description description";
+  column-gap:clamp(28px,5vw,80px);
+}
+.music-page .music-discovery {
+  grid-area:discovery;
+  align-self:center;
+  justify-self:start;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  width:min(100%,330px);
+  min-height:250px;
+  padding:24px 28px;
+  margin:18px 0 28px clamp(0px,3vw,44px);
+  border:1px solid #b59c6699;
+  background:linear-gradient(120deg,#071e19 0%,#0e3027 23%,#24513e 42%,#153c2e 55%,#09241e 78%,#14372b 100%);
+  background-size:260% 220%;
+  animation:discovery-metal 13s ease-in-out infinite alternate;
+  color:#f1d99f;
+  text-align:center;
+  text-decoration:none;
+  box-shadow:inset 0 1px #f5dfad28,0 12px 32px #071e1914;
+  transition:border-color .3s,box-shadow .3s,transform .3s;
+}
+.music-discovery::before {
+  content:"";position:absolute;inset:6px;border:1px solid #dbc28c20;pointer-events:none;z-index:-1;
+}
+.music-discovery::after {
+  content:"";position:absolute;inset:-120% -70%;pointer-events:none;z-index:-1;
+  background:linear-gradient(110deg,transparent 40%,#e9d2a308 46%,#fff1c522 50%,#e9d2a308 54%,transparent 60%);
+  transform:translateX(-22%);animation:discovery-sheen 10s ease-in-out infinite alternate;
+}
+.music-discovery .discovery-icon {display:block;line-height:0;}
+.music-discovery .discovery-icon svg {width:39px;height:39px;filter:drop-shadow(0 0 8px #e4c98a20);}
+.music-discovery .discovery-copy {display:flex;flex-direction:column;align-items:center;gap:12px;}
+.music-discovery .discovery-kicker {font:9px/1.4 'Helvetica Neue',Arial,sans-serif;letter-spacing:.19em;color:#d6bd85;}
+.music-discovery .discovery-question {
+  font:italic 34px/1.08 'Iowan Old Style','Palatino Linotype','Book Antiqua',Georgia,serif;
+  letter-spacing:-.035em;
+  background:linear-gradient(105deg,#d9b56b 0%,#fff1cc 35%,#e0c18b 55%,#fff3d6 75%,#cfa259 100%);
+  background-size:200% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;
+  animation:discovery-metal 13s ease-in-out infinite alternate;
+}
+.music-discovery .discovery-action {display:inline-flex;align-items:center;gap:22px;padding:1px 0 6px;border-bottom:1px solid #e8cf9180;font:12px/1.5 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em;color:#f7e5ba;}
+.music-discovery .discovery-action>span {font-size:18px;line-height:1;transition:transform .3s;}
+.music-page .music-discovery:hover {border-color:#edd49d;box-shadow:inset 0 1px #f5dfad40,0 12px 36px #071e1933;transform:translateY(-2px);}
+.music-discovery:hover .discovery-action>span {transform:translate(2px,-2px);}
+.music-page .music-discovery:focus-visible {outline:2px solid #efc148;outline-offset:5px;}
+@keyframes discovery-metal {from{background-position:0% 45%}to{background-position:100% 55%}}
+@keyframes discovery-sheen {from{transform:translateX(-22%)}to{transform:translateX(22%)}}
+@media(max-width:900px) and (min-width:721px) {
+ .music-page .music-intro {grid-template-columns:minmax(0,1fr) 260px;column-gap:20px;}
+ .music-page .music-intro h1 {font-size:clamp(62px,8.5vw,76px);}
+ .music-page .music-discovery {padding-inline:18px;min-height:230px;margin-left:0;}
+ .music-discovery .discovery-question {font-size:30px;}
+}
+@media(max-width:720px) {
+ .music-page .music-intro {grid-template-columns:minmax(0,1fr);grid-template-areas:"label" "title" "description" "discovery";}
+ .music-page .music-discovery {justify-self:center;width:min(100%,460px);min-height:0;flex-direction:row;gap:22px;padding:24px;margin:23px 0 4px;}
+ .music-discovery .discovery-copy {align-items:flex-start;gap:9px;text-align:left;}
+ .music-discovery .discovery-question {font-size:28px;}
+ .music-discovery .discovery-kicker {font-size:8px;letter-spacing:.15em;}
+ .music-discovery .discovery-icon svg {width:40px;height:40px;}
+}
+@media(prefers-reduced-motion:reduce) {
+ .music-page .music-discovery,.music-discovery::after,.music-discovery .discovery-question {animation:none;}
+ .music-page .music-discovery,.music-discovery .discovery-action>span {transition:none;}
+ .music-page .music-discovery:hover,.music-discovery:hover .discovery-action>span {transform:none;}
+}
+
+/* Approved editorial direction, larger icon and direct test entry. */
+.music-page .music-intro{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(28px,4vw,64px)}
+.music-page .music-discovery{width:min(100%,400px);min-height:0;margin:20px 0 28px 0;justify-self:center;box-shadow:inset 0 1px #fff3cf14;}
+.music-discovery::before{display:none}
+.music-discovery .discovery-copy{gap:17px}
+.music-discovery .discovery-icon svg{width:76px;height:76px;filter:none}
+.music-discovery .discovery-question{font-style:normal;font-size:34px;line-height:1.05;letter-spacing:-.035em;animation:none;background:linear-gradient(110deg,#d3ad67,#f8e5b8 40%,#f0d8a0 70%,#d3ad67);background-clip:text;-webkit-background-clip:text}
+.music-discovery .discovery-question em{font-family:inherit;font-style:italic}
+.music-discovery .discovery-action{font-size:12px;letter-spacing:.045em;gap:20px;padding-bottom:5px}
+.music-page .music-discovery:hover{transform:none;box-shadow:inset 0 1px #fff3cf28,0 8px 24px #00000010}
+/* 01 — horizontal editorial invitation. */
+.music-page .music-discovery{flex-direction:row;padding:34px 30px;gap:25px;text-align:left;border-color:#b69b614a;background-image:linear-gradient(115deg,#071e18 0%,#0b2921 28%,#1a3e30 50%,#0b2c22 72%,#081f19 100%);}
+.music-page .discovery-icon{flex:none;}
+.music-page .discovery-copy{align-items:flex-start}
+
+@media(max-width:1050px) and (min-width:721px){
+ .music-page .music-discovery{padding:28px 22px;gap:17px;}
+ .music-discovery .discovery-icon svg{width:68px;height:68px;}
+ .music-discovery .discovery-question{font-size:30px;}
+}
+@media(max-width:720px){
+ .music-page .music-intro{grid-template-columns:minmax(0,1fr)}
+ .music-page .music-discovery{margin:24px 0 8px;padding:28px 24px;gap:22px;width:min(100%,440px);}
+ .music-discovery .discovery-icon svg{width:64px;height:64px;}
+ .music-discovery .discovery-question{font-size:29px;}
+}
+@media(max-width:359px){
+ .music-page .music-discovery{padding:24px 17px;gap:16px;}
+ .music-discovery .discovery-icon svg{width:52px;height:52px;}
+ .music-discovery .discovery-question{font-size:26px;}
+}

@@ -1,0 +1,9 @@
+/* Larger, readable guidance; poem wording and artwork stay unchanged. */
+#susi-poems .sp-word-instruction {font-size:23px;line-height:1.45;margin-top:24px;margin-bottom:12px;}
+#susi-poems .sp-idle {font-size:16px;line-height:1.6;}
+#susi-poems .sp-seven-progress {font-size:16px;line-height:1.5;}
+@media(max-width:720px){
+ #susi-poems .sp-word-instruction {font-size:19px;line-height:1.5;margin-top:18px;margin-bottom:10px;}
+ #susi-poems .sp-idle {font-size:15px;line-height:1.5;}
+ #susi-poems .sp-seven-progress {font-size:14px;line-height:1.5;}
+}
