@@ -1,0 +1,20 @@
+/* Match ordinary song text (16px / 1.75), not the larger Scene typography. */
+.moradas-page .cover-summary,
+.moradas-page .morada-summary,
+.moradas-page .index-heading > p,
+.moradas-page .chapter-entry,
+.moradas-page .chapter-entry > span:last-child {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.moradas-page .chapter-entry small,
+.moradas-page .index-heading > p span {
+  font-size: 14px;
+}
+.moradas-page .chapter-entry > span:last-child {
+  text-align: right;
+  flex-shrink: 0;
+}
+@media (max-width: 380px) {
+  .moradas-page .chapter-entry { gap: 12px; }
+}
