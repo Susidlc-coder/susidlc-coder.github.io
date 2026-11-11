@@ -1356,7 +1356,7 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Triangul
   function fit(word,box,scale,textScale=opts.textScale){
     const tokens=word.split(/\s+/),usableW=Math.max(1,box.w-4/scale),usableH=Math.max(1,box.h-4/scale);
     const desktop=(q('[data-art]').getBoundingClientRect().width>=650);
-    const minPx=desktop?14:11.5,targetPx=Math.min(desktop?27:20,Math.max(desktop?19:14,Math.sqrt(box.w*box.h)*scale/(desktop?4.5:6)))*textScale/100;
+    const minPx=desktop?14:11.5,targetPx=Math.min(desktop?34:25,Math.max(desktop?24:18,Math.sqrt(box.w*box.h)*scale/(desktop?3.6:4.8)))*textScale/100;
     let best=null;
     const arrangements=[tokens.length===2?[word]:tokens];if(tokens.length===2)arrangements.push(tokens);
     for(const lines of arrangements){
@@ -1376,7 +1376,35 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Triangul
     }
     const model=geometryCache.get(geometryKey),pageBank=PAGES[page].words,bank=compact?PAGES[page].compactWords.map(text=>pageBank.find(word=>word.text===text)):pageBank;
     const count=totalClicks%7,excluded=count?choices.slice(-count).map(c=>c.word):[];
-    return assignUniqueWords(model.cells,bank,{excluded,scale,compact,shape:PAGES[page].kind,label:w=>displayWord(w.text,page),fit:(word,cell)=>fit(displayWord(word.text,page),cell.box,scale,100)||fit(word.text,cell.box,scale,100)});
+    const assigned=assignUniqueWords(model.cells,bank,{excluded,scale,compact,shape:PAGES[page].kind,label:w=>displayWord(w.text,page),fit:(word,cell)=>fit(displayWord(word.text,page),cell.box,scale,100)||fit(word.text,cell.box,scale,100)});
+    const centered=assigned.map((cell,i)=>{
+      if(cell.decorative)return cell;
+      const original=model.cells[i].box;
+      const coords=cell.d.match(/-?\d+(?:\.\d+)?/g).map(Number);
+      const rectangular=/^[MLZmlz\d.,\s-]+$/.test(cell.d)&&new Set(coords.filter((_,j)=>j%2===0)).size===2&&new Set(coords.filter((_,j)=>j%2===1)).size===2;
+      const box=rectangular?{...cell.box,x:original.x+original.w/2-cell.box.w/2,y:original.y+original.h/2-cell.box.h/2}:original;
+      return {...cell,box};
+    });
+    // Keep the same words and destinations; reserve wider cells for longer labels.
+    const occupied=centered.filter(cell=>!cell.decorative);
+    const score=(word,cell)=>{
+      const text=displayWord(word,page),fitted=fit(text,cell.box,scale,100);
+      if(!fitted)return -Infinity;
+      const weight=1+text.length/8+(text.includes(' ')?1:0);
+      return weight*(fitted.screenSize-3*(fitted.lines.length-1));
+    };
+    for(let pass=0;pass<occupied.length;pass++){
+      let changed=false;
+      for(let i=0;i<occupied.length;i++)for(let j=i+1;j<occupied.length;j++){
+        const a=occupied[i],b=occupied[j];
+        if(score(a.word,b)+score(b.word,a)>score(a.word,a)+score(b.word,b)+.1){
+          [a.word,b.word]=[b.word,a.word];[a.dest,b.dest]=[b.dest,a.dest];changed=true;
+        }
+      }
+      if(!changed)break;
+    }
+    occupied.forEach(cell=>{cell.fit=fit(displayWord(cell.word,page),cell.box,scale,100)||cell.fit;});
+    return centered;
   }
 
   function save(){try{const host=stateHost;if(host?.setWidgetState){const p=host.setWidgetState({modelContent:{version:4,poema:PAGES[active].title,pagina:active+1,destinosVisibles:false,palabrasOcultas:wordsHidden,palabras:choices.slice(-7).map(x=>x.word),elecciones:totalClicks,proximaCancion:7-totalClicks%7,recomendacion:recentSongs.at(-1)||null,palabrasConPoema:choices.slice(-7).map(x=>({palabra:x.word,poema:PAGES[x.page].title}))},privateContent:{version:4,editorialVersion:EDITORIAL_VERSION,active,wordsHidden,history,choices:choices.slice(-7),totalClicks,recentSongs,trail:opts.trail,textScale:opts.textScale,routePage,routeDeck:routeDeck.slice(),previousDecks:Array.from(previousDecks)}});p?.catch?.(()=>{});}}catch(e){}}
@@ -1492,7 +1520,7 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Triangul
           let offset=0;const pieces=(breaks[word.toLowerCase()]||word).split('|');
           return pieces.map((piece,i)=>{const text=word.slice(offset,offset+piece.length);offset+=piece.length;return {text,join:i===0&&wordIndex?' ':'',wordEnd:i===pieces.length-1};});
         });
-        const usableH=Math.max(1,cell.box.h-inset/scale),targetPx=Math.min(20,Math.max(14,Math.sqrt(cell.box.w*cell.box.h)*scale/6))*opts.textScale/100;
+        const usableH=Math.max(1,cell.box.h-inset/scale),targetPx=Math.min(25,Math.max(18,Math.sqrt(cell.box.w*cell.box.h)*scale/4.8))*opts.textScale/100;
         let readable=null,best=fitted;
         function consider(candidateLines,hyphens){
           let candidateSize=Math.min(targetPx/scale,usableH/(candidateLines.length*1.13));
@@ -1555,6 +1583,14 @@ PAGES.forEach((p,i)=>Object.assign(p,{shape:["Threshold", "Fibonacci", "Triangul
       anchor.addEventListener('pointerleave',e=>{if(e.pointerType!=='touch')releaseCell(anchor);});
       anchor.addEventListener('focus',()=>{lightCell(anchor);selectCell(cell);});anchor.addEventListener('blur',()=>releaseCell(anchor));
       anchor.addEventListener('click',e=>{e.preventDefault();followCell(cell);});group.append(anchor);
+    });
+    // Centre the rendered glyph block, not the font's inherited SVG baseline.
+    group.querySelectorAll('[data-label-box]').forEach(anchor=>{
+      const box=JSON.parse(anchor.getAttribute('data-label-box'));
+      anchor.querySelectorAll('.sp-word,.sp-route-code').forEach(text=>{
+        const bounds=text.getBBox();
+        if(bounds.width&&bounds.height)text.setAttribute('transform','translate('+(box.x+box.w/2-bounds.x-bounds.width/2)+','+(box.y+box.h/2-bounds.y-bounds.height/2)+')');
+      });
     });
     q('[data-art]').dataset.cellCount=cells.length;q('[data-art]').dataset.compact=String(compact);colorMotion?.refresh();
   }
