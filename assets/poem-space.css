@@ -1,0 +1,21 @@
+/* Journey spacing and shared music bar; approved November 11, 2026. */
+#susi-poems .sp-selection[hidden],
+#susi-poems .sp-tools[hidden]{display:none}
+#susi-poems .sp-music-destinations{display:flex;align-items:center;gap:8px;margin:24px 0 30px;padding:8px 10px;border:1px solid #b9768c;background:linear-gradient(110deg,#302020,#562733 80%,#6b2d40);color:#fff2e3}
+#susi-poems .sp-music-label{flex:1;min-width:0;font:italic 19px/1.3 var(--selective-serif,Georgia,serif)}
+#susi-poems .sp-music-actions{display:flex;flex-shrink:0}
+#susi-poems .sp-music-destination{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 8px;box-sizing:border-box;color:inherit;text-decoration:none;font:400 13px/1.4 'Helvetica Neue',Arial,sans-serif;white-space:nowrap;transition:background .2s}
+#susi-poems .sp-music-destination+.sp-music-destination{border-left:1px solid #f2dac340}
+#susi-poems .sp-music-destination svg{width:19px;height:19px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+#susi-poems .sp-music-destination:hover{background:#fff2e312}
+#susi-poems .sp-music-destination:focus-visible{outline:2px solid #e7c268;outline-offset:3px}
+@media(max-width:720px){
+ #susi-poems .sp-heading{margin-bottom:12px}
+ #susi-poems .sp-music-destinations{margin:18px 0 26px}
+}
+@media(max-width:360px){
+ #susi-poems .sp-music-destinations{padding:8px}
+ #susi-poems .sp-music-label{font-size:18px}
+ #susi-poems .sp-music-destination{padding:0 5px;gap:5px;font-size:12px}
+ #susi-poems .sp-music-destination svg{width:18px;height:18px}
+}
