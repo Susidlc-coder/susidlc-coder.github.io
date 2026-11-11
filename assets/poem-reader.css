@@ -14,3 +14,7 @@
 #susi-poems .sp-reading-column-title{font:11px/1.5 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em;margin:0 0 22px;color:var(--quiet)}
 @media(max-width:720px){#susi-poems .sp-reading-parallel{grid-template-columns:1fr;gap:28px}#susi-poems .sp-reading-column+.sp-reading-column{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:28px}}
 @media(max-width:480px){#susi-poems .sp-reading-controls{grid-template-columns:1fr;gap:12px}#susi-poems .sp-reading-compare{justify-self:start}}
+
+/* Comparison needs two readable columns; keep ES/EN on small screens. */
+#susi-poems .sp-reading-compare[hidden]{display:none}
+@media(max-width:720px){#susi-poems .sp-reading-compare{display:none}#susi-poems .sp-reading-controls{grid-template-columns:1fr}}

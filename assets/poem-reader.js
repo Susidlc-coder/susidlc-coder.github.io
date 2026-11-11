@@ -6,13 +6,15 @@ export function createPoemReader({root,pages,originals,translations,lang}){
   let labels=messages[lang]||messages.es;
   const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
   let readingLang=lang==='en'?'en':'es',index=0,parallel=false;
+  const compactReading=matchMedia('(max-width:720px)');
   const controls=make('div','sp-reading-controls'),languageStack=make('div','sp-reading-language-stack');
   const toolbar=make('div','sp-reading-languages');toolbar.setAttribute('role','group');toolbar.setAttribute('aria-label',labels.group);const languageLabel=make('span','sp-reading-language-label',labels.group);toolbar.append(languageLabel);
   const buttons=['en','es'].map(code=>{const b=make('button','',code.toUpperCase());b.type='button';b.setAttribute('data-reading-language',code);b.lang=readingLang;b.setAttribute('aria-label',code==='en'?labels.readEn:labels.readEs);b.addEventListener('click',()=>{readingLang=code;render();});toolbar.append(b);return b;});
   const note=make('p','sp-reading-version');note.setAttribute('aria-live','polite');
   const compare=make('button','sp-reading-compare',labels.parallel);compare.type='button';compare.setAttribute('aria-pressed','false');
   if(!body.id)body.id='sp-reading-content';compare.setAttribute('aria-controls',body.id);
-  compare.addEventListener('click',()=>{parallel=!parallel;render();});
+  compare.addEventListener('click',()=>{if(compactReading.matches)return;parallel=!parallel;render();});
+  compactReading.addEventListener('change',()=>{const hadFocus=document.activeElement===compare;if(compactReading.matches)parallel=false;render();if(hadFocus&&compactReading.matches)buttons.find(b=>b.getAttribute('data-reading-language')===readingLang).focus();});
   languageStack.append(toolbar,note);controls.append(languageStack,compare);body.before(controls);
   function versionName(code){return code==='es'?labels.original:labels.translation;}
   function paragraphs(code){return code==='es'?originals[index].paragraphs:translations[index].paragraphs;}
@@ -22,6 +24,8 @@ export function createPoemReader({root,pages,originals,translations,lang}){
     section.append(heading,...paragraphs(code).map(text=>make('p','',text)));return section;
   }
   function render(){
+    if(compactReading.matches)parallel=false;
+    compare.hidden=compactReading.matches;
     const poem=originals[index];labels=messages[readingLang];body.lang=readingLang;
     toolbar.lang=readingLang;toolbar.setAttribute('aria-label',labels.group);languageLabel.textContent=labels.group;note.lang=readingLang;compare.lang=readingLang;compare.textContent=labels.parallel;
     dialog.setAttribute('data-reading-parallel',String(parallel));body.classList.toggle('sp-reading-parallel',parallel);
