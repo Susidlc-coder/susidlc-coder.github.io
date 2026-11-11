@@ -20,3 +20,7 @@ Whenever the owner supplies a new music release, song, chapter, reading, or vide
 The owner can give updates in ordinary English or Spanish with the album/chapter name, content, and links or attachments. Do the catalog/page/banner work as part of that request; do not require a special form. See `.development/home-updates.md` for examples and the current sources.
 
 Older architecture and maintenance notes describe earlier site revisions. Current approved pages, source data, these instructions, and the owner's latest requests take precedence over those obsolete descriptions.
+
+## Consistent site navigation
+
+Every public site header, including the Poemas gateway, interactive journey, and all ES/EN pages, must contain Música/Music, Poemas/Poems, Pan de Cada Día, and Morpheus in that order. Use localized section URLs and `/quiz` for Poemas. Preserve each section’s approved header colors. Poemas uses `poems-standard-header.css` with the shared portrait, gold wordmark, gold active/hover underline and 899px mobile breakpoint; retain its rose background. Before preview/publication, run `python3 .development/check-navigation.py` (or `--ref` with reviewed `--overlay` files for a clean release candidate). Update existing static headers and generators together when menu options change.
