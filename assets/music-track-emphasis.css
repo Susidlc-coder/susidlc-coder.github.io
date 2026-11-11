@@ -1,0 +1,8 @@
+/* Approved expanded-track typography. Preserve the original section order. */
+.album-page .record-track .track-content h4 {font-size:12px;line-height:1.5;letter-spacing:1px;}
+.album-page .record-track .track-content p {font-size:16px;line-height:1.75;}
+.album-page .record-track .track-content .track-about p {font-family:var(--sans,Arial,sans-serif);font-size:16px;line-height:1.75;color:var(--muted);}
+.album-page .record-track .track-content .track-visual-reference p {font-family:var(--serif,Georgia,serif);font-size:24px;line-height:1.6;color:var(--ink);}
+@media(max-width:700px){
+ .album-page .record-track .track-content .track-visual-reference p {font-size:22px;}
+}

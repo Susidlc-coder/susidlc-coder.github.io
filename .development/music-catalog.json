@@ -590,6 +590,7 @@
     "status": "Out now",
     "link": "https://open.spotify.com/album/4ASnhnwrDU1A6FvpZY0x9T",
     "linkLabel": "Listen now",
-    "label": "NEW RELEASE"
+    "label": "NEW RELEASE",
+    "showBanner": false
   }
 }

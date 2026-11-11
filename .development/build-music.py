@@ -48,7 +48,7 @@ def page(title, description, route, image, content, data, structured):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{DOMAIN}{image}">
 <link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=6"><link rel="stylesheet" href="/assets/music.css?v=9">
 <script src="/assets/app.js?v=2" defer></script><script src="/assets/music.js?v=2" defer></script>
-<script type="application/ld+json">{schema}</script>{discovery_style}</head><body id="top" class="music-page">
+<script type="application/ld+json">{schema}</script>{discovery_style}<link rel="stylesheet" href="/assets/music-track-emphasis.css?v=20261111-2"></head><body id="top" class="music-page">
 {header()}<main id="main">{content}</main>{footer(data)}
 </body></html>'''
 
@@ -63,7 +63,7 @@ def main_page(data, manifest):
     content = f'''<section class="page-intro music-intro wrap"><p class="eyebrow">01 / THE LISTENING ROOM</p><h1><span>001-SDLC</span><em>_music</em></h1>
 {discovery_link()}<div class="intro-line"><p>Cinematic and experimental music for listeners, filmmakers, movement artists, and visual storytellers. Available worldwide for original scores, licensing, and creative collaboration.</p></div></section>'''
     upcoming = data.get('latestRelease') or data.get('upcoming')
-    if upcoming:
+    if upcoming and upcoming.get('showBanner', True):
         art = f'<div class="upcoming-art">{picture(upcoming["cover"], upcoming["coverAlt"], manifest, True, "(max-width: 720px) 158px, 195px")}</div>' if upcoming.get('cover') else ''
         button = external(upcoming['link'], upcoming['linkLabel'], 'spotify-button release-listen', icon=True) if upcoming.get('link') and upcoming.get('linkLabel') else ''
         title = esc(upcoming['title'])
@@ -96,7 +96,7 @@ def track_html(track):
     tags = '<span class="track-tags">' + ''.join(f'<span>{esc(tag)}</span>' for tag in labels) + '</span>' if labels else ''
     duration = f'<span class="track-duration">{esc(track["duration"])}</span>' if track.get('duration') else ''
     panel = optional_field(track.get('about'), 'About the track', 'track-about')
-    facts = ''.join(optional_field(track.get(field), title, cls) for field, title, cls in [('mood', 'Mood and atmosphere', ''), ('genre', 'Genre and musical style', ''), ('instrumentation', 'Instrumentation and sound', ''), ('scene', 'Scene or visual suggestion', 'track-scene'), ('additional_credits', 'Additional credits', 'track-scene')])
+    facts = ''.join(optional_field(track.get(field), title, cls) for field, title, cls in [('mood', 'Mood and atmosphere', ''), ('genre', 'Genre and musical style', ''), ('instrumentation', 'Instrumentation and sound', ''), ('scene', 'Visual reference', 'track-scene track-visual-reference'), ('additional_credits', 'Additional credits', 'track-scene')])
     if facts:
         panel += '<div class="track-facts">' + facts + '</div>'
     if track.get('lyrics'):
