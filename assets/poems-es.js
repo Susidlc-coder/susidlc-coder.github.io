@@ -2,7 +2,7 @@ import {prepareResultNavigation} from './result-navigation.js?v=20261013-story-a
 import {selectReflections} from './result-reflections.js?v=20261013-story-adapted-meanings-1';
 import {assignUniqueWords,normalizeWord} from './unique-labels.js?v=20261013-story-adapted-meanings-1';
 import {POEM_EN} from './poem-translations.js?v=20261013-story-adapted-meanings-1';
-import {createPoemReader} from './poem-reader.js?v=20261111-mobile-reader-1';
+import {createPoemReader} from './poem-reader.js?v=20261111-reader-inline-original-1';
 import {createColorMotion} from './poem-color-motion.js?v=20261013-story-adapted-meanings-1';
 import {prepareResultSharing} from './result-sharing.js?v=20261013-story-adapted-meanings-1';
 import {createRecommender} from './recommendation.js?v=20261013-story-adapted-meanings-1';
@@ -1407,7 +1407,7 @@ function buildPoemGeometry(kind,compact=false){
   function save(){try{const host=stateHost;if(host?.setWidgetState){const p=host.setWidgetState({modelContent:{version:4,poema:PAGES[active].title,pagina:active+1,destinosVisibles:false,palabrasOcultas:wordsHidden,palabras:choices.slice(-7).map(x=>x.word),elecciones:totalClicks,proximaCancion:7-totalClicks%7,recomendacion:recentSongs.at(-1)||null,palabrasConPoema:choices.slice(-7).map(x=>({palabra:x.word,poema:PAGES[x.page].title}))},privateContent:{version:4,editorialVersion:EDITORIAL_VERSION,active,wordsHidden,history,choices:choices.slice(-7),totalClicks,recentSongs,trail:opts.trail,textScale:opts.textScale,routePage,routeDeck:routeDeck.slice(),previousDecks:Array.from(previousDecks)}});p?.catch?.(()=>{});}}catch(e){}}
   function setMenu(open){const nav=q('[data-site-nav]'),toggle=q('[data-menu-toggle]');nav.dataset.open=String(open);toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Cerrar −':'Menú +';}
   function progress(){const done=totalClicks%7;const node=q('[data-seven-progress]');node.textContent='Tu recorrido · '+done+' de 7 palabras';node.dataset.step=String(done);node.setAttribute('aria-live','polite');}
-  const poemReader=createPoemReader({root,pages:PAGES,originals:POEMS,translations:POEM_EN,lang:LANG});
+  const poemReader=createPoemReader({root,pages:PAGES,originals:POEMS,translations:POEM_EN,lang:LANG,songs:SONGS});
   function readPoem(index=active){poemReader.open(Number.isInteger(index)?index:active);}
   let recentSongs=[];
   let recentVerses=[];try{recentVerses=JSON.parse(sessionStorage.getItem('susi-recent-verses')||'[]').filter(id=>typeof id==='string').slice(-4);}catch(e){}

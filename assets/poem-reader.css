@@ -1,20 +1,55 @@
-#susi-poems .sp-reading-controls{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 22px;align-items:start;margin:-4px 0 22px}
+/* Reader follows the existing site day/evening selection; scoped to poem reading. */
+#susi-poems .sp-read-dialog{--reader-paper:#f2eee5;--reader-ink:#33241e;--reader-muted:#76685b;--reader-rule:#cfc4b4;--reader-controls:#e8e1d7;--reader-heading:linear-gradient(115deg,#eadde0,#e2ccd3);--reader-heading-ink:#562c3b;--reader-button:linear-gradient(115deg,#713447,#973653);--reader-button-ink:#fff1d2;color-scheme:light;max-width:min(820px,calc(100vw - 28px));background:var(--reader-paper);color:var(--reader-ink);border-color:var(--reader-rule)}
+body.evening #susi-poems .sp-read-dialog{--reader-paper:#242123;--reader-ink:#f0e7d5;--reader-muted:#c0b3b4;--reader-rule:#55484d;--reader-controls:#30292d;--reader-heading:linear-gradient(115deg,#39272e,#622d40);--reader-heading-ink:#f4ecdc;--reader-button:linear-gradient(115deg,#74364b,#973653);--reader-button-ink:#fff1d2;color-scheme:dark}
+#susi-poems .sp-read-dialog .sp-dialog-inner{padding:0}
+#susi-poems .sp-read-dialog .sp-dialog-top{position:relative;display:block;margin:0;padding:32px 66px 30px;border:0;background:var(--reader-heading);color:var(--reader-heading-ink);text-align:center}
+#susi-poems .sp-read-dialog .sp-dialog-title{font:italic 38px/1.14 Georgia,'Times New Roman',serif;max-width:620px;margin:0 auto}
+#susi-poems .sp-read-dialog .sp-dialog-close{position:absolute;right:12px;top:12px;display:grid;place-items:center;height:44px;min-width:44px;margin:0;color:var(--reader-heading-ink)}
+#susi-poems .sp-reading-controls{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:16px;align-items:start;margin:0;padding:18px 34px;background:var(--reader-controls);border-bottom:1px solid var(--reader-rule)}
 #susi-poems .sp-reading-language-stack{min-width:0}
-#susi-poems .sp-reading-languages{display:flex;align-items:center;gap:4px;font:11px/1.4 'Helvetica Neue',Arial,sans-serif}
-#susi-poems .sp-reading-language-label{margin-right:auto;color:var(--quiet)}
-#susi-poems .sp-reading-languages button,#susi-poems .sp-reading-compare{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:8px 12px;border:1px solid var(--rule);border-radius:2px;background:transparent;color:var(--ink);font:11px 'Helvetica Neue',Arial,sans-serif;cursor:pointer}
-#susi-poems .sp-reading-languages button[aria-pressed=true],#susi-poems .sp-reading-compare[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-#susi-poems .sp-reading-controls button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
-#susi-poems .sp-reading-version{font:11px/1.5 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em;color:var(--quiet);margin:8px 0 0;text-align:right}
-#susi-poems .sp-reading p{white-space:pre-line}
+#susi-poems .sp-reading-languages{display:flex;align-items:center;gap:3px;justify-content:flex-end}
+#susi-poems .sp-reading-languages button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;min-width:36px;gap:5px;padding:6px;border:1px solid transparent;border-radius:2px;background:none;color:var(--reader-muted);font:11px/1 'Helvetica Neue',Arial,sans-serif;cursor:pointer}
+#susi-poems .sp-reading-languages button[data-reading-language=es]{min-width:86px}
+#susi-poems .sp-reading-languages button[aria-pressed=true]{color:var(--reader-ink);border-color:var(--reader-rule);background:var(--reader-paper)}
+#susi-poems .sp-reading-compare{align-self:start;min-height:40px;padding:6px 2px;border:0;background:none;color:var(--reader-muted);font:11px/1.4 'Helvetica Neue',Arial,sans-serif;cursor:pointer;text-decoration:underline;text-decoration-color:#a69885;text-underline-offset:4px;white-space:nowrap}
+#susi-poems .sp-reading-compare[aria-pressed=true]{color:var(--reader-ink);font-weight:600}
+#susi-poems .sp-reading-controls button:focus-visible,#susi-poems .sp-reading-music-action:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+#susi-poems .sp-reading-version{font:10px/1 'Helvetica Neue',Arial,sans-serif;color:var(--reader-muted);margin:0;white-space:nowrap}
+#susi-poems .sp-reading-version[hidden],#susi-poems .sp-reading-compare[hidden],#susi-poems .sp-reading-music[hidden]{display:none}
+#susi-poems .sp-reading-music{display:flex;align-items:center;gap:16px;min-width:0;justify-self:start}
+#susi-poems .sp-reading-music-copy{display:flex;flex-direction:column;gap:4px;min-width:0}
+#susi-poems .sp-reading-music-label{font:9px/1.3 'Helvetica Neue',Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--reader-muted)}
+#susi-poems .sp-reading-music-title{font:500 14px/1.3 'Helvetica Neue',Arial,sans-serif;color:var(--reader-ink);overflow-wrap:anywhere;text-decoration:none}
+#susi-poems .sp-reading-music-action{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex:none;min-height:40px;padding:0 12px;border:1px solid #ad7585;border-radius:3px;background:var(--reader-button);color:var(--reader-button-ink);font:12px/1 'Helvetica Neue',Arial,sans-serif;text-decoration:none}
+#susi-poems .sp-reading-music-action:hover{filter:brightness(1.12);border-color:#d2a3af}
+#susi-poems .sp-reading-music-icon{display:inline-flex;align-items:center}
+#susi-poems .sp-reading-music-icon svg{width:19px;height:19px}
+#susi-poems .sp-read-dialog .sp-reading{max-width:720px;margin:0 auto;padding:32px 34px 8px;font:400 19px/1.8 Georgia,'Times New Roman',serif;color:var(--reader-ink)}
+#susi-poems .sp-reading p{white-space:pre-line;margin:0 0 24px}
+#susi-poems .sp-read-dialog .sp-dialog-source{margin:0 34px 28px;padding-top:16px;border-color:var(--reader-rule);color:var(--reader-muted);font-size:11px}
 #susi-poems .sp-read-dialog[data-reading-parallel=true]{max-width:min(1040px,calc(100vw - 28px))}
-#susi-poems .sp-reading-parallel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+#susi-poems .sp-read-dialog[data-reading-parallel=true] .sp-reading{max-width:none}
+#susi-poems .sp-reading-parallel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
 #susi-poems .sp-reading-column{min-width:0;overflow-wrap:break-word}
-#susi-poems .sp-reading-column+.sp-reading-column{border-left:1px solid var(--rule);padding-left:36px}
-#susi-poems .sp-reading-column-title{font:11px/1.5 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em;margin:0 0 22px;color:var(--quiet)}
-@media(max-width:720px){#susi-poems .sp-reading-parallel{grid-template-columns:1fr;gap:28px}#susi-poems .sp-reading-column+.sp-reading-column{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:28px}}
-@media(max-width:480px){#susi-poems .sp-reading-controls{grid-template-columns:1fr;gap:12px}#susi-poems .sp-reading-compare{justify-self:start}}
-
-/* Comparison needs two readable columns; keep ES/EN on small screens. */
-#susi-poems .sp-reading-compare[hidden]{display:none}
-@media(max-width:720px){#susi-poems .sp-reading-compare{display:none}#susi-poems .sp-reading-controls{grid-template-columns:1fr}}
+#susi-poems .sp-reading-column+.sp-reading-column{border-left:1px solid var(--reader-rule);padding-left:28px}
+#susi-poems .sp-reading-column-title{font:11px/1.5 'Helvetica Neue',Arial,sans-serif;margin:0 0 22px;color:var(--reader-muted)}
+@media(max-width:720px){
+ #susi-poems .sp-read-dialog .sp-dialog-top{padding:30px 46px 26px}
+ #susi-poems .sp-read-dialog .sp-dialog-title{font-size:29px}
+ #susi-poems .sp-read-dialog .sp-dialog-close{right:3px;top:4px}
+ #susi-poems .sp-reading-controls{grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:15px 22px}
+ #susi-poems .sp-reading-compare{display:none}
+ #susi-poems .sp-reading-music{gap:8px}
+ #susi-poems .sp-reading-music-action{padding:0 9px;font-size:11px;gap:5px}
+ #susi-poems .sp-reading-music-label{font-size:8px;letter-spacing:.07em}
+ #susi-poems .sp-reading-music-title{font-size:12px}
+ #susi-poems .sp-reading-music-icon svg{width:16px;height:16px}
+ #susi-poems .sp-reading-languages button{min-width:29px;min-height:40px;font-size:10px;padding:5px;gap:4px}
+ #susi-poems .sp-reading-languages button[data-reading-language=es]{min-width:76px}
+ #susi-poems .sp-reading-version{font-size:9px}
+ #susi-poems .sp-read-dialog .sp-reading{padding:24px 22px 4px;font-size:18px;line-height:1.75}
+ #susi-poems .sp-read-dialog .sp-dialog-source{margin:0 22px 22px}
+ #susi-poems .sp-reading-parallel{grid-template-columns:1fr}
+ #susi-poems .sp-reading-column+.sp-reading-column{border-left:0;padding-left:0}
+}
+@media(max-width:360px){#susi-poems .sp-reading-music{flex-wrap:wrap;gap:7px}#susi-poems .sp-reading-music-action{min-height:36px}}
