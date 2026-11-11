@@ -178,3 +178,28 @@
 .m-gallery-cloud .m-art figcaption{margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
 .m-gallery-cloud .m-art:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 24px);justify-self:center}
 @media(max-width:669px){.m-gallery.m-gallery-cloud{grid-template-columns:1fr;gap:36px;padding:30px 0 40px}.m-gallery-cloud .m-art:nth-child(n){width:100%;grid-column:auto}.m-gallery-cloud .m-art img{height:auto;max-height:540px}}
+
+.m-world-meta .m-related-music{display:flex;flex-direction:column;gap:7px;min-width:210px;text-align:left;padding:14px 20px}
+.m-related-music span{font-size:10px;letter-spacing:.13em;text-transform:uppercase}
+.m-related-music strong{font-size:14px;font-weight:400}
+@media(max-width:669px){.m-world-meta .m-related-music{min-width:0;max-width:100%;padding:12px 15px}.m-related-music strong{font-size:12px}}
+
+.m-world-meta{gap:28px;align-items:center}
+.m-world-meta .m-artist-note{max-width:610px;font-size:15px;line-height:1.7;margin:0;text-wrap:pretty}
+.m-world-meta .m-related-music{flex-shrink:0}
+@media(max-width:669px){.m-world-meta{align-items:flex-start;flex-direction:column;gap:22px}.m-world-meta .m-artist-note{font-size:13px;max-width:100%}}
+
+/* Morpheus-only emerald masthead: Earth greens against the ocean-blue galleries. */
+.morpheus-page .header{
+ background:linear-gradient(108deg,#091e1a 0%,#10352b 38%,#204d3d 65%,#12392e 84%,#0b2923 100%);
+ background-size:180% 100%;
+ border-bottom-color:#718d79;
+ box-shadow:inset 0 1px #eef5df1c,inset 0 -1px #071e1a55;
+ animation:m-emerald-light 18s ease-in-out infinite alternate;
+}
+@keyframes m-emerald-light{from{background-position:0% 50%}to{background-position:100% 50%}}
+@media(max-width:899px){
+ .morpheus-page .header > #navigation{background:linear-gradient(130deg,#0b211b,#14372b);border-top-color:#a7bba538;border-bottom-color:#a7bba575;box-shadow:0 16px 24px #0003}
+ .morpheus-page .header > #navigation a{border-bottom-color:#c5d6b825}
+}
+@media(prefers-reduced-motion:reduce){.morpheus-page .header{animation:none}}

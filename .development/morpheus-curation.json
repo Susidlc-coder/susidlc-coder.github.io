@@ -15,6 +15,139 @@
       "17-009",
       "17-003",
       "17-011"
+    ],
+    "06": [
+      "06-001",
+      "06-003",
+      "06-002",
+      "06-004",
+      "06-005",
+      "06-007",
+      "06-006"
+    ]
+  },
+  "relatedAlbums": {
+    "01": {
+      "slug": "sdlc-10",
+      "editorialBasis": "Don Perro: juego, irreverencia y personajes; Tricksters."
+    },
+    "02": {
+      "slug": "sdlc-10",
+      "editorialBasis": "Lo que vibra en la vida: desarraigo, tránsito y empezar de nuevo."
+    },
+    "03": {
+      "slug": "sdlc-01",
+      "editorialBasis": "Aurelillo y Crystal: vuelo, suspensión y contemplación."
+    },
+    "04": {
+      "slug": "sdlc-10",
+      "editorialBasis": "Sandais: anticipación que se abre en color y movimiento."
+    },
+    "05": {
+      "slug": "sdlc-02",
+      "editorialBasis": "Dream 2 y Tortilla Song: tensión interior, presión e identidad."
+    },
+    "06": {
+      "slug": "sdlc-10",
+      "editorialBasis": "Lo que vibra en la vida: costa, viaje y esperanza en otra tierra."
+    },
+    "07": {
+      "slug": "sdlc-07",
+      "editorialBasis": "Dar y romA: asombro, esperanza y apertura al mundo."
+    },
+    "08": {
+      "slug": "sdlc-11",
+      "editorialBasis": "El Tuki Tuki: convivencia, recuerdos y juego."
+    },
+    "09": {
+      "slug": "sdlc-11",
+      "editorialBasis": "Linden Ocean y Lala: agua, tránsito y suspensión."
+    },
+    "10": {
+      "slug": "sdlc-11",
+      "editorialBasis": "songon B: recorrido, descubrimiento y aventura."
+    },
+    "11": {
+      "slug": "sdlc-02",
+      "editorialBasis": "Dream 2: intimidad, sueño y tensión interior."
+    },
+    "12": {
+      "slug": "sdlc-10",
+      "editorialBasis": "Don Perro y ...25: comunidad, juego y vida compartida."
+    },
+    "13": {
+      "slug": "sdlc-02",
+      "editorialBasis": "Cowgirl y Dream 2: figuras suspendidas, sueños y vulnerabilidad."
+    },
+    "14": {
+      "slug": "sdlc-07",
+      "editorialBasis": "Dar y romA: esperanza, contemplación y vida cotidiana."
+    },
+    "15": {
+      "slug": "sdlc-10",
+      "editorialBasis": "Sandais: relación nominal y movimiento entre expectativa y color."
+    },
+    "16": {
+      "slug": "sdlc-11",
+      "editorialBasis": "Seda y Lala: formas suaves, suspensión y despedida tranquila."
+    },
+    "17": {
+      "slug": "sdlc-01",
+      "editorialBasis": "Crystal: figura entre nubes y ventana geométrica, observando desde arriba."
+    },
+    "18": {
+      "slug": "sdlc-01",
+      "editorialBasis": "Nebuú y Aurel: transformación, mundos imaginados y contrastes."
+    },
+    "19": {
+      "slug": "sdlc-11",
+      "editorialBasis": "Linden Ocean y Elbe: agua, viaje y llegada a un refugio."
+    }
+  },
+  "displayTitles": {
+    "01": [
+      "Tricksters",
+      "Between Folk & Silk Cities"
+    ],
+    "02": [
+      "Outcasts",
+      "Between Hillsides & Silk Cities"
+    ],
+    "03": [
+      "Birds",
+      "Between Hillsides & Sandais Hills"
+    ],
+    "04": [
+      "Saint Victoria Lands / Sandais Hills",
+      "Between"
+    ],
+    "05": [
+      "Tricksters",
+      "Between Saint Victoria Lands & Folk"
+    ],
+    "06": [
+      "The Border",
+      "Between Saint Victoria Lands & The Cloud"
+    ],
+    "07": [
+      "Admirers",
+      "Between Sandais Hills & The Cloud"
+    ],
+    "08": [
+      "Sandais Hills / Folk",
+      "Between"
+    ],
+    "09": [
+      "Float",
+      "Between Sandais Hills, The Cloud & Saint Victoria Lands"
+    ],
+    "10": [
+      "SinLands",
+      "Between The Cloud & Wetlands"
+    ],
+    "11": [
+      "Wetlands / Hillsides",
+      "Between"
     ]
   }
 }
