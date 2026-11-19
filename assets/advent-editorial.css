@@ -106,8 +106,16 @@
   .reader-step:hover {background:#513e5d}
   .reader-step:disabled {visibility:hidden}
   .advent-page .prayer-shell {max-width:none;padding:clamp(25px,3.4vw,46px) clamp(25px,4.5vw,65px);border-top:4px solid #9473a1}
-  .advent-page .prayer-dialog[data-week='3'] .prayer-shell {border-top-color:#c68b9f;--reading-fill:#f3e3e9;--reading-ink:#693d50}
-  .advent-page.evening .prayer-dialog[data-week='3'] .prayer-shell {--reading-fill:#4f3645;--reading-ink:#f6dce6}
+  .advent-page .prayer-dialog[data-week='3'] {
+    --panel:#f2e0e3; --ink:#482931; --muted:#69454f; --accent:#713c50;
+    --line:#ceabb3; --advent-rule:#b58290; --reading-fill:#e8cdd4; --reading-ink:#522d3a;
+    color:var(--ink);
+  }
+  .advent-page.evening .prayer-dialog[data-week='3'] {
+    --panel:#633d49; --ink:#fff3f1; --muted:#f3dee1; --accent:#f7d5db;
+    --line:#a87986; --advent-rule:#c38f9f; --reading-fill:#4e2c39; --reading-ink:#f9e6e9;
+  }
+  .advent-page .prayer-dialog[data-week='3'] .prayer-shell {border-top-color:#c68b9f}
   .advent-page .prayer-dialog .prayer-tools {position:sticky;top:8px;z-index:3;display:flex;justify-content:flex-end;height:0;margin:0;pointer-events:none}
   .advent-page .prayer-tools .prayer-close {flex:none;position:static;width:44px;height:44px;pointer-events:auto;border-color:var(--line);background:var(--panel)}
   .prayer-meta {display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;min-height:44px;margin:0 0 19px;padding-right:51px}
@@ -140,7 +148,10 @@
   .gospel-passage strong {font:400 1.24rem/1.32 var(--advent-serif)}
   .gospel-source {padding:12px 19px 19px;border-top:1px solid color-mix(in srgb,currentColor 20%,transparent)}
   .gospel-source blockquote {margin:0 0 6px;font:400 1.33rem/1.45 var(--advent-serif)}
-  .gospel-source cite,.gospel-source a {display:block;font:normal .86rem/1.55 'Helvetica Neue',Arial,sans-serif}
+  .gospel-source .gospel-verses {margin:0 0 18px}
+  .advent-page .gospel-verses p {margin:0 0 .55em;font:400 clamp(1rem,1.5vw,1.1rem)/1.55 var(--advent-serif)}
+  .gospel-verses sup {padding-right:.28em;font:600 .7em 'Helvetica Neue',Arial,sans-serif}
+  .gospel-source a {display:block;font:normal .75rem/1.5 'Helvetica Neue',Arial,sans-serif}
   .gospel-source a {width:fit-content;padding:9px 0 4px}
   .advent-page .prayer-moment {margin:24px 0;color:var(--muted)}
   .prayer-moment i {font:italic 400 1.08rem/1.4 var(--advent-serif)}
@@ -204,5 +215,5 @@
   .gospel-passage {margin:8pt 0}
   .gospel-passage summary strong {margin-left:.4em}
   .gospel-source blockquote {margin:6pt 0;font-style:italic}
-  .gospel-source cite,.gospel-source a {display:block;font-size:9pt}
+  .gospel-source a {display:block;font-size:9pt}
 }
