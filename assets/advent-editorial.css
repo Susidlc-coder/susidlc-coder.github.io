@@ -1,0 +1,208 @@
+@media screen {
+  .advent-page .header #navigation a[aria-current="page"] {border-bottom-color:#e7c581}
+  .advent-page .header #navigation a[aria-current="page"]::after {background-color:#e7c581}
+  body.advent-page {
+    --bg:#f6f2f7; --ink:#34273c; --muted:#695c70; --line:#d3c7d8; --panel:#fffcff;
+    --accent:#634b73; --advent-metal:#765784; --advent-rule:#b6a4c0;
+    --reading-fill:#ece4f1; --reading-ink:#4b355b;
+    --foil:linear-gradient(110deg,#956327 0%,#dab475 18%,#fff0bd 33%,#c38d42 49%,#f9e5a8 64%,#b38039 83%,#eacb88 100%);
+    background-color:var(--bg); color:var(--ink);
+  }
+  body.advent-page.evening {
+    --bg:#211c29; --ink:#f4edf5; --muted:#c7bbc9; --line:#514657; --panel:#2e2637;
+    --accent:#e6cdef; --advent-metal:#d0b3d8; --advent-rule:#776781;
+    --reading-fill:#46374f; --reading-ink:#f3e7f9;
+  }
+  .advent-page main.wrap {width:min(calc(100% - 96px),1180px)}
+  .advent-page .advent-opening {display:block;margin:0}
+  .advent-page .advent-hero {
+    display:grid; grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);
+    align-items:center; gap:clamp(32px,6vw,84px); margin:0;
+    padding-block:clamp(31px,3.9vw,60px) clamp(42px,5vw,76px);
+  }
+  .advent-page .hero-perspective {
+    display:flex; gap:14px; align-items:center; margin:0 0 18px; color:var(--accent);
+    font:italic 400 clamp(1.25rem,1.9vw,1.75rem)/1.3 var(--advent-serif);
+  }
+  .hero-perspective::before {
+    content:''; width:31px; height:1px; background:var(--advent-rule);
+  }
+  .advent-page .advent-hero h1 {
+    margin:0; max-width:14ch; text-wrap:balance; color:var(--ink);
+    font:400 clamp(3.4rem,5.65vw,5.75rem)/1.02 var(--advent-serif); letter-spacing:-.052em;
+  }
+  .advent-page .advent-hero h1 em {font-weight:inherit; color:var(--accent)}
+  .advent-page .workbook-link {
+    display:inline-flex; align-items:center; gap:12px; min-height:44px; margin-top:clamp(22px,2.5vw,38px);
+    padding:3px 1px; border:0; color:var(--ink); text-decoration:none;
+    font:500 .99rem/1.2 'Helvetica Neue',Arial,sans-serif;
+  }
+  .workbook-label {padding:4px 8px;background:#fff2cc;color:#34273c;border-radius:2px}
+  .workbook-link:hover .workbook-label {text-decoration:underline;text-underline-offset:3px}
+  .download-icon {font:400 1.25rem/1 Georgia,serif; border-bottom:1px solid; padding:0 3px 1px}
+  .advent-page .advent-hero figure {
+    position:relative; width:min(100%,385px); max-width:none; box-sizing:border-box; padding:5px;
+    margin:0 auto; border:1px solid var(--advent-rule); border-radius:50% 50% 2px 2px / 48% 48% 2px 2px;
+    box-shadow:0 12px 34px #1d142921;
+    background:linear-gradient(108deg,#80638c,#ead8c0,#b48b8f,#d7c2da,#9478a2);
+    background-size:260% 100%; animation:advent-color-flow 14s ease-in-out infinite alternate;
+  }
+  .advent-page .advent-hero img {
+    display:block; width:100%; max-width:100%; height:auto; aspect-ratio:auto; object-fit:contain;
+    border-radius:50% 50% 0 0 / 48% 48% 0 0;
+  }
+  .advent-page .sunday-hub {border-top:1px solid var(--line);padding:clamp(28px,3.5vw,48px) 0 clamp(16px,2vw,26px)}
+  .advent-page .hub-heading {margin:0 0 clamp(21px,2.5vw,32px)}
+  .advent-page .hub-heading h2 {max-width:none;margin:0;font:400 clamp(2.15rem,3.8vw,3.6rem)/1.1 var(--advent-serif);letter-spacing:-.045em}
+  .advent-page .sunday-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,26px)}
+  .advent-page .sunday-card {
+    min-height:clamp(205px,18vw,268px);padding:clamp(25px,3vw,44px);justify-content:center;border-radius:2px;
+    background-size:155% 120%;animation:advent-color-flow 15s ease-in-out infinite alternate;
+  }
+  .advent-page .sunday-card[data-week='2'] {animation-delay:-5s}
+  .advent-page .sunday-card[data-week='3'] {animation-delay:-10s}
+  .advent-page .sunday-card[data-week='4'] {animation-delay:-7s}
+  .advent-page .sunday-label {font-size:.86rem;letter-spacing:.12em}
+  .advent-page .sunday-virtue {max-width:78%;margin:.35em 0 0;font-size:clamp(2.3rem,3.7vw,3.85rem);line-height:1.05;text-wrap:balance}
+  .advent-page .sunday-card::before {height:80%}
+  .advent-page .sunday-candles {height:58%}
+  .advent-page .advent-gold {
+    color:#27190b; border:1px solid #d2ae72; border-radius:2px;
+    background:linear-gradient(#fff1bd26,#fff1bd26),var(--foil);background-size:100% 100%,260% 100%;
+    box-shadow:inset 0 1px #fff5d9b3,inset 0 -1px #79552255,0 3px 15px #0002;
+    animation:advent-color-flow 9s ease-in-out infinite alternate;
+  }
+  .advent-page .providence-launch {
+    --advent-rule:#835d2e; --panel:#d6aa63;
+    display:grid;grid-template-columns:clamp(74px,8vw,110px) minmax(0,1fr) auto;
+    gap:clamp(18px,3.5vw,54px); align-items:center; width:100%; margin:0 0 clamp(32px,4vw,60px);
+    padding:clamp(28px,3.9vw,54px);text-align:left;text-decoration:none;
+    background-image:linear-gradient(#fff1bd38,#fff1bd38),var(--foil);
+    background-size:100% 100%,240% 100%;animation-duration:14s;
+  }
+  .advent-page .providence-title {max-width:28ch;color:inherit;font-size:clamp(1.95rem,3.4vw,3.5rem)}
+  .providence-go {font:400 1.45rem/1 Georgia,serif}
+  .providence-launch:hover .providence-go {transform:translate(2px,-2px)}
+  .advent-page .extra-details {max-width:100%;margin:0 0 clamp(44px,5vw,76px);padding-top:5px;border-top:1px solid var(--line);color:var(--muted);font-size:.97rem}
+  .extra-details summary {width:fit-content;min-height:44px;padding:13px 0;cursor:pointer}
+  .extra-details p {max-width:62ch;margin:6px 0 15px}
+  .extra-details a {text-decoration:underline;text-underline-offset:3px}
+
+  .advent-page .prayer-dialog {
+    width:min(900px,calc(100vw - 28px));max-width:none;max-height:none;margin:auto;padding:0;
+    border:0;background:transparent;box-shadow:none;color:var(--ink);overflow:visible;
+  }
+  .advent-page .prayer-dialog[open] {display:grid;grid-template-columns:46px minmax(0,1fr) 46px;gap:16px;align-items:center}
+  .advent-page .prayer-dialog::backdrop {background:#1d1726bd;backdrop-filter:blur(5px)}
+  .reader-surface {
+    min-width:0;max-height:min(89dvh,1040px);overflow:auto;overscroll-behavior:contain;scrollbar-color:var(--advent-rule) transparent;
+    border:1px solid var(--advent-rule);border-radius:3px;background:var(--panel);box-shadow:0 24px 72px #180e2461;
+  }
+  .reader-step {
+    display:grid;place-items:center;box-sizing:border-box;padding:0;width:46px;height:46px;
+    border:1px solid #f6ecf385;border-radius:50%;background:#302738a8;color:#fff8f8;
+    font:400 1.35rem/1 Georgia,serif;cursor:pointer;
+  }
+  .reader-step:hover {background:#513e5d}
+  .reader-step:disabled {visibility:hidden}
+  .advent-page .prayer-shell {max-width:none;padding:clamp(25px,3.4vw,46px) clamp(25px,4.5vw,65px);border-top:4px solid #9473a1}
+  .advent-page .prayer-dialog[data-week='3'] .prayer-shell {border-top-color:#c68b9f;--reading-fill:#f3e3e9;--reading-ink:#693d50}
+  .advent-page.evening .prayer-dialog[data-week='3'] .prayer-shell {--reading-fill:#4f3645;--reading-ink:#f6dce6}
+  .advent-page .prayer-dialog .prayer-tools {position:sticky;top:8px;z-index:3;display:flex;justify-content:flex-end;height:0;margin:0;pointer-events:none}
+  .advent-page .prayer-tools .prayer-close {flex:none;position:static;width:44px;height:44px;pointer-events:auto;border-color:var(--line);background:var(--panel)}
+  .prayer-meta {display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;min-height:44px;margin:0 0 19px;padding-right:51px}
+  .advent-page .prayer-kicker {padding:0;margin:0;color:var(--muted);font:500 .76rem/1.3 'Helvetica Neue',Arial,sans-serif;letter-spacing:.11em}
+  .advent-page .prayer-keyword {display:inline-block;padding:5px 14px 6px;font:italic 400 1.25rem/1.1 var(--advent-serif);letter-spacing:.01em}
+  .advent-page .prayer-dialog h2 {margin:0 0 24px;max-width:24ch;padding:0;font:400 clamp(2.05rem,3.4vw,3.05rem)/1.08 var(--advent-serif);letter-spacing:-.045em;text-wrap:balance}
+  .advent-page .prayer-dialog h2:focus {outline:none}
+  .providence-title strong {font-weight:700}
+  .advent-page .prayer-dialog[data-week='providence'] {
+    --panel:#382920; --bg:#30231e; --ink:#f2eee5; --muted:#e0d2c0;
+    --accent:#e9c680; --line:#806748; --advent-rule:#bd9b60; --advent-metal:#e9c680;
+    color:var(--ink);
+  }
+  .prayer-dialog[data-week='providence']::backdrop {background:#201814bd}
+  .prayer-dialog[data-week='providence'] .reader-surface {
+    background:linear-gradient(115deg,var(--panel),var(--bg) 80%);
+    border:1px solid var(--advent-rule); padding:6px;
+  }
+  .advent-page .prayer-dialog .providence-content {border:1px solid var(--line);color:var(--ink)}
+  .advent-page .providence-content h2 {padding-right:45px}
+  .gospel-passage {color:var(--reading-ink);background:var(--reading-fill);border-left:3px solid currentColor}
+  .advent-page .prayer-shell .gospel-passage > summary {
+    position:relative;display:flex;align-items:baseline;gap:8px 17px;flex-wrap:wrap;
+    min-height:44px;padding:13px 48px 13px 19px;list-style:none;cursor:pointer;
+  }
+  .gospel-passage summary::-webkit-details-marker {display:none}
+  .gospel-passage summary::after {content:'';position:absolute;right:21px;top:50%;width:8px;height:8px;border-right:1.5px solid;border-bottom:1.5px solid;transform:translateY(-75%) rotate(45deg)}
+  .gospel-passage[open] summary::after {transform:translateY(-25%) rotate(225deg)}
+  .gospel-name {font:500 .75rem/1.4 'Helvetica Neue',Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em}
+  .gospel-passage strong {font:400 1.24rem/1.32 var(--advent-serif)}
+  .gospel-source {padding:12px 19px 19px;border-top:1px solid color-mix(in srgb,currentColor 20%,transparent)}
+  .gospel-source blockquote {margin:0 0 6px;font:400 1.33rem/1.45 var(--advent-serif)}
+  .gospel-source cite,.gospel-source a {display:block;font:normal .86rem/1.55 'Helvetica Neue',Arial,sans-serif}
+  .gospel-source a {width:fit-content;padding:9px 0 4px}
+  .advent-page .prayer-moment {margin:24px 0;color:var(--muted)}
+  .prayer-moment i {font:italic 400 1.08rem/1.4 var(--advent-serif)}
+  .advent-page .prayer-moment p {margin:4px 0 0;font-size:1rem;line-height:1.56}
+  .advent-page .prayer-dialog .reflection-notes {margin:0;padding:0;border:0}
+  .advent-page .prayer-dialog h3 {margin:25px 0 13px;font:400 clamp(1.45rem,2.2vw,1.78rem)/1.27 var(--advent-serif)}
+  .advent-page .prayer-dialog .prayer-questions {margin:0;padding-left:1.48em}
+  .advent-page .prayer-dialog .prayer-questions li {margin:0 0 11px;padding-left:5px;font-size:1.05rem;line-height:1.52}
+  .advent-page .prayer-dialog .prayer-questions li::marker {color:var(--accent);font-family:var(--advent-serif);font-weight:600}
+  .advent-page .prayer-dialog .prayer-central {margin:24px 0 0;padding:19px 0 0;border:0;border-top:1px solid var(--line)}
+  .advent-page .prayer-dialog .prayer-central > p:not(.eyebrow) {text-align:center;margin:0;color:var(--accent);font:italic 400 clamp(1.65rem,2.7vw,2.25rem)/1.23 var(--advent-serif);text-wrap:pretty}
+  .advent-page .providence-content p {font-size:1.07rem;line-height:1.65}
+  .advent-page .providence-content .practice-list li {display:block;padding-block:19px}
+  .advent-page .providence-content .practice-list h4 {margin:0 0 6px}
+  .advent-page .providence-content .practice-list p {font-size:1rem}
+  .advent-page :is(.workbook-link,.providence-launch,.gospel-passage summary):focus-visible {outline:2px solid var(--accent);outline-offset:3px}
+  @keyframes advent-color-flow {from{background-position:0% 50%}to{background-position:100% 50%}}
+}
+@media screen and (max-width:820px) {
+  .advent-page main.wrap {width:calc(100% - 50px)}
+  .advent-page .advent-hero {gap:28px;grid-template-columns:minmax(0,1.14fr) minmax(0,.86fr)}
+  .advent-page .advent-hero h1 {font-size:clamp(2.8rem,6.3vw,4rem)}
+}
+@media screen and (max-width:740px) {
+  .advent-page .prayer-dialog {width:min(620px,calc(100vw - 24px))}
+  .advent-page .prayer-dialog[open] {display:block}
+  .reader-step {display:none}
+  .reader-surface {max-height:93dvh}
+}
+@media screen and (max-width:570px) {
+  .advent-page main.wrap {width:calc(100% - 40px)}
+  .advent-page .advent-hero {grid-template-columns:1fr;gap:28px;padding:28px 0 36px}
+  .advent-page .advent-hero h1 {font-size:clamp(2.75rem,10.7vw,3.75rem);max-width:16ch}
+  .advent-page .hero-perspective {margin-bottom:13px}
+  .advent-page .workbook-link {margin-top:15px}
+  .advent-page .advent-hero figure {width:min(85%,286px);margin:0 auto}
+  .advent-page .sunday-grid {gap:10px}
+  .advent-page .sunday-card {min-height:180px;padding:19px 13px 38px;justify-content:start}
+  .advent-page .sunday-label {font-size:.77rem;letter-spacing:.04em}
+  .advent-page .sunday-virtue {max-width:100%;margin-top:.55em;font-size:clamp(1.38rem,5.5vw,1.9rem)}
+  .advent-page .sunday-card::before {height:44%}
+  .advent-page .sunday-candles {height:36%}
+  .advent-page .providence-launch {grid-template-columns:46px minmax(0,1fr);padding:22px 14px;gap:14px}
+  .advent-page .providence-launch .providence-title {font-size:1.62rem}
+  .providence-go {display:none}
+  .advent-page .prayer-shell {padding:19px 19px 28px}
+  .advent-page .prayer-meta {gap:7px 10px;margin-bottom:14px}
+  .advent-page .prayer-keyword {font-size:1.08rem;padding:5px 8px}
+  .advent-page .prayer-kicker {font-size:.68rem}
+  .advent-page .prayer-dialog h2 {margin-bottom:20px}
+  .gospel-passage summary {gap:10px}
+}
+@media (prefers-reduced-motion:reduce) {
+  .advent-page :is(.advent-gold,.sunday-card,.advent-hero figure) {animation:none;background-position:35% 50%}
+}
+@media print {
+  .advent-page :is(.providence-launch,.extra-details,.workbook-link,.reader-step) {display:none!important}
+  .advent-page .advent-print-readings {display:block}
+  .advent-page .providence-content .practice-list li {break-inside:avoid}
+  .advent-page .prayer-kicker {margin-right:8pt}
+  .gospel-passage {margin:8pt 0}
+  .gospel-passage summary strong {margin-left:.4em}
+  .gospel-source blockquote {margin:6pt 0;font-style:italic}
+  .gospel-source cite,.gospel-source a {display:block;font-size:9pt}
+}

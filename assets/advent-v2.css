@@ -1,0 +1,524 @@
+/* The image, candle niches and Providence medallion share the same arch motif. */
+.advent-page {
+  --advent-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --advent-metal: #966f34;
+  --advent-rule: #bba47b;
+}
+.advent-page.evening {
+  --advent-metal: #e1bc7c;
+  --advent-rule: #796040;
+}
+.advent-page .advent-hero {
+  grid-template-columns: 1fr minmax(270px, .94fr);
+  gap: clamp(40px, 8vw, 126px);
+  padding-block: clamp(32px, 4vw, 64px) clamp(54px, 6vw, 90px);
+}
+.advent-page .advent-hero h1 { margin-block: .22em; }
+.advent-page .advent-hero .eyebrow,
+.advent-page .hub-heading .eyebrow {
+  color: var(--advent-metal);
+  font-size: .84rem;
+  font-weight: 550;
+  letter-spacing: .12em;
+}
+.advent-page .advent-hero figure {
+  position: relative;
+  width: 100%;
+  max-width: 575px;
+  margin-inline: auto;
+  padding: 7px;
+  border: 1px solid var(--advent-rule);
+  border-radius: 49% 49% 2px 2px / 46% 46% 2px 2px;
+}
+.advent-page .advent-hero img {
+  height: auto;
+  aspect-ratio: 1.13;
+  object-fit: cover;
+  object-position: 50% 43%;
+  border-radius: 49% 49% 0 0 / 46% 46% 0 0;
+}
+.advent-page .sunday-hub {
+  padding-block: clamp(32px, 4vw, 64px) clamp(48px, 6vw, 90px);
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 20px;
+}
+.advent-page .hub-heading { margin: 0 0 clamp(24px, 3vw, 38px); }
+.advent-page .hub-heading h2 {
+  margin: 12px 0 10px;
+  max-width: 24ch;
+  font-family: var(--advent-serif);
+  font-size: clamp(2.1rem, 4.4vw, 4.25rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+.advent-page .hub-heading > p:not(.eyebrow) { color: var(--muted); max-width: 64ch; }
+.advent-page .sunday-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 26px);
+}
+.advent-page .sunday-card {
+  --card-dark: #30233e;
+  --card-light: #694d71;
+  --card-word: #fff7eb;
+  --card-metal: #edd3ae;
+  --card-fine: #f8ddad4d;
+  --wax-top: #f8dfa7;
+  --wax-body: #b697b4;
+  --wax-shadow: #795a81;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  min-width: 0;
+  min-height: clamp(235px, 22vw, 320px);
+  padding: clamp(24px, 2.85vw, 44px);
+  margin: 0;
+  color: var(--card-word);
+  border: 1px solid #897286;
+  border-radius: 3px;
+  background: linear-gradient(116deg, var(--card-dark) 6%, var(--card-light) 113%);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: none;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.advent-page .sunday-card[data-week='2'] {
+  --card-dark: #35223d;
+  --card-light: #805f7e;
+}
+.advent-page .sunday-card[data-week='3'] {
+  --card-dark: #713e50;
+  --card-light: #ac737d;
+  --card-metal: #ffe2bf;
+  --wax-body: #f0b9a7;
+  --wax-shadow: #b68089;
+  border-color: #b8848d;
+}
+.advent-page .sunday-card[data-week='4'] {
+  --card-dark: #35253e;
+  --card-light: #705b81;
+}
+.advent-page .sunday-card::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  inset: auto -5% -1px auto;
+  width: 39%;
+  height: 83%;
+  border: 1px solid var(--card-fine);
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0 / 42% 42% 0 0;
+  box-shadow: 0 0 0 6px #fff1d806, 0 0 0 7px #f8ddad1c;
+  background: radial-gradient(ellipse at 62% 62%, #f8d8a31f, transparent 72%);
+  pointer-events: none;
+}
+.advent-page .sunday-label {
+  font: 550 .86rem/1.35 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--card-metal);
+}
+.advent-page .sunday-virtue {
+  display: block;
+  max-width: 72%;
+  margin: .4em 0 .2em;
+  color: var(--card-word);
+  font: 400 clamp(2.1rem, 3.45vw, 3.8rem)/1.02 var(--advent-serif);
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+.advent-page .sunday-scene {
+  max-width: 68%;
+  font: 400 1rem/1.45 'Helvetica Neue', Arial, sans-serif;
+  color: #fff3e6;
+}
+.advent-page .sunday-cta {
+  display: inline-block;
+  margin-top: auto;
+  padding: 23px 0 4px;
+  border-bottom: 1px solid var(--card-fine);
+  color: var(--card-word);
+  font: 500 .95rem/1.3 'Helvetica Neue', Arial, sans-serif;
+}
+.advent-page .sunday-candles {
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+  width: 20%;
+  height: 62%;
+  display: flex;
+  gap: clamp(3px, .45vw, 8px);
+  align-items: end;
+  justify-content: center;
+  border-bottom: 1px solid transparent;
+  pointer-events: none;
+}
+.advent-page .sunday-candles i {
+  position: relative;
+  display: block;
+  width: clamp(8px, 1vw, 16px);
+  height: 50%;
+  border-radius: 2px 2px 0 0;
+  border-top: 2px solid var(--wax-top);
+  background: linear-gradient(90deg, var(--wax-shadow), var(--wax-body) 38%, var(--wax-body) 63%, var(--wax-shadow));
+  box-shadow: 2px 2px 12px #21122321;
+}
+.advent-page .sunday-candles i:nth-child(2) { height: 65%; }
+.advent-page .sunday-candles i:nth-child(3) { height: 44%; }
+.advent-page .sunday-candles i:nth-child(4) { height: 57%; }
+.advent-page .sunday-candles i::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  width: 65%;
+  min-width: 5px;
+  height: 14px;
+  transform: translateX(-50%) rotate(9deg);
+  border-radius: 90% 20% 65% 45%;
+  background: linear-gradient(145deg, #fffbe1 13%, #f7c36d 68%, #d98744);
+  box-shadow: 0 0 9px #f8c37688, 0 0 20px #f6d37b4d;
+}
+.advent-page .sunday-candles i::after {
+  content: '';
+  position: absolute;
+  left: calc(50% - .5px);
+  bottom: 100%;
+  width: 1px;
+  height: 4px;
+  background: #3b2736;
+}
+@media (hover: hover) {
+  .advent-page .sunday-card:hover {
+    transform: translateY(-3px);
+    border-color: #d9b687;
+    box-shadow: 0 9px 24px #2013232e;
+  }
+  .advent-page .sunday-card:hover .sunday-cta { border-color: var(--card-metal); }
+}
+.advent-page :is(.sunday-card, .prayer-close, .providence summary, .prayer-dialog a, .prayer-dialog button):focus-visible {
+  outline: 3px solid var(--advent-metal);
+  outline-offset: 3px;
+}
+.advent-page .providence {
+  margin-bottom: clamp(48px, 6vw, 90px);
+  overflow: hidden;
+  border: 1px solid var(--advent-rule);
+  border-radius: 3px;
+}
+.advent-page .providence > summary {
+  display: grid;
+  position: relative;
+  isolation: isolate;
+  grid-template-columns: 150px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(22px, 3.5vw, 54px);
+  padding: clamp(30px, 4.2vw, 68px);
+  list-style: none;
+  background: radial-gradient(ellipse at 0 100%, #cfab6b22, transparent 60%), var(--panel);
+  cursor: pointer;
+}
+.advent-page .providence > summary::-webkit-details-marker { display: none; }
+.advent-page .providence > summary:focus-visible { outline-offset: -5px; }
+.advent-page .providence-seal {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--advent-rule);
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #ead09c 0 13%, #a47d44 13.5% 14.5%, transparent 15%), repeating-conic-gradient(from .5deg, transparent 0deg 6deg, var(--advent-rule) 6.3deg 6.8deg, transparent 7deg 12deg);
+  box-shadow: inset 0 0 0 6px var(--panel), inset 0 0 0 7px var(--advent-rule);
+}
+.advent-page .providence-seal::before {
+  position: absolute;
+  content: '';
+  inset: 20%;
+  border: 1px solid var(--advent-rule);
+  border-radius: 50%;
+  background: radial-gradient(circle, #dabb7c, #c29854 36%, #775939 38%, transparent 40%);
+}
+.advent-page .providence-title {
+  max-width: 23ch;
+  font: 400 clamp(2.1rem, 4.3vw, 4.45rem)/1.04 var(--advent-serif);
+  letter-spacing: -.05em;
+  text-wrap: balance;
+}
+.advent-page .providence-action {
+  justify-self: end;
+  align-self: end;
+  color: var(--ink);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--advent-rule);
+  font-size: .95rem;
+  line-height: 1.3;
+}
+.advent-page .providence-body { border-top: 1px solid var(--advent-rule); padding: clamp(24px, 4vw, 64px); }
+.advent-page .providence-body > p { max-width: 68ch; margin: 0 0 15px; }
+.advent-page .providence-body > p:first-of-type { max-width: 53ch; font: 400 clamp(1.35rem, 1.8vw, 1.8rem)/1.45 var(--advent-serif); }
+.advent-page .providence-body h3 {
+  margin: 36px 0 18px;
+  font: 400 clamp(1.65rem, 2.7vw, 2.65rem)/1.16 var(--advent-serif);
+  letter-spacing: -.025em;
+}
+.advent-page .practice-list { counter-reset: practice; padding: 0; margin: 0; list-style: none; }
+.advent-page .practice-list li {
+  position: relative;
+  counter-increment: practice;
+  display: grid;
+  grid-template-columns: minmax(150px, .78fr) 1.2fr;
+  gap: 20px;
+  padding: 19px 4px 19px 48px;
+  border-top: 1px solid var(--line);
+}
+.advent-page .practice-list li::before {
+  content: counter(practice);
+  position: absolute;
+  inset: 18px auto auto 0;
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--advent-rule);
+  border-radius: 50%;
+  color: var(--advent-metal);
+  font: 400 1rem/1 var(--advent-serif);
+}
+.advent-page .practice-list h4 { margin: 0; font: 400 1.3rem/1.3 var(--advent-serif); }
+.advent-page .practice-list p { margin: 0; color: var(--muted); }
+.advent-page .advent-print-readings { display: none; }
+.advent-page .prayer-dialog {
+  color: var(--ink);
+  background: var(--bg);
+  width: min(790px, calc(100% - 36px));
+  max-width: none;
+  max-height: min(88dvh, 1040px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--advent-rule);
+  border-radius: 4px;
+  box-shadow: 0 24px 110px #0009;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--advent-rule) transparent;
+}
+.advent-page .prayer-dialog::backdrop { background: #201a21b8; backdrop-filter: blur(4px); }
+.advent-page:has(.prayer-dialog[open]) { overflow: hidden; }
+.advent-page .prayer-shell { position: relative; padding: clamp(26px, 5vw, 68px); border-top: 6px solid #76577f; }
+.advent-page .prayer-dialog[data-week='3'] .prayer-shell { border-top-color: #bc8092; }
+.advent-page .prayer-close {
+  position: sticky;
+  z-index: 2;
+  top: 12px;
+  float: right;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 6px 12px;
+  margin: -5px -7px 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: .95rem;
+  cursor: pointer;
+}
+.advent-page .prayer-kicker { margin: 0 0 12px; color: var(--advent-metal); font-size: .86rem; text-transform: uppercase; letter-spacing: .09em; }
+.advent-page .prayer-dialog h2 { margin: 8px 0 20px; font: 400 clamp(2rem, 4.4vw, 3.3rem)/1.08 var(--advent-serif); letter-spacing: -.045em; }
+.advent-page .prayer-dialog h3 { margin: 25px 0 12px; font: 400 1.5rem/1.2 var(--advent-serif); }
+.advent-page .prayer-dialog p { line-height: 1.65; }
+.advent-page .prayer-central {
+  clear: both;
+  margin: 24px 0;
+  padding: 18px 0 18px 22px;
+  border-left: 3px solid var(--advent-rule);
+  font: italic 400 clamp(1.35rem, 2.25vw, 1.9rem)/1.4 var(--advent-serif);
+}
+.advent-page .prayer-reading { margin: 26px 0; padding: 22px 24px; background: var(--panel); }
+.advent-page .prayer-reading blockquote { margin: 10px 0 12px; font: 400 clamp(1.2rem, 1.7vw, 1.55rem)/1.5 var(--advent-serif); }
+.advent-page .prayer-reading :is(cite, figcaption, small) { display: block; color: var(--muted); font: normal .91rem/1.5 'Helvetica Neue', Arial, sans-serif; }
+.advent-page .prayer-dialog a:not(.prayer-close) { text-decoration: underline; text-underline-offset: 4px; }
+.advent-page .prayer-questions { margin: 14px 0; padding-left: 1.5em; }
+.advent-page .prayer-questions li { padding-left: .35em; margin: 10px 0; line-height: 1.55; }
+.advent-page .prayer-questions li::marker { color: var(--advent-metal); }
+.advent-page .prayer-navigation { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; margin-top: 30px; border-top: 1px solid var(--line); padding-top: 16px; }
+.advent-page .prayer-navigation :is(button, a) { min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); background: transparent; color: var(--ink); }
+@media (max-width: 900px) {
+  .advent-page .providence > summary { grid-template-columns: 100px minmax(0, 1fr); gap: 18px 30px; }
+  .advent-page .providence-seal { grid-row: span 2; }
+  .advent-page .providence-action { grid-column: 2; justify-self: start; }
+}
+@media (max-width: 720px) {
+  .advent-page .advent-hero { grid-template-columns: 1fr; gap: 26px; padding-block: 26px 38px; }
+  .advent-page .advent-hero figure { max-width: 460px; }
+  .advent-page .advent-hero img { aspect-ratio: 1.28; }
+  .advent-page .sunday-grid { gap: 10px; }
+  .advent-page .sunday-card { min-height: 240px; padding: 22px 16px 18px; }
+  .advent-page .sunday-label { font-size: .82rem; letter-spacing: .04em; }
+  .advent-page .sunday-card::before { width: 35%; height: 40%; }
+  .advent-page .sunday-virtue { max-width: 100%; margin-block: 13px 7px; font-size: clamp(1.5rem, 5vw, 2rem); }
+  .advent-page .sunday-scene { max-width: 100%; padding-bottom: 24px; font-size: 1rem; }
+  .advent-page .sunday-candles { width: 21%; height: 32%; right: 2%; gap: 2px; }
+  .advent-page .sunday-candles i { width: 5px; }
+  .advent-page .sunday-candles i::before { height: 9px; min-width: 3px; }
+  .advent-page .sunday-cta { max-width: 72%; padding-top: 6px; font-size: .875rem; }
+  .advent-page .providence > summary { grid-template-columns: 68px 1fr; gap: 14px; padding: 26px 18px; }
+  .advent-page .providence-title { font-size: clamp(1.65rem, 6vw, 2.6rem); }
+  .advent-page .practice-list li { grid-template-columns: 1fr; gap: 8px; }
+  .advent-page .prayer-dialog { max-height: 92dvh; width: calc(100% - 20px); }
+  .advent-page .prayer-shell { padding: 22px; }
+  .advent-page .prayer-reading { padding: 18px; }
+}
+@media (max-width: 350px) {
+  .advent-page .sunday-grid { grid-template-columns: 1fr; }
+  .advent-page .sunday-card { min-height: 188px; }
+  .advent-page .sunday-scene { max-width: 78%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .advent-page .sunday-card { transition: none; }
+  .advent-page .sunday-card:hover { transform: none; }
+}
+@media print {
+  .advent-page, .advent-page:has(.prayer-dialog[open]) { overflow: visible; }
+  .advent-page .advent-print-readings { display: block !important; }
+  .advent-page .sunday-hub, .advent-page .prayer-dialog, .advent-page .prayer-dialog::backdrop,
+  .advent-page .providence-seal, .advent-page .providence-action { display: none !important; }
+  .advent-page .advent-hero { display: block; padding: 0 0 10pt; }
+  .advent-page .advent-print-readings article { break-before: page; }
+  .advent-page .advent-print-readings h2 { margin: 12pt 0; font: 22pt/1.2 var(--advent-serif); }
+  .advent-page .prayer-central, .advent-page .prayer-reading { margin: 12pt 0; padding: 0 0 0 10pt; border-left: 1pt solid #9e8d73; }
+  .advent-page .prayer-reading blockquote, .advent-page .prayer-central { font-size: 14pt; }
+  .advent-page .providence { margin-top: 20pt; border: 0; break-before: page; }
+  .advent-page .providence > summary, .advent-page .providence-body { display: block; padding: 0; border: 0; background: none; }
+  .advent-page .providence-title { font-size: 22pt; }
+  .advent-page .practice-list li { break-inside: avoid; }
+}
+.advent-page .vatican-reader {
+  margin-block: 16px 26px;
+  padding-inline: clamp(14px, 3vw, 26px);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--advent-rule);
+}
+.advent-page .vatican-reader > summary {
+  min-height: 48px;
+  padding: 15px 0;
+  font-weight: 550;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.advent-page .vatican-reader > summary::marker { color: var(--advent-metal); }
+.advent-page .vatican-reader[open] > summary { margin-bottom: 12px; border-bottom: 1px solid var(--line); }
+.advent-page .vatican-reader .bible-verse {
+  margin: 0 0 .85em;
+  max-width: 65ch;
+  font: 400 1.12rem/1.65 var(--advent-serif);
+}
+.advent-page .bible-verse sup { margin-right: 4px; color: var(--advent-metal); font: 600 .73em/0 'Helvetica Neue', Arial, sans-serif; }
+.advent-page .vatican-reader small, .advent-page .vatican-reader cite {
+  display: block;
+  margin-block: 12px 20px;
+  font: normal .91rem/1.5 'Helvetica Neue', Arial, sans-serif;
+  color: var(--muted);
+}
+@media print {
+  .advent-page .vatican-reader { margin: 10pt 0; padding: 0; border: 0; }
+  .advent-page .vatican-reader > summary { min-height: 0; padding: 0; }
+  .advent-page .vatican-reader .bible-verse { font-size: 11pt; }
+}
+
+.advent-page .providence .when-open,
+.advent-page .providence[open] .when-closed { display: none; }
+.advent-page .providence[open] .when-open { display: inline; }
+.advent-page .color-note { margin-top: 21px; max-width: 66ch; color: var(--muted); font-size: .92rem; }
+.advent-page .color-note summary { width: fit-content; padding: 10px 0; cursor: pointer; }
+.advent-page .color-note a, .advent-page .providence-body a { text-decoration: underline; text-underline-offset: 3px; }
+.advent-page .prayer-tools { display: flex; justify-content: flex-end; align-items: center; gap: 14px; }
+.advent-page .prayer-tools .prayer-close { float: none; margin: 0; font-size: 1.55rem; line-height: 1; }
+.advent-page .prayer-language { font-size: .9rem; }
+.advent-page .prayer-language .locale-flag { display: none; }
+.advent-page .prayer-central .eyebrow { font: 500 .8rem/1.5 'Helvetica Neue', Arial, sans-serif; letter-spacing: .09em; color: var(--muted); margin-bottom: 8px; }
+.advent-page .vatican-reader .edition-credit { font-size: .92rem; color: var(--muted); margin-bottom: 15px; }
+@media print {
+  .advent-page .prayer-tools, .advent-page .prayer-navigation { display: none; }
+  .advent-page .prayer-shell { padding: 0; border: 0; }
+  .advent-page .advent-hero h1 br::after { content: ' '; }
+  .advent-page .advent-hero h1 br { display: inline; }
+}
+.advent-page .prayer-dialog .prayer-central > p:not(.eyebrow) {
+  font: italic 400 clamp(1.35rem,2.4vw,1.85rem)/1.4 var(--advent-serif);
+  color: var(--ink);
+}
+.advent-page .prayer-dialog .prayer-shell > p:not(.prayer-kicker),
+.advent-page .prayer-dialog .bible-verse {
+  font-size: 1.1rem;
+  line-height: 1.62;
+  color: var(--ink);
+}
+.advent-page .providence-body .catechism-source { font-size: .93rem; }
+
+/* Pair the opening image with the Sunday index so the collection is visible at entry. */
+@media screen {
+  .advent-opening {display:grid;grid-template-columns:minmax(0,.76fr) minmax(0,1.55fr);gap:clamp(24px,4vw,65px);align-items:start;margin:25px 0 40px}
+  .advent-page .advent-hero {display:flex;flex-direction:column;align-items:start;padding:0;gap:24px}
+  .advent-page .advent-hero h1 {font-size:clamp(44px,4.4vw,76px);margin:12px 0}
+  .advent-page .advent-hero .advent-subtitle {font-size:clamp(18px,1.65vw,24px)}
+  .advent-page .advent-hero figure {max-width:360px;margin:0}
+  .advent-page .sunday-hub {padding:0;border:0;min-width:0}
+  .advent-page .hub-heading {margin:0 0 18px}
+  .advent-page .hub-heading h2 {font-size:clamp(28px,2.7vw,42px);margin:0 0 6px}
+  .advent-page .hub-heading .liturgical-key {font-size:.9rem;line-height:1.5;max-width:none}
+  .liturgical-key a {white-space:nowrap;text-underline-offset:3px;text-decoration:underline;margin-left:.4em}
+  .advent-page .sunday-grid {gap:12px}
+  .advent-page .sunday-card {padding:clamp(17px,1.6vw,27px);min-height:clamp(185px,13.5vw,225px)}
+  .advent-page .sunday-virtue {font-size:clamp(25px,2.4vw,40px);margin:.25em 0}
+  .advent-page .sunday-scene {max-width:77%;font-size:.98rem;line-height:1.35}
+  .advent-page .sunday-cta {font-size:.85rem;padding-top:16px}
+  .advent-page .sunday-hub .advent-actions {margin-top:8px}
+  .advent-page .prayer-dialog {width:min(680px,calc(100% - 26px))}
+  .advent-page .prayer-shell {padding:clamp(22px,3.7vw,54px)}
+  .advent-page .prayer-tools {gap:12px}
+  .advent-page .prayer-kicker {margin:0 0 12px}
+  .advent-page .prayer-dialog h2 {font-size:clamp(1.9rem,3.25vw,3rem);line-height:1.1;margin:0 0 22px;text-wrap:balance}
+  .advent-page .prayer-central {border:0;padding:0;margin:0 0 26px}
+  .advent-page .prayer-dialog .prayer-central > p {font-size:clamp(1.22rem,2.3vw,1.55rem)}
+  .advent-page .prayer-reading {padding:4px 0 4px 17px;border-left:2px solid var(--advent-metal);background:transparent;margin:0 0 25px}
+  .advent-page .prayer-reading blockquote {margin:0 0 7px;font-size:1.15rem}
+  .advent-page .prayer-reading cite {font-size:.9rem}
+  .advent-page .vatican-reader,.advent-page .reflection-notes {margin:0;padding:0;border:0;border-top:1px solid var(--line)}
+  .advent-page .prayer-shell details summary {padding:16px 0;min-height:48px;font:500 1rem/1.45 'Helvetica Neue',Arial,sans-serif;cursor:pointer}
+  .advent-page .prayer-shell details summary::marker {color:var(--advent-metal)}
+  .advent-page .reflection-notes > p {line-height:1.65;font-size:1rem}
+}
+@media screen and (max-width:920px) {
+  .advent-opening {display:block;margin:16px 0 32px}
+  .advent-page .advent-hero {display:grid;grid-template-columns:1fr minmax(90px,150px);gap:15px;align-items:center;margin-bottom:20px}
+  .advent-page .advent-hero h1 br {display:none}
+  .advent-page .advent-hero h1 {font-size:clamp(35px,6vw,50px)}
+  .advent-page .advent-hero img {aspect-ratio:1.15}
+}
+@media screen and (max-width:580px) {
+  .advent-page .advent-hero {grid-template-columns:minmax(0,1fr) 82px;gap:12px}
+  .advent-page .advent-hero h1 {font-size:2rem;line-height:1.03}
+  .advent-page .advent-hero .eyebrow {font-size:.74rem}
+  .advent-page .advent-hero .advent-subtitle {font-size:1.03rem}
+  .advent-page .advent-hero figure {padding:3px}
+  .advent-page .sunday-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .advent-page .sunday-card {padding:13px 11px;min-height:165px}
+  .advent-page .sunday-virtue {max-width:100%;font-size:1.4rem}
+  .advent-page .sunday-scene {max-width:100%;font-size:.88rem;padding-bottom:13px}
+  .advent-page .sunday-label {font-size:.77rem}
+  .advent-page .sunday-cta {font-size:.78rem;padding-top:6px}
+  .advent-page .sunday-candles {height:20%}
+  .advent-page .sunday-card::before {height:24%}
+  .advent-page .prayer-tools {margin-bottom:11px}
+}
+@media print {.reflection-notes > summary {font-size:14pt}}
