@@ -6,3 +6,30 @@
 @media(max-width:700px){
  .album-page .record-track .track-content .track-visual-reference p {font-size:22px;}
 }
+
+/* Surface the collection link before the album opening. */
+.music-page .album-page :is(.back-link,.album-return),
+.music-page .album-breadcrumb {
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  margin:24px 0 20px;
+  padding:9px 17px;
+  border:1px solid #b38b49;
+  border-radius:2px;
+  background:#ecd29b;
+  color:#302018;
+  font:600 15px/1.35 'Helvetica Neue',Arial,sans-serif;
+  text-decoration:none;
+}
+.music-page .album-page :is(.back-link,.album-return):hover,
+.music-page .album-breadcrumb:hover {
+  background:#f8e2ae;
+  color:#302018;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.music-page :is(.album-page .back-link,.album-page .album-return,.album-breadcrumb):focus-visible {
+  outline:2px solid var(--accent);
+  outline-offset:4px;
+}

@@ -54,3 +54,7 @@
 .m-music-orbit:is(:hover,:focus-visible) .m-music-disc{border-color:#e8c784;box-shadow:0 0 22px #d7b96e23}
 .m-about-toggle{line-height:0;display:grid;place-items:center}
 .m-about-toggle svg{width:17px;height:17px;display:block}
+
+.m-art-email{display:inline-flex;gap:.45em;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px}
+.m-request .m-direct-email{font:400 clamp(22px,2.2vw,30px)/1.2 var(--serif);margin:18px 0 12px;overflow-wrap:anywhere}
+.m-request .m-mail-hint{font-size:13px}

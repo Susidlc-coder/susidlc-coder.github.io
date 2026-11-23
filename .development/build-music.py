@@ -5,6 +5,7 @@ import json
 import re
 import runpy
 from pathlib import Path
+from site_footer import STYLESHEET as FOOTER_STYLE, render as site_footer
 
 ROOT = Path(__file__).resolve().parents[1]
 DEV = ROOT / '.development'
@@ -34,9 +35,6 @@ def contact(data):
 def header():
     return '''<a class="skip" href="#main">Skip to content</a><header class="header"><a class="brand" href="/index.html" aria-label="Susidlc World, home"><span class="brand-portrait"><img src="/assets/doll-detail.webp" alt="" width="31" height="42"></span><span>susidlc<span class="brand-world">WORLD</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Explore <span>＋</span></button><nav id="navigation" aria-label="Main navigation"><a href="/music.html" aria-current="page">Música</a><a href="/quiz">Poemas</a><a href="/pan-de-cada-dia/">Pan de Cada Día</a><a href="/morpheus/">Morpheus</a></nav><button class="light-toggle" aria-pressed="false" aria-label="Switch to evening light"><span class="light-orb"></span><span data-light-label>Daylight</span></button></header>'''
 
-def footer(data):
-    return f'''<footer class="wrap site-footer editorial-footer"><div class="footer-inner"><div class="footer-main"><div class="footer-identity"><a class="footer-brand" href="/index.html" aria-label="Susidlc World, home">susidlc <em>world.</em></a></div><div class="footer-music"><a class="footer-heading" href="/music.html">MUSIC<span aria-hidden="true"> ↗</span></a><div class="footer-related"><a href="{esc(data['artistUrl'])}" target="_blank" rel="noopener noreferrer" aria-label="Spotify (opens in a new tab)">Spotify</a><a href="https://www.instagram.com/susidlc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)">Instagram</a></div></div><div class="footer-contact-group"><h2>Say hello</h2><a class="footer-action" href="mailto:{esc(data['contactEmail'])}">Contact me<span aria-hidden="true"> ↗</span></a></div></div><div class="footer-baseline"><p class="footer-copyright">© 2026 Susidlc</p><a href="#top">Go to top ↑</a></div></div></footer>'''
-
 def page(title, description, route, image, content, data, structured):
     discovery_style = '<link rel="stylesheet" href="/assets/music-discovery.css?v=20261111-discovery-1">' if route == '/music.html' else ''
     schema = json.dumps(structured, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
@@ -47,9 +45,9 @@ def page(title, description, route, image, content, data, structured):
 <meta property="og:title" content="{esc(title)} | Susidlc World"><meta property="og:description" content="{esc(description)}"><meta property="og:image" content="{DOMAIN}{image}"><meta property="og:type" content="website"><meta property="og:url" content="{DOMAIN}{route}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{DOMAIN}{image}">
 <link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=6"><link rel="stylesheet" href="/assets/music.css?v=9">
-<script src="/assets/app.js?v=2" defer></script><script src="/assets/music.js?v=2" defer></script>
-<script type="application/ld+json">{schema}</script>{discovery_style}<link rel="stylesheet" href="/assets/music-track-emphasis.css?v=20261111-2"></head><body id="top" class="music-page">
-{header()}<main id="main">{content}</main>{footer(data)}
+<script src="/assets/app.js?v=contact-7" defer></script><script src="/assets/music.js?v=2" defer></script>
+<script type="application/ld+json">{schema}</script>{discovery_style}<link rel="stylesheet" href="/assets/music-track-emphasis.css?v=album-return-preview-2">{FOOTER_STYLE}</head><body id="top" class="music-page">
+{header()}<main id="main">{content}</main>{site_footer("en")}
 </body></html>'''
 
 def album_route(album):
@@ -111,7 +109,7 @@ def new_album_page(album, data, manifest):
     cover = picture(album['cover'], album['coverAlt'], manifest, True)
     title = album['title'] + ' ' + album['subtitle']
     tracks = ''.join(track_html(t) for t in album['tracks'])
-    content = f'''<div class="wrap new-album"><a class="album-breadcrumb" href="/music.html#collection-title"><span aria-hidden="true">←</span> The collection</a><section class="album-opening" aria-labelledby="album-title"><div class="album-art">{cover}</div><div class="album-copy"><p class="eyebrow">SUSIDLC / {len(album['tracks'])} TRACKS</p><h1 id="album-title">{esc(album['title'])}<em class="album-title-subtitle">{esc(album['subtitle'])}</em></h1>{external(album['spotifyUrl'], 'Listen on Spotify', 'spotify-button', 'Listen to ' + title + ' on Spotify', True)}</div></section><section class="track-list" aria-labelledby="tracks-title"><div class="track-section-heading"><h2 id="tracks-title">Inside the record</h2><span class="eyebrow">SELECT A TRACK TO EXPLORE</span></div>{tracks}</section><div class="album-next"><a class="quiet-link" href="/music.html#collection-title">All albums <span aria-hidden="true">↗</span></a></div></div>'''
+    content = f'''<div class="wrap new-album"><a class="album-breadcrumb" href="/music.html#collection-title"><span aria-hidden="true">←</span> Browse all albums</a><section class="album-opening" aria-labelledby="album-title"><div class="album-art">{cover}</div><div class="album-copy"><p class="eyebrow">SUSIDLC / {len(album['tracks'])} TRACKS</p><h1 id="album-title">{esc(album['title'])}<em class="album-title-subtitle">{esc(album['subtitle'])}</em></h1>{external(album['spotifyUrl'], 'Listen on Spotify', 'spotify-button', 'Listen to ' + title + ' on Spotify', True)}</div></section><section class="track-list" aria-labelledby="tracks-title"><div class="track-section-heading"><h2 id="tracks-title">Inside the record</h2><span class="eyebrow">SELECT A TRACK TO EXPLORE</span></div>{tracks}</section><div class="album-next"><a class="quiet-link" href="/music.html#collection-title">All albums <span aria-hidden="true">↗</span></a></div></div>'''
     items = [{'@type': 'ListItem', 'position': t['number'], 'item': {'@type': 'MusicRecording', '@id': DOMAIN + album_route(album) + '#' + t['id'], 'url': DOMAIN + album_route(album) + '#' + t['id'], 'name': t['title'], 'sameAs': t['spotifyUrl']}} for t in album['tracks']]
     structured = {'@context': 'https://schema.org', '@type': 'MusicAlbum', 'name': title, 'url': DOMAIN + album_route(album), 'sameAs': album['spotifyUrl'], 'numTracks': len(album['tracks']), 'track': {'@type': 'ItemList', 'itemListElement': items}}
     return page(title, f'Explore the {len(album["tracks"])} tracks on {title} by Susidlc. Listen to the album on Spotify.', album_route(album), manifest[album['cover']]['fallback']['src'], content, data, structured).replace('music.css?v=9', 'music.css?v=15')
@@ -122,7 +120,7 @@ def album_page(album, data, manifest):
     description = album.get('description')
     intro = f'<p class="album-description">{esc(description)}</p>' if description else ''
     cover = picture(album['cover'], album['coverAlt'], manifest, True, '(max-width: 540px) calc(100vw - 80px), (max-width: 720px) 460px, (max-width: 1080px) calc(50vw - 97px), (max-width: 1572px) calc(50vw - 122px), 640px')
-    content = f'''<div class="wrap"><a class="album-breadcrumb" href="/music.html#collection-title"><span aria-hidden="true">←</span> The collection</a><section class="album-opening" aria-labelledby="album-title"><div class="album-art">{cover}</div><div class="album-copy"><p class="eyebrow">SUSIDLC / {len(album['tracks'])} TRACKS</p><h1 id="album-title">{esc(album['title'])}</h1>{intro}{external(album['spotifyUrl'], 'Listen on Spotify', 'spotify-button', 'Listen to ' + album['title'] + ' on Spotify', True)}<p class="album-credit">{esc(data['standardCredit'])}</p></div></section><section class="track-list" aria-labelledby="tracks-title"><div class="track-section-heading"><h2 id="tracks-title">Inside the record</h2><span class="eyebrow">SELECT A TRACK TO EXPLORE</span></div>{''.join(track_html(t) for t in album['tracks'])}</section>'''
+    content = f'''<div class="wrap"><a class="album-breadcrumb" href="/music.html#collection-title"><span aria-hidden="true">←</span> Browse all albums</a><section class="album-opening" aria-labelledby="album-title"><div class="album-art">{cover}</div><div class="album-copy"><p class="eyebrow">SUSIDLC / {len(album['tracks'])} TRACKS</p><h1 id="album-title">{esc(album['title'])}</h1>{intro}{external(album['spotifyUrl'], 'Listen on Spotify', 'spotify-button', 'Listen to ' + album['title'] + ' on Spotify', True)}<p class="album-credit">{esc(data['standardCredit'])}</p></div></section><section class="track-list" aria-labelledby="tracks-title"><div class="track-section-heading"><h2 id="tracks-title">Inside the record</h2><span class="eyebrow">SELECT A TRACK TO EXPLORE</span></div>{''.join(track_html(t) for t in album['tracks'])}</section>'''
     other = data['albums'][(data['albums'].index(album) + 1) % len(data['albums'])]
     content += f'<div class="album-next"><a class="quiet-link" href="/music.html#collection-title">All albums <span aria-hidden="true">↗</span></a><a class="quiet-link" href="{album_route(other)}">Explore {esc(other["title"])} <span aria-hidden="true">→</span></a></div></div>' + contact(data)
     items = []

@@ -58,7 +58,7 @@ if (spotify && safeUrl(content.spotifyUrl)) spotify.href = safeUrl(content.spoti
 const youtube = document.querySelector('#music-youtube');
 if (youtube && safeUrl(content.musicYoutubeUrl)) youtube.href = safeUrl(content.musicYoutubeUrl);
 if (typeof content.contactEmail === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(content.contactEmail)) {
- document.querySelectorAll('a[href^="mailto:"]').forEach(a => { a.href = 'mailto:' + content.contactEmail; if (a.classList.contains('contact-link')) a.textContent = content.contactEmail + ' ↗'; });
+ document.querySelectorAll('a.contact-link[href^="mailto:"]').forEach(a => { a.href = 'mailto:' + content.contactEmail; if (a.classList.contains('contact-link')) a.textContent = content.contactEmail + ' ↗'; });
 }
 const bread = document.querySelector('#daily-bread');
 if (bread) { const links = (content.dailyBreadLinks || []).filter(l => l.title && safeUrl(l.url)); if (links.length) bread.replaceChildren(...links.map(l => externalLink(l.title, safeUrl(l.url)))); }

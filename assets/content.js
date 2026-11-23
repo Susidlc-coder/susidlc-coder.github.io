@@ -1,6 +1,6 @@
 /* Owner-provided links. No album photography is rendered. */
 window.SUSIDLC_CONTENT = {
-  contactEmail: 'susid95@gmail.com',
+  contactEmail: 'me@susidlc.com',
   spotifyUrl: 'https://open.spotify.com/artist/3qu5vshqqfnVnWFNLV5Ouo',
   musicYoutubeUrl: 'https://www.youtube.com/@susid95',
   musicProjects: [
