@@ -81,3 +81,57 @@ if (document.querySelector('footer.editorial-footer') && !document.querySelector
  document.querySelector('footer.editorial-footer').outerHTML = footers[document.documentElement.lang === 'en' ? 'en' : 'es'];
  document.head.insertAdjacentHTML('beforeend', "<link rel=\"stylesheet\" href=\"/assets/world-footer.css?v=3\">");
 }
+
+// Give collection and section returns the same label and treatment across the site.
+(() => {
+ const main = document.querySelector('main');
+ const path = location.pathname.replace(/^\/(es|en)(?=\/)/,'').replace(/index\.html$/, '');
+ if (!main || path === '/' || /^\/quiz\/?$/.test(path) || main.querySelector('.site-return')) return;
+ const en = document.documentElement.lang === 'en';
+ const home = en ? '/en/' : '/es/';
+ const back = en ? 'Back to ' : 'Volver a ';
+ let href = home;
+ let label = en ? 'Back to home' : 'Volver al inicio';
+ let selector;
+ const chapter = main.querySelector('.reader-back');
+ if (chapter) {
+   selector = '.reader-back';
+   href = chapter.getAttribute('href');
+   label = en ? 'Back to contents' : 'Volver al índice';
+ } else if (main.querySelector('.back-link,.album-breadcrumb')) {
+   selector = '.back-link,.album-return,.album-breadcrumb';
+   href = home+'music.html#collection-title';
+   label = en ? 'Browse all albums' : 'Ver todos los álbumes';
+ } else if (main.querySelector('.m-atlas-back')) {
+   selector = '.m-atlas-back,.m-atlas-return';
+   href = home+'morpheus/#world-index';
+   label = en ? 'Back to Atlas' : 'Volver al Atlas';
+ } else if (main.querySelector('.advent-breadcrumb,.breadcrumbs,#game-root')) {
+   selector = '.advent-breadcrumb a,.breadcrumbs a';
+   href = home+'pan-de-cada-dia/';
+   label = back+'Pan de Cada Día';
+ } else if (path.endsWith('/recorrido.html')) {
+   main.querySelector('.sp-nav-group a.sp-text-button')?.remove();
+   href = home+'poemas/';
+   label = back+(en?'Poems':'Poemas');
+ }
+ const sheet = document.createElement('link');
+ sheet.rel = 'stylesheet';
+ sheet.href = '/assets/return-navigation.css?v=1';
+ document.head.append(sheet);
+ const links = selector ? [...main.querySelectorAll(selector)] : [];
+ if (!selector) {
+   const row = document.createElement('div');
+   row.className = 'site-return-row'+(['/music.html','/poemas/','/poemas/recorrido.html'].includes(path)?' inset':'');
+   const link = document.createElement('a');
+   row.append(link);
+   if (path.endsWith('/recorrido.html')) document.querySelector('header').after(row);
+   else main.prepend(row);
+   links.push(link);
+ }
+ for (const link of links) {
+   link.classList.add('site-return');
+   link.href = href;
+   link.textContent = '← '+label;
+ }
+})();
